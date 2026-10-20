@@ -1,24 +1,22 @@
 # Plan de cierre
 
-Base actual: B modular, revisable. El horizonte empresarial de 12 meses es distinto del plazo académico del 24 de octubre de 2026.
+Actualizado: 20 de octubre de 2026. Base B modular revisable. ESC-01 fue desarrollado como escenario académico con supuestos explícitos. El horizonte empresarial de 12 meses es distinto de la entrega del 24 de octubre.
 
-| Orden | Trabajo | Condición de cierre | Estado |
+| Orden | Trabajo | Avance disponible | Condición para cerrar |
 | --- | --- | --- | --- |
-| 1 | Integrar diagnóstico/Business Case, enfoque y Charter | Una versión del equipo, fuentes y decisiones coherentes | Base preparada; integrar y revisar |
-| 2 | Definir alcance y depurar backlog entre todos | Inclusiones/exclusiones, aceptación y dependencias acordadas | Capacidades propuestas |
-| 3 | Priorizar y estimar | Criterios, rangos, supuestos y capacidad explícitos | Método y tablas preparados |
-| 4 | Conectar roadmap y riesgos | Valor en primeros 5 meses, preparación para M8 y horizonte M12 | Secuencia propuesta |
-| 5 | Preparar exposición y defensa | Cobertura de pauta y ensayo de 25 + 10 minutos | Estructura preparada |
-| 6 | Entregar | Formato/hora confirmados, versión revisada, una carga por grupo | Pendiente |
+| 1 | Diagnóstico/Business Case, enfoque y Charter | Borradores desarrollados con métricas, roles y condiciones | Integrar versiones del equipo y revisar consistencia. |
+| 2 | Alcance y backlog | Cobertura hipotética, aceptación, ocho capacidades y EDT | Acordar inclusiones, prioridades y escenario del piloto. |
+| 3 | Priorización y estimación | Scoring ilustrativo, costos por rangos, esfuerzo, reserva y sensibilidad | Revisar supuestos, capacidad, costo total y trade-offs. |
+| 4 | Roadmap y riesgos | Releases, gates, evidencia, responsables y disparadores | Defender valor M5, preparación M8 y condiciones de no escalar. |
+| 5 | Exposición y defensa | Orientación de contenido, sin archivo final | Integrar y ensayar propuesta común, 25 + 10 minutos. |
+| 6 | Entrega | Pauta y fuentes organizadas | Confirmar formato/hora, revisar versión y realizar carga grupal. |
 
-Priorizar integración y acuerdos de contenido antes de diseñar archivos finales. Si se incorporan nuevos materiales de clases o una aclaración de pauta, registrar el cambio y revisar los documentos afectados.
+## Próxima revisión, por prioridad
 
-## Qué debe decidirse próximamente
+1. Piloto/cobertura y metas SUP-05/SUP-06: son cifras de escenario, no datos del caso.
+2. Capacidades, límites y roles del Charter; integrar aportes de los primeros tres entregables.
+3. Costos/capacidad SUP-02/SUP-07/SUP-08/SUP-10: fuentes y magnitud razonables para defender el ejercicio.
+4. Plan de evidencia de M5 y acciones si la hipótesis falla.
+5. Material de sesiones 5/6, aclaraciones de aula, formato/hora y distribución académica de la exposición.
 
-- Qué capacidades de B producen la primera entrega de valor y qué se posterga.
-- Cobertura y criterios de aceptación del primer release, sin inventar cantidad de tiendas.
-- Objetivos medibles, responsables empresariales y límites de autoridad.
-- Método y supuestos para estimación; costos adicionales sustentados o declarados.
-- Cómo se muestra la propuesta: presentación obligatoria y eventual informe Typst por confirmar.
-
-Los responsables académicos y las reuniones se coordinan por el grupo; este plan no asigna personas ni horarios.
+Los supuestos pueden aceptarse, corregirse o rechazarse con fundamento. Validarlos académicamente no acredita pruebas reales en una empresa ficticia. No asignar responsables académicos o reuniones no acordadas. La presentación y el eventual informe final siguen pendientes del trabajo de integración.
