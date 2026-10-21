@@ -1,41 +1,47 @@
 # ZEUS: trabajo grupal de Gestión de Proyectos Informáticos
 
-Espacio para desarrollar juntos la primera etapa del caso M-GesPro Retail. La alternativa **B, plataforma omnicanal modular**, es la base actual de trabajo y puede revisarse al contrastar alcance, riesgos, costos y valor.
+Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene los siete entregables en Markdown, sus supuestos y fuentes para revisar y desarrollar la propuesta en conjunto.
 
-Entrega y presentación: **24 de octubre de 2026**, según la clase 2, parte 2, 1:10:32 a 1:10:44. Confirmar hora de carga y formato en el aula. La pauta propone 25 minutos de exposición y 10 de defensa, máximo 35; sugiere hasta 12 diapositivas principales más anexos.
+**Estado al 21 de octubre:** borradores desarrollados con el escenario propuesto ESC-01, pendientes de revisión del equipo. La alternativa B modular es la base actual y puede cambiar si alcance, costo, riesgo o valor no la sostienen.
 
-## Empezar
+**Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo de organización propuesto: dejar la versión final lista y ensayada el viernes 23. Confirmar formato y hora de carga en el aula. La pauta recomienda 25 minutos de exposición y 10 de defensa, máximo 35, y hasta 12 láminas principales más anexos.
 
-1. Leer la [pauta y cobertura](insumos/pauta.md) y el [enunciado](insumos/enunciado-zeus-etapa1.pdf).
-2. Revisar el escenario **ESC-01** de [trabajo](trabajo/README.md) e integrar los aportes del equipo en los tres primeros documentos. Los siete borradores ya incluyen supuestos explícitos, métricas, costos y gates, pendientes de revisión conjunta.
-3. Revisar [alcance y backlog](trabajo/04_alcance_y_backlog.md), luego priorización, estimación y roadmap.
-4. Registrar lo que se acuerde y lo que se supone en [acuerdos y supuestos](registros/acuerdos_y_supuestos.md).
-5. Consultar las [transcripciones](transcripciones/README.md) cuando se necesite evidencia de una indicación docente.
+## Incorporarse al trabajo
 
-## Estructura
+1. Leer la [pauta](insumos/pauta.md) y el [estado de los siete entregables](trabajo/README.md).
+2. Revisar el [reparto propuesto](EQUIPO.md) y acordarlo antes de asumir responsabilidades.
+3. Integrar los aportes ya preparados por el equipo en los primeros tres documentos; conservar una versión común por entregable.
+4. Revisar [alcance y backlog](trabajo/04_alcance_y_backlog.md), [supuestos](registros/acuerdos_y_supuestos.md), costos y roadmap. Cada cifra adicional del escenario puede ajustarse con fundamento.
+5. Proponer cambios mediante rama o edición web con solicitud de revisión; ver [CONTRIBUTING.md](CONTRIBUTING.md).
 
-```text
-insumos/          enunciado y pauta de evaluación
-transcripciones/  clases disponibles con marcas de tiempo
-trabajo/          siete entregables, con guía y borrador editable
-registros/        acuerdos, supuestos y riesgos comunes
-presentacion/     estructura de exposición y defensa
-typst/           ejemplo y módulos para un eventual informe
-scripts/          comprobación y compilación opcional
+## Archivos principales
+
+| Ubicación | Contenido |
+| --- | --- |
+| [trabajo/](trabajo/README.md) | Diagnóstico/Business Case, enfoque, Charter, alcance/backlog, priorización, estimación y roadmap. |
+| [registros/](registros/acuerdos_y_supuestos.md) | Decisiones y supuestos; [riesgos](registros/riesgos.md) compartidos. |
+| [insumos/](insumos/README.md) | Enunciado oficial y resumen de pauta. |
+| [transcripciones/](transcripciones/README.md) | Clases 1 y 2, cuatro partes con marcas de tiempo. |
+| [presentacion/](presentacion/README.md) | Orientación de exposición y defensa. |
+| [typst/](typst/README.md) | Ejemplo compilable y módulos locales para un eventual informe. |
+| [PLAN.md](PLAN.md) | Orden de revisión y cierre. |
+
+Markdown es la fuente de contenido. Diferenciar datos del caso, propuestas, supuestos y acuerdos. CAP identifica capacidades y PAQ paquetes de costo; sus IDs conectan backlog, estimación y releases. No aprobar automáticamente un ítem por estar escrito.
+
+## Revisar ESC-01
+
+El escenario propone piloto acotado, metas intermedias, costos por rangos, capacidad y expansión condicional. Son hipótesis de trabajo académico, no cotizaciones ni pruebas realizadas. El [registro](registros/acuerdos_y_supuestos.md) indica la revisión requerida y qué se haría si cada supuesto falla. La [estimación](trabajo/06_estimacion.md) incluye un adverso que supera el techo y obliga a revisar alcance o inversión.
+
+Como la empresa es ficticia, validar académicamente significa revisar razonabilidad, coherencia y defensa. Las comprobaciones con proveedores/tiendas se describen como trabajo futuro hipotético. La pauta no explicita un informe escrito adicional; decidir su necesidad antes de maquetarlo.
+
+## Herramientas y comprobaciones
+
+Para leer y proponer cambios basta la interfaz web o un editor Markdown. Con Git y Python 3:
+
+```sh
+python3 scripts/verificar.py
 ```
 
-## Cómo avanzar
+El script comprueba fuentes, enlaces, rúbrica, cálculos y referencias; no sustituye la revisión del equipo. Typst 0.15.1 es opcional para el ejemplo técnico; las instrucciones están en su carpeta. `build/` contiene salidas locales y queda fuera de Git.
 
-Los archivos Markdown son la fuente del contenido. Cada sección debe indicar si contiene datos del caso, una propuesta o un acuerdo. Se pueden sugerir capacidades en el backlog antes de cerrar el alcance; su estado pasa de propuesta a incluida solo cuando se justifica y acuerda. Usar IDs comunes para conectar alcance, estimación y releases.
-
-Para cambios pequeños se puede editar Markdown desde la plataforma del repositorio; para cambios extensos, usar una rama y revisión de otro integrante. El flujo está en [CONTRIBUTING.md](CONTRIBUTING.md). El [plan](PLAN.md) marca el orden de cierre, sin asignar responsables ni reuniones que aún no estén acordados.
-
-## Herramientas
-
-Para contenido basta un editor Markdown. Python 3 permite ejecutar `python3 scripts/verificar.py`. Typst es opcional mientras se acuerda si habrá informe; se incluye [soporte compilable](typst/README.md) con módulos locales. La extensión recomendada de VS Code se ofrece como sugerencia de instalación, no se instala automáticamente.
-
-El repositorio está preparado localmente. Antes de compartirlo, crear un remoto privado e invitar a los compañeros; los materiales docentes y las transcripciones se usan como insumo del grupo. La pauta disponible exige una presentación y defensa y no explicita un informe escrito adicional.
-
-## Avance con supuestos, 20 de octubre
-
-ESC-01 propone piloto de 5 tiendas/un CD, metas intermedias, rangos de costo, capacidad y expansión condicional. Cada supuesto tiene en el registro la revisión académica requerida y la validación empresarial hipotética. Los números permiten discutir una propuesta coherente y se pueden sustituir; no son resultados, cotizaciones o decisiones grupales aprobadas. La [estimación](trabajo/06_estimacion.md) muestra también el escenario que supera el techo y exige replantear.
+Este espacio se comparte mediante un repositorio privado. Para que un compañero acceda, debe aceptar una invitación de colaboración con su cuenta de GitHub. Los materiales docentes y transcripciones se incluyen para el trabajo académico del equipo.

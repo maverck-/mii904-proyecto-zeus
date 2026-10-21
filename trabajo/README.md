@@ -1,6 +1,6 @@
 # Entregables y estado de revisión
 
-Los siete documentos desarrollan lo solicitado en la página 8 del enunciado. **ESC-01 es un borrador integral con supuestos explícitos, pendiente de revisión del grupo.** El usuario autorizó usar esos supuestos para avanzar; no se consideran acuerdos grupales ni resultados operacionales.
+Los siete documentos desarrollan lo solicitado en la página 8 del enunciado. **ESC-01 es un borrador integral con supuestos explícitos, pendiente de revisión del grupo.** Los supuestos permiten desarrollar la propuesta, pero aún no representan acuerdos grupales ni resultados operacionales.
 
 | Orden | Archivo | Desarrollo disponible | Revisión que queda |
 | --- | --- | --- | --- |

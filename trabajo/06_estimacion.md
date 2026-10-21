@@ -1,6 +1,6 @@
 # 6. Estimación y tratamiento de incertidumbre
 
-**ESC-01: escenario cuantificado hipotético para discusión.** SUP-07/SUP-08/SUP-10. El usuario autorizó avanzar con supuestos explícitos; el grupo aún no los valida. Las cifras por paquete son valores didácticos construidos, sin cotizaciones ni historial de costos. Los únicos montos y plazos de referencia del caso son las alternativas de p. 7 y el techo de p. 5.
+**ESC-01: escenario cuantificado hipotético para discusión.** SUP-07/SUP-08/SUP-10. El grupo aún debe revisar y validar los supuestos de entrada. Las cifras por paquete son valores didácticos construidos, sin cotizaciones ni historial de costos. Los únicos montos y plazos de referencia del caso son las alternativas de p. 7 y el techo de p. 5.
 
 ## Método, alcance y trazabilidad
 

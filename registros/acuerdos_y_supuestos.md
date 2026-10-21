@@ -1,6 +1,6 @@
 # Acuerdos y supuestos
 
-Versión de trabajo: 20 de octubre de 2026. **ESC-01 es un escenario académico propuesto, sin validación del grupo.** Sirve para desarrollar los siete entregables coherentemente. El usuario autorizó avanzar con supuestos explícitos; esto no equivale a aprobación grupal de sus cifras.
+Versión de trabajo: 20 de octubre de 2026. **ESC-01 es un escenario académico propuesto, sin validación del grupo.** Sirve para desarrollar los siete entregables coherentemente. Las cifras se desarrollan para discutir una propuesta coherente y siguen pendientes de aprobación grupal.
 
 ## Hechos del caso
 

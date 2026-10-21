@@ -1,22 +1,32 @@
 # Cómo trabajar juntos
 
-Cada entregable tiene un archivo de trabajo. Integrar los aportes existentes dentro de ese archivo y conservar su trazabilidad. Los tres primeros documentos pueden incorporarse desde el material que el equipo ya esté preparando.
+Cada entregable tiene un archivo canónico en `trabajo/`. Integrar los aportes existentes, revisar supuestos y actualizar dependencias cuando cambia una decisión. El reparto sugerido está en [EQUIPO.md](EQUIPO.md) y requiere acuerdo.
 
-## Cambios pequeños
+## Entrar al repositorio
 
-Editar el Markdown correspondiente, describir el cambio y solicitar revisión si altera una decisión. Un cambio de costo, alcance, objetivo o fecha debe actualizar todos los documentos afectados. Un ítem propuesto del backlog no se vuelve compromiso al crear una fila.
-
-## Cambios desde Git
-
-Una vez que exista un remoto compartido y se haya clonado, partir de una rama actualizada. Ejemplo de trabajo para alcance:
+Aceptar la invitación de GitHub con la cuenta correcta. Al ser privado, el enlace por sí solo no habilita acceso. Luego clonar:
 
 ```sh
+git clone https://github.com/maverck-/mii904-proyecto-zeus-grupo.git
+cd mii904-proyecto-zeus-grupo
+```
+
+Para cambios pequeños también se puede editar Markdown desde GitHub: abrir el archivo, editar y proponer el cambio en una nueva rama con solicitud de revisión. El contenido puede leerse sin instalar Typst.
+
+## Trabajar en una rama
+
+Antes de empezar, comprobar cambios locales, actualizar `main` y crear una rama del frente:
+
+```sh
+git status
 git switch main
 git pull --ff-only
 git switch -c trabajo/alcance
 ```
 
-Editar los archivos, comprobarlos y registrar solo los cambios pertinentes:
+Si hay cambios sin guardar, registrarlos o resolverlos antes de cambiar de rama; no descartarlos para actualizar. Elegir un nombre distinto si esa rama ya existe.
+
+Después de editar y revisar:
 
 ```sh
 python3 scripts/verificar.py
@@ -25,23 +35,18 @@ git commit -m "Ajusta alcance y dependencias del primer release"
 git push -u origin trabajo/alcance
 ```
 
-Abrir una solicitud de revisión y explicar qué decisión cambia. Si el cambio requiere registros o roadmap, incluirlos en el mismo conjunto. Este ejemplo presupone un remoto `origin` ya configurado; no lo crea.
+Abrir una solicitud de revisión hacia `main`, explicar la decisión y pedir revisión de otro integrante. Si cambia costo, objetivo, cobertura o hito, incluir en el mismo conjunto el registro y los demás archivos afectados. Usar la plantilla disponible. Integrar después de revisar y resolver contradicciones.
 
-## Regla editorial y de fuentes
+## Cómo formular un aporte
 
-Citar enunciado con página y transcripción con clase, parte y tiempo. Diferenciar hecho, supuesto y propuesta. Usar el mismo ID de capacidad en backlog, estimación y releases. No atribuir a ZEUS los datos del ejercicio financiero de onboarding. Mantener las transcripciones como insumo del reconocimiento de voz y anotar correcciones documentales en un apunte aparte.
+Citar enunciado por página y transcripción por clase, parte y tiempo. Diferenciar hecho del caso, propuesta, supuesto y acuerdo del grupo. Conservar IDs CAP/PAQ/KPI. Los costos por rangos son un escenario académico y se pueden corregir con fundamento; no son cotizaciones. Las transcripciones mantienen las palabras reconocidas, con aclaraciones en los documentos de trabajo.
 
-## Typst y archivos derivados
+Un ítem de backlog sigue propuesto hasta acordar su inclusión. No sustituir los datos del retail por cifras del ejercicio financiero de onboarding. Una comprobación del script valida operaciones/documentos, no factibilidad empresarial.
 
-Aprobar contenido en Markdown antes de pasarlo al formato final. Los módulos `.typ` del repo se versionan; `build/` contiene salidas locales. La muestra sirve para probar el entorno y no contiene un informe terminado. La [guía de Typst](typst/README.md) explica compilación y extensiones.
+## Archivos derivados y Typst
 
-## Publicar la copia local
+Editar contenido en Markdown. Decidir si habrá informe antes de pasarlo al formato final. Versionar módulos propios `.typ`; guardar compilaciones en `build/`, ignorado por Git. La muestra técnica y su compilación están en [Typst](typst/README.md).
 
-Crear en la plataforma elegida un repositorio **privado y vacío**, sin README inicial. Copiar su URL real y ejecutar desde esta carpeta, sustituyendo el marcador:
+## Accesos para el equipo
 
-```sh
-git remote add origin URL_REAL_DEL_REPOSITORIO_PRIVADO
-git push -u origin main
-```
-
-Invitar a los compañeros con acceso de colaboración. Si el remoto contiene archivos, revisar primero ese historial antes de integrar; no forzar una sobrescritura. No hace falta copiar el historial de otro repositorio para comenzar este espacio.
+El propietario invita desde la configuración del repositorio, sección de colaboradores/acceso. Usar las cuentas de GitHub confirmadas por cada integrante y el nivel de colaboración acordado. Una invitación pendiente debe aceptarse para acceder. No compartir credenciales para resolver acceso. Confirmar que todos puedan leer y proponer cambios antes del cierre.

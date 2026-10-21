@@ -1,6 +1,6 @@
 # Plan de cierre
 
-Actualizado: 20 de octubre de 2026. Base B modular revisable. ESC-01 fue desarrollado como escenario académico con supuestos explícitos. El horizonte empresarial de 12 meses es distinto de la entrega del 24 de octubre.
+Actualizado: 21 de octubre de 2026. Base B modular revisable. ESC-01 fue desarrollado como escenario académico con supuestos explícitos. El horizonte empresarial de 12 meses es distinto de la entrega del 24 de octubre.
 
 | Orden | Trabajo | Avance disponible | Condición para cerrar |
 | --- | --- | --- | --- |
@@ -19,4 +19,8 @@ Actualizado: 20 de octubre de 2026. Base B modular revisable. ESC-01 fue desarro
 4. Plan de evidencia de M5 y acciones si la hipótesis falla.
 5. Material de sesiones 5/6, aclaraciones de aula, formato/hora y distribución académica de la exposición.
 
-Los supuestos pueden aceptarse, corregirse o rechazarse con fundamento. Validarlos académicamente no acredita pruebas reales en una empresa ficticia. No asignar responsables académicos o reuniones no acordadas. La presentación y el eventual informe final siguen pendientes del trabajo de integración.
+Los supuestos pueden aceptarse, corregirse o rechazarse con fundamento. Validarlos académicamente no acredita pruebas reales en una empresa ficticia. El [reparto académico](EQUIPO.md) es una propuesta para acordar; no atribuye aceptación a los integrantes. La presentación y el eventual informe final siguen pendientes del trabajo de integración.
+
+## Objetivo de organización para el viernes 23
+
+Contenido integrado y revisado, presentación y anexos listos y ensayo realizado. La entrega/presentación documentada es el sábado 24. La fecha de cierre interna no reemplaza una indicación posterior del aula.
