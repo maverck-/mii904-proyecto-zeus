@@ -7,8 +7,8 @@ Cada entregable tiene un archivo canónico en `trabajo/`. Integrar los aportes e
 Aceptar la invitación de GitHub con la cuenta correcta. Al ser privado, el enlace por sí solo no habilita acceso. Luego clonar:
 
 ```sh
-git clone https://github.com/maverck-/mii904-proyecto-zeus-grupo.git
-cd mii904-proyecto-zeus-grupo
+git clone https://github.com/maverck-/mii904-proyecto-zeus.git
+cd mii904-proyecto-zeus
 ```
 
 Para cambios pequeños también se puede editar Markdown desde GitHub: abrir el archivo, editar y proponer el cambio en una nueva rama con solicitud de revisión. El contenido puede leerse sin instalar Typst.
