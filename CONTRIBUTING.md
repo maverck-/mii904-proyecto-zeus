@@ -4,7 +4,7 @@ Cada entregable tiene un archivo canónico en `trabajo/`. Integrar los aportes e
 
 ## Entrar al repositorio
 
-Aceptar la invitación de GitHub con la cuenta correcta. Al ser privado, el enlace por sí solo no habilita acceso. Luego clonar:
+El repositorio es público y puede leerse o clonarse sin invitación. Para subir ramas al repositorio, aceptar una invitación de colaboración con la cuenta correcta. Quien no tenga permisos puede usar un fork y proponer una solicitud de revisión. Para clonar:
 
 ```sh
 git clone https://github.com/maverck-/mii904-proyecto-zeus.git
@@ -49,4 +49,4 @@ Editar contenido en Markdown. Decidir si habrá informe antes de pasarlo al form
 
 ## Accesos para el equipo
 
-El propietario invita desde la configuración del repositorio, sección de colaboradores/acceso. Usar las cuentas de GitHub confirmadas por cada integrante y el nivel de colaboración acordado. Una invitación pendiente debe aceptarse para acceder. No compartir credenciales para resolver acceso. Confirmar que todos puedan leer y proponer cambios antes del cierre.
+La lectura es pública. El propietario invita desde la configuración del repositorio, sección de colaboradores/acceso, para otorgar permisos de escritura al equipo. Usar las cuentas de GitHub confirmadas por cada integrante y el nivel de colaboración acordado. Una invitación pendiente debe aceptarse para activar esos permisos. Confirmar que todos puedan proponer cambios antes del cierre.

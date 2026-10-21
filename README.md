@@ -44,4 +44,4 @@ python3 scripts/verificar.py
 
 El script comprueba fuentes, enlaces, rúbrica, cálculos y referencias; no sustituye la revisión del equipo. Typst 0.15.1 es opcional para el ejemplo técnico; las instrucciones están en su carpeta. `build/` contiene salidas locales y queda fuera de Git.
 
-Este espacio se comparte mediante un repositorio privado. Para que un compañero acceda, debe aceptar una invitación de colaboración con su cuenta de GitHub. Los materiales docentes y transcripciones se incluyen para el trabajo académico del equipo.
+El repositorio es público: cualquier persona con el enlace puede leerlo y clonarlo sin invitación. Para subir cambios directamente, los integrantes deben tener permisos de colaboración; también pueden proponer cambios desde un fork mediante una solicitud de revisión. Los materiales docentes y transcripciones se incluyen como insumo del trabajo académico.
