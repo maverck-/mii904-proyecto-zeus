@@ -6,7 +6,11 @@ Documento docente copiado sin modificación. SHA-256: `e19c4f3d34eaf58fa8b738e37
 
 Referencias por página: 2, reglas; 3 y 4, problema y métricas; 5, restricciones; 6 y 7, stakeholders y alternativas; 8, entregables; 9, formato y rúbrica. Las indicaciones de fecha y canal se apoyan en la clase 2, con los tiempos identificados en la pauta.
 
-Las presentaciones de sesiones 5 y 6 no están entre los materiales locales revisados al preparar esta versión. Incorporar sus aportes cuando el grupo disponga de ellos. Las experiencias narradas en clase no son datos de la empresa ficticia.
+## Material docente incorporado el 21 de octubre
+
+Las [presentaciones 03 a 06](presentaciones/README.md) están copiadas sin modificación y registradas con páginas/hash. La clase 3 del 9 de octubre comprende sesiones 03/04 y tiene sus dos transcripciones en el índice. Presentaciones 05/06 se revisan como complemento de estimación/priorización/cronograma, sin atribuirles transcripción oral.
+
+Los [aportes aplicados a ZEUS](../registros/aportes_clase_03.md) distinguen contenido docente, ejercicios de onboarding y propuestas del equipo. Las experiencias narradas en clase no son datos de la empresa ficticia. No se ha incorporado PMBOK completo ni material personal ajeno al trabajo.
 
 ## Avance recibido del equipo
 

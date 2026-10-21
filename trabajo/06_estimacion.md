@@ -8,6 +8,20 @@ Enunciado: B = **1.350 MM CLP**, 9 a 12 meses (p. 7); máximo preliminar **1.500
 
 SUP-07/SUP-08/SUP-10: reconstruir costo de ESC-02 con alcance de 04 y secuencia de 07. Para el ejercicio pueden usarse rangos supuestos defendidos por el equipo, identificados como tales. No hacen falta cotizaciones reales de una empresa ficticia, pero no deben inventarse como obtenidas. No se investigaron tarifas de mercado.
 
+## Técnica según decisión y horizonte
+
+La sesión 05, pp. 4 a 11 ([material](../insumos/presentaciones/README.md)), distingue objetivo, estimación y compromiso. 68/M7 es un objetivo de cobertura; una estimación debe mostrar si costo y capacidad lo sostienen; el compromiso se acepta por la autoridad con riesgo explícito. Ni el techo 1.500 ni la referencia B calculan por sí solos la nueva solución.
+
+| Decisión | Técnica propuesta | Evidencia / límite |
+| --- | --- | --- |
+| Formular inversión ejecutiva | Referencia B como orientación y descomposición por PAQ con rangos | Ajustar por alcance, licencias, personas, sitios y riesgo; no tratar B como histórico comparable demostrado. |
+| Resolver R0/R1 próximo | Descomposición por entregable y tres puntos para incertidumbre; cantidades × tarifas donde sea defendible | Detallar interfaces/aceptación, dedicación y pruebas; supuestos identificados si faltan datos. |
+| Ampliar tiendas | Paramétrica por habilitación local, separando plataforma común y sitios | Validar tiempo/costo por tienda y paralelismo; no multiplicar toda la plataforma por número de locales. |
+| Refinar backlog de equipo | Comparación relativa de tamaño/complejidad para conversar y dividir | Sin equivalencia automática de story points a horas ni comparación de puntos entre cinco equipos. |
+| Actualizar forecast durante ejecución | Terminados/tiempos de ciclo con unidades comparables y sistema suficientemente estable | Sin histórico real de ZEUS no atribuir P80/P90 ni Monte Carlo calibrado a los rangos supuestos. |
+
+Cada rango debe registrar alcance, unidad, base, técnica, supuestos, riesgos, fecha y quién lo revisa. Las demostraciones y cantidades del onboarding de sesión 05 no son datos de ZEUS. La estimación cuantificada sigue pendiente de Rogelio.
+
 ## Método y tabla de trabajo
 
 Descomponer por PAQ. Estimar optimista O, más probable M y pesimista P con fundamento; E = (O + 4M + P) / 6. Es un escenario central de trabajo, sin confianza probabilística demostrada. Comparar también suma P, riesgos correlacionados y reserva, evitando doble conteo. Usar cantidades × tarifas para las subpartidas con unidad identificable.

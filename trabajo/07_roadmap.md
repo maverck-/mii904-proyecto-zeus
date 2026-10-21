@@ -47,6 +47,36 @@ Cadena que condiciona M5: acceso y viabilidad → inventario/reservas y pedidos 
 
 M5 sin evidencia suficiente: no declarar primera entrega de valor cumplida; investigar base/uso y revisar inversión. WMS tardío: replantear interfaces/plazo/alternativa, sin pruebas ficticias. Stock o adopción deficientes: corregir antes de ampliar. Escala no operable o campaña amenazada: mantener sitios seguros y diferir altas con impacto explícito. Costo mayor que techo: revisar alcance y financiación antes de comprometer. R3 experimental sin hipótesis/costo: no iniciar experimento.
 
+## Dependencias con evidencia y responsable
+
+Complemento propuesto desde sesión 04, p. 9, y sesión 06, pp. 5 a 8. Externo al control del proyecto no significa ajeno a su coordinación.
+
+| Dependencia | Coordinación responsable | Evidencia requerida | Momento necesario / efecto |
+| --- | --- | --- | --- |
+| ERP/WMS y condiciones de OMS | PM/Tecnología con proveedores | Contratos de datos, acceso, prueba representativa y soporte | VT-01/M2; si falla, afecta inventario/pedido y primera entrega. |
+| Stock, turnos, espacio y formación por tienda/CD | Operaciones/Logística/gerencias de tienda | Preparación y aceptación del sitio, roles y soporte | Antes del piloto y de cada ola; condiciona altas. |
+| CISO/Arquitectura y ambientes de prueba | Tecnología/CISO | Controles, integración, carga y recuperación | Cada release y VE-01; las revisiones consumen capacidad. |
+| Regla de devolución y conciliación | Comercial/Finanzas/Operaciones | Elegibilidad, estados y aceptación | Antes de CAP-08/R3; no suponer que reglas aparecen al construir. |
+| Dotación/contratos/costo por tramo | PM/Finanzas/proveedores | FTE por periodo, compromisos y forecast a término | G0, G1 y G2; cinco equipos nominales no garantizan especialistas disponibles. |
+
+## Horizonte, referencia y forecast
+
+Mantener horizonte M12 por capacidades y gates; R1 con mayor detalle de interfaces, aceptación y recursos; trabajo cercano por sprint/flujo y readiness. R2 conserva olas con validación de capacidad; R3 permanece por capacidades/hipótesis hasta acercarse G2. Esto aplica planificación progresiva de sesión 04, p. 16, y sesión 06, p. 10; no exige adivinar todas las tareas futuras.
+
+La referencia aprobada registra compromisos y autorización; el forecast muestra la mejor previsión actual. Hoy los dos son propuestas académicas: no hay baseline empresarial aprobada ni avance real. En ejecución, un forecast tardío se comunica con causa/impacto; cambiarlo no autoriza por sí solo cambiar el compromiso. PM integra costo/fecha/beneficio, PO reordena dentro de límites y sponsor/comité decide cambios mayores.
+
+## Tres señales de flujo propuestas
+
+Según sesión 06, pp. 11 a 17, conectar foro semanal de 02 con estas señales, sin inventar mediciones:
+
+| Señal | Definición propuesta | Decisión que ayuda a tomar |
+| --- | --- | --- |
+| Throughput | Ítems terminados/aceptados por semana y tipo; para rollout, tiendas plenamente aceptadas por semana | Contrastar ritmo con altas pendientes y revisar olas. No mezclar tiendas, historias e interfaces ni sumar puntos de equipos. |
+| Tiempo de ciclo | Tiempo desde inicio hasta aceptación, por tipo de ítem o habilitación de tienda | Revisar dispersión/esperas y actualizar rangos cuando exista histórico suficiente. |
+| WIP y antigüedad/bloqueos | Ítems iniciados sin terminar, tiempo abiertos/bloqueados, causa y responsable | Resolver restricción dominante y limitar nuevos inicios según especialidad/capacidad; no ocultar QA o revisión como terminados. |
+
+29 altas/mes es ritmo requerido por 58 tiendas en dos meses, no rendimiento observado. Las olas y estas señales sostienen la hipótesis 68/M7 sin demostrarla anticipadamente. Límites WIP numéricos requieren capacidad de SUP-02; incorporar costo de apoyo adicional si se decide usarlo. No aplicar ley de Little ni probabilidades como garantía sin sus condiciones/datos.
+
 ## Cierre académico
 
 Para el viernes 23: propuesta integrada, estimación cuantificada por Rogelio, alcance/olas revisados por Maverick, supuestos aceptados o corregidos, presentación/anexos y ensayo. Entrega/presentación documentada: sábado 24; confirmar hora/formato de carga en el aula. La pauta exige coherencia y defensa del conjunto, no siete archivos formateados obligatorios por inferencia.

@@ -36,11 +36,16 @@ Revisión académica: comprobar razonabilidad, coherencia y defensa con el caso.
 | SUP-12 | Un OMS de mercado cubre el flujo con configuración y adaptaciones acotadas | Comparar compra/configuración e interfaces; proveedor no elegido | Selección G0/M1 con aceptación escalonada y prueba VT-01/M2 | Revisar contrato/arquitectura antes de compromisos irreversibles. |
 | SUP-13 | Un experimento Ship-from-store cabe en R3 sin poner en riesgo metas/techo | Definir hipótesis, tiendas, pedidos, esfuerzo y límite monetario antes de G2 | Operaciones/Finanzas autorizan experimento M9 y evalúan resultados antes de cierre | Diferir experimento con impacto explícito; no quitar controles. |
 
+## Incorporación de clase 3
+
+Se incorporan [aportes docentes trazables](aportes_clase_03.md) a problema, interesados, alcance, aceptación/DoD, dependencias, actualización del plan y técnicas de estimación/flujo. La clase admite formular con supuestos numéricos explícitos; no valida para ZEUS las cantidades de los ejercicios ni convierte 10/68 en compromiso aprobado. Se mantienen SUP-01 a SUP-13 y responsables. No se modifica automáticamente cobertura ni se sustituye el avance del equipo.
+
 ## Control de cambios
 
 | Fecha | Actualización | Estado |
 | --- | --- | --- |
 | 20-10-2026 | ESC-01: escenario anterior con otra cobertura, costos y exclusiones | Sustituido como propuesta vigente; conservado en Git. |
 | 21-10-2026 | ESC-02: avance recibido como base principal, correcciones documentadas y reparto actualizado | Integrado para revisión; no presume consenso del grupo. |
+| 21-10-2026 | Clase 3 y presentaciones 03 a 06 incorporadas; trazabilidad, dependencias y prácticas de estimación/flujo desarrolladas | Propuestas para revisión; no cambia objetivos ni acredita pruebas empresariales. |
 
 Registrar decisiones efectivamente aceptadas, motivo, evidencia y documentos afectados. La [revisión de integración](integracion_avance_equipo.md) conserva los fundamentos de cada ajuste.

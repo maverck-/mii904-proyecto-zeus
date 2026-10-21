@@ -55,3 +55,9 @@ Si stock físico no es confiable, priorizar reconciliación antes de más funcio
 ## Cierre a cargo de Rogelio
 
 Revisar pesos y notas contra la estimación, registrar razón de C/K por capacidad, resolver CAP-09 y justificar qué se mantiene, difiere o condiciona. La suma correcta no valida el juicio. Acordar con Maverick la secuencia/cobertura y registrar decisiones aceptadas. Si no cabe 68/M7, la prioridad de controles y evidencia se mantiene; el grupo ajusta el compromiso explícitamente.
+
+## Complemento docente: urgencia y costo de demora
+
+La sesión 05, pp. 12 a 15 ([material](../insumos/presentaciones/README.md)), permite sostener esta matriz multicriterio; WSJF es una opción, no una obligación de reemplazarla. Justificar U por la primera entrega M5 y campaña M8: retrasar integración o aceptación de tienda puede diferir el flujo completo aunque la capacidad aislada tenga poco atractivo visible. CAP-08/CAP-09 pueden diferirse si protegen el flujo principal, explicitando el valor postergado.
+
+Sin volumen, margen y demanda de campaña no cuantificar pesos perdidos por día. Si Rogelio decide usar WSJF, debe definir escalas comparables y tamaño, registrar supuestos y resolver igualmente dependencias/capacidad. No sumar WSJF al score actual como si fueran magnitudes equivalentes ni duplicar la urgencia como un beneficio económico ya probado.

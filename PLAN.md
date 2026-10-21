@@ -1,6 +1,6 @@
 # Plan de cierre
 
-21 de octubre de 2026. ESC-02 prioriza el avance del equipo sobre el escenario anterior. B modular revisable. El horizonte empresarial M12 es distinto de la entrega académica del 24 de octubre.
+21 de octubre de 2026. ESC-02 prioriza el avance del equipo sobre el escenario anterior e incorpora [aportes docentes](registros/aportes_clase_03.md) sin cambiar automáticamente su cobertura. B modular revisable. El horizonte empresarial M12 es distinto de la entrega académica del 24 de octubre.
 
 | Orden | Trabajo | Disponible | Condición de cierre / responsable |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@
 3. Justificar ≥85% devolución como aporte parcial a ≥90% estratégico o elevarlo coherentemente.
 4. Delimitar experimento Ship-from-store: hipótesis, muestra, costo máximo y salida en G2/M9.
 5. Completar estimación y autorización inicial: no equiparar techo 1.500 con costo calculado.
-6. Incorporar aclaraciones/material de sesiones 5/6 cuando esté disponible y confirmar canal de entrega.
+6. Revisar los aportes de clase 3 y presentaciones 03/04/05/06 ya integrados; incorporar transcripción de clase 4 cuando esté disponible y confirmar hora/formato de entrega.
 
 Las decisiones deben registrarse como aceptadas, corregidas o rechazadas con fundamento. Las aprobaciones de una empresa ficticia se proponen, no se simulan como realizadas. Las responsabilidades están en [EQUIPO.md](EQUIPO.md).
 

@@ -1,6 +1,6 @@
 # Entregables y estado de revisión
 
-Siete componentes solicitados en p. 8 del enunciado, organizados en Markdown. **ESC-02 prioriza el avance recibido del equipo.** Integrado significa incorporado en un borrador común; no significa aprobado ni demostrado en operación.
+Siete componentes solicitados en p. 8 del enunciado, organizados en Markdown. **ESC-02 prioriza el avance recibido del equipo.** Se revisaron clase 3 y presentaciones 03 a 06; los [cambios con referencias](../registros/aportes_clase_03.md) desarrollan alcance, aceptación, dependencias y técnicas de estimación/flujo. Integrado significa incorporado en un borrador común; no significa aprobado ni demostrado en operación.
 
 | Orden | Documento | Avance disponible | Pendiente / responsable |
 | --- | --- | --- | --- |

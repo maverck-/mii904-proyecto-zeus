@@ -4,6 +4,10 @@
 
 ## 1.1 Problemas y oportunidad
 
+**Declaración del problema:** M-GesPro Retail presenta una operación omnicanal con información de inventario desactualizada y visibilidad fragmentada de pedidos entre canales. El caso registra 7,8% de cancelaciones por stock, 7,2 horas de preparación media y 64% de devoluciones resueltas al primer contacto. Estas condiciones afectan el cumplimiento de promesas y la atención, limitando una experiencia de compra confiable. La contribución de cada causa debe verificarse antes de atribuirle toda la brecha.
+
+Se separa problema de solución conforme a sesión 03, pp. 6/7, y clase 3, parte 1, 25:02 a 27:28. La compra/configuración de OMS se evalúa después como alternativa de intervención; no forma parte de la definición del problema. [Fuentes y aplicación](../registros/aportes_clase_03.md).
+
 El negocio presenta alta latencia entre el cambio de inventario y la publicación del stock web (45 a 120 minutos), junto con un 7,8% de cancelaciones por falta de stock. Es consistente plantear la disponibilidad desactualizada como una causa a investigar, pero el caso no permite atribuirle todo ese porcentaje.
 
 Existen múltiples bases con información desalineada de clientes y productos y visibilidad limitada de los pedidos digitales en tiendas. Esto dificulta atención y devoluciones; el caso registra 64% de devoluciones resueltas al primer contacto. Deben revisarse también reglas operativas, dotación y conciliaciones antes de atribuir el problema solo a la plataforma.

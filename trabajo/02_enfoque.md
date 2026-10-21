@@ -50,3 +50,9 @@ Se conserva el supuesto de cinco equipos de implementación, distintos de los cu
 ## 2.7 Puente de artefactos y autoridad
 
 Charter define mandato; EDT PAQ costo y cobertura; backlog CAP prioridades; roadmap R0/R1/R2/R3 evidencia y gates; registros decisiones y supuestos. PO ordena trabajo dentro de límites; PM integra; comité/sponsor decide inversión y cambios mayores; CISO puede bloquear exposición crítica y Operaciones una salida no operable. La DoD incluye pruebas, controles, telemetría, documentación y soporte, pero el beneficio se evalúa con uso y métricas por gate.
+
+## 2.8 Actualización de un mismo plan
+
+La clase 3 pide conectar gobierno, puente y entrega (sesión 03, p. 15; sesión 04, p. 20; [aplicación](../registros/aportes_clase_03.md)). En la revisión semanal, PO y equipos presentan terminados, bloqueos, evidencia y trabajo próximo; PM/Arquitectura actualizan dependencias y forecast del roadmap. Si cambia costo, cobertura, fecha o beneficio comprometido, PM eleva impacto al sponsor/comité antes de modificar la referencia aprobada. La decisión vuelve al backlog y a los documentos afectados. No mantener una fecha ejecutiva inalterada mientras el equipo ya pronostica otra.
+
+Para APIs/integración, proponer políticas Kanban explícitas: entrada con interfaz/dueño y aceptación definidos; límites WIP acordados según capacidad por especialidad; bloqueos visibles con responsable; priorizar terminar o desbloquear antes de abrir más trabajo. Medir terminados, tiempo de ciclo y antigüedad/bloqueos según 07. Los límites numéricos deben justificarse con SUP-02, no copiarse del tablero de ejemplo (sesión 06, pp. 11 a 17).

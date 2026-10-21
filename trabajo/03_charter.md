@@ -56,6 +56,18 @@ Si el objetivo 68/M7 no es defendible, el grupo debe cambiarlo explícitamente c
 
 Stakeholders adicionales: Comercial, equipos de desarrollo y usuarios de las tiendas. Los cuatro integrantes académicos no son los cinco equipos empresariales supuestos.
 
+La sesión 03, p. 11, pide mostrar decisiones y dependencias además de listar interesados. Se propone este vínculo de participación, sin atribuir validaciones ya realizadas:
+
+| Interesado | Impacto / aportación | Decisión o dependencia que debe coordinarse |
+| --- | --- | --- |
+| Clientes y personal de tiendas | Viven compra, preparación, retiro y devolución | Feedback y aceptación del flujo con PO/Operaciones; no aprueban por sí solos cambios de presupuesto. |
+| Gerencias de tienda / Logística | Absorben formación, turnos, stock y carga | Disponibilidad y aceptación de cada sitio/ola; condición de operabilidad. |
+| Proveedores ERP/WMS/OMS | Condicionan datos, interfaz y soporte | Hitos contractuales y evidencia antes de VT-01/olas; PM/Tecnología coordinan. |
+| Finanzas, CISO y Arquitectura | Evalúan costo, exposición y viabilidad | Evidencia para comité y aceptación de controles/arquitectura según derechos anteriores. |
+
+Si cambia un objetivo, límite o financiación, actualizar este Charter y comunicar a los interesados afectados; no dejar el cambio solo en una reunión (clase 3, parte 2, 55:53 a 57:57). El detalle operativo permanece en 04 a 07.
+
+
 ## Restricciones, supuestos y riesgos
 
 Techo máximo preliminar **1.500 MM CLP**, horizonte 12 meses, valor dentro de los primeros cinco meses, Black Friday aproximadamente M8; ERP no reemplazado, WMS solo modificado, continuidad y controles obligatorios (enunciado p. 5).

@@ -44,6 +44,25 @@ source = root/'insumos/enunciado-zeus-etapa1.pdf'
 expected = re.search(r'`([0-9a-f]{64})`', (root/'insumos/README.md').read_text()).group(1)
 check(hashlib.sha256(source.read_bytes()).hexdigest() == expected, 'El enunciado no coincide con el hash registrado.')
 
+presentations = 0
+for line in (root/'insumos/presentaciones/README.md').read_text().splitlines():
+    if not line.startswith('|'):
+        continue
+    cells = [x.strip() for x in line.strip('|').split('|')]
+    if len(cells) != 4 or not re.fullmatch(r'0[3-6]', cells[0]):
+        continue
+    match = re.search(r'\]\(([^)]+)\)', cells[1])
+    check(match is not None, f'Falta enlace de presentación: {cells[0]}')
+    if match is None:
+        continue
+    path = root/'insumos/presentaciones'/match.group(1)
+    check(path.is_file(), f'Falta presentación: {path.name}')
+    if path.is_file():
+        check(path.read_bytes().startswith(b'%PDF-'), f'Archivo no es PDF: {path.name}')
+        check(hashlib.sha256(path.read_bytes()).hexdigest() == cells[3].strip('`'), f'Hash de presentación distinto: {path.name}')
+    presentations += 1
+check(presentations == 4, 'Se esperan las presentaciones docentes 03 a 06.')
+
 transcripts = 0
 segments = 0
 for line in (root/'transcripciones/README.md').read_text().splitlines():
@@ -60,7 +79,7 @@ for line in (root/'transcripciones/README.md').read_text().splitlines():
     check(hashlib.sha256(path.read_bytes()).hexdigest() == digest, f'Hash de transcripción distinto: {name}')
     transcripts += 1
     segments += len(stamps)
-check(transcripts == 4, 'Se esperan cuatro partes disponibles de las clases 1 y 2.')
+check(transcripts == 6, 'Se esperan seis partes disponibles de las clases 1 a 3.')
 check(len(list((root/'trabajo').glob('[0-9][0-9]_*.md'))) == 7, 'Se esperan siete documentos de entregables.')
 
 def rows(name):
@@ -147,7 +166,7 @@ for error in errors:
 if errors:
     sys.exit(1)
 print(f'OK: {len(paths)} archivos, siete entregables, pauta 100%, {transcripts} transcripciones y {segments} segmentos.')
-print('OK: fuentes, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
+print(f'OK: fuentes, {presentations} presentaciones, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
 print('OK: puntajes numéricos, acumulados de olas y referencias del escenario integrado.')
 if pending_costs:
     print(f'PENDIENTE: {len(pending_costs)} paquetes sin costo; total, reserva, capacidad y financiación requieren revisión. No se certifica una estimación terminada.')

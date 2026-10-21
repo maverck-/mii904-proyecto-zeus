@@ -2,7 +2,7 @@
 
 Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete documentos de trabajo en Markdown, fuentes y registros para construir y defender una propuesta común.
 
-**Estado al 21 de octubre: ESC-02 integra el avance recibido del equipo como base principal.** Diagnóstico/Business Case, enfoque y Charter están integrados; alcance y roadmap se alinean con piloto 10/M5, objetivo 68/M7 y R3 condicionado. Priorización requiere revisión y estimación requiere nueva cuantificación. Son borradores con supuestos, no decisiones colectivas aprobadas.
+**Estado al 21 de octubre: ESC-02 integra el avance recibido del equipo como base principal.** Diagnóstico/Business Case, enfoque y Charter están integrados; alcance y roadmap se alinean con piloto 10/M5, objetivo 68/M7 y R3 condicionado. Priorización requiere revisión y estimación requiere nueva cuantificación. Son borradores con supuestos, no decisiones colectivas aprobadas. Se incorporaron la clase 3 y las presentaciones 03 a 06; ver [aportes aplicados](registros/aportes_clase_03.md).
 
 **Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
 
@@ -18,8 +18,8 @@ Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete do
 | --- | --- |
 | [trabajo/](trabajo/README.md) | Siete componentes de la pauta y estado de revisión. |
 | [registros/](registros/acuerdos_y_supuestos.md) | Supuestos/decisiones, [riesgos](registros/riesgos.md) y [revisión de integración](registros/integracion_avance_equipo.md). |
-| [insumos/](insumos/README.md) | Enunciado oficial, pauta y avance recibido. |
-| [transcripciones/](transcripciones/README.md) | Clases 1 y 2, cuatro partes con tiempos. |
+| [insumos/](insumos/README.md) | Enunciado, pauta, avance recibido y presentaciones 03 a 06. |
+| [transcripciones/](transcripciones/README.md) | Clases 1 a 3, seis partes con tiempos. |
 | [presentacion/](presentacion/README.md) | Orientación de exposición y defensa; archivo final pendiente. |
 | [typst/](typst/README.md) | Ejemplo y módulos locales para eventual informe. |
 | [PLAN.md](PLAN.md) | Orden y condiciones para cerrar. |
@@ -40,6 +40,6 @@ Para leer y proponer cambios basta GitHub o un editor Markdown. Con Python 3:
 python3 scripts/verificar.py
 ```
 
-Comprueba fuentes, enlaces, rúbrica, operaciones disponibles y referencias. Declara la estimación pendiente; no acredita validación del grupo. Typst 0.15.1 es opcional para el ejemplo técnico; `build/` queda fuera de Git.
+Comprueba fuentes, presentaciones, transcripciones, enlaces, rúbrica, operaciones disponibles y referencias. Declara la estimación pendiente; no acredita validación del grupo. Typst 0.15.1 es opcional para el ejemplo técnico; `build/` queda fuera de Git.
 
 Repositorio público: se puede leer y clonar con el enlace. Para subir directamente se requiere permiso de colaboración; también se puede proponer desde un fork. No incluir conversaciones privadas ni datos de contacto. Materiales docentes y transcripciones se incluyen como insumos académicos.
