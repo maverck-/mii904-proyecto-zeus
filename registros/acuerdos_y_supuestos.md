@@ -1,43 +1,46 @@
 # Acuerdos y supuestos
 
-Versión de trabajo: 20 de octubre de 2026. **ESC-01 es un escenario académico propuesto, sin validación del grupo.** Sirve para desarrollar los siete entregables coherentemente. Las cifras se desarrollan para discutir una propuesta coherente y siguen pendientes de aprobación grupal.
+**ESC-02, 21 de octubre de 2026: integración priorizando el avance del equipo.** La integración es una propuesta para revisar; no acredita aprobación colectiva ni pruebas empresariales. El escenario previo ESC-01 queda en el historial de Git y no sostiene los costos ni la cobertura actuales.
 
-## Hechos del caso
+## Hechos y decisiones
 
-Enunciado: 68 tiendas, 3 CD; cancelación por stock 7,8%, exactitud 91%, preparación media 7,2 horas (pp. 3 y 4); máximo preliminar 1.500 MM CLP, 12 meses, valor en primeros 5, Black Friday aproximadamente M8, ERP sin reemplazo, WMS sin reemplazo completo, continuidad y controles (p. 5); B = 1.350 MM y 9 a 12 meses (p. 7). Son antecedentes de una empresa ficticia. La cobertura y las metas de ESC-01 no vienen dadas por esos antecedentes.
+Enunciado: 68 tiendas y 3 CD (p. 3); cancelación por stock 7,8%, exactitud 91%, preparación 7,2 h y devolución al primer contacto 64% (p. 4); máximo preliminar 1.500 MM CLP, 12 meses, valor dentro de primeros 5, campaña aproximadamente M8, ERP sin reemplazo, WMS sin reemplazo completo, continuidad y controles (p. 5); B = 1.350 MM y 9 a 12 meses (p. 7). La empresa es ficticia. Estos antecedentes no demuestran que 68 tiendas estén operables en M7.
 
-## Decisiones
+| ID | Decisión / propuesta | Estado y revisión |
+| --- | --- | --- |
+| DEC-01 | B modular como base revisable | Retiene la orientación del equipo; cambiar si integración, costo o valor no la sostienen. |
+| DEC-02 | Dar prioridad al avance recibido para 01/02/03 y alinear 04 a 07 | Instrucción de integración del usuario; ajustes sujetos a revisión grupal. |
+| DEC-03 | Inventario, pedidos y C&C primero; controles, medición y soporte desde inicio | Propuesta integrada, sin aceptación operacional realizada. |
+| DEC-04 | Gobierno formal y entrega adaptativa; Kanban y Scrum de dos semanas | Base del equipo; disponibilidad y prácticas por validar. |
+| DEC-05 | Piloto 10/M5, objetivo 68/M7, devolución y experimento acotado Ship-from-store/R3 | Base del equipo condicionada a costo/capacidad/evidencia. |
+| DEC-06 | IA y data platform completa fuera; Ship-from-store condicionado a G2/M9 | Sustituye exclusión completa de Ship-from-store del escenario anterior. |
+| DEC-07 | Rogelio: priorización/estimación; Maverick: alcance/roadmap | Asignación comunicada por Maverick; revisión transversal de los otros contenidos. |
 
-| ID | Decisión | Estado | Condición para revisar |
-| --- | --- | --- | --- |
-| DEC-01 | Desarrollar B modular como alternativa base | Base de trabajo revisable | Integración, valor M5, costo o capacidad no sostienen la propuesta. |
-| DEC-02 | Inventario/pedidos/C&C primero, controles y soporte desde inicio | Propuesta ESC-01 | Prioridad y dependencias revisadas con el grupo. |
-| DEC-03 | IA, data platform corporativa y Ship-from-store fuera del compromiso base | Propuesta ESC-01 | Nueva necesidad, valor o dependencia justificados dentro de límites. |
-| DEC-04 | Híbrido con gobierno, releases y aprendizaje conectados | Propuesta ESC-01 | Capacidad de negocio y análisis contextual justifican ajustar prácticas. |
-| DEC-05 | Trabajar con piloto y expansión condicionada del escenario | Propuesta ESC-01 | Cobertura y beneficio razonables frente a costo y capacidad. |
+## Supuestos pendientes de validación
 
-## Supuestos de ESC-01
+Revisión académica: comprobar razonabilidad, coherencia y defensa con el caso. Validación empresarial: trabajo futuro hipotético, sin APIs probadas, cotizaciones ni aprobaciones reales. No confundir ambos niveles.
 
-Todos están **propuestos y pendientes de validación**. La columna de revisión académica indica lo que el equipo puede evaluar para defender el caso. La validación empresarial se describe como trabajo futuro hipotético: no se ha contactado una empresa real ni ejecutado pruebas.
-
-| ID | Supuesto y fundamento inicial | Revisión académica requerida | Validación empresarial hipotética / momento | Si falla |
+| ID | Supuesto de ESC-02 | Revisión académica | Validación empresarial hipotética / momento | Si falla |
 | --- | --- | --- | --- | --- |
-| SUP-01 | ERP/WMS admiten integración acotada; B se apoya en mantenerlos | Justificar alternativa y dependencias, sin dar por conocida la API | Tecnología/proveedor prueban contrato, consistencia, carga y recuperación; G1/M2 | Revisar integración, alcance, costo y B. |
-| SUP-02 | Negocio, tiendas y especialistas tienen capacidad para piloto y dos frentes técnicos | Revisar dedicaciones y simultaneidad de 06 | Sponsor/Operaciones confirman disponibilidad y dotación; G0/G1 | Limitar trabajo simultáneo o cobertura. |
-| SUP-03 | Hay datos comparables y volumen para evaluar cuatro semanas de piloto | Revisar denominadores y sesgos de 01 | Dueños de beneficio validan base por cohorte, eventos y volumen; G1 | No afirmar resultado; anticipar medición o revisar gate. |
-| SUP-04 | El flujo puede operar en M4 y producir valor comprobable hasta M5 | Revisar precedencias, capacidad y ventana; el plazo total de B no lo demuestra | Dirección/Operaciones verifican plan y uso real; G1/G2 | Declarar requisito incumplido si solo hay entrega técnica y revisar inversión. |
-| SUP-05 | Piloto de 5 tiendas y 1 CD; hasta 20 tiendas en M7 y 35 en M11 | Justificar exposición acotada, diversidad y costo; son coberturas totales, no sumas | Operaciones selecciona sitios y autoriza cada ola por capacidad | Reducir/ampliar cobertura con nuevos costo y beneficio. |
-| SUP-06 | Metas piloto: cancelación <4%, exactitud ≥96%, preparación <4 h | Revisar ambición intermedia frente a metas estratégicas y base de cohorte | Dueños de beneficio ratifican metas y definiciones en G1 | Recalibrar; una base mejor que el umbral no permite aceptar deterioro. |
-| SUP-07 | Rangos de costo por paquete de 06 son valores didácticos construidos | Revisar componentes, magnitud relativa, cobertura y sensibilidad; no llamarlos cotizaciones | Finanzas contrasta costos internos, proveedores, licencias, transición e impuestos; G1 | Sustituir rangos y reestimar. |
-| SUP-08 | Sobre de trabajo 1.350 MM, reserva nominal 150 incluida; primer tramo hasta 100 MM | Acordar límite de exposición y regla de uso; reserva sin probabilidad calibrada | Sponsor/Finanzas aprueban tramos y forecast; G0/G1 | Ajustar gasto/alcance; techo 1.500 sigue vigente. |
-| SUP-09 | Pesos y notas de priorización de 05 reflejan el juicio inicial del caso | Revisar ponderaciones, notas y orden por dependencias | PO y comité revisan prioridades con nueva evidencia | Reordenar y actualizar impacto en roadmap/costo. |
-| SUP-10 | Costos de 06 incluyen 12 meses, trabajo interno/externo y operación/transición sin doble conteo | Comprobar frontera de paquetes y reconocer ausencia de TCO posterior | Finanzas valida licencias, consumo, soporte y tratamiento tributario | Rehacer costo total antes de comprometer escala. |
-| SUP-11 | 99,9% de disponibilidad y cero riesgos críticos abiertos son criterios de salida operativos propuestos | Acordar medición y autoridad; continuidad de despliegue sigue obligatoria | Tecnología/CISO/Operaciones aceptan pruebas y operación por release | Bloquear liberación o expansión y corregir. |
+| SUP-01 | ERP/WMS permiten integración acotada por APIs y, donde sea viable, eventos | Defender interfaces y opciones sin suponer solución conocida | Tecnología/proveedores prueban consistencia, carga, recuperación y contratos en VT-01/M2 | Revisar arquitectura, plazo, alcance y B. |
+| SUP-02 | Cinco equipos de implementación y funciones de negocio/tienda pueden sostener la secuencia | Estimar tamaños, dedicaciones, especialidades y concurrencia en 06; no equivalen a cuatro alumnos | Sponsor/Operaciones confirman dotación antes de comprometer R1/olas | Limitar WIP, cobertura o secuencia y reestimar. |
+| SUP-03 | Hay datos comparables y volumen para evaluar unas cuatro semanas de piloto | Definir cohortes, denominadores y sesgos en 01 | Dueños de beneficio fijan base y suficiencia de evidencia antes del piloto | No declarar valor demostrado con evidencia insuficiente. |
+| SUP-04 | Flujo usable desde M4 y evidencia de valor hasta G1/M5 | Revisar precedencias y ventana; plazo total de B no prueba primera entrega | PM/Operaciones comprueban uso y KPI en G1 | Revisar inversión y declarar si requisito de valor no se cumple. |
+| SUP-05 | Diez tiendas piloto y expansión a 68 en M7 son operables; cuatro olas adicionales de 15/15/14/14 como propuesta de integración | Justificar 58 altas en dos meses, selección de sitios y capacidad; cobertura CD/familias por definir | Operaciones autoriza cada ola y dependencias de CD antes de exponer clientes | Mantener solo cobertura segura y modificar compromiso explícitamente. |
+| SUP-06 | Objetivos del Charter son alcanzables en cobertura acordada: devolución ≥85% a M12 y adopción >80%, entre otros | Justificar brecha frente al ≥90% estratégico y umbrales de mejora para M5 | Negocio ratifica base, metas y ventanas antes de piloto; medición por release | Ajustar objetivo/cobertura/recursos sin confundirlo con cumplimiento estratégico. |
+| SUP-07 | B puede concretarse bajo techo con OMS, 10/68 tiendas y R3 | Rogelio debe reconstruir rangos por PAQ; montos previos no se trasladan | Finanzas/proveedores contrastan costos y contratos por etapas | Revisar cobertura, experimento, alternativa o financiación; no ocultar exceso. |
+| SUP-08 | Financiación por tramos y reserva por definir sostienen G0/M1, G1/M5, G2/M9 | Cuantificar primer tramo, reserva y autorización antes de cerrar Charter | Comité/Finanzas aprueban liberaciones y forecast | No comprometer gasto sin tramo/costo aceptados. |
+| SUP-09 | Pesos y notas ilustrativas de 05 ayudan a ordenar el trabajo | Rogelio revisa C/K para 68 tiendas y puntúa CAP-09 si procede | PO/comité revisan con evidencia | Reordenar manteniendo precedencias/controles. |
+| SUP-10 | Se puede calcular costo total de 12 meses sin doble conteo | Incluir interno/externo, adopción, licencias, consumo, transición, impuestos y experimento; declarar TCO posterior | Finanzas valida fronteras e indexación antes de escala | Rehacer costo y beneficio antes de contratar. |
+| SUP-11 | Controles, observabilidad, soporte y disponibilidad pueden aceptarse desde R1 | Acordar ventana ≥99,9%, pruebas y autoridad; el porcentaje no habilita interrupciones | CISO/Tecnología/Operaciones aceptan cada salida y VE-01/M7 | Bloquear liberación no operable y corregir. |
+| SUP-12 | Un OMS de mercado cubre el flujo con configuración y adaptaciones acotadas | Comparar compra/configuración e interfaces; proveedor no elegido | Selección G0/M1 con aceptación escalonada y prueba VT-01/M2 | Revisar contrato/arquitectura antes de compromisos irreversibles. |
+| SUP-13 | Un experimento Ship-from-store cabe en R3 sin poner en riesgo metas/techo | Definir hipótesis, tiendas, pedidos, esfuerzo y límite monetario antes de G2 | Operaciones/Finanzas autorizan experimento M9 y evalúan resultados antes de cierre | Diferir experimento con impacto explícito; no quitar controles. |
 
 ## Control de cambios
 
-| Fecha | Actualización | Estado de revisión del grupo |
+| Fecha | Actualización | Estado |
 | --- | --- | --- |
-| 20-10-2026 | Desarrollado ESC-01 con metas, cobertura, costos, roles y gates explícitos | Pendiente |
+| 20-10-2026 | ESC-01: escenario anterior con otra cobertura, costos y exclusiones | Sustituido como propuesta vigente; conservado en Git. |
+| 21-10-2026 | ESC-02: avance recibido como base principal, correcciones documentadas y reparto actualizado | Integrado para revisión; no presume consenso del grupo. |
 
-Al acordar cambios, registrar decisión, motivo, evidencia, revisión y archivos afectados. Aprobar un supuesto para el ejercicio significa aceptar su razonabilidad y coherencia; no demuestra que sea cierto en una operación real. El alcance del informe y las responsabilidades académicas aún no se asignan por inferencia.
+Registrar decisiones efectivamente aceptadas, motivo, evidencia y documentos afectados. La [revisión de integración](integracion_avance_equipo.md) conserva los fundamentos de cada ajuste.

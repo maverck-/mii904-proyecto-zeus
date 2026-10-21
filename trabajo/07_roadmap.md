@@ -1,54 +1,52 @@
 # 7. Roadmap y planificación
 
-**ESC-01: plan hipotético desarrollado, pendiente de revisión grupal.** Los meses son relativos al inicio empresarial; el 24 de octubre es entrega académica. Hechos: valor dentro de M5, Black Friday aproximadamente M8, horizonte M12 (enunciado, p. 5). Piloto/cobertura y ventanas de evidencia son SUP-03/SUP-04/SUP-05.
+**Responsable indicado: Maverick. ESC-02, propuesta basada en el equipo.** Meses relativos al inicio empresarial. La entrega académica del 24 de octubre es distinta de M12. Hechos: valor dentro de los primeros cinco meses, Black Friday aproximadamente M8 y horizonte 12 meses (enunciado, p. 5).
 
-## Releases, dependencias y evidencia
+## Releases y evidencia
 
-| Release | Ventana propuesta | Capacidades | Cobertura SUP-05 | Resultado y decisión |
+| Release | Ventana propuesta | Capacidades | Cobertura propuesta | Evidencia / condición |
 | --- | --- | --- | --- | --- |
-| R0 | M1 a M2 | CAP-01 + inicio CAP-05/CAP-06 | Sitios y datos representativos | Base por cohorte, prueba ERP/WMS, controles, capacidad y forecast. G1 autoriza piloto o revisa. No acredita todavía valor comercial. |
-| R1 | Construcción M2 a M4; evaluación hasta M5 | CAP-02/CAP-03/CAP-04 y transversales | 5 tiendas, 1 CD y familias acotadas | Pedidos reales desde M4; cuatro semanas de medición hasta M5. KPI-01 <4%, KPI-02 ≥96%, KPI-03 <4 h, sujetos a base comparable y sin deterioro. |
-| R2 | M5 a M7, tras G2 | CAP-07 + estabilización y transversales | Hasta 20 tiendas en total | Ampliación por evidencia y capacidad; prueba de carga/recuperación y soporte antes de M8. |
-| Evento | Aproximadamente M8 | Cobertura R2 aceptada y transversales | Cobertura segura ya aceptada | Proteger operación y promesas, monitoreo y respuesta. No forzar nueva funcionalidad de alto riesgo. |
-| R3 | Diseño M6/M7; despliegue M9 a M11 | CAP-08 + expansión autorizada | Hasta 35 tiendas en total | Devolución elegible y nueva cobertura con reglas, costos y capacidad aceptadas; revisar evidencia del evento. |
-| R4 | M11 a M12 | Aceptación y transición | Cobertura efectivamente aprobada | KPI-01 <2%, KPI-02 ≥98%, KPI-03 <3 h propuestos para cobertura; servicio/beneficios pendientes con dueño. |
+| R0 | M1/M2 | CAP-01 + inicio CAP-05/CAP-06 | Datos y sitios representativos | Base por cohorte, arquitectura, OMS por hitos y prueba ERP/WMS; VT-01/M2. Aún no acredita valor comercial. |
+| R1 | Construir M2/M4; usar en M4 y evaluar hasta M5 | CAP-02/CAP-03/CAP-04 y transversales | 10 tiendas piloto | Retiro real, adopción >80% propuesta, mejora frente a base comparable con suficiencia de evidencia fijada antes del piloto; G1/M5. |
+| R2 | Tras G1, expansión M6/M7 | CAP-07 y transversales | Objetivo 68 tiendas totales, condicionado | Cada ola con datos, dotación, controles y soporte; VE-01/M7. No forzar altas para completar la cifra. |
+| Campaña | Aproximadamente M8, fecha por confirmar | Cobertura aceptada y transversales | Solo sitios operables | Carga representativa, monitoreo, respuesta, reversión y promesas protegidas; disponibilidad con ventana acordada. |
+| R3 | Preparar reglas antes; ejecutar/autorizar evolución tras G2/M9 y cerrar M12 | CAP-08/CAP-09 + ampliar CAP-05 | Devoluciones elegibles; experimento Ship-from-store acotado | KPI-04 ≥85% propuesto, aprendizaje experimental con límite; aceptación/traspaso y objetivos M12. |
 
-La cobertura es un tope propuesto condicionado, no compromiso automático ni suma de 5+20+35. No se garantiza cubrir 68 tiendas ni 3 CD. La devolución tiene aceptación propia en CAP-08 y no se usa para atribuir todo el beneficio corporativo al proyecto.
+Observabilidad mínima, seguridad, soporte y formación se incorporan desde R1 y se sostienen en todas las olas. R3 amplía centralización/cobertura. El experimento no compromete Ship-from-store nacional. Precisar CD/familias y tiendas experimentales antes de fijar costo.
 
-## Gates y autoridades
+## Olas propuestas para revisar capacidad
 
-| Gate | Momento | Evidencia / decisión | Autoridad propuesta |
+Se conserva la meta del equipo de 68/M7. Las cuatro olas son un complemento de planificación, **no un acuerdo ni una capacidad demostrada**.
+
+| Ola | Ventana propuesta | Tiendas adicionales | Total acumulado | Condición previa |
+| --- | --- | ---: | ---: | --- |
+| Piloto | M4/M5 | 10 | 10 | VT-01, operación/medición/soporte aceptados. |
+| O1 | Primera parte M6 | 15 | 25 | G1 y brigadas/horas/stock disponibles. |
+| O2 | Segunda parte M6 | 15 | 40 | Estabilidad O1, capacidad y costo actualizado. |
+| O3 | Primera parte M7 | 14 | 54 | Estabilidad O2 y pruebas/carga según expansión. |
+| O4 | Segunda parte M7 | 14 | 68 | Estabilidad O3 y tiempo para VE-01/correcciones antes de campaña. |
+
+58 altas en aproximadamente dos meses requieren justificar paralelismo, capacidad de tienda/proveedor y estabilización. Rogelio debe contrastarlas con esfuerzo/costo. Si las primeras olas consumen el margen de preparación, reducir cobertura o mover altas posteriores al evento y actualizar el compromiso; no desplazar seguridad/recuperación ni presentar 68 como logrado.
+
+## Gates financieros y revisiones de salida
+
+| ID | Momento | Evidencia / decisión | Autoridad propuesta |
 | --- | --- | --- | --- |
-| G0 | Inicio | Aceptar hipótesis, límites, responsables, escenario y tramo inicial hasta 100 MM dentro del sobre | Sponsor con Finanzas y responsables |
-| G1 | Fin M2 | Interfaces/datos viables, base, volumen, capacidad de tiendas, controles y costo a término; continuar, cambiar o parar | Sponsor/comité, evidencia de Tecnología/Operaciones/Finanzas/CISO |
-| G2 | Fin M5 | Uso y beneficio con conteos/definiciones; guardrails; decidir ampliar, corregir o detener expansión | Sponsor/comité y dueños de beneficios |
-| G3 | Fin M7 | Capacidad de campaña, operación, soporte y reversión aceptadas | Operaciones/Tecnología/CISO; sponsor decide cobertura |
-| G4 | M9 | Datos de M8, estabilidad, riesgo y forecast sostienen evolución | Sponsor/comité y negocio |
-| G5 | Fin M12 | Entregables, resultados, costos y transición; beneficios aún pendientes con dueño y fecha | Sponsor y responsables de servicio/beneficio |
+| G0 | M1 | Arquitectura inicial, selección OMS y financiación escalonada; primer tramo debe cuantificarse | Comité/sponsor con Finanzas y Arquitectura. |
+| VT-01 | Final M2 | Prueba de interfaces/datos, OMS, capacidad, controles y forecast antes de piloto | Tecnología/Arquitectura, CISO, Operaciones; PM escala desvíos al comité. |
+| G1 | M5 | Evidencia de primera entrega de valor y decisión de expandir con costo/capacidad aceptados | Comité/sponsor y dueños de beneficio. |
+| VE-01 | M7 | Cobertura segura, carga, recuperación, soporte y preparación de campaña; congelar cambios de alto riesgo | Operaciones/Tecnología/CISO y sponsor. |
+| G2 | M9 | Revisar beneficios, campaña, forecast y financiación de devoluciones/experimento R3 | Comité/sponsor, Finanzas y dueños de beneficio. |
+| Cierre | M12 | Aceptación, transferencia, costo y beneficios pendientes con responsables | Sponsor/Operaciones y dueños de beneficio. |
 
-No escalar por cumplir calendario cuando falta evidencia. Si G2 solo acredita output técnico o no hay volumen evaluable, registrar que el requisito de valor M5 no se ha demostrado. La base del caso y las metas piloto deben compararse correctamente antes de aceptar.
+VT-01 y VE-01 son revisiones técnicas/operacionales adicionales a los gates del equipo. El contrato OMS de G0 requiere hitos de prueba/aceptación, para no asumir resueltas APIs/licencias antes de validar. Reglas de devoluciones pueden analizarse antes de M9, pero gasto/compromiso R3 requiere autorización y estimación.
 
-## Precedencias y plan cercano
+## Dependencias y acciones
 
-CAP-01 reduce incertidumbre; CAP-05/CAP-06 trabajan en paralelo desde inicio. Inventario/reserva y pedidos requieren contratos de interfaz antes de paralelizar. El flujo C&C requiere ambos y capacidad local. Expansión requiere evidencia del piloto; la preparación del evento requiere capacidad y reversión; devolución requiere estados y reglas Comercial/Finanzas.
+Cadena que condiciona M5: acceso y viabilidad → inventario/reservas y pedidos → C&C usable → ventana de evidencia. Parte de integración/pedidos puede solaparse una vez acordados contratos y capacidad. No es una ruta crítica CPM calculada: faltan duraciones detalladas, holguras y recursos.
 
-Detalle propuesto para M1/M2:
+M5 sin evidencia suficiente: no declarar primera entrega de valor cumplida; investigar base/uso y revisar inversión. WMS tardío: replantear interfaces/plazo/alternativa, sin pruebas ficticias. Stock o adopción deficientes: corregir antes de ampliar. Escala no operable o campaña amenazada: mantener sitios seguros y diferir altas con impacto explícito. Costo mayor que techo: revisar alcance y financiación antes de comprometer. R3 experimental sin hipótesis/costo: no iniciar experimento.
 
-| Ventana | Trabajo y evidencia esperada |
-| --- | --- |
-| M1, primera mitad | Selección de piloto, responsables, definición KPI/base y acceso proveedor/datos. |
-| M1, segunda mitad | Prueba representativa de contratos/stock, mapa de excepciones y capacidad física del proceso. |
-| M2, primera mitad | Concurrencia/recuperación, restricciones de seguridad y primeras validaciones con tiendas. |
-| M2, segunda mitad | Alcance mínimo refinado, rangos/capacidad revisados y gate G1. |
+## Cierre académico
 
-Estas son actividades a planificar para la empresa ficticia; no pruebas realizadas. Especialistas/proveedor pueden limitar el paralelismo, SUP-01/SUP-02. No se presenta una ruta CPM validada sin red detallada y duración estimada de actividades.
-
-## Qué haría cambiar el plan
-
-- API no viable o WMS retrasado: revisar integración, cobertura y costo; si M5 deja de ser posible, escalar y revisar B.
-- Stock/adopción insuficientes: priorizar corrección del proceso y reducir exposición; no sumar tiendas para aparentar avance.
-- Forecast >1.350: revisar sobre antes de comprometer; >1.500 sin reducción viable: no autorizar escala.
-- Evento adelantado: conservar cobertura estable disponible y reordenar expansión.
-- Riesgo crítico o interrupción material: pausar rollout, activar recuperación y no liberar por presión comercial.
-
-Todo cambio actualiza [supuestos](../registros/acuerdos_y_supuestos.md), [riesgos](../registros/riesgos.md), alcance, costos y beneficios. La validación académica comprueba coherencia y defensa; no transforma estas ventanas en resultados operacionales.
+Para el viernes 23: propuesta integrada, estimación cuantificada por Rogelio, alcance/olas revisados por Maverick, supuestos aceptados o corregidos, presentación/anexos y ensayo. Entrega/presentación documentada: sábado 24; confirmar hora/formato de carga en el aula. La pauta exige coherencia y defensa del conjunto, no siete archivos formateados obligatorios por inferencia.

@@ -1,47 +1,45 @@
 # ZEUS: trabajo grupal de Gestión de Proyectos Informáticos
 
-Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene los siete entregables en Markdown, sus supuestos y fuentes para revisar y desarrollar la propuesta en conjunto.
+Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete documentos de trabajo en Markdown, fuentes y registros para construir y defender una propuesta común.
 
-**Estado al 21 de octubre:** borradores desarrollados con el escenario propuesto ESC-01, pendientes de revisión del equipo. La alternativa B modular es la base actual y puede cambiar si alcance, costo, riesgo o valor no la sostienen.
+**Estado al 21 de octubre: ESC-02 integra el avance recibido del equipo como base principal.** Diagnóstico/Business Case, enfoque y Charter están integrados; alcance y roadmap se alinean con piloto 10/M5, objetivo 68/M7 y R3 condicionado. Priorización requiere revisión y estimación requiere nueva cuantificación. Son borradores con supuestos, no decisiones colectivas aprobadas.
 
-**Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo de organización propuesto: dejar la versión final lista y ensayada el viernes 23. Confirmar formato y hora de carga en el aula. La pauta recomienda 25 minutos de exposición y 10 de defensa, máximo 35, y hasta 12 láminas principales más anexos.
+**Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
 
 ## Incorporarse al trabajo
 
-1. Leer la [pauta](insumos/pauta.md) y el [estado de los siete entregables](trabajo/README.md).
-2. Revisar el [reparto propuesto](EQUIPO.md) y acordarlo antes de asumir responsabilidades.
-3. Integrar los aportes ya preparados por el equipo en los primeros tres documentos; conservar una versión común por entregable.
-4. Revisar [alcance y backlog](trabajo/04_alcance_y_backlog.md), [supuestos](registros/acuerdos_y_supuestos.md), costos y roadmap. Cada cifra adicional del escenario puede ajustarse con fundamento.
-5. Proponer cambios mediante rama o edición web con solicitud de revisión; ver [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Archivos principales
+1. Leer la [pauta](insumos/pauta.md), el [estado de entregables](trabajo/README.md) y las [responsabilidades](EQUIPO.md).
+2. Revisar el [avance recibido](insumos/avance_equipo_2026-10-21.md) y los [ajustes con fundamento](registros/integracion_avance_equipo.md). Los documentos 01 a 03 son la versión integrada editable.
+3. Rogelio revisa priorización/estimación; Maverick alcance/roadmap. Coordinar capacidad/costo antes de cerrar 68 tiendas en M7.
+4. Resolver [supuestos](registros/acuerdos_y_supuestos.md), metas piloto, alcance del experimento y financiación inicial. Registrar solo acuerdos efectivamente aceptados.
+5. Proponer cambios mediante rama o edición con solicitud de revisión; ver [CONTRIBUTING.md](CONTRIBUTING.md).
 
 | Ubicación | Contenido |
 | --- | --- |
-| [trabajo/](trabajo/README.md) | Diagnóstico/Business Case, enfoque, Charter, alcance/backlog, priorización, estimación y roadmap. |
-| [registros/](registros/acuerdos_y_supuestos.md) | Decisiones y supuestos; [riesgos](registros/riesgos.md) compartidos. |
-| [insumos/](insumos/README.md) | Enunciado oficial y resumen de pauta. |
-| [transcripciones/](transcripciones/README.md) | Clases 1 y 2, cuatro partes con marcas de tiempo. |
-| [presentacion/](presentacion/README.md) | Orientación de exposición y defensa. |
-| [typst/](typst/README.md) | Ejemplo compilable y módulos locales para un eventual informe. |
-| [PLAN.md](PLAN.md) | Orden de revisión y cierre. |
+| [trabajo/](trabajo/README.md) | Siete componentes de la pauta y estado de revisión. |
+| [registros/](registros/acuerdos_y_supuestos.md) | Supuestos/decisiones, [riesgos](registros/riesgos.md) y [revisión de integración](registros/integracion_avance_equipo.md). |
+| [insumos/](insumos/README.md) | Enunciado oficial, pauta y avance recibido. |
+| [transcripciones/](transcripciones/README.md) | Clases 1 y 2, cuatro partes con tiempos. |
+| [presentacion/](presentacion/README.md) | Orientación de exposición y defensa; archivo final pendiente. |
+| [typst/](typst/README.md) | Ejemplo y módulos locales para eventual informe. |
+| [PLAN.md](PLAN.md) | Orden y condiciones para cerrar. |
 
-Markdown es la fuente de contenido. Diferenciar datos del caso, propuestas, supuestos y acuerdos. CAP identifica capacidades y PAQ paquetes de costo; sus IDs conectan backlog, estimación y releases. No aprobar automáticamente un ítem por estar escrito.
+## Alcance de la propuesta
 
-## Revisar ESC-01
+B modular sigue siendo una base revisable. Se conserva el avance del equipo con correcciones trazables: observabilidad mínima desde R1, viabilidad técnica temprana, metas y ventanas explícitas, escala condicionada y Ship-from-store experimental en R3. El escenario anterior ESC-01 queda en Git; sus costos y cobertura no son vigentes para este plan.
 
-El escenario propone piloto acotado, metas intermedias, costos por rangos, capacidad y expansión condicional. Son hipótesis de trabajo académico, no cotizaciones ni pruebas realizadas. El [registro](registros/acuerdos_y_supuestos.md) indica la revisión requerida y qué se haría si cada supuesto falla. La [estimación](trabajo/06_estimacion.md) incluye un adverso que supera el techo y obliga a revisar alcance o inversión.
+La estimación sigue abierta: 1.350 MM CLP es referencia B y 1.500 MM es techo del caso. Faltan rangos por paquete, capacidad, reserva y tramos. No afirmar que la nueva cobertura cabe en esos montos. Al ser una empresa ficticia, validación académica significa revisar razonabilidad/coherencia; pruebas con proveedores/tiendas se describen como futuro hipotético.
 
-Como la empresa es ficticia, validar académicamente significa revisar razonabilidad, coherencia y defensa. Las comprobaciones con proveedores/tiendas se describen como trabajo futuro hipotético. La pauta no explicita un informe escrito adicional; decidir su necesidad antes de maquetarlo.
+Los siete Markdown organizan el contenido, sin implicar siete documentos formales separados para entregar. La pauta no explicita un informe adicional. Mantener contenido primero y decidir formato final según aula.
 
 ## Herramientas y comprobaciones
 
-Para leer y proponer cambios basta la interfaz web o un editor Markdown. Con Git y Python 3:
+Para leer y proponer cambios basta GitHub o un editor Markdown. Con Python 3:
 
 ```sh
 python3 scripts/verificar.py
 ```
 
-El script comprueba fuentes, enlaces, rúbrica, cálculos y referencias; no sustituye la revisión del equipo. Typst 0.15.1 es opcional para el ejemplo técnico; las instrucciones están en su carpeta. `build/` contiene salidas locales y queda fuera de Git.
+Comprueba fuentes, enlaces, rúbrica, operaciones disponibles y referencias. Declara la estimación pendiente; no acredita validación del grupo. Typst 0.15.1 es opcional para el ejemplo técnico; `build/` queda fuera de Git.
 
-El repositorio es público: cualquier persona con el enlace puede leerlo y clonarlo sin invitación. Para subir cambios directamente, los integrantes deben tener permisos de colaboración; también pueden proponer cambios desde un fork mediante una solicitud de revisión. Los materiales docentes y transcripciones se incluyen como insumo del trabajo académico.
+Repositorio público: se puede leer y clonar con el enlace. Para subir directamente se requiere permiso de colaboración; también se puede proponer desde un fork. No incluir conversaciones privadas ni datos de contacto. Materiales docentes y transcripciones se incluyen como insumos académicos.

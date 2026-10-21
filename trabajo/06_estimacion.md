@@ -1,76 +1,59 @@
 # 6. Estimación y tratamiento de incertidumbre
 
-**ESC-01: escenario cuantificado hipotético para discusión.** SUP-07/SUP-08/SUP-10. El grupo aún debe revisar y validar los supuestos de entrada. Las cifras por paquete son valores didácticos construidos, sin cotizaciones ni historial de costos. Los únicos montos y plazos de referencia del caso son las alternativas de p. 7 y el techo de p. 5.
+**Responsable indicado: Rogelio. ESC-02 pendiente de cuantificación.** Se conserva el método de trabajo, pero se retiran como vigentes los montos y 92,5 persona-meses de ESC-01: estimaban otra cobertura y excluían el experimento. No demuestran viabilidad de 10/68 tiendas ni de cinco equipos. Este documento prepara la estimación y declara lo que falta para cumplirla.
 
-## Método, alcance y trazabilidad
+## Referencias y unidad
 
-Referencia B: 1.350 MM CLP, 9 a 12 meses. Estimar por paquetes PAQ de 04, con tres puntos optimista O, más probable M y pesimista P. Calcular E = (O + 4M + P) / 6 como escenario central; sin una distribución validada no implica probabilidad de éxito, intervalo de confianza ni compromiso de precio.
+Enunciado: B = **1.350 MM CLP**, 9 a 12 meses (p. 7); máximo preliminar **1.500 MM CLP**, 12 meses, primera entrega de valor dentro de M5 (p. 5). Son referencia y restricción, no costos descompuestos ni autorización de gasto. MM CLP significa millones de pesos chilenos. La diferencia nominal 150 no es reserva aprobada ni dinero libre.
 
-Unidad: **millones de CLP**. ESC-01 supone 12 meses, costo interno/externo, integración, configuración, licencias, seguridad/calidad, adopción y transición; PAQ-07 concentra recurrentes y soporte. Revisión financiera debe precisar impuestos, moneda, indexación y qué operación posterior a M12 requiere TCO adicional. No se investigaron tarifas de mercado.
+SUP-07/SUP-08/SUP-10: reconstruir costo de ESC-02 con alcance de 04 y secuencia de 07. Para el ejercicio pueden usarse rangos supuestos defendidos por el equipo, identificados como tales. No hacen falta cotizaciones reales de una empresa ficticia, pero no deben inventarse como obtenidas. No se investigaron tarifas de mercado.
 
-## Rangos propuestos
+## Método y tabla de trabajo
 
-| Paquete | O | M | P | E | Fundamento y validación pendiente |
-| --- | ---: | ---: | ---: | ---: | --- |
-| PAQ-01 | 40 | 60 | 90 | 61,67 | Gobierno/arquitectura/aprendizaje; revisar duración de coordinación y pruebas. |
-| PAQ-02 | 180 | 240 | 360 | 250,00 | Mayor incertidumbre de integración, stock y concurrencia; revisar WMS/API y datos. |
-| PAQ-03 | 150 | 220 | 320 | 225,00 | Configuración/compra y estados del pedido; validar alcance/licencia e interfaces. |
-| PAQ-04 | 80 | 120 | 180 | 123,33 | C&C/formación piloto y primeras olas; validar carga y dotación de tiendas. |
-| PAQ-05 | 70 | 100 | 160 | 105,00 | Devoluciones y expansión posterior; validar reglas y cobertura de SUP-05. |
-| PAQ-06 | 100 | 150 | 220 | 153,33 | QA, controles, rendimiento y observabilidad transversales; precisar cobertura y entornos. |
-| PAQ-07 | 100 | 140 | 220 | 146,67 | Transición, cloud/licencias y soporte del horizonte; validar consumo, modalidad y SLA. |
-| Total | 720 | 1030 | 1550 | 1065,00 | Suma calculada con valores completos antes de redondear filas. |
+Descomponer por PAQ. Estimar optimista O, más probable M y pesimista P con fundamento; E = (O + 4M + P) / 6. Es un escenario central de trabajo, sin confianza probabilística demostrada. Comparar también suma P, riesgos correlacionados y reserva, evitando doble conteo. Usar cantidades × tarifas para las subpartidas con unidad identificable.
 
-La amplitud refleja áreas de incertidumbre conocidas del caso, no cuantifica su probabilidad. El peso relativo de integración/pedidos se propone porque sostiene el flujo. El monto absoluto requiere revisión académica de razonabilidad y, en una ejecución real, contraste de Finanzas/proveedores. Una fórmula precisa no transforma valores supuestos en evidencia.
+| Paquete | Base de cálculo de ESC-02 | O | M | P | E | Información / decisión pendiente |
+| --- | --- | --- | --- | --- | --- | --- |
+| PAQ-01 | Meses de gobierno, arquitectura y pruebas iniciales | Pendiente | Pendiente | Pendiente | Pendiente | Dedicaciones, hitos y actividades de viabilidad. |
+| PAQ-02 | Interfaces × esfuerzo, datos/reconciliación y adaptación WMS | Pendiente | Pendiente | Pendiente | Pendiente | Contratos, número/complejidad, carga y calidad stock. |
+| PAQ-03 | Configuración OMS, estados e interfaces de pedido | Pendiente | Pendiente | Pendiente | Pendiente | Compra/configuración, implantación y personalizaciones. |
+| PAQ-04 | App/C&C común + habilitar 10 piloto y 58 adicionales | Pendiente | Pendiente | Pendiente | Pendiente | Costo fijo/reusable y costo local por ola, turnos y formación. |
+| PAQ-05 | Devoluciones + experimento Ship-from-store delimitado | Pendiente | Pendiente | Pendiente | Pendiente | Separar subpartidas y techo experimental antes de G2. |
+| PAQ-06 | QA transversal, controles, carga, observabilidad y recuperación | Pendiente | Pendiente | Pendiente | Pendiente | Entornos, pruebas y especialidades desde R1. |
+| PAQ-07 | Licencias/consumo/soporte/transición de 12 meses | Pendiente | Pendiente | Pendiente | Pendiente | Base por tienda/pedido/usuario, fechas de alta y recurrentes. |
 
-## Reserva y asequibilidad
+No sumar un precio de solución que ya incluye ingeniería y volver a cargar todos sus FTE. Licencias se concentran en PAQ-07; configuración OMS en PAQ-03. La formación local de las 68 tiendas está en PAQ-04. Costos comunes de C&C no se multiplican automáticamente por 6,8 al pasar de 10 a 68. Más sitios sí afectan soporte, consumo, licencias y operación.
 
-| Concepto | MM CLP | Origen / interpretación |
-| --- | ---: | --- |
-| Central de paquetes | 1065,00 | Cálculo de ESC-01. |
-| Reserva nominal | 150,00 | SUP-08, sin calibración probabilística. |
-| Central más reserva | 1215,00 | Propuesta de costo de trabajo con colchón. |
-| Sobre de trabajo | 1350,00 | Límite propuesto anclado a referencia B; incluye la reserva. |
-| Margen no asignado del sobre | 135,00 | 1350 − 1215; no es gasto ya comprometido. |
-| Techo preliminar del caso | 1500,00 | Enunciado, p. 5. |
-| Diferencia techo/sobre | 150,00 | No es una segunda reserva autorizada. |
-| Adverso de partidas | 1550,00 | Suma P; ya excede techo por 50. |
-| Adverso más reserva nominal | 1700,00 | Test conservador de asequibilidad; excede techo por 200. |
+## Capacidad y calendario
 
-No contabilizar dos veces un riesgo ya materializado en partidas y consumo de reserva. Mostrar adverso con y sin reserva evita ocultar que las propias partidas pueden rebasar el techo. La reserva nominal no garantiza cobertura. Un costo central inferior a B no demuestra ahorro conseguido.
+SUP-02 conserva cinco equipos de implementación como supuesto recibido; faltan tamaño, especialidad, dedicación y meses. No significa cinco personas ni los cuatro integrantes académicos. Definir funciones de integración/datos, OMS/pedidos, experiencia/tiendas, calidad/confiabilidad y coordinación según arquitectura, sin asumir que la división propuesta acredita cinco equipos disponibles.
 
-Primer tramo propuesto hasta 100 MM dentro del sobre para limitar exposición de validación; no es el costo calculado de todo M1 ni de PAQ-01. Finanzas/sponsor hipotéticamente deben determinar composición, disponibilidad y liberación de cada tramo.
+Persona-meses = suma de FTE por rol y periodo × meses. Costo de trabajo = persona-meses × tarifa por rol, cuando se use ese método. Separar trabajo de proveedor incluido en contrato y capacidad interna. Horas de formación/operación por tienda se estiman con participantes × horas y cobertura de turnos; registrar costos de oportunidad aunque no sean desembolso externo.
 
-## Capacidad y esfuerzo ilustrativos
+Base cuantitativa de despliegue: **10 piloto + 58 adicionales = 68**. Cuatro olas propuestas de 15/15/14/14 durante M6/M7. Es un promedio de 29 altas por mes, sin demostrar disponibilidad semanal ni tiempos de estabilización. Calcular brigadas, horas por tienda, paralelismo y soporte. Si no caben, modificar cobertura/fecha con su efecto en el Business Case. No forzar cantidades para que sumen el techo.
 
-SUP-02: dedicaciones hipotéticas, sin productividad o disponibilidad comprobadas. Persona-mes = dedicación FTE × meses activos; no convertir automáticamente esfuerzo en duración. Negocio/tiendas deben revisar además turnos y carga local, fuera de una mera equivalencia de personas centrales.
+## Presupuesto, reserva y autorización por completar
 
-| Rol propuesto | FTE durante actividad | Meses activos | Persona-meses | Dependencia / observación |
-| --- | ---: | ---: | ---: | --- |
-| Dirección de proyecto | 0,75 | 12 | 9,00 | Gobierno y coordinación. |
-| PO / representante de negocio | 0,50 | 12 | 6,00 | Decisión y aceptación disponibles. |
-| Arquitectura / liderazgo técnico | 0,50 | 10 | 5,00 | Interfaces y soporte de especialistas. |
-| Ingeniería de integración/inventario | 3,00 | 9 | 27,00 | Frente técnico con carga WMS/datos. |
-| Ingeniería de pedidos/experiencia | 2,00 | 7 | 14,00 | Frente coordinado, no autónomo de interfaces. |
-| QA | 1,00 | 10 | 10,00 | Pruebas integradas y regresión. |
-| DevOps / confiabilidad | 0,75 | 10 | 7,50 | Entornos, observabilidad y recuperación. |
-| Seguridad / datos | 0,50 | 10 | 5,00 | Controles, pruebas y revisión. |
-| Analítica / medición | 0,50 | 10 | 5,00 | Base, eventos y evidencia. |
-| Adopción / formación central | 0,50 | 8 | 4,00 | Dotación de tienda adicional por validar. |
-| Total | No sumable como dotación fija | No aplica | 92,50 | Dedicaciones y meses no son tarifas ni plan de contratación. |
+| Concepto | Valor / estado | Regla de cierre |
+| --- | --- | --- |
+| Referencia B del caso | 1.350 MM CLP | Comparar con propuesta descompuesta; no reemplaza su cálculo. |
+| Techo preliminar del caso | 1.500 MM CLP | Restricción de asequibilidad. |
+| Central de paquetes | Pendiente | Sumar E sin redondear antes de total. |
+| Reserva propuesta | Pendiente | Justificar por riesgos, exclusiones y regla de uso; no asumir automáticamente 150. |
+| Central más reserva | Pendiente | Comparar con límite y financiación propuesta. |
+| Escenario adverso | Pendiente | Mostrar P y tratamiento de reserva sin ocultar excedentes. |
+| Primer tramo G0 y compromisos hasta VT-01 | Pendiente | Cuantificar exposición, actividades y aceptación contractual. |
+| Liberaciones G1/M5 y G2/M9 | Pendiente | Costos a término, beneficios y condiciones por gate. |
 
-Los 92,5 persona-meses no se suman otra vez a los montos PAQ: el escenario de costo ya supone trabajo interno/externo. Tampoco se presenta como estimación bottom-up monetaria calibrada, porque faltan tarifas y asignación detallada por paquete. El cuadro permite discutir capacidad y costos de oportunidad, no cerrar precio.
+Precisar impuestos, moneda/indexación, inversión/gasto, contratos recurrentes y operación posterior a M12. Declarar TCO posterior separado cuando no esté dentro del horizonte, sin ocultar obligaciones asumidas durante el proyecto.
 
-## Duración y dependencias
+## Sensibilidades que debe defender el equipo
 
-M1/M2: base y prueba de interfaces; M2/M4: inventario y pedidos en paralelo parcial, sujeto a contratos; M3/M4: C&C y preparación de operación; M4/M5: uso y evaluación. M5/M7: estabilización y expansión; M8: protección del evento; M9/M11: evolución/devoluciones; M11/M12: transición y resultados.
+1. WMS/integración demora o toma el rango alto: efecto en costo y primera evidencia hasta M5.
+2. Las 58 altas requieren más brigadas, soporte o licencias: efecto en M7 y techo.
+3. Menor adopción/stock confiable: se mantiene costo pero baja beneficio; no escalar sin mejora verificable.
+4. OMS por transacción o consumo de campaña mayor: costo recurrente y dependencia contractual.
+5. Experimento R3 no cabe: diferirlo con cambio explícito de alcance, sin retirar controles/soporte.
+6. Techo disminuye 20%: nuevo límite 1.200 MM; recalcular propuesta cuando exista, sin afirmar un ahorro no estimado.
 
-La cadena de precedencias que limita M5 es viabilidad → inventario/pedidos → flujo usable → ventana de evidencia. Son ventanas de planificación, no una ruta CPM calculada ni una garantía de dotación. Si no cabe la medición en M5, ajustar antes de comprometer; no etiquetar go-live como beneficio.
-
-## Sensibilidad y acciones
-
-Si PAQ-02/PAQ-03 toman P y las demás E: costo = 1.270 MM, con reserva nominal = **1.420 MM**. Supera el sobre 1.350 por 70, aunque permanece bajo techo 1.500. Requiere decisión previa; no se utiliza automáticamente la diferencia con el techo.
-
-Si el techo baja 20% a 1.200, central más reserva 1.215 supera el nuevo límite por 15. Reevaluar cobertura, PAQ-05 y alternativa C, manteniendo controles y actualizando beneficios. No afirmar que quitar PAQ-05 ahorra exactamente 105 MM: hay costos compartidos y transición.
-
-Reestimar en G1/G2/G3 y ante nueva dependencia. Sustituir supuestos por evidencia o rangos revisados, registrar costo total a término y consumo de reserva, y actualizar alcance/beneficios. El grupo puede sustituir cualquier cifra didáctica; conservar coherencia y fundamento es más importante que conservar el total.
+Antes del viernes: completar rangos y capacidad, total/reserva/adverso, financiación inicial y sensibilidad. **Este apartado aún no cumple una estimación cuantificada terminada.** Reestimar con evidencia en VT-01 y gates G1/G2; cualquier ajuste de cobertura modifica 04/07 y los beneficios de 01/03.

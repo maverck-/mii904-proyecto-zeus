@@ -1,66 +1,81 @@
 # 3. Project Charter
 
-**Versión ESC-01, 20-10-2026. Borrador propuesto para revisión del grupo y posterior integración de sus aportes.** No hay autorización empresarial ni aprobación grupal de este escenario. Fuentes: enunciado, pp. 4 a 8; clase 2, parte 1, 48:45 a 52:55.
+**ZEUS: Plataforma Omnicanal Modular. ESC-02, propuesta integrada desde el equipo, 21-10-2026.** Las condiciones empresariales aún no están autorizadas. La [revisión de integración](../registros/integracion_avance_equipo.md) identifica correcciones y decisiones pendientes.
 
-## Propósito y marco
+## Propósito y contribución
 
-Mejorar confiabilidad y ejecución omnicanal de M-GesPro Retail, reduciendo cancelaciones y tiempos de preparación con continuidad operacional. B modular es base revisable. Sponsor: **Gerencia General**, según el caso.
+Construir una plataforma que integre inventario, pedidos, tiendas y devoluciones mediante servicios reutilizables, para ofrecer una experiencia omnicanal consistente y reducir complejidad de integración. Sponsor: **Gerente General**.
 
-Horizonte del caso: 12 meses relativos al inicio empresarial. Obligaciones: primera entrega de valor dentro de M5, Black Friday aproximadamente M8, ERP sin reemplazo, WMS sin reemplazo completo, tiendas y e-commerce operativos, controles de identidad/acceso/trazabilidad/datos/seguridad.
+Contribuye a las metas estratégicas de 35% de ventas digitales, NPS ≥+48, puntualidad ≥95% y abandono de carro <55%. No se garantiza atribución íntegra a ZEUS. La creación de tecnología debe traducirse en uso, beneficio y valor.
 
-## Objetivos y éxito propuestos
+## Objetivos medibles del equipo, con horizonte propuesto
 
-| Objetivo | Piloto M5, SUP-06 | Cobertura aprobada M12 | Dueño propuesto |
+| ID | Objetivo del proyecto | Horizonte/cobertura propuestos | Referencia |
 | --- | --- | --- | --- |
-| KPI-01: cancelación por stock | <4% y mejora frente a base comparable | <2% | Comercial/Logística |
-| KPI-02: exactitud inventario | ≥96% sin deterioro | ≥98% | Operaciones |
-| KPI-03: preparación media | <4 h y mejora frente a base comparable | <3 h | Logística/Tiendas |
+| KPI-01 | Cancelaciones por stock de 7,8% corporativo a <2% | M12, operación cubierta; validar base comparable | Meta estratégica p. 4; objetivo del equipo. |
+| KPI-02 | Actualización web de 45 a 120 min a <2 min | M12, interfaces cubiertas | Meta del caso; precisión de método en 01. |
+| KPI-03 | Preparación media de 7,2 h a <3 h | M12, separar flujos de retiro/despacho | Meta del caso; validar base por cohorte. |
+| KPI-04 | Devoluciones de 64% corporativo a ≥85% primer contacto | M12, casos elegibles del alcance | Objetivo propuesto del equipo; meta estratégica ≥90%, brecha explícita de 5 pp. |
+| KPI-05 | Disponibilidad e-commerce ≥99,9%, protegida en Black Friday | Campaña M8 y ventanas regulares acordadas | Meta del caso y criterio operativo propuesto. |
+| KPI-06 | >80% de pedidos C&C preparados mediante la aplicación | Piloto y cada ola aceptada; validar fechas por release | Criterio de adopción propuesto por equipo. |
 
-Definiciones, ventanas y limitaciones en [01](01_diagnostico_y_business_case.md). Las bases corporativas no son automáticamente las del piloto. Medir cuatro semanas con volumen evaluable antes del cierre M5, SUP-03/SUP-04. Criterios transversales propuestos: disponibilidad mensual objetivo ≥99,9% del servicio afectado y cero riesgos críticos abiertos. No reemplazan la continuidad exigida durante despliegues.
+El horizonte M12 y la cobertura/ventanas se proponen para hacer verificables los objetivos. En G1/M5 debe existir evidencia de primera entrega de valor, no solo una instalación. Definiciones y evaluación en [01](01_diagnostico_y_business_case.md). Resolver magnitud mínima de mejora del piloto antes de abrirlo; una oscilación sin evidencia no demuestra beneficio.
 
-## Alcance y entregables
+## Alcance incluido
 
-CAP-01 diagnóstico/base/prueba; CAP-02 inventario/reserva; CAP-03 pedidos; CAP-04 C&C; CAP-05 controles/observabilidad; CAP-06 adopción/continuidad; CAP-07 escalamiento; CAP-08 devolución elegible. Alcance, aceptación y paquetes PAQ en [04](04_alcance_y_backlog.md).
+OMS adquirido/configurado e integrado; inventario, reserva y disponibilidad mediante APIs/servicios; pedidos, C&C y aplicación para preparación; formación y adopción; controles, métricas, observabilidad mínima, continuidad y soporte desde R1; expansión por olas; devoluciones y ampliación de observabilidad en R3. Experimento acotado de Ship-from-store en R3, condicionado a hipótesis, capacidad y financiación aprobadas en M9.
 
-ESC-01: piloto 5 tiendas/un CD; hasta 20 tiendas M7 y 35 M11, condicional a capacidad y evidencia. SUP-05. Fuera del compromiso base: ERP/WMS completos, IA, data platform corporativa, Ship-from-store y despliegue de todas las tiendas. Datos operacionales y métricas mínimos sí forman parte del alcance.
+## Alcance excluido
 
-## Recursos y presupuesto
+Reemplazo del ERP o reemplazo completo del WMS; se permiten adaptaciones acotadas del WMS. IA/recomendaciones, data platform corporativa completa, migración amplia a cloud y nueva plataforma corporativa de identidad. La exclusión de una plataforma de identidad nueva no elimina controles de identidad/acceso obligatorios. Cloud selectivo puede usarse si es necesario y se costea.
 
-Proponer sobre de trabajo de **1.350 MM CLP**, incluyendo reserva nominal 150 MM; el techo del caso es 1.500 MM. Modelo ilustrativo: 1.065 MM central antes de reserva y 1.215 MM con ella, con 135 MM no asignados dentro del sobre. Adverso de partidas 1.550 MM; más reserva nominal 1.700 MM. Estos rangos son SUP-07/SUP-08/SUP-10; no son cotización ni costo aceptado por el grupo.
+## Entregables principales y cobertura
 
-Primer tramo propuesto hasta 100 MM dentro del sobre, para limitar exposición mientras se valida. Liberación posterior por gates. Dos frentes técnicos más especialistas y negocio, con dedicaciones hipotéticas descritas en [06](06_estimacion.md); confirmar SUP-02 antes de prometer paralelismo.
-
-## Gobierno y autoridad propuestos
-
-| Rol empresarial | Decisión / responsabilidad |
-| --- | --- |
-| Gerencia General | Autorizar mandato, tramos, cobertura de alto nivel y cambios de baseline. |
-| Comité con Finanzas, Operaciones, Comercial y Tecnología | Revisar evidencia, costo a término y trade-offs por gate. Composición propuesta. |
-| Dirección de proyecto, por designar | Integrar plan, costo, riesgos y dependencias; escalar desvíos. |
-| PO E-commerce | Priorizar detalle dentro de objetivos, presupuesto y guardrails. |
-| Operaciones/Logística/Tiendas | Aceptar capacidad, procesos, adopción y beneficios operacionales. |
-| Tecnología/Arquitectura | Aceptar diseño, integración, rendimiento y recuperación. |
-| CISO / responsables de datos | Aceptar controles y exposición; bloquear salida con riesgo crítico. |
-| Finanzas | Validar TCO, rangos, forecast y consumo de reserva. |
-| Proveedores WMS/cloud | Acordar interfaces, costos, soporte y aceptación contractual. |
-
-Son roles de la empresa ficticia; no asignaciones nominales a los compañeros.
-
-## Hitos y evidencia
-
-| Gate | Fecha relativa | Criterio propuesto |
+| Release | Propuesta del equipo integrada | Condición |
 | --- | --- | --- |
-| G0 | Inicio | Propósito, responsables, restricciones y tramo inicial aceptados. |
-| G1 | Fin M2 | Prueba de integración, base por cohorte, capacidad de tienda, controles y forecast viables. |
-| G2 | Fin M5 | Uso y evidencia de KPI-01/02/03; guardrails; decisión de expansión. |
-| G3 | Fin M7 | Carga representativa y reversión probadas, cobertura/capacidad listas para M8. |
-| G4 | M9 | Resultados del evento, estabilidad y costo justifican devolución/expansión. |
-| G5 | Fin M12 | Aceptación, operación transferida, resultados y beneficios pendientes con dueño. |
+| R0, M1/M2 | Formulación, arquitectura, selección/contratación escalonada OMS, prueba de integración y base | No sustituye primera entrega de valor. |
+| R1, hasta M5 | Piloto C&C en 10 tiendas, proponiendo uso desde M4 para medir hasta M5 | Sitios, volumen, métricas y operación aceptados; número 10 es supuesto. |
+| R2, hasta M7 | Objetivo C&C en las 68 tiendas, listo para campaña M8 | Ampliar 58 tiendas en olas solo si capacidad, coste y operación lo sostienen. El caso no exige esa fecha de cobertura. |
+| R3, hasta M12 | Devoluciones, ampliación de observabilidad y piloto Ship-from-store | Gate M9, costo y límites del experimento por aprobar. No posponer toda observabilidad a R3. |
 
-El [roadmap](07_roadmap.md) detalla releases, rutas y criterios de continuar/ajustar/detener. El registro de supuestos aporta validación académica y empresarial hipotética. Riesgos R-01 a R-08 en [registro](../registros/riesgos.md).
+Si el objetivo 68/M7 no es defendible, el grupo debe cambiarlo explícitamente con su impacto. No se lo reemplaza por la cobertura 5/20/35 del escenario anterior por conveniencia.
 
-## Aceptación y cambios
+## Roles y derechos de decisión
 
-Aprobar este borrador para la tarea requiere revisar objetivos, costos, cobertura y capacidad con el grupo. Una autorización empresarial exigiría aceptación del sponsor y responsables respectivos, aquí solo descrita. No se simulan firmas o pruebas.
+| Rol | Responsabilidad / derecho |
+| --- | --- |
+| Comité Ejecutivo | Gates, financiación y aceptación de cambios de baseline que afecten inversión/beneficio. |
+| Sponsor Gerente General | Propósito, prioridades y cambios de fecha/alcance mayor dentro de límites; escalar los que alteran condiciones del caso. |
+| PM de ZEUS | Coordinar frentes, dependencias, riesgos, cambios y forecast. ZEUS se trata aquí como proyecto con frentes; no se presupone un programa formal sin definirlo. |
+| PO e-commerce y función PO/representante de tiendas | Priorizar backlog por release dentro de objetivos/guardrails. El rol adicional de tiendas es propuesta organizacional. |
+| Gerente de Tecnología / Arquitectura Empresarial | Estándares, interfaces y viabilidad técnica. |
+| CISO | Controles y facultad de detener release ante riesgo crítico. |
+| Logística / Operaciones / gerencias de tienda | Beneficios, dotación, capacidad y aceptación operacional; pueden impedir una salida no operable. |
+| Finanzas | Costo total, forecast, reservas y liberación financiera con comité. |
+| Proveedores WMS, OMS y cloud | Compromisos, integración, licencias y soporte según contrato. OMS comprado es supuesto del equipo. |
 
-Toda nueva capacidad, cambio de presupuesto, hito o beneficio actualiza Business Case, alcance, estimación y roadmap. Si no hay valor M5 o viabilidad dentro del techo, no declarar éxito por completar el desarrollo: replantear el caso.
+Stakeholders adicionales: Comercial, equipos de desarrollo y usuarios de las tiendas. Los cuatro integrantes académicos no son los cinco equipos empresariales supuestos.
+
+## Restricciones, supuestos y riesgos
+
+Techo máximo preliminar **1.500 MM CLP**, horizonte 12 meses, valor dentro de los primeros cinco meses, Black Friday aproximadamente M8; ERP no reemplazado, WMS solo modificado, continuidad y controles obligatorios (enunciado p. 5).
+
+Supuestos: API/eventos útiles del ERP, cumplimiento WMS, OMS de mercado, cinco equipos disponibles, diez tiendas piloto, escalamiento a 68, evidencia a M5 y recursos para experimento. Todos requieren validación académica de coherencia y validación empresarial hipotética descrita en el [registro](../registros/acuerdos_y_supuestos.md).
+
+Riesgos: exactitud de stock insuficiente (91% corporativo como condición base), retrasos de WMS, capacidad de tiendas/equipos, campaña, sobrecosto y bloqueo por seguridad. El 91% es una condición que puede generar promesas erróneas; formular riesgo como evento/efecto, no llamar riesgo a la cifra por sí sola. [Registro de riesgos](../registros/riesgos.md).
+
+## Presupuesto y financiación
+
+El equipo propone un marco máximo preliminar de **1.500 MM CLP** liberado por tramos. Esto es un techo para formular, no una estimación bottom-up ni una aprobación de gasto. Referencia B del caso: **1.350 MM CLP**. Rogelio debe reestimar alcance 10/68, cinco equipos, licencias/operación y R3/experimento, definir reservas y primer tramo antes de cerrar el Charter.
+
+Se retiran los totales 1.215/1.700 MM y dedicaciones de ESC-01 como cifras vigentes: correspondían a otra cobertura/exclusiones. Métodos y estructura de estimación permanecen como apoyo en [06](06_estimacion.md).
+
+## Hitos y criterios de salida
+
+G0/M1: aprobación de arquitectura inicial y selección/contratación OMS por hitos, con financiación y validación técnica condicionadas. VT-01/M2: revisión de viabilidad antes del piloto/escala. G1/M5: evidencia de primera entrega y decisión de ampliar. VE-01/M7: preparación, cobertura segura y congelamiento de cambios de alto riesgo, con excepciones críticas controladas. Campaña aproximadamente M8. G2/M9: beneficios/forecast y financiación de R3. Cierre M12: aceptación y traspaso con responsables de beneficios pendientes.
+
+Éxito propuesto: objetivos medidos, adopción >80%, ejecución dentro del costo autorizado compatible con techo, riesgos críticos de seguridad tratados y campaña operable. «Sin interrupciones» es objetivo de continuidad, no garantía anticipada de resultado. Para aprobación de release exigir pruebas y soporte, además de medir disponibilidad con ventana definida.
+
+## Solicitud de autorización
+
+Solicitar al Comité aprobar la formulación y las condiciones de financiación inicial de R0/R1. Cuantificar el primer tramo antes de cerrar la solicitud; no dar por autorizado todo el presupuesto. Cada liberación depende de evidencia técnica, operación, costo y riesgos, manteniendo trazabilidad entre Business Case, alcance y roadmap.

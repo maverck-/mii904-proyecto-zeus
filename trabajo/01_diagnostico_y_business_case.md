@@ -1,69 +1,79 @@
 # 1. Diagnóstico estratégico y Business Case
 
-**Borrador desarrollado con ESC-01, propuesto y pendiente de revisión del grupo.** Fuente de hechos: enunciado, pp. 3 a 8. Los supuestos están en el [registro común](../registros/acuerdos_y_supuestos.md). Integrar aquí los aportes del equipo cuando estén disponibles.
+**ESC-02: versión integrada desde el avance del equipo, 21-10-2026.** Se priorizan su diagnóstico, alternativa B, objetivos y secuencia. Los complementos y correcciones están en la [revisión de integración](../registros/integracion_avance_equipo.md). El [texto recibido](../insumos/avance_equipo_2026-10-21.md) se conserva como antecedente; la pauta y los hechos los establece el enunciado.
 
-## Problema, prioridad y drivers
+## 1.1 Problemas y oportunidad
 
-M-GesPro Retail presenta inconsistencias entre inventario publicado y disponible, demoras en el traspaso de pedidos y visibilidad limitada entre canales. El caso informa cancelaciones por falta de stock de 7,8%, entregas a tiempo de 82% y preparación media de 7,2 horas. Estas condiciones dificultan sostener la experiencia omnicanal y crecer digitalmente con eficiencia. No se conoce cuánto aporta cada causa a cada indicador.
+El negocio presenta alta latencia entre el cambio de inventario y la publicación del stock web (45 a 120 minutos), junto con un 7,8% de cancelaciones por falta de stock. Es consistente plantear la disponibilidad desactualizada como una causa a investigar, pero el caso no permite atribuirle todo ese porcentaje.
 
-La prioridad es aumentar ventas digitales, eficiencia operacional y satisfacción. Drivers: confiabilidad de promesa, capacidad logística, continuidad, adopción y reducción de dependencias frágiles. La tecnología, los datos físicos y la capacidad de tienda deben evaluarse juntos.
+Existen múltiples bases con información desalineada de clientes y productos y visibilidad limitada de los pedidos digitales en tiendas. Esto dificulta atención y devoluciones; el caso registra 64% de devoluciones resueltas al primer contacto. Deben revisarse también reglas operativas, dotación y conciliaciones antes de atribuir el problema solo a la plataforma.
 
-## Recomendación revisable
+ERP y WMS deben mantenerse bajo las restricciones del caso. Evitar reemplazarlos limita el alcance de cambio, pero obliga a integrar y gestionar legacy; no demuestra por sí solo un menor costo total. La oportunidad es construir una experiencia omnicanal confiable con servicios reutilizables, coordinando personas, operación y tecnología (enunciado, pp. 3 a 5).
 
-Desarrollar B modular: preservar ERP/WMS y habilitar inventario, reservas, pedidos y C&C por releases. ESC-01 propone 5 tiendas/un CD como piloto, operación en M4 y evaluación hasta M5; hasta 20 tiendas en M7 y 35 en M11, solo con evidencia y capacidad. Estas coberturas son SUP-05, no datos del enunciado ni decisiones grupales aprobadas.
+## 1.2 Drivers estratégicos, métricas e hitos
 
-## Hipótesis y cadena de valor
+La propuesta del equipo busca una experiencia omnicanal resiliente, eficiente, sostenible y escalable. Los drivers son crecimiento digital, cumplimiento de promesas, eficiencia de preparación, calidad de atención, continuidad y reducción de complejidad de integración.
 
-Si reconciliamos disponibilidad y reservas y hacemos trazable el pedido, y las tiendas adoptan el flujo con capacidad suficiente, la cohorte cubierta debería registrar menos cancelaciones y preparación más rápida. Eso puede retener pedidos y mejorar confianza. Requiere SUP-01 a SUP-06 y medición comparable.
+| Indicador del caso | Actual | Meta estratégica, p. 4 |
+| --- | --- | --- |
+| Ventas digitales / ventas totales | 24% | 35% |
+| Pedidos entregados a tiempo | 82% | ≥95% |
+| Cancelaciones por stock | 7,8% | <2% |
+| Exactitud de inventario | 91% | ≥98% |
+| Actualización de stock web | 45 a 120 min | <2 min |
+| Preparación media | 7,2 h | <3 h |
+| Devoluciones resueltas en primer contacto | 64% | ≥90% |
+| Disponibilidad e-commerce | 99,3% | ≥99,9% |
 
-| Nivel | Definición aplicada |
-| --- | --- |
-| Output | APIs, inventario/reserva, pedido y C&C operativos con controles. |
-| Outcome | Tiendas y logística usan información consistente y ejecutan pedidos con menor espera y menos excepciones. |
-| Beneficio | Menos cancelación, preparación más rápida y mayor cumplimiento. |
-| Valor | Contribución a crecimiento y eficiencia considerando costos, riesgos, sostenibilidad y costo de oportunidad. |
+NPS ≥+48 y abandono de carro <55% son otras metas estratégicas del caso. La propuesta contribuye a ellas sin garantizar que todas sean efectos atribuibles a ZEUS ni fijar por inferencia un horizonte corporativo que el caso no explicita.
 
-## Tres indicadores principales y metas propuestas
+Hitos obligatorios del escenario empresarial: horizonte 12 meses, valor dentro de los primeros 5, campaña Black Friday aproximadamente M8. La [secuencia del equipo](07_roadmap.md) propone R1 con 10 tiendas/M5, R2 con objetivo 68/M7 y R3/M12; la cobertura y viabilidad se registran como supuestos y condiciones, no como datos del caso.
 
-Los valores base corporativos y metas estratégicas proceden de la p. 4. La base de una cohorte piloto todavía no está definida. Los umbrales piloto son SUP-06; son una aspiración intermedia para discutir, sin evidencia empírica de factibilidad. Las metas M12 se proponen para operaciones cubiertas, tomando como referencia las corporativas.
+## 1.3 Alternativas y recomendación
 
-| ID | Indicador y fórmula propuesta | Base corporativa | Piloto M5, propuesta | Cobertura aprobada M12, propuesta | Dueño empresarial propuesto |
-| --- | --- | --- | --- | --- | --- |
-| KPI-01 | Cancelaciones por stock / pedidos aceptados de cohorte con seguimiento completo | 7,8% | <4% y mejora frente a base comparable | <2% | Comercial/Logística |
-| KPI-02 | Registros SKU-ubicación correctos / registros SKU-ubicación auditados | 91% | ≥96% sin deterioro frente a base comparable | ≥98% | Operaciones |
-| KPI-03 | Tiempo medio de confirmación de pedido a listo para retiro/despacho, en horas | 7,2 h | <4 h y mejora frente a base comparable | <3 h | Logística/Tiendas |
-
-El mecanismo de KPI-01 captura beneficio para el cliente; KPI-02 detecta si el habilitador funciona y por sí solo no acredita valor; KPI-03 captura eficiencia operacional, pero necesita revisión de mix y carga. No sumar una mejora de estos tres como si fueran beneficios financieros independientes.
-
-**Señales tempranas:** antigüedad de stock web, conflictos de reserva y pedidos pendientes sin consumir; permiten ajustar antes del cierre mensual. Definir eventos y umbrales técnicos en G1, sin inventar carga real. **Guardrails:** disponibilidad del servicio afectado objetivo ≥99,9%, método mensual propuesto; cero riesgos críticos abiertos al liberar. La continuidad de e-commerce/tiendas durante despliegues sigue siendo restricción del caso y no se sustituye por el porcentaje de disponibilidad.
-
-### Cómo se evaluaría
-
-Registrar línea base por tienda, familia y flujo con cuatro semanas históricas comparables si existen. Acordar tiempos, reglas de rechazo/cancelación, reintentos y seguimiento de cohorte. Comparar piloto con período y/o tiendas equivalentes, informando numerador, denominador y mix; un antes/después aislado no prueba causalidad.
-
-Operar R1 en M4, medir cuatro semanas hasta M5 y revisar suficiencia del volumen. No se ha determinado un tamaño muestral ni calculado significancia. Si la base piloto ya es mejor que los umbrales, recalibrar antes de autorizar: cumplir un umbral más débil no justifica deteriorar el desempeño.
-
-Las metas estratégicas restantes (35% digital, puntualidad ≥95%, devoluciones ≥90%, NPS ≥+48, carro <55%, stock web <2 min) se mantienen como contexto y se asignan a capacidades pertinentes. No asegurar que el piloto por sí solo produzca esos resultados corporativos. El caso no especifica el horizonte de realización de todas ellas.
-
-## Alternativas
-
-| Alternativa | Inversión preliminar del caso | Horizonte | Juicio de trabajo |
+| Alternativa | Inversión preliminar | Horizonte del caso | Evaluación |
 | --- | ---: | --- | --- |
-| A. Reemplazo integral | 1.850 MM CLP | 12 a 18 meses | Excede techo en 350 MM y puede exceder 12 meses; no recomendar con límites actuales. |
-| B. Plataforma modular | 1.350 MM CLP | 9 a 12 meses | Base revisable; requiere primer valor M5, integración viable y costo a término compatible. |
-| C. MVP focalizado | 800 MM CLP | 5 a 7 meses | Menor exposición; no garantiza valor M5 por su plazo total y debe estimar expansión posterior. |
-| Diferir / no actuar | Sin cifra informada | Por evaluar | Evita inversión inmediata pero persisten fricción, costos y riesgo; no equivale a costo cero. |
+| A. Reemplazo integral | 1.850 MM CLP | 12 a 18 meses | Excede el techo en 350 MM y puede exceder los 12 meses. No recomendada con restricciones actuales. |
+| B. Plataforma modular | 1.350 MM CLP | 9 a 12 meses | Mantiene ERP/WMS e incorpora APIs, gestión de pedidos y capacidades digitales; base del equipo, condicionada a viabilidad, valor M5 y costo. |
+| C. MVP focalizado | 800 MM CLP | 5 a 7 meses | Menor exposición inicial, pero no prueba valor dentro de M5 ni incluye necesariamente el despliegue nacional y R3 propuestos. |
+| Diferir / no actuar | Sin monto informado | Por evaluar | Evita comprometer inversión inmediata, manteniendo problemas y costo de oportunidad. No equivale a costo cero. |
 
-B ofrece capacidad reutilizable y evolución dentro de 12 meses, a cambio de mayor esfuerzo de integración y coordinación. El flujo mínimo retoma inventario/pedidos/C&C; no se suman los 800 MM de C a los 1.350 MM de B. Una alternativa D solo se necesita si se justifica un cambio material.
+Recomendamos desarrollar B modular por releases, preservando la elección inicial del equipo. Permite secuenciar capacidades para la campaña y mantener una arquitectura evolutiva. Su inversión y plazo son preliminares del enunciado (p. 7), no cotización ni prueba de que 68 tiendas y el experimento adicional quepan. Si la integración o capacidad no sostienen el plan, revisar cobertura, secuencia o alternativa con criterios explícitos.
 
-## Economía y asequibilidad de ESC-01
+## 1.4 Output, outcome, beneficio y valor
 
-El [modelo de 06](06_estimacion.md) propone rangos por paquete: costo central 1.065 MM; con reserva nominal de 150, **1.215 MM**. El sobre de trabajo de **1.350 MM** usa la referencia B como límite propuesto, no como precio confirmado. Quedan 135 MM no asignados dentro del sobre y 150 MM entre sobre y techo de 1.500. No son dos reservas ya autorizadas.
+| Capacidad / output | Outcome esperado | Beneficio medible | Valor estratégico y condición |
+| --- | --- | --- | --- |
+| APIs, inventario/reserva y OMS integrado | Clientes y operación usan disponibilidad consistente; menos excepciones no previstas | Menos cancelaciones y reclamos, pedidos retenidos | Crecimiento confiable si datos físicos e integración son correctos. |
+| C&C y aplicación de tienda | Personal prepara con estados y promesas visibles | Menor preparación y más pedidos cumplidos | Eficiencia si hay capacidad y adopción, no solo una app disponible. |
+| Devoluciones elegibles omnicanal | Atención resuelve casos con trazabilidad y reglas comunes | Mayor resolución al primer contacto | Satisfacción/costo de servir; meta proyecto 85% distingue aporte parcial respecto de 90% corporativo. |
+| Observabilidad, controles y soporte | Incidentes se detectan y atienden; liberaciones son operables | Menor exposición y servicio estable | Resiliencia y sostenibilidad; base desde R1, ampliada en R3. |
 
-Adverso de partidas: 1.550 MM; manteniendo además la reserva nominal como prueba conservadora, **1.700 MM**. Incluso sin esa reserva el adverso supera el techo en 50 MM. No hay promesa de que B siempre quepa; reducir cobertura/capacidades secundarias o detener escala. No recortar controles ni contar una contingencia materializada dos veces.
+**Hipótesis de valor:** si datos de inventario, reserva y pedido son consistentes y las tiendas adoptan el proceso con capacidad, disminuirán cancelaciones y preparación. Una devolución integrada puede elevar resolución en primer contacto. Esto sostiene crecimiento y experiencia considerando costos y riesgos. Requiere SUP-01 a SUP-08 y evidencia que permita revisar causalidad y trade-offs.
 
-Para beneficios económicos: `pedidos comparables × reducción de cancelación atribuible × margen incremental recuperable`, más costos de reproceso efectivamente evitables, menos operación incremental. Corregir sustitución entre canales y evitar doble conteo. Faltan volumen, margen, costo de servir, costos y flujos confirmados para ROI/VAN/payback numéricos. Mantener esos valores sin calcular hasta disponer de supuestos económicos explícitos adicionales o evidencia.
+## 1.5 Objetivos del proyecto y medición propuesta
 
-## Decisión y condiciones
+Se preservan los objetivos del Charter del equipo, proponiendo horizonte/cobertura explícitos. Son objetivos a evaluar, no resultados. El horizonte M12 es una definición de integración para revisión del grupo.
 
-Proponer autorización inicial hasta 100 MM incluida en el sobre para diagnóstico y validación, SUP-08; no es el costo calculado de M1 ni una aprobación real. G1 decide construcción/piloto según datos, integración, capacidad y costo. G2/M5 decide expansión según beneficio y guardrails. Si valor M5, controles o presupuesto no son viables, revisar B y el alcance; dejar C como opción de repliegue que también debe probar sus condiciones.
+| ID | Indicador / cálculo propuesto | Objetivo del proyecto | Dueño empresarial propuesto |
+| --- | --- | --- | --- |
+| KPI-01 | Cancelaciones por stock / pedidos aceptados comparables con seguimiento completo | <2% a M12 en operación cubierta | Comercial/Logística |
+| KPI-02 | Tiempo desde cambio confirmado de inventario hasta publicación web consistente | <2 min a M12 en interfaces cubiertas | Tecnología/Operaciones |
+| KPI-03 | Promedio de tiempo desde pedido confirmado a listo para retiro/despacho, separado por flujo | <3 h a M12 en operación cubierta | Logística/Tiendas |
+| KPI-04 | Devoluciones elegibles resueltas al primer contacto / devoluciones elegibles | ≥85% a M12, propuesta del equipo; referencia estratégica ≥90% | Operaciones/Comercial |
+| KPI-05 | Tiempo de servicio disponible / ventana de observación acordada | ≥99,9% en campaña y seguimiento regular con ventanas definidas | Tecnología/Operaciones |
+| KPI-06 | Pedidos C&C preparados mediante la app / pedidos C&C preparados de cohorte | >80% en piloto y cada ola aceptada, plazo operativo propuesto para revisión | Operaciones/Tiendas |
+
+Los denominadores y reglas son propuestas: confirmar antes de comparar la base corporativa con tiendas piloto. En KPI-02 no reemplazar <2 minutos por un percentil favorable sin explicitar el cambio de criterio; observar también frecuencia/duración de incumplimientos. KPI-04 deja una brecha de 5 puntos porcentuales frente a la meta estratégica: el grupo debe justificar el objetivo parcial o elevarlo con costo/plazo coherentes. Los datos solo respaldan 64% corporativo, no una base piloto idéntica.
+
+Para G1/M5 se propone que el piloto esté en uso, KPI-06 supere 80%, haya mejora de cancelación/preparación frente a base comparable y no deterioro material de la operación. Fijar magnitud mínima de mejora y suficiencia de evidencia antes de abrir el piloto; no reutilizar automáticamente las metas intermedias de ESC-01 ni aceptar cualquier oscilación como valor probado. La exactitud de inventario se sigue como habilitador (91% y meta estratégica ≥98%), sin duplicar el beneficio económico de cancelaciones.
+
+Ventana de trabajo propuesta: base por tienda/familia/flujo, piloto en M4 y evaluación de cuatro semanas hasta M5, con volumen suficiente y conteos. Contrastar cambios de demanda/mix y controles comparables cuando sea viable. Un antes/después no prueba causalidad. Si solo hay go-live al final de M5 o evidencia insuficiente, el requisito de valor no queda demostrado. La disponibilidad porcentual no autoriza interrupciones planificadas de tiendas/e-commerce.
+
+## 1.6 Costos, riesgos, supuestos y solicitud
+
+Techo preliminar: 1.500 MM CLP. Referencia B: 1.350 MM. El equipo propone financiación por tramos. La distribución de presupuesto, reservas y primer tramo quedan a reestimar por Rogelio con el alcance 10/68 tiendas, cinco equipos supuestos, OMS comprado y experimento R3. Los totales de ESC-01 no validan ese alcance y se retiran como presupuesto vigente.
+
+La [estimación](06_estimacion.md) conserva método y una tabla para la nueva cobertura. Contemplar licencias por uso/tienda, trabajo interno, integración, datos, formación, operación/transición, seguridad, despliegue y experimento, sin doble conteo. Faltan volumen, margen y flujos para ROI/VAN/payback numéricos. Beneficio potencial = pedidos recuperables × margen incremental, más costos realmente evitados, menos gasto incremental; ajustar sustitución de canal y capacidad liberada, que no es ahorro de caja automático.
+
+Riesgos principales: integración, exactitud de stock, WMS, dotación, escalamiento de 58 tiendas, campaña, sobrecosto y seguridad. Registro común con responsables y disparadores. Se solicita aprobar la formulación de B y financiación inicial por un monto que debe estimarse antes de cerrar autorización; R0/R1 tienen liberación condicionada a evidencia técnica y capacidad, no a una aprobación de todo el proyecto sin límites.

@@ -1,28 +1,22 @@
-# Riesgos iniciales y dependencias
+# Riesgos y dependencias de ESC-02
 
-**ESC-01: evaluación cualitativa propuesta, pendiente de revisión grupal.** Se describe una empresa ficticia; no hay pruebas ni incidentes realizados. Exposición alta/media es juicio de trabajo, sin probabilidades ni pérdidas calibradas. Ver supuestos SUP-01 a SUP-11.
+Registro propuesto, no incidentes observados ni evaluación probabilística calibrada. Base: caso y avance del equipo. Todos los responsables son roles de la empresa ficticia, distintos del reparto académico. Revisar en foro semanal y en gates.
 
-| ID | Causa → riesgo → efecto | Exposición propuesta | Respuesta y evidencia | Dueño empresarial propuesto | Disparador / decisión |
-| --- | --- | --- | --- | --- | --- |
-| R-01 | API/legacy inciertos → integración inviable/tardía → falla M5 | Alta | Prueba representativa, contrato de datos, carga/recuperación G1 | Tecnología/proveedor WMS | Sin flujo viable en G1: revisar B, costo y alcance antes de seguir. |
-| R-02 | Stock físico/datos inconsistentes → disponibilidad falsa → cancelaciones persisten | Alta | Reconciliación, auditoría, concurrencia y KPI-02 | Operaciones/Logística | Stock no confiable: corregir y no ampliar productos/tiendas. |
-| R-03 | Dotación/adopción insuficientes → tareas no ejecutadas → preparación/atención deterioradas | Alta | Ensayo de proceso, formación, capacidad local y KPI-03 | Operaciones/Tiendas | Personal no preparado o carga no absorbible: limitar ola. |
-| R-04 | Costos/licencias/soporte inciertos → sobrecosto → presión sobre techo | Alta | Rangos, TCO, forecast y revisión de reservas | Finanzas/dirección de proyecto | Forecast >1.350: decidir ajuste; >1.500 sin mitigación: no escalar. |
-| R-05 | Despliegue en sistemas activos → interrupción/pedido perdido → daño de servicio | Alta | Salida gradual, idempotencia, monitoreo, reversión y soporte | Tecnología/Operaciones | Interrupción material/pérdida no conciliada: parar rollout y recuperar. |
-| R-06 | Acceso/trazabilidad/datos mal controlados → exposición → daño o bloqueo | Alta | Controles desde diseño, pruebas y aceptación CISO | CISO/responsables de datos | Riesgo crítico abierto: bloquear liberación. |
-| R-07 | Base/muestra incomparables → beneficio no demostrable → expansión sin evidencia | Media/alta | Definiciones, eventos, conteos y ventana desde M1 | Dueños de beneficio/analítica | G2 sin evidencia: no declarar valor M5 cumplido. |
-| R-08 | Carga de campaña/dependencia tardía → capacidad insuficiente → falla M8 | Alta | Prueba de demanda representativa, cobertura estable, recuperación | Operaciones/Tecnología | G3 sin capacidad aceptada: limitar cobertura y diferir expansión. |
+| ID | Causa → evento → efecto | Respuesta y aprendizaje propuestos | Dueño empresarial | Disparador / decisión |
+| --- | --- | --- | --- | --- |
+| R-01 | Legacy/interfaces desconocidas → integración no viable o tardía → costo/plazo/valor afectados | Pruebas representativas, contrato de datos e hitos OMS antes de compromiso irreversible | Tecnología/Arquitectura | VT-01 no demuestra flujo: replantear B/interfaz y forecast. |
+| R-02 | Stock físico inexacto → reserva sin existencias → cancelaciones y menor valor | Reconciliación, selección de cohortes, excepciones y control físico | Logística/Tiendas | Cohorte no soporta promesa: corregir antes de abrir o escalar. |
+| R-03 | Proveedor WMS dependiente → entrega/prueba tardía → flujo incompleto hasta M5 | Compromisos, ventanas de integración, pruebas y escalamiento contractual | Tecnología/proveedor | Hito proveedor incumplido: revisar secuencia/cobertura y costo. |
+| R-04 | Dotación limitada → baja adopción o colas → preparación sin mejora | Medir carga, formación por turno y soporte; no asumir cinco equipos disponibles | Operaciones/PM | No cabe trabajo o uso app insuficiente: limitar WIP/altas y ajustar proceso. |
+| R-05 | 58 altas en dos meses → capacidad o estabilización insuficiente → fallos antes de campaña | Estimar brigadas, costo por ola, criterios de salida y margen de corrección | Operaciones/PM | Una ola no es operable o consume margen: diferir siguientes; actualizar meta 68/M7. |
+| R-06 | Datos/muestra insuficientes o go-live tardío → no se demuestra valor hasta M5 → inversión sin hipótesis contrastada | Base e instrumentación desde R0, uso M4, umbral de mejora/suficiencia acordados | Dueños de beneficio/analítica | G1 solo acredita instalación: no declarar requisito cumplido; revisar inversión. |
+| R-07 | Cambios/integración durante operación → interrupción o pedidos perdidos → incumplimiento/daño | Despliegue gradual, idempotencia, conciliación, reversión y soporte desde R1 | Tecnología/Operaciones | Interrupción material o pérdida no conciliada: detener altas y recuperar. |
+| R-08 | Controles insuficientes → exposición de datos/accesos → daño o bloqueo | Controles desde diseño y cada incremento, aceptación CISO | CISO | Riesgo crítico abierto: bloquear liberación. |
+| R-09 | Carga de campaña superior a capacidad → degradación → promesas/ventas afectadas | Prueba de carga y recuperación, observabilidad, soporte y cobertura segura | Tecnología/Operaciones | VE-01 no aceptado: limitar cobertura y diferir cambios, escalar al sponsor. |
+| R-10 | Licencias, cinco equipos o expansión subestimados → costo a término excede techo → plan no financiable | Reestimar PAQ, impuestos/recurrentes, reserva y sensibilidad; compras por hitos | Finanzas/PM | Estimación excede límite: cambiar alcance o alternativa antes de contratar. |
+| R-11 | Experimento Ship-from-store sin límites → alcance/logística crecen → desplazan metas y costo | Hipótesis, muestra, tope y criterio de parada separados en CAP-09 | Logística/PO/Finanzas | G2 sin caso/costo/capacidad: diferir experimento explícitamente. |
+| R-12 | Devoluciones elegibles limitadas → mejora parcial se presenta como corporativa → beneficio sobreestimado | Separar base/cohorte y ≥85% proyecto de ≥90% estratégico | Comercial/Operaciones | Resultado no comparable: reportar alcance real y brecha. |
 
-## Dependencias que deben tener acuerdo
+Dependencias que requieren dueño y acuerdo: ERP/WMS/OMS y contratos; stock/dotación por tienda y CD; reglas de devolución/conciliación; controles/rendimiento/soporte; Finanzas para costo total y liberaciones. Desconocemos capacidad real de API, demanda y adopción: proponer pruebas reduce incertidumbre, no acredita que ya se resolvió.
 
-- Proveedor WMS/ERP: acceso, contrato de datos, prueba, soporte y escalamiento para G1.
-- Operaciones: calidad de stock, dotación, espacio y promesas por tienda antes de piloto/ola.
-- Comercial/Finanzas: reglas de devolución, conciliación y aceptación antes de CAP-08.
-- Tecnología/CISO: controles, carga, observabilidad, reversión y soporte para cada salida.
-- Finanzas/proveedores: costo total, modalidad de licencia, consumo, impuestos y operación antes de comprometer contratos.
-
-## Incertidumbre y respuesta
-
-El riesgo identificado admite una respuesta; la ausencia de datos requiere aprender. La tasa de conflictos de reserva, capacidad real de API y tiempo de adopción no se han medido. Una prueba propuesta reduce esa incertidumbre y permite recalibrar exposición, no garantiza eliminarla.
-
-Revisión semanal de bloqueos por dirección de proyecto y revisión mensual/gates del costo y beneficio por sponsor/comité. Son cadencias propuestas en 02. Registrar riesgo residual, responsable y cambio; toda variación de alcance/fecha/costo actualiza el resto de documentos. Seguridad, continuidad y calidad no se recortan para absorber sobrecosto.
+No retirar seguridad, continuidad o instrumentación para absorber sobrecosto. Registrar riesgo residual, acción, evidencia y cambio en alcance/estimación/roadmap; no inventar probabilidad o impacto monetario cuando no existe base.

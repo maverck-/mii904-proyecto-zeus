@@ -71,59 +71,47 @@ def rows(name):
 def number(value):
     return Decimal(value.replace('.', '').replace(',', '.'))
 
-# ESC-01: verificar operaciones y relaciones, sin validar los supuestos de entrada.
+# ESC-02: comprobar rangos disponibles sin presentar pendientes como calculados.
 costs = {}
-listed_total = None
-effort_total = Decimal(0)
-listed_effort = None
-for cells in rows('trabajo/06_estimacion.md'):
-    if re.fullmatch(r'PAQ-\d\d', cells[0]):
-        o, m, p, listed = map(number, cells[1:5])
-        estimate = (o + 4*m + p) / 6
-        check(o <= m <= p, f'Rango de costo inválido: {cells[0]}')
-        check(abs(listed-estimate) <= Decimal('0.005'), f'Tres puntos incorrectos: {cells[0]}')
-        costs[cells[0]] = (o, m, p, estimate)
-    elif cells[0] == 'Total' and len(cells) == 6:
-        listed_total = tuple(map(number, cells[1:5]))
-    elif len(cells) == 5 and re.fullmatch(r'\d+(?:,\d+)?', cells[1]):
-        effort = number(cells[1]) * number(cells[2])
-        check(effort == number(cells[3]), f'Esfuerzo incorrecto: {cells[0]}')
-        effort_total += effort
-    elif cells[0] == 'Total' and len(cells) == 5:
-        listed_effort = number(cells[3])
-check(len(costs) == 7, 'ESC-01 necesita siete paquetes de costo.')
-if costs:
-    totals = tuple(sum(row[i] for row in costs.values()) for i in range(4))
-    check(listed_total is not None and all(abs(a-b) < Decimal('0.01') for a,b in zip(totals, listed_total)), 'Totales de costo incorrectos.')
-    check(effort_total == listed_effort, 'Total de persona-meses incorrecto.')
-    budget = {}
-    for cells in rows('trabajo/06_estimacion.md'):
-        if len(cells) == 3 and re.fullmatch(r'\d+,\d+', cells[1]):
-            budget[cells[0]] = number(cells[1])
-    central = totals[3]
-    reserve = budget['Reserva nominal']
-    envelope = budget['Sobre de trabajo']
-    cap = budget['Techo preliminar del caso']
-    check(central == budget['Central de paquetes'], 'Central distinto del total de tres puntos.')
-    check(central+reserve == budget['Central más reserva'], 'Central más reserva incorrecto.')
-    check(envelope-central-reserve == budget['Margen no asignado del sobre'], 'Margen del sobre incorrecto.')
-    check(cap-envelope == budget['Diferencia techo/sobre'], 'Diferencia techo/sobre incorrecta.')
-    check(totals[2] == budget['Adverso de partidas'] and totals[2]+reserve == budget['Adverso más reserva nominal'], 'Adverso incorrecto.')
+pending_costs = []
+package_rows = list(c for c in rows('trabajo/06_estimacion.md') if re.fullmatch(r'PAQ-\d\d', c[0]))
+check(len(package_rows) == 7, 'Se esperan siete paquetes de estimación.')
+for cells in package_rows:
+    check(len(cells) == 7, f'Columnas de estimación incorrectas: {cells[0]}')
+    if len(cells) != 7:
+        continue
+    values = cells[2:6]
+    if values == ['Pendiente'] * 4:
+        pending_costs.append(cells[0])
+        continue
+    valid = all(re.fullmatch(r'\d+(?:\.\d{3})*(?:,\d+)?', v) for v in values)
+    check(valid, f'Completar O/M/P/E o marcar todos Pendiente: {cells[0]}')
+    if not valid:
+        continue
+    o, m, p, listed = map(number, values)
+    expected_cost = (o + 4*m + p) / 6
+    check(o <= m <= p, f'Rango de costo inválido: {cells[0]}')
+    check(abs(listed-expected_cost) <= Decimal('0.005'), f'Tres puntos incorrectos: {cells[0]}')
+    costs[cells[0]] = (o, m, p, expected_cost)
 
 priority_weights = {}
 scores = {}
+pending_scores = []
 for cells in rows('trabajo/05_priorizacion.md'):
     if len(cells) == 3 and re.fullmatch(r'\d+%', cells[1]):
         priority_weights[cells[0]] = Decimal(cells[1].strip('%'))
     elif len(cells) == 9 and re.fullmatch(r'CAP-\d\d', cells[0]):
-        scores[cells[0]] = cells
+        if cells[1:] == ['Pendiente'] * 8:
+            pending_scores.append(cells[0])
+        else:
+            scores[cells[0]] = cells
 check(len(priority_weights) == 7 and sum(priority_weights.values()) == 100, 'Pesos de priorización deben sumar 100%.')
 for ident, cells in scores.items():
     notes = list(map(number, cells[1:8]))
     check(all(1 <= note <= 5 for note in notes), f'Nota fuera de escala: {ident}')
     expected_score = sum(note*priority_weights[key] for note,key in zip(notes,['V','U','D','R','I','C','K'])) / 100
     check(expected_score == number(cells[8]), f'Puntaje incorrecto: {ident}')
-check(len(scores) == 6, 'Se esperan seis capacidades puntuadas; las otras dos son transversales obligatorias.')
+check(len(scores) + len(pending_scores) == 7, 'Se esperan siete capacidades priorizables; otras dos son transversales obligatorias.')
 
 backlog = (root/'trabajo/04_alcance_y_backlog.md').read_text()
 assumptions = (root/'registros/acuerdos_y_supuestos.md').read_text()
@@ -132,10 +120,38 @@ for path in (root/'trabajo').glob('[0-9][0-9]_*.md'):
         check(ident in assumptions, f'Supuesto sin definición: {ident} en {path.name}')
     for ident in set(re.findall(r'\b(?:CAP|PAQ)-\d\d\b', path.read_text())):
         check(ident in backlog, f'Capacidad/paquete sin definición: {ident} en {path.name}')
+# Comprobar las cantidades del roadmap; no acredita capacidad de despliegue.
+accumulated = 0
+waves = []
+for cells in rows('trabajo/07_roadmap.md'):
+    if len(cells) == 5 and (cells[0] == 'Piloto' or re.fullmatch(r'O[1-4]', cells[0])):
+        valid = cells[2].isdigit() and cells[3].isdigit()
+        check(valid, f'Cantidades de ola inválidas: {cells[0]}')
+        if valid:
+            accumulated += int(cells[2])
+            check(accumulated == int(cells[3]), f'Acumulado incorrecto: {cells[0]}')
+            waves.append(int(cells[2]))
+check(len(waves) == 5 and accumulated == 68 and sum(waves[1:]) == 58, 'Revisar cobertura piloto/olas y objetivo 68.')
+
+members = [cells[0] for cells in rows('EQUIPO.md') if cells[0] not in {'Integrante', '---'}]
+check(len(members) == 4 and len(set(members)) == 4, 'La nómina activa debe contener cuatro integrantes distintos.')
+
+# El archivo recibido es fuente, no la versión común editable.
+source_digest = re.search(r'SHA-256 del avance preservado: `([0-9a-f]{64})`', (root/'insumos/README.md').read_text())
+check(source_digest is not None, 'Falta hash del avance recibido.')
+if source_digest:
+    check(hashlib.sha256((root/'insumos/avance_equipo_2026-10-21.md').read_bytes()).hexdigest() == source_digest.group(1), 'El avance preservado cambió; editar la integración en trabajo/.')
+
 for error in errors:
     print('ERROR:', error)
 if errors:
     sys.exit(1)
 print(f'OK: {len(paths)} archivos, siete entregables, pauta 100%, {transcripts} transcripciones y {segments} segmentos.')
-print('OK: fuentes y enlaces verificados; sin rutas personales, contactos o capturas detectados.')
-print('OK: operaciones de costo, esfuerzo, priorización y referencias ESC-01; falta revisión de los supuestos.')
+print('OK: fuentes, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
+print('OK: puntajes numéricos, acumulados de olas y referencias del escenario integrado.')
+if pending_costs:
+    print(f'PENDIENTE: {len(pending_costs)} paquetes sin costo; total, reserva, capacidad y financiación requieren revisión. No se certifica una estimación terminada.')
+else:
+    print('REVISAR: rangos calculados; revisar manualmente total, reserva, capacidad y asequibilidad.')
+if pending_scores:
+    print('PENDIENTE: priorización sin puntuar: ' + ', '.join(pending_scores))

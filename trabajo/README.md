@@ -1,27 +1,21 @@
 # Entregables y estado de revisión
 
-Los siete documentos desarrollan lo solicitado en la página 8 del enunciado. **ESC-01 es un borrador integral con supuestos explícitos, pendiente de revisión del grupo.** Los supuestos permiten desarrollar la propuesta, pero aún no representan acuerdos grupales ni resultados operacionales.
+Siete componentes solicitados en p. 8 del enunciado, organizados en Markdown. **ESC-02 prioriza el avance recibido del equipo.** Integrado significa incorporado en un borrador común; no significa aprobado ni demostrado en operación.
 
-| Orden | Archivo | Desarrollo disponible | Revisión que queda |
+| Orden | Documento | Avance disponible | Pendiente / responsable |
 | --- | --- | --- | --- |
-| 1 | [Diagnóstico y Business Case](01_diagnostico_y_business_case.md) | Problema, hipótesis, tres KPI, metas piloto, alternativas, economía y gates | Integrar aporte del equipo, validar metas/base y supuestos de valor. |
-| 2 | [Enfoque](02_enfoque.md) | Comparación, prácticas, cadencias, autoridad y calidad | Integrar aporte del equipo, revisar disponibilidad y tailoring. |
-| 3 | [Charter](03_charter.md) | Objetivos, cobertura, financiación, roles, hitos y aceptación | Integrar aporte del equipo y revisar mandato propuesto. |
-| 4 | [Alcance y backlog](04_alcance_y_backlog.md) | Piloto/olas, ocho capacidades, aceptación y siete paquetes de EDT | Acordar inclusiones/exclusiones, cobertura y fronteras de costo. |
-| 5 | [Priorización](05_priorizacion.md) | Pesos/notas ilustrativos, puntajes, precedencias y trade-offs | Revisar juicio de puntajes y disponibilidad; no automatizar decisión. |
-| 6 | [Estimación](06_estimacion.md) | Rangos por paquete, reserva, escenario adverso/sensibilidad, esfuerzo y ventanas | Revisar razonabilidad de montos/capacidad e incorporar sesiones 5/6. |
-| 7 | [Roadmap](07_roadmap.md) | Releases, gates, evidencia, responsables y reacción a desvíos | Aceptar secuencia y posibilidad de valor M5/capacidad M8. |
+| 1 | [Diagnóstico y Business Case](01_diagnostico_y_business_case.md) | Base del equipo, alternativas completadas, hipótesis/beneficios y seis KPI | Equipo: validar objetivos y evidencia piloto; magnitudes económicas sin datos no se inventan. |
+| 2 | [Enfoque](02_enfoque.md) | Híbrido, Kanban/Scrum, cadencias, autoridad y controles | Equipo: revisar capacidad y distinción entre restricción e incertidumbre. |
+| 3 | [Charter](03_charter.md) | Base del equipo, alcance completado y financiación condicionada | Equipo: cerrar metas, tramos, escala y experimento tras estimación. |
+| 4 | [Alcance y backlog](04_alcance_y_backlog.md) | 10/68 tiendas, nueve capacidades, siete paquetes y aceptación | Maverick: definir CD/familias, límites y viabilidad de cobertura. |
+| 5 | [Priorización](05_priorizacion.md) | Pesos y seis puntuaciones iniciales; experimento sin puntuar | Rogelio: reevaluar especialmente costo/capacidad y justificar secuencia. |
+| 6 | [Estimación](06_estimacion.md) | Método, tabla por PAQ, cantidades y sensibilidades | Rogelio: falta cuantificación; no hay total/reserva vigentes para ESC-02. |
+| 7 | [Roadmap](07_roadmap.md) | Releases, cuatro olas propuestas, gates M1/M5/M9, VT-01/VE-01 y riesgos | Maverick: contrastar capacidad/costo y sostener valor M5/campaña M8. |
 
-## Cómo revisar el escenario
+## Revisar juntos
 
-1. Confirmar restricciones del enunciado y base B revisable.
-2. Leer [supuestos](../registros/acuerdos_y_supuestos.md): cada uno tiene validación académica y validación empresarial hipotética.
-3. Revisar piloto, metas y alcance antes de discutir montos finales; si cambian, revisar todo el costo/roadmap.
-4. Conservar o sustituir cada valor con fundamento y registrar decisiones efectivamente acordadas.
-5. Preparar presentación una vez integrados los aportes, con todos capaces de defender el conjunto.
+Leer [ajustes con fundamento](../registros/integracion_avance_equipo.md) y [supuestos](../registros/acuerdos_y_supuestos.md). Conservar o cambiar propuestas explícitamente; cualquier cambio de cobertura actualiza costo/roadmap/beneficios. ESC-01 y sus cifras anteriores quedan como antecedente en Git.
 
-Como la compañía es ficticia, la validación académica comprueba coherencia, razonabilidad y defensa ante el caso. La prueba con APIs, una cotización o la aprobación empresarial se describen como trabajo futuro hipotético; no se exigen como hechos reales para afirmar que el grupo revisó la propuesta.
+Los archivos organizan fuentes de contenido. No implican siete documentos formales obligatorios: la pauta pide propuesta y defensa integrada. Presentación e informe eventual son formatos posteriores; confirmar requerimientos de aula.
 
-## Convenciones
-
-Dato del caso: página o tiempo; propuesta: opción revisable; supuesto: condición provisional con validación prevista; acuerdo: decisión efectivamente registrada por el equipo. CAP identifica capacidades; PAQ paquetes de costo; KPI resultados/habilitadores; R releases y G gates. Se comparten referencias entre documentos y cada costo se imputa una sola vez.
+CAP identifica capacidades; PAQ paquetes de costo; KPI indicadores; R releases; G gates financieros; VT-01 revisión técnica y VE-01 preparación del evento. Dato del caso requiere página/tiempo; propuesta y supuesto requieren revisión; acuerdo requiere decisión efectivamente comunicada.
