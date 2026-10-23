@@ -1,6 +1,6 @@
 # 1. Diagnóstico estratégico y Business Case
 
-**ESC-02: versión integrada desde el avance del equipo, revisión 22-10-2026.** Se priorizan su diagnóstico, alternativa B, objetivos y secuencia. Los complementos y correcciones están en la [revisión de integración](../registros/integracion_avance_equipo.md). El [texto recibido](../insumos/avance_equipo_2026-10-21.md) se conserva como antecedente; la pauta y los hechos los establece el enunciado.
+**ESC-02: versión integrada desde el avance del equipo, revisión 23-10-2026.** Se priorizan su diagnóstico, alternativa B, objetivos y secuencia. Los complementos y correcciones están en la [revisión de integración](../registros/integracion_avance_equipo.md). El [texto recibido](../insumos/avance_equipo_2026-10-21.md) se conserva como antecedente; la pauta y los hechos los establece el enunciado.
 
 ## 1.1 Problemas y oportunidad
 
@@ -70,7 +70,7 @@ Se preservan los objetivos del Charter del equipo, proponiendo horizonte/cobertu
 
 Los denominadores y reglas son propuestas: confirmar antes de comparar la base corporativa con tiendas piloto. En KPI-02 no reemplazar <2 minutos por un percentil favorable sin explicitar el cambio de criterio; observar también frecuencia/duración de incumplimientos. KPI-04 deja una brecha de 5 puntos porcentuales frente a la meta estratégica: el grupo debe justificar el objetivo parcial o elevarlo con costo/plazo coherentes. Los datos solo respaldan 64% corporativo, no una base piloto idéntica.
 
-Para G1/M5 se desarrolla SUP-16 en el [escenario provisional del 22 de octubre](../registros/escenario_provisional.md): cancelación al menos 20% menor en términos relativos y preparación media al menos 25% menor que sus respectivas bases comparables, adopción >80% por conjunto y tienda, servicio operable y evidencia evaluable. Si la base ya cumple una meta final, conservarla sin deterioro. Estos umbrales nuevos son supuestos didácticos para revisión; no vienen del enunciado ni se heredan automáticamente de ESC-01.
+Como propuesta adicional del 22 pendiente de ratificación del equipo, para G1/M5 se desarrolla SUP-16 en el [escenario provisional del 22 de octubre](../registros/escenario_provisional.md): cancelación al menos 20% menor en términos relativos y preparación media al menos 25% menor que sus respectivas bases comparables, adopción >80% por conjunto y tienda, servicio operable y evidencia evaluable. Si la base ya cumple una meta final, conservarla sin deterioro. Estos umbrales nuevos son supuestos didácticos para revisión; no vienen del enunciado ni se heredan automáticamente de ESC-01.
 
 Se propone habilitar 10 tiendas, 1 CD y 2 familias al inicio de M4, y evaluar cuatro semanas de uso hasta M5, frente a cuatro semanas de base comparable. Piso operacional propuesto: 1.000 pedidos elegibles con seguimiento completo por fase; no es potencia estadística calculada ni garantía causal. Reportar conteos, mix, diferencias por tienda y datos faltantes. Sin evidencia suficiente el resultado es inconcluso, no una primera entrega de valor demostrada.
 
@@ -78,8 +78,14 @@ La exactitud de inventario se sigue como habilitador, sin duplicar beneficio eco
 
 ## 1.6 Costos, riesgos, supuestos y solicitud
 
-Techo preliminar: 1.500 MM CLP. Referencia B: 1.350 MM. El equipo propone financiación por tramos. La distribución de presupuesto, reservas y primer tramo quedan a reestimar por Rogelio con el alcance 10/68 tiendas, cinco equipos supuestos, OMS comprado y experimento R3. El límite de exposición incremental experimental se propone en 30 MM CLP, incluido en el total y sujeto a G2; no es una estimación realizada. Los totales de ESC-01 no validan ese alcance y se retiran como presupuesto vigente.
+Se integra el presupuesto preliminar del equipo: **base 1.330 MM CLP + contingencia 170 = marco total 1.500 MM**, igual al techo del caso. Referencia B: 1.350 MM. Extremos declarados de categorías: 1.215 a 1.500 MM, sin reserva adicional sobre el extremo alto. Son valores supuestos del ejercicio, no cotizaciones verificadas.
 
-La [estimación](06_estimacion.md) conserva método y una tabla para la nueva cobertura. Contemplar licencias por uso/tienda, trabajo interno, integración, datos, formación, operación/transición, seguridad, despliegue y experimento, sin doble conteo. Faltan volumen, margen y flujos para ROI/VAN/payback numéricos. Beneficio potencial = pedidos recuperables × margen incremental, más costos realmente evitados, menos gasto incremental; ajustar sustitución de canal y capacidad liberada, que no es ahorro de caja automático.
+La [estimación 06](06_estimacion.md) incluye 104 equipo-sprints esperados y capacidad efectiva propuesta 120, con refuerzo temporal del sexto equipo. Se verificaron totales y WSJF. Falta conciliar calendario de dotación, carga por épica/tramo/rol y fronteras de costos externos versus capacidad propia. No inferir confianza de fecha 80–95% por sumar esfuerzo.
 
-Riesgos principales: integración, exactitud de stock, WMS, dotación, escalamiento de 58 tiendas, campaña, sobrecosto y seguridad. Registro común con responsables y disparadores. Se solicita aprobar la formulación de B y financiación inicial por un monto que debe estimarse antes de cerrar autorización; R0/R1 tienen liberación condicionada a evidencia técnica y capacidad, no a una aprobación de todo el proyecto sin límites.
+Financiación base recibida: **675 MM en G0/M1**, 345 en G1/M5 y 310 en G2/M9; contingencia 170 por riesgo y autorización del comité. Son cuotas propuestas; falta asignación categoría/mes para verificar obligaciones. Se solicita el primer tramo de 675 condicionado a arquitectura, contrato por hitos y revisión técnica VT-01, sin simular aprobación empresarial.
+
+Riesgos principales: integración/API, stock, WMS, dotación/sitios, campaña, sobrecosto y seguridad. Si se consumen los 170 para alcanzar el extremo alto de categorías, no quedan los mismos 170 disponibles para otro riesgo. Primeras opciones de diferimiento son capacidades opcionales/experimento, sin eliminar condiciones del flujo ni objetivo de devolución sin cambio formal.
+
+El nuevo avance propone experimento Ship-from-store de **3 a 5 tiendas** en R3; el límite anterior de 2 tiendas/30 MM queda retirado como condición vigente. No duplicar el esfuerzo E10 sobre el costo de equipos ya incluido. Límites de duración/pedidos y exposición se definen en G2 con frontera de costos clara. Ver [revisión del avance del 23](../registros/revision_avance_2026-10-23.md).
+
+Faltan volumen, margen y flujos para ROI/VAN/payback numéricos. Beneficio potencial = pedidos recuperables × margen incremental, más costos realmente evitados, menos gasto incremental; ajustar sustitución de canal y costos de oportunidad, que no son ahorro de caja automático. El presupuesto es ahora una base cuantificada para discutir inversión, no prueba de esos beneficios.

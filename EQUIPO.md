@@ -23,3 +23,7 @@ Cada responsable verifica su contenido y sus vínculos con los demás frentes. T
 ## Avance del 22 de octubre
 
 El [escenario provisional](registros/escenario_provisional.md) deja cantidades y aceptación propuestas de alcance/roadmap para revisar con Rogelio. El [mapa/guion](presentacion/mapa_y_guion.md) prepara 12 láminas/25 minutos y defensa. No atribuye aprobación a los otros integrantes ni cierra costos pendientes.
+
+## Actualización del 23 de octubre
+
+Se integra el nuevo WSJF y la estimación recibida con [comparación](registros/revision_avance_2026-10-23.md). Rogelio y Maverick deben conciliar calendario, carga por épica/rol y fronteras de costos; los totales ya están cuantificados. El apoyo del 22 no impone brigadas ni límites experimentales distintos del nuevo avance.

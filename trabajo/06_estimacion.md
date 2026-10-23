@@ -1,88 +1,110 @@
 # 6. Estimación y tratamiento de incertidumbre
 
-**Responsable indicado: Rogelio. ESC-02 pendiente de cuantificación.** Se conserva el método de trabajo, pero se retiran como vigentes los montos y 92,5 persona-meses de ESC-01: estimaban otra cobertura y excluían el experimento. No demuestran viabilidad de 10/68 tiendas ni de cinco equipos. Este documento prepara la estimación y declara lo que falta para cumplirla.
+**Responsable: Rogelio. ESC-02, base del equipo recibida el 23-10-2026 e integrada para revisión.** Ya existe estimación preliminar: se conservan esfuerzo 104, capacidad propuesta 120 y presupuesto base 1.330 + reserva 170 = 1.500 MM CLP. La [comparación](../registros/revision_avance_2026-10-23.md) separa operaciones correctas de hipótesis por conciliar. No hay cotizaciones, históricos empresariales ni capacidad contratada verificados.
 
-## Referencias y unidad
+## 6.1 Técnica y base
 
-Enunciado: B = **1.350 MM CLP**, 9 a 12 meses (p. 7); máximo preliminar **1.500 MM CLP**, 12 meses, primera entrega de valor dentro de M5 (p. 5). Son referencia y restricción, no costos descompuestos ni autorización de gasto. MM CLP significa millones de pesos chilenos. La diferencia nominal 150 no es reserva aprobada ni dinero libre.
-
-SUP-07/SUP-08/SUP-10: reconstruir costo de ESC-02 con alcance de 04 y secuencia de 07. Para el ejercicio pueden usarse rangos supuestos defendidos por el equipo, identificados como tales. No hacen falta cotizaciones reales de una empresa ficticia, pero no deben inventarse como obtenidas. No se investigaron tarifas de mercado.
-
-## Técnica según decisión y horizonte
-
-La sesión 05, pp. 4 a 11 ([material](../insumos/presentaciones/README.md)), distingue objetivo, estimación y compromiso. 68/M7 es un objetivo de cobertura; una estimación debe mostrar si costo y capacidad lo sostienen; el compromiso se acepta por la autoridad con riesgo explícito. Ni el techo 1.500 ni la referencia B calculan por sí solos la nueva solución.
-
-| Decisión | Técnica propuesta | Evidencia / límite |
+| Componente | Técnica propuesta | Precisión de evidencia |
 | --- | --- | --- |
-| Formular inversión ejecutiva | Referencia B como orientación y descomposición por PAQ con rangos | Ajustar por alcance, licencias, personas, sitios y riesgo; no tratar B como histórico comparable demostrado. |
-| Resolver R0/R1 próximo | Descomposición por entregable y tres puntos para incertidumbre; cantidades × tarifas donde sea defendible | Detallar interfaces/aceptación, dedicación y pruebas; supuestos identificados si faltan datos. |
-| Ampliar tiendas | Paramétrica por habilitación local, separando plataforma común y sitios | Validar tiempo/costo por tienda y paralelismo; no multiplicar toda la plataforma por número de locales. |
-| Refinar backlog de equipo | Comparación relativa de tamaño/complejidad para conversar y dividir | Sin equivalencia automática de story points a horas ni comparación de puntos entre cinco equipos. |
-| Actualizar forecast durante ejecución | Terminados/tiempos de ciclo con unidades comparables y sistema suficientemente estable | Sin histórico real de ZEUS no atribuir P80/P90 ni Monte Carlo calibrado a los rangos supuestos. |
+| Integración, conciliación, controles y campaña | Analogía y tres puntos PERT | Requisitos/controles conocidos no vuelven conocida la capacidad de APIs o la solución. Rangos recibidos son supuestos, no históricos observados. |
+| APIs/disponibilidad con Kanban | PERT de alto nivel; throughput/ciclo para recalibrar | Usar flujo empírico cuando exista suficiente información comparable y estable; no declarar Monte Carlo realizado. |
+| OMS, cambios WMS y cloud | Paramétrica y futura validación contractual/proveedores | «Cotización» es método de contraste previsto; los montos actuales no son ofertas obtenidas. |
+| C&C, app, devoluciones y experimento | Comparación relativa por equipo y conversión a equipo-sprints | Seis personas por equipo es supuesto de normalización, no prueba de productividad equivalente. No agregar story points entre equipos. |
+| Proyecto | PERT de esfuerzo agregado + presupuesto por categoría + reserva | Escenarios aritméticos no garantizan duración/calendario ni confianza de plazo. |
 
-Cada rango debe registrar alcance, unidad, base, técnica, supuestos, riesgos, fecha y quién lo revisa. Las demostraciones y cantidades del onboarding de sesión 05 no son datos de ZEUS. La estimación cuantificada sigue pendiente de Rogelio.
+Supuestos recibidos: cinco equipos promedio de unas seis personas, un sexto de apoyo en tramo previo a campaña y cuatro en periodo posterior; sprints de dos semanas; 26 en el año, descontando sprint 1 de arranque y 17 de estabilización. Costo medio supuesto de 14 MM por equipo-mes, unos 60 equipo-meses/840 MM, OMS por suscripción con partner y ERP con APIs/eventos útiles. Deben conciliarse calendario, fechas de cambios de dotación y actividades por rol. Esfuerzo de habilitadores externos, formación local y soporte no desaparece por contratar equipos.
 
-## Método y tabla de trabajo
+## 6.2 Esfuerzo PERT recibido
 
-Descomponer por PAQ. Estimar optimista O, más probable M y pesimista P con fundamento; E = (O + 4M + P) / 6. Es un escenario central de trabajo, sin confianza probabilística demostrada. Comparar también suma P, riesgos correlacionados y reserva, evitando doble conteo. Usar cantidades × tarifas para las subpartidas con unidad identificable.
+Unidad: equipo-sprint de referencia. E = (O + 4M + P) / 6; σ = (P − O) / 6. El total usa valores completos antes de redondear las filas. O/P son escenarios supuestos de estimación, no mínimos/máximos garantizados ni percentiles medidos.
 
-| Paquete | Base de cálculo de ESC-02 | O | M | P | E | Información / decisión pendiente |
-| --- | --- | --- | --- | --- | --- | --- |
-| PAQ-01 | Meses de gobierno, arquitectura y pruebas iniciales | Pendiente | Pendiente | Pendiente | Pendiente | Dedicaciones, hitos y actividades de viabilidad. |
-| PAQ-02 | Interfaces × esfuerzo, datos/reconciliación y adaptación WMS | Pendiente | Pendiente | Pendiente | Pendiente | Contratos, número/complejidad, carga y calidad stock. |
-| PAQ-03 | Configuración OMS, estados e interfaces de pedido | Pendiente | Pendiente | Pendiente | Pendiente | Compra/configuración, implantación y personalizaciones. |
-| PAQ-04 | App/C&C común + habilitar 10 piloto y 58 adicionales | Pendiente | Pendiente | Pendiente | Pendiente | Costo fijo/reusable y costo local por ola, turnos y formación. |
-| PAQ-05 | Devoluciones + experimento Ship-from-store delimitado | Pendiente | Pendiente | Pendiente | Pendiente | Separar subpartidas y techo experimental antes de G2. |
-| PAQ-06 | QA transversal, controles, carga, observabilidad y recuperación | Pendiente | Pendiente | Pendiente | Pendiente | Entornos, pruebas y especialidades desde R1. |
-| PAQ-07 | Licencias/consumo/soporte/transición de 12 meses | Pendiente | Pendiente | Pendiente | Pendiente | Base por tienda/pedido/usuario, fechas de alta y recurrentes. |
+| ID | Épica | O | M | P | E | σ |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| E1 | Disponibilidad stock | 10 | 14 | 22 | 14,7 | 2,0 |
+| E2 | APIs/integración ERP-WMS-POS | 12 | 16 | 26 | 17,0 | 2,3 |
+| E3 | OMS configuración/integración | 10 | 14 | 24 | 15,0 | 2,3 |
+| E4 | Click & Collect | 6 | 9 | 14 | 9,3 | 1,3 |
+| E5 | App de preparación | 6 | 8 | 13 | 8,5 | 1,2 |
+| E6 | Seguridad transversal | 4 | 6 | 9 | 6,2 | 0,8 |
+| E7 | Preparación Black Friday | 3 | 5 | 8 | 5,2 | 0,8 |
+| E8a | Observabilidad básica | 2 | 3 | 4 | 3,0 | 0,3 |
+| E8b | Observabilidad centralizada | 2 | 4 | 6 | 4,0 | 0,7 |
+| E9 | Devoluciones omnicanal | 6 | 9 | 15 | 9,5 | 1,5 |
+| E10 | Experimento Ship-from-store | 3 | 5 | 9 | 5,3 | 1,0 |
+| E11 | Rollout y gestión del cambio | 4 | 6 | 10 | 6,3 | 1,0 |
+| Total | Doce filas, E8 desdoblada | 68 | 99 | 160 | 104,0 | 4,9 |
 
-No sumar un precio de solución que ya incluye ingeniería y volver a cargar todos sus FTE. Licencias se concentran en PAQ-07; configuración OMS en PAQ-03. La formación local de las 68 tiendas está en PAQ-04. Costos comunes de C&C no se multiplican automáticamente por 6,8 al pasar de 10 a 68. Más sitios sí afectan soporte, consumo, licencias y operación.
+Bajo independencia: Σσ² = 24,2222 y σ total = 4,9216. No sumar desviaciones ni calcular con las desviaciones de fila ya redondeadas. E2 y otras épicas comparten dependencias, por lo que independencia es una simplificación, no un hecho.
 
-## Capacidad y calendario
+## 6.3 Sensibilidad probabilística, no garantía de fecha
 
-SUP-02 conserva cinco equipos de implementación como supuesto recibido; faltan tamaño, especialidad, dedicación y meses. No significa cinco personas ni los cuatro integrantes académicos. Definir funciones de integración/datos, OMS/pedidos, experiencia/tiendas, calidad/confiabilidad y coordinación según arquitectura, sin asumir que la división propuesta acredita cinco equipos disponibles.
+| Escenario teórico | Equipo-sprints | Uso de 120 | Interpretación |
+| --- | ---: | ---: | --- |
+| Esfuerzo esperado | 104,0 | 86,67% | Media PERT; no llamarla P50 empírico. |
+| Aproximación normal 80%, E + 0,84σ | 108,1342 | 90,11% | Solo bajo independencia/normalidad supuestas y agregación de esfuerzo. |
+| Aproximación normal 95%, E + 1,65σ | 112,1207 | 93,43% | Misma limitación; no demuestra probabilidad de entregar antes de campaña. |
+| Suma pesimista de épicas | 160,0 | 133,33% | No cabe en capacidad propuesta; exige respuesta explícita. |
 
-Persona-meses = suma de FTE por rol y periodo × meses. Costo de trabajo = persona-meses × tarifa por rol, cuando se use ese método. Separar trabajo de proveedor incluido en contrato y capacidad interna. Horas de formación/operación por tienda se estiman con participantes × horas y cobertura de turnos; registrar costos de oportunidad aunque no sean desembolso externo.
+Es razonable presentar las aproximaciones como sensibilidad del ejercicio. No sostener «viabilidad de fecha 80–95%» con esta suma: faltan secuencias, recursos, correlaciones y distribución de carga por release. Tampoco está calculado un P80 específico de R1/R2: las 74 unidades citadas en la fuente no tienen desglose de varianza de las partes incluidas. No trasladar automáticamente el σ total al subconjunto previo a campaña.
 
-## Cantidades de apoyo listas para costear
+## 6.4 Capacidad y carga recibidas
 
-El [escenario provisional del 22 de octubre](../registros/escenario_provisional.md) concreta alcance y capacidad sin inventar tarifas. Son supuestos de apoyo a la estimación de Rogelio, que puede cambiarlos dejando su impacto.
+| ID | Periodo / sprints efectivos propuestos | Capacidad | Carga recibida | Uso |
+| --- | --- | ---: | ---: | ---: |
+| F1 | R1: sprints 2–11; 5 equipos en 2–5 y 6 en 6–11 | 56 | 47,7 | 85,18% |
+| F2 | R2: sprints 12–15, 6 equipos | 24 | 23,0 | 95,83% |
+| F3 | Poscongelamiento: sprint 16 y 18–26, 4 equipos | 40 | 33,3 | 83,25% |
+| Total | 24 sprints efectivos | 120 | 104,0 | 86,67% |
 
-| Componente | Cantidad propuesta / unidad | Imputación y cuidado de costo |
-| --- | --- | --- |
-| Habilitación piloto | 40 jornadas-persona; 2 brigadas × 2 personas × 10 días hábiles | PAQ-04; soporte y preparación previos no quedan absorbidos automáticamente. |
-| Expansión, trabajo local | 232 jornadas-persona de trabajo requerido para 58 tiendas | PAQ-04; no sumarlas otra vez si ya se paga la disponibilidad de brigadas. |
-| Brigadas disponibles para expansión y margen | 5 × 2 × 40 = 400 jornadas-persona de disponibilidad nominal; 320 efectivas al 80% | Costear según contrato/dedicación: incluye 30 días de expansión y 10 protegidos. Trabajo requerido no equivale a facturación. |
-| Personal local formado | 1.632 horas-participante: 240 piloto y 1.392 expansión | PAQ-04; horas de participantes diferentes de formadores incluidos en brigadas. Costear turnos/oportunidad sin asumir 408 nuevas contrataciones. |
-| Preparación de CD | Hasta 30 jornadas-persona para los 3 CD: 10 piloto y 20 adicionales | PAQ-02; revisar complejidad real y recursos de integración compartidos. |
-| Experimento Ship-from-store | 2 tiendas, 4 semanas/200 pedidos máximos; exposición incremental propuesta ≤30 MM CLP | Estimar subpartidas PAQ-05 y recurrentes de PAQ-07; el límite incluye todo el incremento, dentro del techo general, sin duplicar componentes reutilizados. |
+La suma está correcta. R1/R2 conjunto: 70,7/80 = 88,375%. El 96% de R2 sigue siendo una restricción real del plan propuesto: adelantar trabajo requiere interfaces, ambiente, personas y aceptación disponibles. Falta una matriz por épica → R0/R1/R2/campaña/R3 y por especialidad; 47,7/23/33,3 son asignaciones recibidas, no esa demostración.
 
-Costos por brigada deben aclarar viajes, equipamiento, disponibilidad y soporte. El factor 80% no elimina el pago del tiempo no productivo; para contrato por disponibilidad se costean jornadas nominales. Identificar si la dotación se contrata aparte o sale de los cinco equipos de implementación, reduciendo capacidad concurrente de desarrollo. Licencias por tienda/usuario/pedido crecen con fechas de alta; cobertura nacional se limita a las familias incluidas, no todo el catálogo.
+**Conciliación pendiente de calendario/costo:** 840/120 = 7 MM es asignación media por equipo-sprint efectivo, no una tarifa exacta de dos semanas pagadas. Al sumar arranque (5 equipos) y estabilización (4) se obtienen 129 equipo-sprints pagados. Con 26 sprints en 12 meses, equivalen a 59,54 equipo-meses; a 14 MM serían 833,54 MM, cerca del supuesto redondeado 840. Un calendario mensual alternativo de 5 equipos en M1/M2, 6 en M3–M7 y 4 en M8–M12 suma 60 equipo-meses/840, pero no reproduce automáticamente las mismas ventanas de sprints. Elegir un calendario y explicar redondeos; no mezclar dos sprints exactos por mes con 26 anuales.
 
-El modelo muestra 58 altas con 240 jornadas-persona efectivas planificadas frente a 232 requeridas, y 80 efectivas adicionales de margen. No garantiza que cinco equipos nominales sostengan construcción, revisiones CISO/QA, operación y brigadas a la vez. La prueba de asequibilidad sigue pendiente del costo total, reserva y financiación; 29 altas por mes es ritmo requerido, no histórico observado.
+Aclarar además cuándo se reduce a cuatro equipos: la fuente dice después de campaña, pero su tabla lo hace desde sprint 16. F3 incluye preparación/soporte de M8 financiados por tramo 2 y R3 desde M9/G2; sus 40 unidades no son capacidad R3 autorizada sin restricciones. No comprometer contenido R3 antes de G2 por tener personal disponible.
 
-## Presupuesto, reserva y autorización por completar
+El modelo anterior de cinco brigadas queda como alternativa histórica de dimensionamiento local, no otra dotación que se añada a los 840. Si se reutiliza, incorporarlo a E11/roles/periodos y decidir si son equipos compartidos o costo externo incluido. No sumar horas de sus brigadas y equipo-sprints para el mismo trabajo.
 
-| Concepto | Valor / estado | Regla de cierre |
-| --- | --- | --- |
-| Referencia B del caso | 1.350 MM CLP | Comparar con propuesta descompuesta; no reemplaza su cálculo. |
-| Techo preliminar del caso | 1.500 MM CLP | Restricción de asequibilidad. |
-| Central de paquetes | Pendiente | Sumar E sin redondear antes de total. |
-| Reserva propuesta | Pendiente | Justificar por riesgos, exclusiones y regla de uso; no asumir automáticamente 150. |
-| Central más reserva | Pendiente | Comparar con límite y financiación propuesta. |
-| Escenario adverso | Pendiente | Mostrar P y tratamiento de reserva sin ocultar excedentes. |
-| Primer tramo G0 y compromisos hasta VT-01 | Pendiente | Cuantificar exposición, actividades y aceptación contractual. |
-| Liberaciones G1/M5 y G2/M9 | Pendiente | Costos a término, beneficios y condiciones por gate. |
+## 6.5 Presupuesto preliminar por categoría
 
-Precisar impuestos, moneda/indexación, inversión/gasto, contratos recurrentes y operación posterior a M12. Declarar TCO posterior separado cuando no esté dentro del horizonte, sin ocultar obligaciones asumidas durante el proyecto.
+Unidad: **millones de CLP**. Valores supuestos del equipo. Base no significa costo esperado calculado por PERT monetario; O/P son extremos declarados de categoría. Impuestos, costo integral de equipo, condiciones de proveedor y operación posterior a M12 deben precisarse.
 
-## Sensibilidades que debe defender el equipo
+| ID | Categoría | Base | O | P | Técnica / frontera por validar |
+| --- | --- | ---: | ---: | ---: | --- |
+| COST-01 | Capacidad de equipos | 840 | 840 | 840 | Paramétrica supuesta; costo por disponibilidad, no 104 × 7 adicional. |
+| COST-02 | OMS año 1 y partner de implementación | 180 | 140 | 240 | Supuesto a contrastar; separar partner de E3/configuración propia. |
+| COST-03 | Adaptaciones proveedor WMS | 70 | 50 | 100 | Supuesto a contrastar; separar entrega proveedor de integración propia E2. |
+| COST-04 | Cloud y observabilidad | 70 | 50 | 100 | Paramétrica supuesta; consumo, herramientas y licencias, no duplicar ingeniería E8. |
+| COST-05 | Seguridad externa/herramientas | 35 | 25 | 50 | Analogía hipotética; distinguir pentest externo de trabajo E6. |
+| COST-06 | Adopción, capacitación y rollout local | 45 | 30 | 70 | Supuesto; aclarar turnos, traslados y preparación de sitios, y qué está en E11. El caso no informa ubicación de cada tienda. |
+| COST-07 | Gobierno PM/Arquitectura/PMO | 90 | 80 | 100 | Analogía hipotética; evitar cobrar otra vez personas ya en equipos. |
+| Subtotal | Siete categorías | 1330 | 1215 | 1500 | Suma de categorías, no cotizaciones verificadas. |
 
-1. WMS/integración demora o toma el rango alto: efecto en costo y primera evidencia hasta M5.
-2. Las 58 altas requieren más brigadas, soporte o licencias: efecto en M7 y techo.
-3. Menor adopción/stock confiable: se mantiene costo pero baja beneficio; no escalar sin mejora verificable.
-4. OMS por transacción o consumo de campaña mayor: costo recurrente y dependencia contractual.
-5. Experimento R3 no cabe: diferirlo con cambio explícito de alcance, sin retirar controles/soporte.
-6. Techo disminuye 20%: nuevo límite 1.200 MM; recalcular propuesta cuando exista, sin afirmar un ahorro no estimado.
+| Concepto | MM CLP | Lectura |
+| --- | ---: | --- |
+| Base de categorías | 1330 | Cercana a referencia B del caso 1350, sin probar asequibilidad de todo alcance. |
+| Reserva de contingencia | 170 | 12,78% de base; gobernada por comité. |
+| Marco preliminar total | 1500 | Base + reserva, igual al techo del caso. |
+| Extremo alto de categorías | 1500 | Consume toda la reserva respecto de base; no sumar otros 170 para afirmar cobertura. |
 
-Antes del viernes: completar rangos y capacidad, total/reserva/adverso, financiación inicial y sensibilidad. **Este apartado aún no cumple una estimación cuantificada terminada.** Reestimar con evidencia en VT-01 y gates G1/G2; cualquier ajuste de cobertura modifica 04/07 y los beneficios de 01/03.
+El extremo alto sí cabe aritméticamente en 1.500 para esos rangos y capacidad fija. No garantiza cubrir además nuevos equipos, ERP sin API, demora o consumo fuera de rango. Si se usa reserva para una exposición, disminuye la disponible para las otras. Confirmar fronteras de categorías, contrato fijo de capacidad y distribución a PAQ. No sumar costos de 104 equipo-sprints otra vez sobre 840: están dentro de la capacidad pagada propuesta de 120.
+
+Rango de costo frente a base: −8,65%/+12,78%; esfuerzo O/P frente a 104: −34,62%/+53,85%. No afirmar un ±30–40% calibrado ni presentar esos extremos como intervalos probabilísticos.
+
+## 6.6 Financiación por tramos recibida
+
+| ID | Momento de autorización propuesto | Cubre | MM CLP |
+| --- | --- | --- | ---: |
+| T1 | G0/M1 | R0/R1, M1–M5, incluida mayor parte de OMS | 675 |
+| T2 | G1/M5 | R2 y campaña, M6–M8 | 345 |
+| T3 | G2/M9 | R3, M9–M12 | 310 |
+| RES | Comité, por riesgos registrados | Reserva, fuera de las liberaciones base | 170 |
+
+T1+T2+T3 = 1.330; más reserva = 1.500. La suma es correcta. Falta distribución categoría/mes/tramo para demostrar que las cuotas cubren cada obligación contractual y dotación; no simular que los tramos están aprobados. Contrato OMS por hitos/aceptación y VT-01/M2 antes de compromisos irreversibles.
+
+## 6.7 Actualización y decisiones pendientes
+
+Reestimar con evidencia de cada equipo/flujo en VT-01 y gates. El inicio del sprint 3 es oportunidad de revisar, no garantía de velocidad representativa. Si la entrega comparable cae por debajo del 80% del forecast interno acordado, investigar dependencia/capacidad y elevar impacto; excluir arranque/estabilización del comparativo. No esperar a G1 para descubrir un bloqueo crítico de API.
+
+Monte Carlo se plantea solo cuando haya histórico suficiente, comparable y razonablemente estable; seis a ocho semanas por sí solas no lo garantizan. Reservas requieren aprobación del comité y no financian alcance nuevo por defecto. Recortar E9 altera objetivo de devolución; no declarar todo R3 prescindible sin actualizar Charter/beneficios.
+
+Antes de cerrar: un calendario consistente de dotación/costo, matriz de carga por épica/tramo/rol, fronteras de doble conteo y asignación de categorías a PAQ. El piloto Ship-from-store pasa a **3 a 5 tiendas** como propone el equipo, con duración/pedidos/exposición por acordar en G2. Nuestras condiciones anteriores de 2 tiendas/30 MM no son límites vigentes ni gastos que se añadan a esta estimación.

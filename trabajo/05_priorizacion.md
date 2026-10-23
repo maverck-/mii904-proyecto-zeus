@@ -1,63 +1,60 @@
 # 5. Priorización
 
-**Responsable indicado: Rogelio. ESC-02: método y matriz ilustrativa heredados, SUP-09; pendientes de revisión para el alcance integrado.** La pauta exige valor, urgencia, dependencia, riesgo, incertidumbre, costo y capacidad (enunciado p. 8). Las notas son juicio didáctico sobre el caso, sin medición empírica ni aprobación del equipo.
+**Responsable: Rogelio. ESC-02, integración del avance del 23-10-2026.** Se prioriza el WSJF [recibido del equipo](../insumos/avance_equipo_2026-10-23.md). Reemplaza la matriz ponderada anterior como método vigente de trabajo. Puntajes propuestos, no mediciones ni sesión empresarial efectuada. [Comparación y precisiones](../registros/revision_avance_2026-10-23.md).
 
-## Filtros previos y método
+## 5.1 Método y criterios
 
-Primero verificar techo, continuidad, ERP/WMS, controles y posibilidad de valor M5. CAP-05 y CAP-06 son condiciones transversales del alcance mínimo, no capacidades que puedan eliminarse por un puntaje. Después puntuar capacidades elegibles y resolver precedencias/capacidad, evitando que el total sustituya la decisión.
+Tres pasos: WSJF ordena opciones, dependencias ajustan precedencias y capacidad/condiciones obligatorias limitan contenido del release. WSJF = costo del retraso relativo / tamaño relativo. El numerador suma valor, urgencia y reducción de riesgo/habilitación; escala recibida 1, 2, 3, 5, 8, 13, 20. No son pesos monetarios ni probabilidades.
 
-Escala 1 a 5, mayor es más favorable para adelantar. V = valor; U = urgencia M5/M8; D = habilita otras capacidades; R = reduce riesgo; I = compra aprendizaje temprano; C = costo relativo favorable; K = demanda de capacidad manejable. En C/K un 5 significa menos costo/carga relativa, no mayor costo.
+| Criterio de pauta | Aplicación |
+| --- | --- |
+| Valor | Aporte esperado a KPI del Charter. |
+| Urgencia | Primera entrega M5 y preparación de campaña aproximadamente M8. |
+| Dependencia/riesgo | Habilitación y reducción de exposición; precedencias pueden adelantar una épica aunque puntúe menos. |
+| Costo | Tamaño relativo informado por esfuerzo PERT de 06; documentar regla de conversión sin igualar puntos de distintos equipos. |
+| Incertidumbre | Aprendizaje temprano y experimento acotado, especialmente E10. |
+| Capacidad | Revisar 56/24/40 equipo-sprints propuestos y carga por periodo/rol; R2 usa 95,83%, no 88%. |
 
-| Criterio | Peso propuesto | Razón |
-| --- | ---: | --- |
-| V | 30% | Resultado de negocio como centro de la decisión. |
-| U | 10% | Compromisos de primera entrega y evento. |
-| D | 15% | Dependencias que habilitan el flujo completo. |
-| R | 15% | Exposición operacional y tecnológica. |
-| I | 10% | Reducir incertidumbre antes de comprometer escala. |
-| C | 10% | Asequibilidad sin privilegiar solo lo barato. |
-| K | 10% | Disponibilidad de equipos y operación. |
+E6 seguridad, E7 preparación de campaña y E11 rollout/adopción no se descartan por ranking: son condiciones que consumen esfuerzo/costo. E8a básica también debe acompañar todo servicio crítico en producción; su score ayuda a secuenciar trabajo, no autoriza omitir monitoreo.
 
-Total 100%. Puntaje = suma de nota × peso / 100. Este reparto puede cambiar; no proviene del enunciado.
+## 5.2 WSJF recibido, aritmética comprobada
 
-## Matriz inicial que Rogelio debe revisar
+| ID | Épica | Valor | Urgencia | Riesgo/habilitación | Costo del retraso relativo | Tamaño | WSJF |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| E8a | Observabilidad básica | 3 | 13 | 13 | 29 | 3 | 9,7 |
+| E4 | Click & Collect | 20 | 13 | 5 | 38 | 8 | 4,8 |
+| E1 | Disponibilidad de stock | 20 | 20 | 20 | 60 | 13 | 4,6 |
+| E5 | App de preparación | 13 | 13 | 8 | 34 | 8 | 4,3 |
+| E3 | OMS | 13 | 13 | 13 | 39 | 13 | 3,0 |
+| E8b | Observabilidad centralizada | 3 | 2 | 8 | 13 | 5 | 2,6 |
+| E2 | APIs/integración ERP-WMS-POS | 8 | 20 | 20 | 48 | 20 | 2,4 |
+| E9 | Devoluciones omnicanal | 13 | 3 | 3 | 19 | 8 | 2,4 |
+| E10 | Experimento Ship-from-store | 5 | 1 | 5 | 11 | 5 | 2,2 |
 
-| Capacidad | V | U | D | R | I | C | K | Puntaje |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| CAP-01 | 3 | 5 | 5 | 5 | 5 | 4 | 3 | 4,10 |
-| CAP-02 | 5 | 5 | 5 | 5 | 4 | 3 | 3 | 4,50 |
-| CAP-03 | 5 | 5 | 5 | 4 | 3 | 3 | 3 | 4,25 |
-| CAP-04 | 5 | 5 | 3 | 3 | 4 | 3 | 3 | 3,90 |
-| CAP-07 | 4 | 4 | 3 | 4 | 3 | 2 | 2 | 3,35 |
-| CAP-08 | 3 | 2 | 2 | 2 | 3 | 3 | 2 | 2,50 |
-| CAP-09 | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
+Los cocientes usan valores completos y se muestran con un decimal. E2 y E9 parecen empatados por redondeo: 2,4 y 2,375 sin redondear. Las notas y tamaños son juicio del equipo; la corrección aritmética no prueba prioridad óptima. Registrar la regla de tamaño y revisarla cuando se refinan épicas.
 
-Los seis puntajes numéricos conservan el juicio inicial para que Rogelio lo revise, no una nueva evaluación demostrada de ESC-02. CAP-07 requiere revisar costo/capacidad al pasar a 68 tiendas; CAP-08 depende de la elegibilidad y CAP-09 ahora tiene límites SUP-17 en el [escenario provisional del 22 de octubre](../registros/escenario_provisional.md), pero requiere que Rogelio evalúe costo/capacidad y confirme sus notas, sin rellenarlas para forzar el orden. No asignar notas para justificar retrospectivamente una decisión.
+Lectura: E8a es pequeña y reduce exposición; E4 aporta valor visible pero depende de E1/E2/E3. E2 y E3 se adelantan por dependencia aunque su ratio sea menor. La compra OMS en G0 se propone por hitos y aceptación, sin dar por probada integración de antemano.
 
-Inventario y pedidos puntúan alto por su vínculo con cancelación y flujo operativo. CAP-01 se ejecuta antes aunque tenga menor puntaje, porque sin viabilidad/base no puede comprometerse el resto. C&C entrega valor visible, pero depende de inventario/pedidos/controles/adopción. CAP-07 consume más coordinación y tiendas; se expande tras evidencia. CAP-08 añade reglas de devolución que pueden posponerse frente a M5/M8.
+## 5.3 Secuencia resultante
 
-Las notas C/K son especialmente inciertas antes de descomponer y validar esfuerzo. Cambiarlas si se dispone de evidencia; el [registro](../registros/acuerdos_y_supuestos.md) identifica SUP-09 y las validaciones del escenario.
+| Release / hito | Contenido del equipo integrado | Condición |
+| --- | --- | --- |
+| R0, M1 y verificación técnica hasta M2 | Arquitectura, contratación OMS escalonada, acuerdo WMS, entornos y controles base | G0/M1 y VT-01/M2; «mes 0» no añade un mes no costeado al horizonte. |
+| R1, evidencia hasta M5 | E1, flujos necesarios E2/E3, E8a y piloto E4/E5 en 10 tiendas; E6/E11 desde inicio | Proponer uso M4 para evaluar hasta M5; medir valor y aceptación, no solo instalación. |
+| R2, hasta M7 | E4/E5 en 68 tiendas, E7 carga/contingencia, E11 preparación y adopción | Costo, personal y operaciones aceptados antes de VE-01; sostener objetivos sin forzar salidas no operables. |
+| Campaña, aproximadamente M8 | Estabilización y soporte, sin cambios funcionales de alto riesgo | Disponibilidad/continuidad y dotación confirmadas; no tratar este periodo como capacidad R3 libre. |
+| R3, M9 a M12 tras G2 | E9, E8b, E10 en 3 a 5 tiendas, integraciones no imprescindibles y ruteo avanzado de OMS | Solo trabajo efectivamente diferible; definir límites, costo y aceptación antes de iniciar. |
 
-## Secuencia resultante
+## 5.4 Compromisos y adaptación
 
-1. CAP-01, con CAP-05/CAP-06 desde inicio: diagnóstico, viabilidad, base, seguridad y capacidad.
-2. CAP-02/CAP-03 con paralelismo solo después de acordar interfaces y disponer de capacidad SUP-02.
-3. CAP-04: flujo C&C usable en M4 y evidencia hasta M5.
-4. CAP-07: estabilización y ampliación aprobada antes de M8.
-5. CAP-08: devoluciones en R3 tras revisión G2/M9. CAP-09: experimento condicionado a hipótesis, costo y capacidad; no desplazar condiciones del primer flujo ni prometer expansión nacional.
+La propuesta busca comprometer mínimo R1, 68/M7 y preparación de campaña, sujetos a autorización de capacidad/costo. PO reordena detalle dentro de límites; sponsor/comité cambia compromiso, fecha, cobertura o presupuesto. Ni el piloto ni el corte de R3 pueden modificarse silenciosamente si alteran evidencia/objetivos.
 
-Trade-off: mantener IA y plataforma corporativa completa fuera; concentrar primera entrega en C&C y limitar Ship-from-store a un experimento R3 condicionado. Sostener 68/M7 aumenta exposición de escala: conservarlo solo con capacidad/costo defendibles. El resultado no es una regla universal de priorizar tecnología antes del cliente; las dependencias del caso y la hipótesis de valor sostienen este orden.
+E10, ruteo avanzado e incrementos opcionales son primeras opciones de diferimiento. E9 sostiene objetivo ≥85% al primer contacto a M12: recortarlo implica revisar Charter/Business Case, no solo borrar backlog. E6, observabilidad básica y continuidad no se eliminan para liberar capacidad.
 
-## Cambios y condiciones
+## 5.5 Decisiones defendibles
 
-Si stock físico no es confiable, priorizar reconciliación antes de más funcionalidades. Si falta capacidad, limitar trabajo en curso y cobertura. Si el proveedor bloquea G1, revisar B y costo/plazo. Si negocio propone otra capacidad de mayor valor, evaluar dependencia, costo de oportunidad y qué se posterga. Mantener los IDs del backlog al cambiar orden y releases.
+Ship-from-store no entra en primer release: se prioriza como experimento R3 en **3 a 5 tiendas**, siguiendo el nuevo avance. Nuestras propuestas previas de dos tiendas/tope 30 MM quedan sin efecto como restricciones vigentes. Límites de duración, pedidos y exposición deben definirse en G2 con costo real del escenario, sin sumar gasto de E10 otra vez sobre equipos ya presupuestados.
 
-## Cierre a cargo de Rogelio
+IA/recomendaciones y data platform corporativa completa quedan fuera por falta de necesidad/valor incremental demostrado para esta primera hipótesis y por dependencias de datos. No afirmar que IA jamás pueda mover KPI. Datos mínimos, eventos de stock/pedidos y tableros de gates sí están en E2/E8. No se elimina identidad/acceso obligatorio al excluir una plataforma nueva.
 
-Revisar pesos y notas contra la estimación, registrar razón de C/K por capacidad, resolver CAP-09 y justificar qué se mantiene, difiere o condiciona. La suma correcta no valida el juicio. Acordar con Maverick la secuencia/cobertura y registrar decisiones aceptadas. Si no cabe 68/M7, la prioridad de controles y evidencia se mantiene; el grupo ajusta el compromiso explícitamente.
-
-## Complemento docente: urgencia y costo de demora
-
-La sesión 05, pp. 12 a 15 ([material](../insumos/presentaciones/README.md)), permite sostener esta matriz multicriterio; WSJF es una opción, no una obligación de reemplazarla. Justificar U por la primera entrega M5 y campaña M8: retrasar integración o aceptación de tienda puede diferir el flujo completo aunque la capacidad aislada tenga poco atractivo visible. CAP-08/CAP-09 pueden diferirse si protegen el flujo principal, explicitando el valor postergado.
-
-Sin volumen, margen y demanda de campaña no cuantificar pesos perdidos por día. Si Rogelio decide usar WSJF, debe definir escalas comparables y tamaño, registrar supuestos y resolver igualmente dependencias/capacidad. No sumar WSJF al score actual como si fueran magnitudes equivalentes ni duplicar la urgencia como un beneficio económico ya probado.
+La tabla [E/CAP/PAQ de 04](04_alcance_y_backlog.md) conecta este lenguaje con los IDs anteriores. Validaciones pendientes: calendario único, carga por épica/tramo/rol y fronteras de costo de 06. Método y narrativa WSJF ya se incorporan como base prioritaria.

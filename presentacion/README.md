@@ -12,4 +12,4 @@ Cada integrante debe explicar qué se construye, qué cambia en operación, cóm
 
 Ensayar cambios de presupuesto, retraso de WMS y falta de adopción. Mostrar qué cambia en alcance, costo, beneficios y roadmap y quién decide. La exposición se cierra con una recomendación y una decisión solicitada, sin presentar propuestas como aprobaciones ya realizadas.
 
-Pendientes: integrar estimación y monto inicial en láminas 10/12, confirmar medio/plantilla, reparto de exposición y realizar ensayo. Anexos están identificados en el guion; falta montarlos en el formato final. Si se produce un informe, el soporte de [Typst](../typst/README.md) está preparado por separado.
+Pendientes: revisar en láminas 10/12 las cifras recibidas (1.330 + 170; primer tramo 675), conciliar calendario/fronteras, confirmar medio/plantilla, reparto de exposición y realizar ensayo. Anexos están identificados en el guion; falta montarlos en el formato final. Si se produce un informe, el soporte de [Typst](../typst/README.md) está preparado por separado.

@@ -1,6 +1,6 @@
 # 2. Selección y tailoring del enfoque
 
-**ESC-02: base del equipo integrada con correcciones de fundamento, 21-10-2026.** Véase [revisión](../registros/integracion_avance_equipo.md), INT-05/10/11/12. Se conserva su gobierno predictivo, entrega adaptativa, Kanban y Scrum de dos semanas. Propuesta pendiente de revisión, no prácticas ejecutadas.
+**ESC-02: base del equipo integrada con correcciones de fundamento, revisión 23-10-2026.** Véase [revisión](../registros/integracion_avance_equipo.md), INT-05/10/11/12. Se conserva su gobierno predictivo, entrega adaptativa, Kanban y Scrum de dos semanas. Propuesta pendiente de revisión, no prácticas ejecutadas.
 
 ## 2.1 Enfoque propuesto
 
@@ -45,7 +45,7 @@ El contrato OMS en M1 se plantea con hitos de validación y aceptación; no asum
 
 Revisión de sprint cada dos semanas con responsables de tienda piloto y PO de e-commerce; revisión semanal de métricas de flujo y bloqueos; foro de integración semanal PM/PO/Arquitectura para dependencias. Son propuestas del equipo y requieren disponibilidad, SUP-02.
 
-Se conserva el supuesto de cinco equipos de implementación, distintos de los cuatro integrantes académicos. Tamaños, dedicaciones, especialidades y concurrencia requieren estimación; no se heredan los 92,5 persona-meses ni los dos frentes de ESC-01 como equivalentes.
+La nueva estimación propone cinco equipos promedio de unas seis personas, sexto de apoyo previo a campaña y cuatro en tramo posterior; ver 06 para calendario por conciliar. Son equipos empresariales distintos de los cuatro integrantes académicos, sin disponibilidad/productividad comprobadas. La estimación relativa no sustituye carga por especialidad ni convierte equipos heterogéneos en capacidad perfectamente intercambiable.
 
 ## 2.7 Puente de artefactos y autoridad
 

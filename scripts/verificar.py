@@ -90,47 +90,74 @@ def rows(name):
 def number(value):
     return Decimal(value.replace('.', '').replace(',', '.'))
 
-# ESC-02: comprobar rangos disponibles sin presentar pendientes como calculados.
-costs = {}
-pending_costs = []
-package_rows = list(c for c in rows('trabajo/06_estimacion.md') if re.fullmatch(r'PAQ-\d\d', c[0]))
-check(len(package_rows) == 7, 'Se esperan siete paquetes de estimación.')
-for cells in package_rows:
-    check(len(cells) == 7, f'Columnas de estimación incorrectas: {cells[0]}')
-    if len(cells) != 7:
-        continue
-    values = cells[2:6]
-    if values == ['Pendiente'] * 4:
-        pending_costs.append(cells[0])
-        continue
-    valid = all(re.fullmatch(r'\d+(?:\.\d{3})*(?:,\d+)?', v) for v in values)
-    check(valid, f'Completar O/M/P/E o marcar todos Pendiente: {cells[0]}')
-    if not valid:
-        continue
-    o, m, p, listed = map(number, values)
-    expected_cost = (o + 4*m + p) / 6
-    check(o <= m <= p, f'Rango de costo inválido: {cells[0]}')
-    check(abs(listed-expected_cost) <= Decimal('0.005'), f'Tres puntos incorrectos: {cells[0]}')
-    costs[cells[0]] = (o, m, p, expected_cost)
+# Estimación y WSJF recibidos: operaciones verificables, sin certificar hipótesis.
+epics = {}
+listed_pert_total = None
+categories = {}
+listed_cost_total = None
+funding = {}
+capacity = {}
+budget = {}
+for cells in rows('trabajo/06_estimacion.md'):
+    if len(cells) == 7 and re.fullmatch(r'E\d+(?:a|b)?', cells[0]):
+        o,m,pess,listed_e,listed_sigma = map(number,cells[2:7])
+        e = (o+4*m+pess)/6
+        sigma = (pess-o)/6
+        check(o <= m <= pess, f'Rango PERT inválido: {cells[0]}')
+        check(abs(listed_e-e) <= Decimal('0.051'), f'Esperado PERT incorrecto: {cells[0]}')
+        check(abs(listed_sigma-sigma) <= Decimal('0.051'), f'Sigma PERT incorrecta: {cells[0]}')
+        epics[cells[0]] = (o,m,pess,e,sigma)
+    elif len(cells) == 7 and cells[0] == 'Total':
+        listed_pert_total = tuple(map(number,cells[2:7]))
+    elif len(cells) == 6 and re.fullmatch(r'COST-\d\d',cells[0]):
+        base,low,high = map(number,cells[2:5])
+        check(low <= base <= high, f'Rango presupuestario inválido: {cells[0]}')
+        categories[cells[0]] = (base,low,high)
+    elif len(cells) == 6 and cells[0] == 'Subtotal':
+        listed_cost_total = tuple(map(number,cells[2:5]))
+    elif len(cells) == 4 and cells[0] in {'T1','T2','T3','RES'}:
+        funding[cells[0]] = number(cells[3])
+    elif len(cells) == 5 and cells[0] in {'F1','F2','F3'}:
+        cap,load,usage = number(cells[2]),number(cells[3]),number(cells[4].strip('%'))
+        check(abs(load/cap*100-usage) < Decimal('0.005'), f'Utilización incorrecta: {cells[0]}')
+        capacity[cells[0]] = (cap,load)
+    elif len(cells) == 3 and cells[0] in {'Base de categorías','Reserva de contingencia','Marco preliminar total','Extremo alto de categorías'}:
+        budget[cells[0]] = number(cells[1])
+check(len(epics) == 12, 'Se esperan doce filas de épica: E1 a E11 con E8 desdoblada.')
+if epics and listed_pert_total is not None:
+    totals = tuple(sum(row[i] for row in epics.values()) for i in range(4))
+    sigma_total = sum(row[4]**2 for row in epics.values()).sqrt()
+    check(all(abs(a-b) <= Decimal('0.051') for a,b in zip(totals+(sigma_total,),listed_pert_total)), 'Total PERT o sigma total incorrectos.')
+else:
+    check(False, 'Falta total PERT verificable.')
+check(len(categories) == 7, 'Se esperan siete categorías de costo.')
+if categories:
+    cost_totals = tuple(sum(row[i] for row in categories.values()) for i in range(3))
+    check(cost_totals == listed_cost_total, 'Subtotal base/O/P incorrecto.')
+    if len(budget) == 4:
+        check(cost_totals[0] == budget['Base de categorías'], 'Base distinta de suma de categorías.')
+        check(cost_totals[2] == budget['Extremo alto de categorías'], 'Extremo alto incorrecto.')
+        check(budget['Base de categorías']+budget['Reserva de contingencia'] == budget['Marco preliminar total'], 'Base más reserva incorrecta.')
+        check(budget['Marco preliminar total'] <= 1500, 'Marco preliminar supera techo del caso; revisar antes de comprometer.')
+    else:
+        check(False,'Faltan relaciones presupuestarias.')
+check(len(funding) == 4 and len(capacity) == 3,'Faltan tramos de financiación o capacidad.')
+if len(funding) == 4 and len(budget) == 4:
+    check(sum(funding[k] for k in ['T1','T2','T3']) == budget['Base de categorías'],'Tramos no suman base.')
+    check(funding['RES'] == budget['Reserva de contingencia'],'Reserva de tramos distinta de presupuesto.')
+if len(capacity) == 3 and epics:
+    check(sum(c[0] for c in capacity.values()) == 120, 'Revisar capacidad efectiva propuesta 120.')
+    check(abs(sum(c[1] for c in capacity.values())-sum(e[3] for e in epics.values())) < Decimal('0.01'),'Cargas por tramo no suman esfuerzo.')
 
-priority_weights = {}
-scores = {}
-pending_scores = []
+ratios = {}
 for cells in rows('trabajo/05_priorizacion.md'):
-    if len(cells) == 3 and re.fullmatch(r'\d+%', cells[1]):
-        priority_weights[cells[0]] = Decimal(cells[1].strip('%'))
-    elif len(cells) == 9 and re.fullmatch(r'CAP-\d\d', cells[0]):
-        if cells[1:] == ['Pendiente'] * 8:
-            pending_scores.append(cells[0])
-        else:
-            scores[cells[0]] = cells
-check(len(priority_weights) == 7 and sum(priority_weights.values()) == 100, 'Pesos de priorización deben sumar 100%.')
-for ident, cells in scores.items():
-    notes = list(map(number, cells[1:8]))
-    check(all(1 <= note <= 5 for note in notes), f'Nota fuera de escala: {ident}')
-    expected_score = sum(note*priority_weights[key] for note,key in zip(notes,['V','U','D','R','I','C','K'])) / 100
-    check(expected_score == number(cells[8]), f'Puntaje incorrecto: {ident}')
-check(len(scores) + len(pending_scores) == 7, 'Se esperan siete capacidades priorizables; otras dos son transversales obligatorias.')
+    if len(cells) == 8 and re.fullmatch(r'E\d+(?:a|b)?',cells[0]):
+        v,u,risk,cod,size,listed = map(number,cells[2:8])
+        check(v+u+risk == cod, f'Costo de retraso relativo incorrecto: {cells[0]}')
+        check(size > 0 and abs(cod/size-listed) <= Decimal('0.051'),f'WSJF incorrecto: {cells[0]}')
+        check(cells[0] in epics,f'WSJF sin esfuerzo definido: {cells[0]}')
+        ratios[cells[0]] = listed
+check(len(ratios) == 9,'Se esperan nueve ratios WSJF, además de tres épicas obligatorias.')
 
 backlog = (root/'trabajo/04_alcance_y_backlog.md').read_text()
 assumptions = (root/'registros/acuerdos_y_supuestos.md').read_text()
@@ -161,7 +188,13 @@ check(source_digest is not None, 'Falta hash del avance recibido.')
 if source_digest:
     check(hashlib.sha256((root/'insumos/avance_equipo_2026-10-21.md').read_bytes()).hexdigest() == source_digest.group(1), 'El avance preservado cambió; editar la integración en trabajo/.')
 
-# Cantidades de habilitación: comprobar relaciones sin validar productividad/dotación.
+# El nuevo insumo se conserva como fuente, no como documento corregido.
+new_digest = re.search(r'SHA-256 del avance del 23: `([0-9a-f]{64})`', (root/'insumos/README.md').read_text())
+check(new_digest is not None, 'Falta hash del avance recibido el 23.')
+if new_digest:
+    check(hashlib.sha256((root/'insumos/avance_equipo_2026-10-23.md').read_bytes()).hexdigest() == new_digest.group(1),'El avance recibido del 23 fue modificado.')
+
+# Antecedente del 22: comprobar operaciones archivadas, no su vigencia o dotación.
 parameters = {}
 listed_calculations = {}
 for cells in rows('registros/escenario_provisional.md'):
@@ -201,10 +234,5 @@ if errors:
     sys.exit(1)
 print(f'OK: {len(paths)} archivos, siete entregables, pauta 100%, {transcripts} transcripciones y {segments} segmentos.')
 print(f'OK: fuentes, {presentations} presentaciones, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
-print('OK: puntajes, acumulados de olas, relaciones de capacidad y referencias; mapa de 12 láminas/25 minutos.')
-if pending_costs:
-    print(f'PENDIENTE: {len(pending_costs)} paquetes sin costo; total, reserva, capacidad y financiación requieren revisión. No se certifica una estimación terminada.')
-else:
-    print('REVISAR: rangos calculados; revisar manualmente total, reserva, capacidad y asequibilidad.')
-if pending_scores:
-    print('PENDIENTE: priorización sin puntuar: ' + ', '.join(pending_scores))
+print('OK: WSJF, PERT, categorías presupuestarias, tramos y cargas; mapa de 12 láminas/25 minutos.')
+print('REVISAR: calendario de equipos, carga por épica/rol, fronteras de costo y límites del experimento; no se certifica confianza de fecha.')

@@ -2,14 +2,16 @@
 
 Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete documentos de trabajo en Markdown, fuentes y registros para construir y defender una propuesta común.
 
-**Estado al 22 de octubre: ESC-02 integra el avance recibido del equipo como base principal.** Diagnóstico/Business Case, enfoque y Charter están integrados; alcance y roadmap se alinean con piloto 10/M5, objetivo 68/M7 y R3 condicionado. Se concretó el [escenario provisional](registros/escenario_provisional.md): piloto 1 CD/2 familias, base de brigadas, umbrales M5 y experimento delimitado. Priorización requiere revisión y estimación requiere nueva cuantificación. Son borradores con supuestos, no decisiones colectivas aprobadas. Se incorporaron la clase 3 y las presentaciones 03 a 06; ver [aportes aplicados](registros/aportes_clase_03.md).
+**Estado al 23 de octubre: se integra la nueva actualización del equipo.** WSJF reemplaza la matriz anterior; la estimación incorpora 104 equipo-sprints, capacidad propuesta 120 y presupuesto base 1.330 + reserva 170 = 1.500 MM CLP. Primer tramo propuesto 675 MM. Cálculos verificados, con calendario, carga por rol y frontera de costos pendientes de conciliar. Ver [comparación y ajustes](registros/revision_avance_2026-10-23.md).
+
+Se mantienen B/híbrido, piloto 10/M5 y objetivo 68/M7. El experimento R3 pasa a 3–5 tiendas según el equipo. Los límites de apoyo del 22 (brigadas, 2 tiendas/30 MM) quedan como antecedente, sin agregarse al nuevo presupuesto. Catálogo/CD y umbrales piloto anteriores requieren ratificación. No se presume aprobación colectiva ni empresarial.
 
 **Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
 
 ## Incorporarse al trabajo
 
 1. Leer la [pauta](insumos/pauta.md), el [estado de entregables](trabajo/README.md) y las [responsabilidades](EQUIPO.md).
-2. Revisar el [avance recibido](insumos/avance_equipo_2026-10-21.md) y los [ajustes con fundamento](registros/integracion_avance_equipo.md). Los documentos 01 a 03 son la versión integrada editable.
+2. Revisar el [avance recibido del 23](insumos/avance_equipo_2026-10-23.md) y la [comparación](registros/revision_avance_2026-10-23.md). Los documentos 01 a 03 son la versión integrada editable.
 3. Rogelio revisa priorización/estimación; Maverick alcance/roadmap. Coordinar capacidad/costo antes de cerrar 68 tiendas en M7.
 4. Resolver [supuestos](registros/acuerdos_y_supuestos.md), metas piloto, alcance del experimento y financiación inicial. Registrar solo acuerdos efectivamente aceptados.
 5. Proponer cambios mediante rama o edición con solicitud de revisión; ver [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -28,9 +30,9 @@ Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete do
 
 B modular sigue siendo una base revisable. Se conserva el avance del equipo con correcciones trazables: observabilidad mínima desde R1, viabilidad técnica temprana, metas y ventanas explícitas, escala condicionada y Ship-from-store experimental en R3. El escenario anterior ESC-01 queda en Git; sus costos y cobertura no son vigentes para este plan.
 
-La [base de capacidad](registros/escenario_provisional.md) propone cinco brigadas para las 58 altas, seis semanas de expansión y dos protegidas, y entrega cantidades para costear. Es un modelo bajo supuestos, distinto de disponibilidad confirmada.
+La [estimación del equipo](trabajo/06_estimacion.md) ya está cuantificada como base de discusión. No acredita cotizaciones/históricos ni probabilidad validada de plazo. El extremo alto de categorías 1.500 consume toda la reserva nominal; no hay otros 170 disponibles además para cualquier riesgo. Revisar doble conteo entre equipos, OMS/WMS, capacitación y gobierno.
 
-La estimación sigue abierta: 1.350 MM CLP es referencia B y 1.500 MM es techo del caso. Faltan rangos por paquete, capacidad, reserva y tramos. No afirmar que la nueva cobertura cabe en esos montos. Al ser una empresa ficticia, validación académica significa revisar razonabilidad/coherencia; pruebas con proveedores/tiendas se describen como futuro hipotético.
+El [antecedente del 22](registros/escenario_provisional.md) conserva un modelo local para sensibilidad; tiene prioridad la nueva base del equipo y su conciliación con alcance/recursos. La [revisión de clase 3](registros/aportes_clase_03.md) conserva referencias docentes.
 
 Los siete Markdown organizan el contenido, sin implicar siete documentos formales separados para entregar. La pauta no explicita un informe adicional. Mantener contenido primero y decidir formato final según aula.
 
@@ -42,6 +44,6 @@ Para leer y proponer cambios basta GitHub o un editor Markdown. Con Python 3:
 python3 scripts/verificar.py
 ```
 
-Comprueba fuentes, presentaciones, transcripciones, enlaces, rúbrica, operaciones disponibles y referencias. Declara la estimación pendiente; no acredita validación del grupo. Typst 0.15.1 es opcional para el ejemplo técnico; `build/` queda fuera de Git.
+Comprueba fuentes, presentaciones, transcripciones, enlaces, rúbrica, operaciones disponibles y referencias. Distingue cálculo comprobado de calendario/viabilidad pendientes; no acredita validación del grupo. Typst 0.15.1 es opcional para el ejemplo técnico; `build/` queda fuera de Git.
 
 Repositorio público: se puede leer y clonar con el enlace. Para subir directamente se requiere permiso de colaboración; también se puede proponer desde un fork. No incluir conversaciones privadas ni datos de contacto. Materiales docentes y transcripciones se incluyen como insumos académicos.

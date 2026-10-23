@@ -1,6 +1,6 @@
 # 3. Project Charter
 
-**ZEUS: Plataforma Omnicanal Modular. ESC-02, propuesta integrada desde el equipo, revisión 22-10-2026.** Las condiciones empresariales aún no están autorizadas. La [revisión de integración](../registros/integracion_avance_equipo.md) identifica correcciones y decisiones pendientes.
+**ZEUS: Plataforma Omnicanal Modular. ESC-02, propuesta integrada desde el equipo, revisión 23-10-2026.** Las condiciones empresariales aún no están autorizadas. La [revisión de integración](../registros/integracion_avance_equipo.md) identifica correcciones y decisiones pendientes.
 
 ## Propósito y contribución
 
@@ -36,7 +36,7 @@ Reemplazo del ERP o reemplazo completo del WMS; se permiten adaptaciones acotada
 | R0, M1/M2 | Formulación, arquitectura, selección/contratación escalonada OMS, prueba de integración y base | No sustituye primera entrega de valor. |
 | R1, hasta M5 | Piloto C&C en 10 tiendas, 1 CD y 2 familias de productos, con habilitación al inicio de M4 y evaluación hasta M5 | Sitios, volumen, métricas y operación aceptados; número 10 es supuesto. |
 | R2, hasta M7 | Objetivo C&C en las 68 tiendas, listo para campaña M8 | Ampliar 58 tiendas en olas, hasta 3 CD y las mismas 2 familias, solo si capacidad, coste y operación lo sostienen. El caso no exige esa fecha de cobertura. |
-| R3, hasta M12 | Devoluciones, ampliación de observabilidad y piloto Ship-from-store | Gate M9: experimento propuesto de 2 tiendas, máximo 4 semanas/200 pedidos y exposición incremental ≤30 MM CLP incluida en presupuesto; estimación por completar. No posponer toda observabilidad a R3. |
+| R3, hasta M12 | Devoluciones, ampliación de observabilidad y piloto Ship-from-store | Gate M9: experimento de 3 a 5 tiendas según avance del equipo; duración, pedidos y exposición se acuerdan con costo antes de iniciar. No posponer toda observabilidad a R3. |
 
 Si el objetivo 68/M7 no es defendible, el grupo debe cambiarlo explícitamente con su impacto. No se lo reemplaza por la cobertura 5/20/35 del escenario anterior por conveniencia.
 
@@ -78,9 +78,11 @@ Riesgos: exactitud de stock insuficiente (91% corporativo como condición base),
 
 ## Presupuesto y financiación
 
-El equipo propone un marco máximo preliminar de **1.500 MM CLP** liberado por tramos. Esto es un techo para formular, no una estimación bottom-up ni una aprobación de gasto. Referencia B del caso: **1.350 MM CLP**. Rogelio debe reestimar alcance 10/68, cinco equipos, licencias/operación y R3/experimento, definir reservas y primer tramo antes de cerrar el Charter.
+Nueva base preliminar del equipo: **1.330 MM CLP + 170 MM de contingencia = 1.500 MM**, sin exceder nominalmente el techo. Referencia B del caso: 1.350 MM. Rango de categorías supuesto 1.215 a 1.500; el extremo alto consume toda la reserva. No existen cotizaciones o históricos verificados detrás de esos montos.
 
-Se retiran los totales 1.215/1.700 MM y dedicaciones de ESC-01 como cifras vigentes: correspondían a otra cobertura/exclusiones. Métodos y estructura de estimación permanecen como apoyo en [06](06_estimacion.md).
+Propuesta de financiación: **675 MM en G0/M1** para R0/R1, 345 en G1/M5 para R2/campaña y 310 en G2/M9 para R3; reserva 170 gestionada por comité. La [estimación 06](06_estimacion.md) documenta 104 equipo-sprints y capacidad propuesta 120, así como la conciliación pendiente de calendario/roles, costos que podrían duplicarse y cuotas por categoría. El marco preliminar no acredita financiación ya aprobada ni confianza garantizada de fecha.
+
+Estas cifras sustituyen la tabla sin cuantificar y los escenarios de costo de ESC-01. Las brigadas y tope experimental de 30 MM del apoyo del 22 no se suman ni se imponen como otra condición del presupuesto actual.
 
 ## Hitos y criterios de salida
 
@@ -88,10 +90,12 @@ G0/M1: aprobación de arquitectura inicial y selección/contratación OMS por hi
 
 Éxito propuesto: objetivos medidos, adopción >80%, ejecución dentro del costo autorizado compatible con techo, riesgos críticos de seguridad tratados y campaña operable. «Sin interrupciones» es objetivo de continuidad, no garantía anticipada de resultado. Para aprobación de release exigir pruebas y soporte, además de medir disponibilidad con ventana definida.
 
-## Precisión del escenario del 22 de octubre
+## Precisiones pendientes para cerrar el mandato
 
-El [escenario provisional del 22 de octubre](../registros/escenario_provisional.md) desarrolla SUP-14 a SUP-17: selección de familias, aceptación por sitio/ola, base de brigadas y CD, umbrales M5 y experimento. Se conserva devolución ≥85% en casos elegibles a M12 como aporte parcial, sin prometer el ≥90% corporativo ni la misma población de medición. Ampliar catálogo o Ship-from-store nacional requiere cambio explícito y nueva estimación. No hay consenso grupal ni disponibilidad empresarial acreditados por esta actualización.
+Se da prioridad a la [revisión del avance del 23](../registros/revision_avance_2026-10-23.md): WSJF, nueva base de esfuerzo/costo y experimento de 3 a 5 tiendas. Piloto de 1 CD/2 familias y umbrales SUP-16 son refinamientos propuestos anteriormente, sin ratificación en el texto nuevo. Confirmarlos o ajustarlos junto con la base de estimación; la geografía 68 tiendas no define por sí sola todo el catálogo ni costo.
+
+Las devoluciones ≥85% en casos elegibles siguen siendo objetivo M12. Si se difieren E9 o integraciones necesarias, revisar este Charter y los beneficios; no afirmar que todo R3 puede recortarse sin impacto. La observabilidad básica y controles se mantienen desde R1 aunque se difiera centralización adicional.
 
 ## Solicitud de autorización
 
-Solicitar al Comité aprobar la formulación y las condiciones de financiación inicial de R0/R1. Cuantificar el primer tramo antes de cerrar la solicitud; no dar por autorizado todo el presupuesto. Cada liberación depende de evidencia técnica, operación, costo y riesgos, manteniendo trazabilidad entre Business Case, alcance y roadmap.
+Proponer al Comité un primer tramo de **675 MM CLP**, con financiación total por etapas y contingencia del marco 1.500. Condicionar compromiso irreversible a evidencia técnica, operación y contratos por hitos; VT-01/M2 y G1/M5 revisan viabilidad y valor. Antes de presentar como solicitud cerrada, conciliar calendario de equipos, flujo financiero y frontera de costos. No simular una autorización empresarial ya obtenida.

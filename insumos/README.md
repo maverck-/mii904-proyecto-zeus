@@ -17,3 +17,9 @@ Los [aportes aplicados a ZEUS](../registros/aportes_clase_03.md) distinguen cont
 [Texto recibido el 21 de octubre](avance_equipo_2026-10-21.md): diagnóstico/Business Case, tailoring y Charter, conservado sin corregir su cuerpo. Es un aporte del grupo, no un documento docente ni aprobación automática. La [revisión](../registros/integracion_avance_equipo.md) explica los cambios de integración; la versión editable común está en `trabajo/`.
 
 SHA-256 del avance preservado: `d4c6a7e6ddd3127bafd5d1fad91da821bb990ad5cd4cea6f5e7a9aca7d78c3d0`.
+
+## Actualización del 23 de octubre
+
+[Avance recibido](avance_equipo_2026-10-23.md), incluyendo WSJF, esfuerzo, capacidad, presupuesto y tramos. Se prioriza como nueva base con [correcciones y diferencias explícitas](../registros/revision_avance_2026-10-23.md).
+
+SHA-256 del avance del 23: `306b8348e7769bc471d31454421354e945fef9c732e6fe67c4434abf2ec4c05f`.

@@ -1,6 +1,8 @@
-# Escenario provisional para cerrar ZEUS
+# Antecedente de dimensionamiento del 22 de octubre
 
-**ESC-02, revisión del 22 de octubre de 2026.** Maverick autorizó desarrollar las sugerencias para avanzar. Se conserva como base el aporte del equipo: B modular, enfoque híbrido, 10 tiendas piloto, objetivo 68/M7, devoluciones ≥85% y experimento R3. Las precisiones nuevas son supuestos de trabajo revisables, no acuerdos colectivos ni recursos empresariales confirmados.
+**Estado al 23 de octubre: antecedente, no plan de recursos vigente.** La [nueva estimación del equipo](../trabajo/06_estimacion.md) tiene prioridad. Sus cinco/seis/cuatro equipos y experimento de 3 a 5 tiendas deben conciliarse con el alcance; no sumar a ese presupuesto las brigadas ni imponer el tope de 30 MM/2 tiendas de este documento. Los cálculos siguientes se conservan para consulta y sensibilidad, no como aprobación de dotación.
+
+**ESC-02, revisión original del 22 de octubre de 2026.** Maverick autorizó desarrollar las sugerencias para avanzar. Se conserva como base el aporte del equipo: B modular, enfoque híbrido, 10 tiendas piloto, objetivo 68/M7, devoluciones ≥85% y experimento R3. Las precisiones nuevas son supuestos de trabajo revisables, no acuerdos colectivos ni recursos empresariales confirmados.
 
 ## Decisiones de trabajo
 
