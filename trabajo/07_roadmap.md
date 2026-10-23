@@ -38,7 +38,7 @@ Se proponen treinta días hábiles de altas y diez posteriores de estabilizació
 
 La entrada a cada ola debe contrastar dos capacidades distintas: habilitación del sitio y operación diaria por turno después de abrir. Gerencias de tienda y Logística presentan dotación, carga habitual, dedicación al nuevo flujo y disponibilidad WMS/CD, según 04. Una célula capaz de instalar/configurar no demuestra que la tienda absorba preparación, retiro y excepciones. Sin esa evidencia, Operaciones no acepta el alta y PM eleva el efecto en cobertura/fecha; no se presume sobretiempo para sostener el plan.
 
-La [precisión logística de alcance](04_alcance_y_backlog.md) añade al control existente mapa de esperas/movimientos, responsabilidades WMS/OMS, promesa compatible con cupos y acompañamiento intensivo tras apertura. R0/VT-01 prueba la cadena física/digital con Logística; R1 calibra tiempos y dedicaciones; cada ola exige stock conciliado y cobertura de atención local/remota hasta salida operativa aceptada. No liberar una célula al siguiente sitio suponiendo que el anterior dejó de necesitar soporte. Revisar solapamiento y costo en E11/COST-06 antes de ratificar el ritmo; si no caben, ajustar olas/cobertura con la autoridad existente.
+La [precisión logística de alcance](04_alcance_y_backlog.md) añade al control existente mapa de esperas/movimientos, responsabilidades WMS/OMS, reserva simple, ventana fija de retiro y acompañamiento intensivo tras apertura. Cupos dinámicos y punto alternativo automático permanecen fuera de la base estimada. R0/VT-01 prueba la cadena física/digital con Logística; R1 calibra tiempos y dedicaciones; cada ola exige stock conciliado y cobertura de atención local/remota hasta salida operativa aceptada. No liberar una célula al siguiente sitio suponiendo que el anterior dejó de necesitar soporte. Revisar solapamiento y costo en E11/COST-06 antes de ratificar el ritmo; si no caben, ajustar olas/cobertura con la autoridad existente.
 
 Mecanismo: cuatro células de dos funciones, 25 jornadas equivalentes y disponibilidad efectiva 75%. Demanda 116 de habilitación más 29 de acompañamiento frente a 150 efectivos. Los 230 brutos de células/preparación se financian con 210 de E11 y veinte de campo en COST-06; viajes tienen bolsa propuesta de diez MM dentro de esa categoría. Calibrar con piloto y ratificar perfiles, relevo y aceptación de cada CD.
 
@@ -106,11 +106,28 @@ Las dependencias externas también requieren coordinación del proyecto (sesión
 | Regla de devolución y conciliación | Comercial/Finanzas/Operaciones | Elegibilidad, estados y aceptación | Antes de CAP-08/R3; no suponer que reglas aparecen al construir. |
 | Dotación/contratos/costo por tramo | PM/Finanzas/proveedores | FTE por periodo, compromisos y forecast a término | G0, G1 y G2; cinco equipos nominales no garantizan especialistas disponibles. |
 
+### Relaciones lógicas propuestas
+
+La clase 4 pide construir fechas desde trabajo, dependencias y recursos ([parte 2](../transcripciones/clase-04_parte-2.md), 1:53:35 a 1:56:40). Estas relaciones precisan la secuencia de ZEUS; son propuesta de coordinación, sin duraciones ni holguras CPM calculadas. FS significa fin a inicio y SS, inicio a inicio. Una dependencia puede ser obligatoria y externa al mismo tiempo.
+
+| Relación | Tipo / condición propuesta | Responsable y control |
+| --- | --- | --- |
+| Accesos, ambientes y contrato de datos → prueba VT-01 | FS obligatoria; incluye entregas de proveedor externas al equipo. | Tecnología/proveedores reservan disponibilidad y presentan evidencia antes de semana 8. |
+| Inicio del desarrollo de adaptadores → inicio de configuración OMS | SS condicionado a contrato de interfaz ya acordado; permite solapar trabajo compatible, sin asumir integración ya aceptada. | Arquitectura/QA verifican versiones y pruebas; no esperar al final para descubrir incompatibilidades. |
+| Flujo productivo aceptado → cuatro semanas de observación comparable → decisión G1 | FS obligatoria para declarar evidencia de valor; la base comparable se prepara antes. | Operaciones/dueños de beneficio confirman fecha de uso real; PM recalcula ventana si cambia. |
+| Tienda aceptada y relevo de soporte → siguiente alta de su célula | FS por capacidad operativa; no bloquea otras células con recursos propios. | Operaciones asigna habilitación y acompañamiento sin doble dedicación. |
+| Estabilidad de ola → siguiente ola | Regla discrecional de gobierno propuesta, con aceptación obligatoria por sitio. | Operaciones revisa evidencia; cambiar el solapamiento requiere recalcular carga/soporte y autorizarlo. |
+| R2 aceptado y VE-01 → congelamiento / campaña | FS de aceptación; fecha de campaña es externa al desarrollo. | Tecnología/CISO/Operaciones confirman salida y soporte; escalar cobertura si no cabe. |
+
+La disponibilidad del sexto equipo en semana 9 y de cuatro células de campo se comprueba antes de comprometer sus ventanas. Son recursos por función, no personas intercambiables. Si un especialista compartido limita la secuencia, PM ajusta asignación o forecast y comunica el impacto. No se solapan pruebas, aceptación o soporte solo para conservar una fecha.
+
 ## Horizonte, referencia y forecast
 
 Mantener horizonte M12 por capacidades y gates; R1 con mayor detalle de interfaces, aceptación y recursos; trabajo cercano por sprint/flujo y preparación operativa. R2 conserva olas con validación de capacidad; R3 permanece por capacidades/hipótesis hasta acercarse G2. Esto aplica planificación progresiva de sesión 04, p. 16, y sesión 06, p. 10; no exige adivinar todas las tareas futuras.
 
 La referencia aprobada registra compromisos y autorización; el forecast muestra la mejor previsión actual. En este ejercicio ambos son propuestas académicas: no existe una referencia empresarial aprobada ni avance ejecutado. En ejecución, un forecast tardío se comunica con causa/impacto; cambiarlo no autoriza por sí solo cambiar el compromiso. PM integra costo/fecha/beneficio, PO reordena dentro de límites y sponsor/comité decide cambios mayores.
+
+En ejecución, PM conserva la versión de referencia, fecha, autoridad y motivo de cada cambio autorizado; publica por separado el forecast con fecha de corte y desviación. Una tarea terminada en desarrollo permanece abierta para el flujo hasta cumplir su aceptación, despliegue y transición aplicables. Una lista de tareas en verde no sustituye hitos aceptados ni beneficios medidos (clase 4, parte 2, 1:38:30 a 1:39:03 y 2:04:23 a 2:06:03).
 
 ## Tres señales de flujo propuestas
 

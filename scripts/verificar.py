@@ -65,6 +65,7 @@ check(presentations == 4, 'Se esperan las presentaciones docentes 03 a 06.')
 
 transcripts = 0
 segments = 0
+transcript_names = set()
 for line in (root/'transcripciones/README.md').read_text().splitlines():
     if not line.startswith('|'):
         continue
@@ -73,13 +74,31 @@ for line in (root/'transcripciones/README.md').read_text().splitlines():
         continue
     name = re.search(r'\]\(([^)]+)\)', cells[2]).group(1)
     path = root/'transcripciones'/name
+    check(name not in transcript_names, f'Transcripción duplicada en índice: {name}')
+    transcript_names.add(name)
+    check(path.is_file(), f'Falta transcripción: {name}')
+    if not path.is_file():
+        continue
     stamps = re.findall(r'^\[([\d:]+)\]', path.read_text(), re.M)
-    check(len(stamps) == int(cells[3]) and stamps[-1] == cells[4], f'Segmentos o tiempo final cambiaron: {name}')
+    check(bool(stamps) and len(stamps) == int(cells[3]) and stamps[-1] == cells[4], f'Segmentos o tiempo final cambiaron: {name}')
+    def seconds(stamp):
+        total = 0
+        for value in stamp.split(':'):
+            total = total * 60 + int(value)
+        return total
+    times = [seconds(stamp) for stamp in stamps]
+    check(all(a <= b for a, b in zip(times, times[1:])), f'Tiempos fuera de orden: {name}')
     digest = cells[5].strip('`')
     check(hashlib.sha256(path.read_bytes()).hexdigest() == digest, f'Hash de transcripción distinto: {name}')
     transcripts += 1
     segments += len(stamps)
-check(transcripts == 6, 'Se esperan seis partes disponibles de las clases 1 a 3.')
+expected_transcripts = {f'clase-{cls:02d}_parte-{part}.md' for cls in range(1, 5) for part in (1, 2)}
+check(transcripts == 8 and transcript_names == expected_transcripts, 'Se esperan ocho partes distintas de las clases 1 a 4.')
+for part, first in ((1, '0:00'), (2, '1:30:22')):
+    path = root/'transcripciones'/f'clase-04_parte-{part}.md'
+    if path.is_file():
+        stamps = re.findall(r'^\[([\d:]+)\]', path.read_text(), re.M)
+        check(bool(stamps) and stamps[0] == first, f'Inicio continuo de clase 4 alterado: parte {part}')
 check(len(list((root/'trabajo').glob('[0-9][0-9]_*.md'))) == 7, 'Se esperan siete documentos de entregables.')
 
 def rows(name):

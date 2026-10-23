@@ -84,6 +84,8 @@ Se incorporan [aportes docentes trazables](aportes_clase_03.md) a problema, inte
 
 La [auditoría contra pauta y stakeholders](auditoria_pauta_2026-10-23.md) registra respuestas propuestas a los trece intereses/tensiones del caso, límites de retorno/capacidad y ajustes de gobierno. La [matriz](matriz_stakeholders.md) documenta la trazabilidad sin atribuir satisfacción ni aceptación empresarial.
 
+La [revisión de clase 4](aportes_clase_04.md) refuerza la separación entre objetivo, estimación y compromiso, la base de estimación y la coordinación de dependencias/flujo. Se incorporan precisiones en 02/06/07 y la indicación de enviar la presentación al exponer. Se mantienen B, los siete componentes, los parámetros de la base y SUP-01 a SUP-25; las cifras de onboarding y las experiencias del docente no son datos de ZEUS.
+
 ## Control de cambios
 
 Precisiones operativas propuestas para revisión: alcance integrado por Maverick y revisado por los cuatro; adopción de prácticas según madurez/capacidad en 02; alertas y respuesta desde R1; congelamiento desde aceptación R2/VE-01 hasta fin de campaña según 07. No modifican los totales recibidos el 23 ni acreditan aprobación colectiva. Su dedicación y costo deben conciliarse con SUP-02/SUP-18/SUP-19.

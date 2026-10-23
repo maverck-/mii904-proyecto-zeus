@@ -31,4 +31,6 @@ Todos deben poder responder sobre cualquier parte. Los docentes pueden cambiar u
 
 Máximo 35 minutos; distribución recomendada 25 de exposición y 10 de preguntas. Extensión sugerida hasta 12 diapositivas principales más anexos. El 24 de octubre de 2026 se entrega la primera etapa y presentan los grupos, según [clase 2, parte 2](../transcripciones/clase-02_parte-2.md), 1:10:32 a 1:10:44. La hora de carga y el formato de archivo se confirman en el aula. Con el grupo configurado basta una entrega de un integrante, según [clase 2, parte 1](../transcripciones/clase-02_parte-1.md), 6:34 a 6:45.
 
+En [clase 4, parte 2](../transcripciones/clase-04_parte-2.md), 2:38:34 a 2:38:53, el profesor recuerda la evaluación de la tarea 1 y pide hacer llegar la presentación al momento de exponer. Esa aclaración no especifica extensión de archivo, plataforma ni hora límite.
+
 El material disponible no establece un informe escrito adicional. El soporte Typst puede usarse si se acuerda producir uno.

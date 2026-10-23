@@ -65,6 +65,8 @@ La clase 3 pide conectar gobierno, puente y entrega (sesión 03, p. 15; sesión 
 
 Para APIs/integración, proponer políticas Kanban explícitas: entrada con interfaz/dueño y aceptación definidos; límites WIP acordados según capacidad por especialidad; bloqueos visibles con responsable; priorizar terminar o desbloquear antes de abrir más trabajo. Medir terminados, tiempo de ciclo y antigüedad/bloqueos según 07. Los límites numéricos deben justificarse con SUP-02, no copiarse del tablero de ejemplo (sesión 06, pp. 11 a 17).
 
+A partir del tratamiento de cuellos de la clase 4 ([parte 2](../transcripciones/clase-04_parte-2.md), 2:13:45 a 2:17:12), se propone esta regla para ZEUS: si un bloqueo crítico impide avanzar el flujo, el responsable de integración y PO frenan nuevos inicios que alimenten ese cuello y priorizan desbloquear/terminar. El ítem bloqueado sigue contando como WIP; PM coordina al dueño externo y escala si amenaza un hito. Revisar bloqueos cada día y consolidar su impacto en el foro semanal; otras especialidades continúan solo con capacidad disponible y sin aumentar la cola bloqueada.
+
 ## 2.9 Adopción de las prácticas
 
 La adopción parte de la madurez desigual descrita en el caso. En R0 se propone revisar experiencia, disponibilidad de PO/tiendas y capacidad de los equipos, sin suponer que todos parten del mismo nivel. Acordar una forma inicial de trabajar: entrada al backlog, criterios de aceptación y DoD, responsables de decisión, límites WIP y tratamiento de bloqueos. Usar trabajo real del primer flujo para practicarla y ajustarla.

@@ -14,6 +14,23 @@
 
 La base de capacidad supone equipos de unas seis personas, sprints de dos semanas y 26 periodos en el año, de los cuales se excluyen arranque y estabilización para obtener 24 efectivos. El calendario propuesto usa cinco equipos en sprints 1–4, seis en 5–15 y cuatro desde 16, antes de campaña. El costo medio supuesto es 14 MM por equipo-mes, con provisión de 840 MM. También se supone un OMS por suscripción con proveedor de implementación y APIs/eventos útiles en ERP. Cada supuesto requiere contraste técnico, operativo y contractual.
 
+### Evidencia y nivel de compromiso
+
+La clase 4 distingue estimación, objetivo y compromiso ([parte 1](../transcripciones/clase-04_parte-1.md), 8:12 a 12:41). En ZEUS, 104 es una estimación de esfuerzo; valor hasta M5 es una condición del caso; 68/M7 es una meta propuesta. El calendario y sus recursos explican cómo se intentaría cumplirla, pero el compromiso requiere aceptación de alcance, capacidad, riesgo y financiación por la autoridad del Charter.
+
+La base de estimación queda trazable en seis campos:
+
+| Campo | Evidencia o definición de ZEUS |
+| --- | --- |
+| Alcance | Catálogo, exclusiones y aceptación de 04; R1 usa reserva simple y ventana fija, sin cupos dinámicos. |
+| Datos | Caso oficial y avance del equipo; cantidades PERT, dotación y precios son supuestos. Faltan históricos, contratos y medición de dedicaciones. |
+| Método | Técnicas de 6.1, PERT de 6.2 y calendario de la base; no hay simulación de fechas ejecutada. |
+| Supuestos | SUP-01 a SUP-25 y parámetros de la base de ejecución, con revisión y respuesta si fallan. |
+| Riesgos | [Registro de riesgos](../registros/riesgos.md), integración, cuellos por especialidad, operación y sensibilidad de costos de este documento. |
+| Rango y confianza | Esfuerzo O/P 68–160 y costo 1.215–1.668 MM como escenarios; 6.3 limita las aproximaciones probabilísticas. No hay P80 de fecha validado. |
+
+Ante una decisión de exposición comercial, pedir evidencia de aceptación, carga y recuperación según el riesgo. Elegir un percentil más conservador solo tiene sentido si existe un modelo y datos que lo sostengan; no se obtiene confianza de fecha agregando un porcentaje al esfuerzo. VT-01 y el piloto son oportunidades para reducir incertidumbre y actualizar el pronóstico, no para certificar de antemano las metas.
+
 ## 6.2 Esfuerzo por épica mediante PERT
 
 Unidad: equipo-sprint de referencia. O es esfuerzo optimista, M el más probable y P el pesimista; E es la media PERT y σ su desviación aproximada. E = (O + 4M + P) / 6; σ = (P − O) / 6. El total usa valores completos antes de redondear las filas. O/P son escenarios supuestos de estimación, no mínimos/máximos garantizados ni percentiles medidos.

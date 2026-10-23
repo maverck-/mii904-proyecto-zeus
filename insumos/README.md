@@ -4,11 +4,11 @@
 
 Documento docente copiado sin modificación. SHA-256: `e19c4f3d34eaf58fa8b738e373dd3e59dd6b842c8344241d15105c9f5053423c`.
 
-Referencias por página: 2, reglas; 3 y 4, problema y métricas; 5, restricciones; 6 y 7, stakeholders y alternativas; 8, entregables; 9, formato y rúbrica. Las indicaciones de fecha y canal se apoyan en la clase 2, con los tiempos identificados en la pauta.
+Referencias por página: 2, reglas; 3 y 4, problema y métricas; 5, restricciones; 6 y 7, stakeholders y alternativas; 8, entregables; 9, formato y rúbrica. Las indicaciones de fecha y canal se apoyan en la clase 2; la clase 4 añade el envío de la presentación al exponer. Los tiempos se identifican en la pauta.
 
 ## Material docente incorporado el 21 de octubre
 
-Las [presentaciones 03 a 06](presentaciones/README.md) están copiadas sin modificación y registradas con páginas/hash. La clase 3 del 9 de octubre comprende sesiones 03/04 y tiene sus dos transcripciones en el índice. Presentaciones 05/06 se revisan como complemento de estimación/priorización/cronograma, sin atribuirles transcripción oral.
+Las [presentaciones 03 a 06](presentaciones/README.md) están copiadas sin modificación y registradas con páginas/hash. La clase 3 del 9 de octubre comprende sesiones 03/04 y tiene sus dos transcripciones en el índice. Al incorporar la clase 4 del 17 de octubre, las presentaciones 05/06 también cuentan con transcripción oral. Los [aportes de clase 4](../registros/aportes_clase_04.md) documentan las precisiones aplicadas al trabajo.
 
 Los [aportes aplicados a ZEUS](../registros/aportes_clase_03.md) distinguen contenido docente, ejercicios de onboarding y propuestas del equipo. Las experiencias narradas en clase no son datos de la empresa ficticia. No se ha incorporado PMBOK completo ni material personal ajeno al trabajo.
 

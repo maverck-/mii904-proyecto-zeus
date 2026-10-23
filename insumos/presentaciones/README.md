@@ -9,7 +9,7 @@ Copias sin modificación de los PDF proporcionados para el curso. Autor indicado
 | 05 | [Estimación y priorización](sesion-05_estimacion_y_priorizacion.pdf) | 17 | `2e29d5ba25f5b1a8510c19155a337dd9084c4828c84384c9137d776b7745cc4a` |
 | 06 | [Cronograma y gestión de flujo](sesion-06_cronograma_y_flujo.pdf) | 19 | `17c6803e0da9eaefa357ee85a0ed3b3368e1056f05cbab2c3ca52adad0f2f9df` |
 
-La **clase 3 del 9 de octubre** reúne las sesiones temáticas 03 y 04 y tiene [dos transcripciones](../../transcripciones/README.md). Las sesiones 05 y 06 se agregan como complemento docente disponible para priorización, estimación y roadmap. No hay transcripción de la clase 4 incorporada: el HTML local sigue como plantilla, por lo que no se atribuyen aclaraciones orales a esos temas.
+La **clase 3 del 9 de octubre** reúne las sesiones temáticas 03 y 04 y tiene [dos transcripciones](../../transcripciones/README.md). La **clase 4 del 17 de octubre** desarrolla las sesiones 05 y 06 y ya cuenta con dos transcripciones en ese índice. Sus aclaraciones orales sobre estimación, capacidad, dependencias y flujo se registran con tiempos en los [aportes de clase 4](../../registros/aportes_clase_04.md).
 
 Referencias útiles: sesión 03, pp. 6 a 12 y 15 a 19; sesión 04, pp. 5 a 10 y 16 a 20; sesión 05, pp. 4 a 11 y 12 a 15; sesión 06, pp. 5 a 17. Ver [aplicación al caso ZEUS](../../registros/aportes_clase_03.md).
 

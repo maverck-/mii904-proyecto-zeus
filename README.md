@@ -6,7 +6,7 @@ Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete do
 
 El [alcance](trabajo/04_alcance_y_backlog.md) y el [roadmap](trabajo/07_roadmap.md) desarrollan catálogo, aceptación, historias, experimento, calendario y olas. El [plan de apoyo](registros/plan_alcance_roadmap.md) distribuye el esfuerzo y dimensiona habilitación; cuatro células con campo en COST-06 permiten programar la meta condicionada de 58 altas adicionales bajo los supuestos de la base. Falta ratificar alcance y criterios de éxito, contrastar dedicación por especialidad y conciliar contratos/costos. La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md) distingue correcciones realizadas y asuntos que requieren decisión del grupo.
 
-**Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
+**Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. La clase 4 pide enviar la presentación al exponer (parte 2, 2:38:34 a 2:38:53). Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
 
 La [auditoría contra pauta y stakeholders](registros/auditoria_pauta_2026-10-23.md) identifica cobertura documental y pendientes de profundidad. La [matriz de trece interesados](registros/matriz_stakeholders.md) conecta intereses/tensiones del caso con respuestas y evidencia. Cobertura de rúbrica no equivale a nota obtenida ni a satisfacción validada.
 
@@ -27,7 +27,7 @@ La [revisión de cierre](registros/cierre_auditoria_2026-10-23.md) actualiza el 
 | [trabajo/](trabajo/README.md) | Siete componentes de la pauta y estado de revisión. |
 | [registros/](registros/acuerdos_y_supuestos.md) | Supuestos/decisiones, [riesgos](registros/riesgos.md) y [revisión de integración](registros/integracion_avance_equipo.md). |
 | [insumos/](insumos/README.md) | Enunciado, pauta, avance recibido y presentaciones 03 a 06. |
-| [transcripciones/](transcripciones/README.md) | Clases 1 a 3, seis partes con tiempos. |
+| [transcripciones/](transcripciones/README.md) | Clases 1 a 4, ocho partes con tiempos. |
 | [presentacion/](presentacion/README.md) | Pauta de construcción: 12 láminas/25 minutos, rúbrica, evidencia, visuales y anexos; presentación y guion en una fase posterior. |
 | [typst/](typst/README.md) | Ejemplo y módulos locales para eventual informe. |
 | [PLAN.md](PLAN.md) | Orden y condiciones para cerrar. |
@@ -38,7 +38,7 @@ B modular es una recomendación condicionada: viabilidad técnica temprana, obse
 
 La [estimación del equipo](trabajo/06_estimacion.md) ya está cuantificada como base de discusión. No acredita cotizaciones/históricos ni probabilidad validada de plazo. El estrés combinado bruto alcanza 1.668 MM; la respuesta condicionada a reducción/topes llega a 1.497,0923. La reserva de 170 se consume una sola vez y los topes no son ofertas ya aceptadas. Revisar doble conteo entre equipos, OMS/WMS, capacitación y gobierno.
 
-Los registros conservan la [integración de aportes](registros/revision_avance_2026-10-23.md), el [antecedente del 22](registros/escenario_provisional.md) y las [referencias docentes](registros/aportes_clase_03.md). Las cantidades históricas no sustituyen la propuesta vigente ni se suman a su presupuesto.
+Los registros conservan la [integración de aportes](registros/revision_avance_2026-10-23.md), el [antecedente del 22](registros/escenario_provisional.md) y las referencias docentes de [clase 3](registros/aportes_clase_03.md) y [clase 4](registros/aportes_clase_04.md). Las cantidades históricas no sustituyen la propuesta vigente ni se suman a su presupuesto.
 
 Los siete Markdown organizan el contenido, sin implicar siete documentos formales separados para entregar. La pauta no explicita un informe adicional. Mantener contenido primero y decidir formato final según aula.
 
