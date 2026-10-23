@@ -2,6 +2,8 @@
 
 23 de octubre de 2026. ESC-02 prioriza el avance del equipo sobre el escenario anterior e incorpora [aportes docentes](registros/aportes_clase_03.md) sin cambiar automáticamente su cobertura. B modular revisable. El horizonte empresarial M12 es distinto de la entrega académica del 24 de octubre.
 
+La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md) está realizada sobre la propuesta vigente. Se conservan cifras y decisiones; los pendientes siguientes requieren revisión de alcance, factibilidad o formato, no una nueva corrección general de redacción.
+
 | Orden | Trabajo | Disponible | Condición de cierre / responsable |
 | --- | --- | --- | --- |
 | 1 | Diagnóstico/Business Case, enfoque y Charter | Avance original e integración con correcciones trazables | Equipo: revisar complementos, metas, roles y fundamento. |

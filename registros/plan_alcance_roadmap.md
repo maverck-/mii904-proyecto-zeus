@@ -1,6 +1,6 @@
 # Desarrollo del alcance y roadmap de Maverick
 
-**Propuesta académica completa para revisión, 23-10-2026.** Apoya los documentos [04](../trabajo/04_alcance_y_backlog.md) y [07](../trabajo/07_roadmap.md). Conserva las medias PERT, capacidad, presupuesto y tramos recibidos el 23. Las distribuciones, ventanas y mecanismos siguientes son supuestos nuevos de planificación; no provienen del profesor ni acreditan dotación, productividad o aprobación del grupo.
+**Propuesta académica completa para revisión, 23-10-2026.** Apoya los documentos [04](../trabajo/04_alcance_y_backlog.md) y [07](../trabajo/07_roadmap.md). Conserva las medias PERT, capacidad, presupuesto y tramos recibidos el 23. Las distribuciones, ventanas y mecanismos siguientes son supuestos de planificación; no provienen del profesor ni acreditan dotación, productividad o aprobación del grupo.
 
 ## Convención de calendario y autorización
 
@@ -113,4 +113,4 @@ No trasladar al proyecto la geografía o tiempos de viaje que el enunciado no in
 
 ## Estado para integrar y defender
 
-El contenido de Maverick queda desarrollado: frontera/catálogo, backlog/EDT, aceptación, releases, calendario relativo, dependencia, olas, capacidad propuesta y respuestas a desvíos. Falta revisión colectiva del alcance y contraste de Rogelio sobre especialidades, precios/contratos y flujo por tramo. La fecha de carga y el formato final siguen sujetos al aula. No se declara ejecución, financiación o aprobación empresarial.
+El anexo desarrolla: frontera/catálogo, backlog/EDT, aceptación, releases, calendario relativo, dependencia, olas, capacidad propuesta y respuestas a desvíos. Falta revisión colectiva del alcance y contraste de Rogelio sobre especialidades, precios/contratos y flujo por tramo. La fecha de carga y el formato final siguen sujetos al aula. No se declara ejecución, financiación o aprobación empresarial.

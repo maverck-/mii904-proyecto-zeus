@@ -2,6 +2,8 @@
 
 **ESC-02 toma como base principal el avance recibido del equipo.** Se conserva el [texto de entrada](../insumos/avance_equipo_2026-10-21.md) y se integra en los documentos 01, 02 y 03. Los documentos 04 a 07 se alinean con esa base. El escenario ESC-01 anterior queda como antecedente en Git, no como plan vigente.
 
+Este registro conserva el diagnóstico del 21. La [revisión del 23](revision_avance_2026-10-23.md) incorpora estimación/WSJF posteriores y el [plan de apoyo](plan_alcance_roadmap.md) desarrolla alcance/roadmap. La [revisión editorial](revision_editorial_2026-10-23.md) precisa INT-07: cinco puntos es la diferencia nominal entre metas de poblaciones distintas, no una brecha corporativa medida.
+
 ## Qué se conserva y prioriza
 
 B modular; gobierno predictivo y entrega adaptativa; Kanban para integración/APIs y Scrum de dos semanas para experiencia; PM/PO/Arquitectura/CISO; gates M1/M5/M9; piloto de 10 tiendas; objetivo de C&C en 68 tiendas en M7; devoluciones y experimento Ship-from-store en R3/M12; >80% de preparación C&C por aplicación; exclusiones de IA, data platform completa, amplia migración cloud y nueva plataforma de identidad. Los valores adicionales se mantienen como propuestas/supuestos, no como hechos del caso.

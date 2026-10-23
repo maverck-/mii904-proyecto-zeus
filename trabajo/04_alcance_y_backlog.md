@@ -1,6 +1,6 @@
 # 4. Diseño del alcance y backlog
 
-**Responsable: Maverick. ESC-02, propuesta desarrollada al 23-10-2026 para revisión del equipo.** Se completa el alcance y se preserva la secuencia 10/68/R3. Fuentes: enunciado pp. 5 y 8, [avance inicial](../insumos/avance_equipo_2026-10-21.md), [actualización del equipo](../insumos/avance_equipo_2026-10-23.md) y [supuestos](../registros/acuerdos_y_supuestos.md). El [plan de apoyo](../registros/plan_alcance_roadmap.md) detalla las nuevas hipótesis de calendario, carga y habilitación.
+**Responsable: Maverick. ESC-02, propuesta desarrollada al 23-10-2026 para revisión del equipo.** El alcance prioriza un flujo C&C completo, su expansión a 68 tiendas y una evolución R3 condicionada. Fuentes: enunciado pp. 5 y 8, [avance inicial](../insumos/avance_equipo_2026-10-21.md), [actualización del equipo](../insumos/avance_equipo_2026-10-23.md) y [supuestos](../registros/acuerdos_y_supuestos.md). El [plan de apoyo](../registros/plan_alcance_roadmap.md) detalla las nuevas hipótesis de calendario, carga y habilitación.
 
 ## Alcance del producto y del proyecto
 
@@ -13,21 +13,21 @@ Según sesión 04, pp. 5 a 8, y clase 3, parte 2, 10:44 a 17:49 ([aportes](../re
 
 El producto continúa evolucionando tras M12. El proyecto no termina con instalar software: requiere aceptación, transferencia y responsables para beneficios pendientes. Ambos alcances se costean sin duplicar trabajo.
 
-Ejemplo para redactar la frontera: el alcance incluye el servicio de disponibilidad y reserva de inventario, sus interfaces y la gestión de excepciones (CAP-02). La actualización web en menos de dos minutos es una meta medible de ese servicio (KPI-02), con horizonte y método definidos en 01/03; escribir solo la meta no identifica qué se construye ni qué se acepta en cada release.
+CAP-02 incluye el servicio de disponibilidad y reserva de inventario, sus interfaces y la gestión de excepciones. La actualización web en menos de dos minutos es una meta del servicio (KPI-02), con horizonte y método definidos en 01/03. Esta separación permite identificar tanto el entregable como el resultado que se evaluará.
 
 ## Fronteras y cobertura
 
 Incluye OMS adquirido/configurado e integrado, contratos API/datos, inventario y reserva, pedidos trazables, Click & Collect (C&C), app de preparación en tienda, formación, continuidad, soporte, seguridad, observabilidad y medición. En R3: devoluciones elegibles, ampliación de observabilidad y experimento limitado de Ship-from-store sujeto a G2/M9. La instrumentación básica y controles empiezan con el primer flujo, no en R3.
 
-R1: **10 tiendas piloto hasta M5**, proponiendo flujo usable al terminar semana 16, durante M4. R2: **objetivo de 68 tiendas totales en M7**, sujeto a evidencia y capacidad. Son 58 tiendas adicionales, no 68 nuevas. Para completar la propuesta se adopta SUP-14 como hipótesis de diseño: **dos familias de productos, un CD en piloto y hasta tres CD en expansión, manteniendo las mismas familias**. El grupo debe ratificarla y Rogelio contrastarla con el esfuerzo 104 y costo 1.330; no se afirma que la estimación original ya la haya considerado.
+R1: **10 tiendas piloto hasta M5**, proponiendo flujo usable al terminar semana 16, durante M4. R2: **objetivo de 68 tiendas totales en M7**, sujeto a evidencia y capacidad. Son 58 tiendas adicionales, no 68 nuevas. SUP-14 delimita la cobertura propuesta: **dos familias de productos, un CD en piloto y hasta tres CD en expansión, manteniendo las mismas familias**. El grupo debe ratificar esta frontera y contrastarla con el esfuerzo 104 y costo 1.330. Su inclusión en la estimación original todavía no está verificada.
 
-Las dos familias se seleccionan en M1 con stock auditable, rotación y logística estándar, sin cadena de frío ni tratamiento especial. No se inventan nombres/códigos del catálogo ni sitios. Preparar cada CD exige prueba de datos/contratos y soporte; un CD piloto no demuestra cobertura nacional. Cubrir 68 tiendas significa habilitar el flujo C&C definido para ese catálogo, no todo producto, canal o modalidad logística de la compañía.
+Las dos familias se seleccionan en M1 con stock auditable, rotación y logística estándar, sin cadena de frío ni tratamiento especial. La selección de familias y sitios concretos queda pendiente para M1. Preparar cada CD exige prueba de datos/contratos y soporte; un CD piloto no demuestra cobertura nacional. Cubrir 68 tiendas significa habilitar el flujo C&C definido para ese catálogo, no todo producto, canal o modalidad logística de la compañía.
 
 En R3 se proponen devoluciones de compras web de esas familias, identificables en el OMS y atendidas en tiendas habilitadas, con reglas de elegibilidad, conciliación y forma de restitución acordadas con Comercial/Finanzas. No incluye cualquier devolución histórica o de cualquier canal por inferencia. Esta frontera explica por qué ≥85% de casos elegibles no acredita ≥90% corporativo. Ampliarla requiere reestimar.
 
 Selección de tiendas propuesta: volumen evaluable, calidad de stock, turnos/dotación, espacio, soporte, diversidad y acceso a interfaces/CD. No hay evidencia de que 10 sea el tamaño óptimo. SUP-05 conserva ese supuesto del equipo para evaluarlo.
 
-Fuera: reemplazo ERP o WMS completo, IA/recomendaciones, data platform corporativa completa, migración amplia a cloud y plataforma corporativa de identidad nueva. Se mantienen adaptaciones acotadas de WMS, datos operacionales, cloud selectivo costeado e identidad/acceso obligatorios. El catálogo comprometido requiere definición explícita; Ship-from-store nacional queda fuera; solo se propone experimento acotado condicionado.
+Fuera: reemplazo ERP o WMS completo, IA/recomendaciones, data platform corporativa completa, migración amplia a cloud y plataforma corporativa de identidad nueva. Se mantienen adaptaciones acotadas de WMS, datos operacionales, cloud selectivo costeado e identidad/acceso obligatorios. Las familias concretas deben identificarse en M1; Ship-from-store nacional queda fuera; solo se propone experimento acotado condicionado.
 
 Interfaces: ERP, WMS, POS, e-commerce, pagos, logística y CRM en cuanto afecten flujo/conciliación. Cada una necesita dueño, contrato, prueba, recuperación y soporte. Mantener un sistema no elimina su trabajo de integración.
 
@@ -42,7 +42,7 @@ Interfaces: ERP, WMS, POS, e-commerce, pagos, logística y CRM en cuanto afecten
 
 ### Experimento de Ship-from-store propuesto
 
-SUP-17 se concreta en una prueba con tres tiendas inicialmente, ampliable a cinco solo tras una primera semana operable, máximo cuatro semanas o 300 pedidos elegibles totales, lo que ocurra primero. Se propone ejecutarla en M11, con stock del catálogo acordado, operador logístico y conciliación definidos, tras autorizarla en G2. Son límites nuevos para revisión, no cantidades del enunciado.
+SUP-17 se concreta en una prueba con tres tiendas inicialmente, ampliable a cinco solo tras una primera semana operable, máximo cuatro semanas o 300 pedidos elegibles totales, lo que ocurra primero. Se propone ejecutarla en M11, con stock del catálogo acordado, operador logístico y conciliación definidos, tras autorizarla en G2. Estos límites son supuestos del diseño, pendientes de ratificación.
 
 Hipótesis: despachar desde tienda puede cumplir la promesa sin deteriorar C&C ni inventario, con costo por pedido y contribución evaluables frente a un flujo comparable desde CD. Registrar cumplimiento, cancelación, esfuerzo de tienda, transporte y margen incremental; no fijar una rentabilidad sin datos. Detener por pérdida no conciliada, exposición crítica, promesas no sostenibles o perjuicio al flujo C&C. Si hay poca evidencia, declarar inconcluso.
 
@@ -66,7 +66,7 @@ CAP-05/CAP-06 son condiciones del flujo completo. No se eliminan por menor atrac
 
 ## Correspondencia de épicas del equipo con alcance y EDT
 
-E identifica épicas usadas por WSJF/estimación; CAP identifica capacidades y PAQ paquetes de alcance. Las tres vistas no se suman como trabajo distinto. La frontera específica de mano de obra versus proveedor sigue pendiente en 06.
+E identifica épicas usadas por WSJF/estimación; CAP identifica capacidades y PAQ paquetes de alcance. Las tres vistas no se suman como trabajo distinto. La separación entre trabajo de equipos y servicios de proveedores debe conciliarse en 06.
 
 | Épica | Capacidad vinculada | Paquete de alcance principal / coordinación |
 | --- | --- | --- |
@@ -112,14 +112,9 @@ CAP identifica capacidades; PAQ identifica paquetes para estimación/control. Un
 
 Jerarquía propuesta: ZEUS → habilitación inicial y gobierno (PAQ-01), flujo omnicanal (PAQ-02/PAQ-03/PAQ-04), evolución condicionada (PAQ-05) y preparación/operación transversal (PAQ-06/PAQ-07). Las ramas organizan el alcance completo comprometido y condicionado, sin repetir un paquete. Las CAP del backlog pueden atravesar ramas; no son nuevos paquetes sumables. Detallar subentregables próximos para estimar, manteniendo lo lejano proporcional a la evidencia (sesión 04, pp. 10/12/16).
 
-PAQ-04 incluye formación/habilitación local de todas las olas; PAQ-05 ya no duplica expansión C&C. PAQ-03 incluye configuración OMS; PAQ-07 sus licencias recurrentes, explicitando cargos de implantación si los hubiera. El esfuerzo funcional se imputa a su paquete; QA transversal a PAQ-06. Separar gasto interno, externo y horas de tienda en 06. Todo cambio de frontera exige reestimar.
+PAQ-04 incluye formación/habilitación local de todas las olas; PAQ-05 se reserva para devoluciones y el experimento. PAQ-03 incluye configuración OMS; PAQ-07 sus licencias recurrentes, explicitando cargos de implantación si los hubiera. El esfuerzo funcional se imputa a su paquete; QA transversal a PAQ-06. Separar gasto interno, externo y horas de tienda en 06. Todo cambio de frontera exige reestimar.
 
 ## Historias iniciales y calidad
-
-- Cliente: comprar sobre stock reservable; aceptar éxito, vencimiento, concurrencia y manejo de stock obsoleto.
-- Personal de tienda: preparar y entregar pedido con promesa visible; aceptar estados, prioridad, permisos y excepciones.
-- Operación: detectar y atender desactualización o pedidos detenidos; aceptar señal, destinatario, tiempo y procedimiento de respuesta.
-- Atención: resolver devolución elegible con reglas y conciliación; aceptar estados, excepciones y trazabilidad.
 
 Backlog inicial propuesto para refinar dentro de las épicas ya estimadas, sin agregar esfuerzo como una lista independiente:
 
@@ -138,7 +133,7 @@ Cada tienda/CD debe presentar evidencia de datos y reservas, roles/turnos formad
 
 La aceptación del release reúne sitios, funciones y calidad, además de las métricas de uso/mejora que correspondan. G1 requiere evidencia de valor según 01/SUP-16; VE-01 exige preparación de campaña. Al cierre M12, sponsor y Operaciones reciben capacidades aceptadas, documentación, soporte, pendientes y responsables de beneficios, con resultados y brechas visibles. La entrega de software no reemplaza esas condiciones.
 
-DoD propuesta: criterio funcional, pruebas necesarias, controles, telemetría, documentación, soporte, reversión y aceptación operacional. Para R1 se proponen umbrales de SUP-16, con base comparable y piso de observación; validarlos antes de abrir. Aplicar por ola aceptación de datos, proceso, formación, soporte y controles; el checklist del antecedente del 22 puede reutilizarse sin imponer su dotación. El experimento CAP-09 requiere su propia hipótesis y límite, no una historia abierta de logística sin costo.
+La definición de terminado (DoD) propuesta exige criterio funcional, pruebas necesarias, controles, telemetría, documentación, soporte, reversión y aceptación operacional. Antes de abrir R1 se acuerdan los criterios de medición de SUP-16; la mejora se evalúa con uso real hasta G1. Cada ola repite la aceptación de datos, proceso, formación, soporte y controles. El experimento CAP-09 requiere su propia hipótesis y límite, no una historia abierta de logística sin costo.
 
 Ejemplo de distinción: aceptar CAP-04 exige que un pedido reservable pueda prepararse y retirarse con estados/permiso correctos y que se mida su uso; la DoD exige además pruebas, revisión de seguridad, telemetría, documentación y reversión. Cumplir la función sin esa calidad no habilita liberar; cumplir DoD sin uso/mejora no acredita beneficio.
 
@@ -146,4 +141,4 @@ Ejemplo de distinción: aceptar CAP-04 exige que un pedido reservable pueda prep
 
 Maverick integra este documento y los cuatro integrantes revisan inclusiones, exclusiones y diferimientos antes de cerrar la propuesta. Si el diagnóstico o la evaluación de alternativas cambia esa frontera, actualizar también Business Case, Charter, priorización, estimación y roadmap; no limitar la corrección a una lista de backlog.
 
-El catálogo/CD, las historias, los límites del experimento y la aceptación ya tienen propuesta redactada. El [plan de apoyo](../registros/plan_alcance_roadmap.md) aporta distribución de cada épica y dimensionamiento de tres células dentro de E11, sustituyendo como mecanismo propuesto las cinco brigadas históricas. Falta ratificación colectiva y contraste de Rogelio sobre especialidades, costos y contratos; no falta otra lista de entregables. PO ordena dentro de límites; PM integra impacto; sponsor/comité acepta cambios de cobertura comprometida, costo, fecha o beneficio. CISO y Operaciones deciden sobre exposición crítica y operabilidad. Actualizar estimación y roadmap al cambiar alcance.
+El [plan de apoyo](../registros/plan_alcance_roadmap.md) distribuye el esfuerzo por épica y dimensiona tres células dentro de E11. La ratificación del alcance y la revisión de especialidades, costos y contratos siguen pendientes. PO ordena dentro de límites; PM integra impacto; sponsor/comité acepta cambios de cobertura comprometida, costo, fecha o beneficio. CISO y Operaciones deciden sobre exposición crítica y operabilidad. Actualizar estimación y roadmap al cambiar alcance.

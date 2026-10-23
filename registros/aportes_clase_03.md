@@ -2,6 +2,8 @@
 
 Revisión del 21 de octubre de 2026. La clase del **9 de octubre** reúne las sesiones temáticas **03 y 04**, con dos grabaciones. Se incorporan también las presentaciones 05/06 como complemento posterior disponible, sin atribuirles una transcripción inexistente. Se prioriza el avance del equipo integrado en ESC-02.
 
+Este registro conserva las aplicaciones y pendientes de esa revisión. Al 23, WSJF/estimación y alcance/roadmap ya tienen desarrollo posterior en los siete documentos de trabajo. Los pendientes actuales se consultan en [PLAN.md](../PLAN.md); las menciones siguientes a cuantificar o completar no describen por sí solas el estado vigente.
+
 ## Qué aporta y qué cambia
 
 El material refuerza la propuesta B modular e híbrida, sin imponerla como única respuesta para ZEUS. Los cambios desarrollan trazabilidad, aceptación, dependencias y actualización de decisiones. No se cambian automáticamente objetivos, cobertura o presupuesto ni se agregan entregables obligatorios.

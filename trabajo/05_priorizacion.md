@@ -1,6 +1,6 @@
 # 5. Priorización
 
-**Responsable: Rogelio. ESC-02, integración del avance del 23-10-2026.** Se prioriza el WSJF [recibido del equipo](../insumos/avance_equipo_2026-10-23.md). Reemplaza la matriz ponderada anterior como método vigente de trabajo. Puntajes propuestos, no mediciones ni sesión empresarial efectuada. [Comparación y precisiones](../registros/revision_avance_2026-10-23.md).
+**Responsable: Rogelio. ESC-02, integración del avance del 23-10-2026.** Se utiliza el WSJF [recibido del equipo](../insumos/avance_equipo_2026-10-23.md) como apoyo a la decisión. Los puntajes son juicios propuestos, no mediciones empresariales. [Comparación y precisiones](../registros/revision_avance_2026-10-23.md).
 
 ## 5.1 Método y criterios
 
@@ -17,7 +17,7 @@ Tres pasos: WSJF ordena opciones, dependencias ajustan precedencias y capacidad/
 
 E6 seguridad, E7 preparación de campaña y E11 rollout/adopción no se descartan por ranking: son condiciones que consumen esfuerzo/costo. E8a básica también debe acompañar todo servicio crítico en producción; su score ayuda a secuenciar trabajo, no autoriza omitir monitoreo.
 
-## 5.2 WSJF recibido, aritmética comprobada
+## 5.2 Matriz WSJF
 
 | ID | Épica | Valor | Urgencia | Riesgo/habilitación | Costo del retraso relativo | Tamaño | WSJF |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -47,14 +47,14 @@ Lectura: E8a es pequeña y reduce exposición; E4 aporta valor visible pero depe
 
 ## 5.4 Compromisos y adaptación
 
-La propuesta busca comprometer mínimo R1, 68/M7 y preparación de campaña, sujetos a autorización de capacidad/costo. PO reordena detalle dentro de límites; sponsor/comité cambia compromiso, fecha, cobertura o presupuesto. Ni el piloto ni el corte de R3 pueden modificarse silenciosamente si alteran evidencia/objetivos.
+Se propone comprometer el flujo R1, la cobertura 68/M7 y la preparación de campaña, sujetos a autorización de capacidad/costo. PO reordena detalle dentro de límites; sponsor/comité cambia compromiso, fecha, cobertura o presupuesto. Ni el piloto ni el corte de R3 pueden modificarse silenciosamente si alteran evidencia/objetivos.
 
 E10, ruteo avanzado e incrementos opcionales son primeras opciones de diferimiento. E9 sostiene objetivo ≥85% al primer contacto a M12: recortarlo implica revisar Charter/Business Case, no solo borrar backlog. E6, observabilidad básica y continuidad no se eliminan para liberar capacidad.
 
 ## 5.5 Decisiones defendibles
 
-Ship-from-store no entra en primer release: se prioriza como experimento R3 en **3 a 5 tiendas**, siguiendo el nuevo avance. Nuestras propuestas previas de dos tiendas/tope 30 MM quedan sin efecto como restricciones vigentes. 04 concreta como propuesta de Maverick máximo cuatro semanas y 300 pedidos; G2 debe autorizar estos límites y el techo monetario de exposición con costo real del escenario, sin sumar gasto de E10 otra vez sobre equipos ya presupuestados.
+Ship-from-store se difiere del primer release a un experimento R3 en **3 a 5 tiendas**, para proteger el flujo de inventario/pedidos/C&C y aprender antes de escalar. El documento 04 propone un máximo de cuatro semanas o 300 pedidos, lo que ocurra primero; G2 debe autorizar estos límites y el techo monetario de exposición con costo real del escenario, sin sumar gasto de E10 otra vez sobre equipos ya presupuestados.
 
-IA/recomendaciones y data platform corporativa completa quedan fuera por falta de necesidad/valor incremental demostrado para esta primera hipótesis y por dependencias de datos. No afirmar que IA jamás pueda mover KPI. Datos mínimos, eventos de stock/pedidos y tableros de gates sí están en E2/E8. No se elimina identidad/acceso obligatorio al excluir una plataforma nueva.
+IA/recomendaciones y data platform corporativa completa quedan fuera por falta de necesidad/valor incremental demostrado para esta primera hipótesis y por dependencias de datos. La exclusión no presupone que IA carezca de posibles beneficios. Datos mínimos, eventos de stock/pedidos y tableros de gates sí están en E2/E8. No se elimina identidad/acceso obligatorio al excluir una plataforma nueva.
 
-La tabla [E/CAP/PAQ de 04](04_alcance_y_backlog.md) conecta este lenguaje con los IDs anteriores. El plan de apoyo de 04/07 ya propone calendario, carga por épica/tramo y funciones. Validaciones pendientes: dedicación por especialidad, contratos y fronteras de costo de 06. Método y narrativa WSJF ya se incorporan como base prioritaria.
+La tabla [E/CAP/PAQ de 04](04_alcance_y_backlog.md) conecta este lenguaje con los IDs anteriores. El plan de apoyo de 04/07 ya propone calendario, carga por épica/tramo y funciones. Validaciones pendientes: dedicación por especialidad, contratos y fronteras de costo de 06. La decisión final combina WSJF, precedencias y capacidad.

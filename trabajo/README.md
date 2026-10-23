@@ -1,6 +1,6 @@
 # Entregables y estado de revisión
 
-Siete componentes solicitados en p. 8 del enunciado, organizados en Markdown. **ESC-02 prioriza el avance recibido del equipo, actualizado al 23.** Se revisaron clase 3 y presentaciones 03 a 06; los [cambios con referencias](../registros/aportes_clase_03.md) desarrollan alcance, aceptación, dependencias y técnicas de estimación/flujo. La [comparación del 23](../registros/revision_avance_2026-10-23.md) integra WSJF y estimación recibidos. El apoyo del 22 queda como antecedente, sin imponer otra dotación o tope experimental. Integrado significa incorporado en un borrador común; no significa aprobado ni demostrado en operación.
+Los siete componentes de la p. 8 del enunciado forman una propuesta común: problema y valor → enfoque → mandato → alcance → prioridades → estimación → roadmap y autorización. **ESC-02, revisión 23-10-2026.** La [integración del avance](../registros/revision_avance_2026-10-23.md), los [aportes docentes](../registros/aportes_clase_03.md) y la [revisión editorial](../registros/revision_editorial_2026-10-23.md) documentan su fundamento. Redactado no significa aprobado ni ejecutado.
 
 | Orden | Documento | Avance disponible | Pendiente / responsable |
 | --- | --- | --- | --- |
@@ -21,3 +21,22 @@ Los archivos organizan fuentes de contenido. No implican siete documentos formal
 CAP identifica capacidades; PAQ paquetes de costo; KPI indicadores; R releases; G gates financieros; VT-01 revisión técnica y VE-01 preparación del evento. Dato del caso requiere página/tiempo; propuesta y supuesto requieren revisión; acuerdo requiere decisión efectivamente comunicada.
 
 El [plan de apoyo](../registros/plan_alcance_roadmap.md) es anexo de 04/07, no un octavo entregable obligatorio. Conserva PERT/cargas recibidas y documenta las nuevas hipótesis SUP-20 a SUP-22.
+
+## Convenciones de lectura
+
+| Término | Uso en el trabajo |
+| --- | --- |
+| M1 a M12 | Meses relativos al inicio empresarial, distintos de la fecha de entrega académica; las semanas de referencia se convierten a calendario real antes de ejecutar. |
+| Release, R0 a R3 | Entrega planificada de capacidades; cada una requiere aceptación y, cuando corresponde, evidencia de valor. |
+| Gate, G0 a G2 | Punto propuesto de decisión ejecutiva sobre inversión y continuidad. VT-01/VE-01 son revisiones de salida técnica/operativa. |
+| Sponsor, PM y PO | Patrocinador, jefatura de proyecto y responsable de producto. Sus derechos de decisión se definen en 03. |
+| CISO | Responsable de seguridad, con autoridad de bloqueo propuesta ante exposición crítica. |
+| OMS, WMS, ERP y POS | Gestión de pedidos, gestión de bodegas, sistema empresarial y punto de venta, respectivamente; sus interfaces se acotan en 04. |
+| C&C y Ship-from-store | Compra digital con retiro físico y despacho desde tienda, respectivamente. |
+| EDT, CAP y PAQ | Estructura de desglose del trabajo, capacidades y paquetes de alcance/costo. Son vistas relacionadas, no trabajo que se sume varias veces. |
+| DoD | Definición de terminado: estándar compartido de calidad que complementa la aceptación específica. |
+| WIP y throughput | Trabajo iniciado sin terminar e ítems terminados por periodo/tipo; ayudan a revisar flujo, bloqueos y previsión. |
+| Forecast y referencia aprobada | Mejor previsión actual y compromiso autorizado, respectivamente; actualizar uno no cambia automáticamente el otro. |
+| Equipo-sprint | Unidad de esfuerzo/capacidad de referencia; el modelo supone seis personas y dos semanas, sin acreditar productividad equivalente entre equipos. |
+| MM CLP | Millones de pesos chilenos. Los costos actuales son supuestos, no cotizaciones. |
+| Output, outcome, beneficio y valor | Entregable producido, cambio de uso/resultado, mejora medible y aporte a la estrategia considerando costos y riesgos. |
