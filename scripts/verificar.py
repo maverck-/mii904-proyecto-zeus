@@ -278,11 +278,11 @@ if len(parameters) == 15:
     check(effective >= required, 'La expansión no cabe en ventana planificada bajo los parámetros actuales.')
 
 slides = []
-for cells in rows('presentacion/mapa_y_guion.md'):
+for cells in rows('presentacion/pauta_construccion.md'):
     if len(cells) == 7 and cells[0].isdigit():
         slides.append((int(cells[0]), number(cells[1])))
-check([n for n, minutes in slides] == list(range(1,13)), 'El mapa debe conservar doce láminas numeradas en orden.')
-check(sum(minutes for n, minutes in slides) == 25, 'El mapa debe sumar 25 minutos de exposición.')
+check([n for n, minutes in slides] == list(range(1,13)), 'La pauta de construcción propone doce láminas numeradas en orden.')
+check(sum(minutes for n, minutes in slides) == 25, 'La pauta de construcción debe sumar los 25 minutos propuestos.')
 
 for error in errors:
     print('ERROR:', error)
@@ -290,6 +290,6 @@ if errors:
     sys.exit(1)
 print(f'OK: {len(paths)} archivos, siete entregables, pauta 100%, {transcripts} transcripciones y {segments} segmentos.')
 print(f'OK: fuentes, {presentations} presentaciones, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
-print('OK: WSJF, PERT, categorías presupuestarias, tramos y cargas; mapa de 12 láminas/25 minutos.')
+print('OK: WSJF, PERT, categorías presupuestarias, tramos y cargas; pauta de 12 láminas/25 minutos.')
 print('OK: asignación por épica/etapa, corte de primera salida y dimensión propuesta de 58 altas sin duplicar E11.')
 print('REVISAR: ratificación de alcance/calendario, dedicación por especialidad, costos y exposición monetaria del experimento; no se certifica confianza de fecha.')

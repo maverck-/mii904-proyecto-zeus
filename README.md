@@ -22,7 +22,7 @@ El [alcance](trabajo/04_alcance_y_backlog.md) y el [roadmap](trabajo/07_roadmap.
 | [registros/](registros/acuerdos_y_supuestos.md) | Supuestos/decisiones, [riesgos](registros/riesgos.md) y [revisión de integración](registros/integracion_avance_equipo.md). |
 | [insumos/](insumos/README.md) | Enunciado, pauta, avance recibido y presentaciones 03 a 06. |
 | [transcripciones/](transcripciones/README.md) | Clases 1 a 3, seis partes con tiempos. |
-| [presentacion/](presentacion/README.md) | Mapa/guion de 12 láminas y 25 minutos, anexos y defensa; archivo final pendiente. |
+| [presentacion/](presentacion/README.md) | Pauta de construcción: 12 láminas/25 minutos, rúbrica, evidencia, visuales y anexos; presentación y guion en una fase posterior. |
 | [typst/](typst/README.md) | Ejemplo y módulos locales para eventual informe. |
 | [PLAN.md](PLAN.md) | Orden y condiciones para cerrar. |
 

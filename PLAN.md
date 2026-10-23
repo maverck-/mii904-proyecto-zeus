@@ -11,7 +11,7 @@ La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md
 | 3 | Priorización | WSJF recibido con nueve ratios, dependencias y obligatorias | Rogelio: revisar pesos/notas contra escala/costo y justificar orden. |
 | 4 | Estimación | PERT 104, capacidad propuesta 120, base 1.330/reserva 170 y tramos | Rogelio: conciliar calendario/recursos, cargas por épica/rol y fronteras de costos; totales ya están. |
 | 5 | Roadmap y riesgos | Parte de Maverick redactada: calendario 52 semanas, cargas por épica 47,7/23/5/28,3, corte piloto y células de habilitación | Grupo/Rogelio revisan contratos/especialidades y viabilidad de ventanas al 95%/96%. |
-| 6 | Exposición | Mapa/guion de 12 láminas/25 minutos, anexos y preguntas; sin archivo final | Equipo: revisar cifras ya integradas en 10/12, cerrar diferencias y construir/ensayar formato final. |
+| 6 | Exposición | Pauta de construcción con 12 láminas/25 minutos, evidencia, visuales, rúbrica y anexos | Equipo: acordar estructura y contenido; después construir las láminas y preparar el guion/ensayo. |
 | 7 | Entrega | Fuentes y pauta organizadas | Confirmar hora/formato de carga y nómina activa de cuatro. |
 
 ## Revisar y cerrar hoy
@@ -20,7 +20,7 @@ La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md
 2. Revisar el [plan desarrollado de Maverick](registros/plan_alcance_roadmap.md): ya hay calendario, carga por épica/tramo y funciones, con capacidad de campaña separada de R3. Rogelio contrasta dedicación por especialidad y contratos/costo. El 88% conjunto no elimina R2 al 96% ni la primera salida al 95%.
 3. Definir fronteras entre 840 de equipos y OMS/WMS/seguridad/formación/gobierno; distribuir 675/345/310 por categorías/mes. Reserva 170 no se cuenta dos veces.
 4. Los cuatro revisan inclusiones/exclusiones preparadas por Maverick; ratificar catálogo/CD/umbrales piloto anteriores y límites del nuevo experimento 3–5 tiendas. Revisar acompañamiento y disponibilidad para adoptar las prácticas, así como alertas/respuesta y congelamiento posterior a R2/VE-01. Recortar devolución exige cambiar objetivo/beneficios.
-5. Revisar cifras y límites en [mapa/guion](presentacion/mapa_y_guion.md), confirmar formato/hora, montar archivo y ensayar 25 + 10. La estimación ya existe; falta conciliación, no inventar otro total.
+5. Acordar la [pauta de construcción](presentacion/pauta_construccion.md) y confirmar formato/hora. Después construir las láminas, preparar el guion y ensayar 25 + 10. La estimación ya existe; la revisión pendiente es de conciliación.
 
 Las decisiones deben registrarse como aceptadas, corregidas o rechazadas con fundamento. Las aprobaciones de una empresa ficticia se proponen, no se simulan como realizadas. Las responsabilidades están en [EQUIPO.md](EQUIPO.md).
 
