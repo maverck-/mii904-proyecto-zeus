@@ -179,6 +179,62 @@ for cells in rows('trabajo/07_roadmap.md'):
             waves.append(int(cells[2]))
 check(len(waves) == 5 and accumulated == 68 and sum(waves[1:]) == 58, 'Revisar cobertura piloto/olas y objetivo 68.')
 
+# Plan desarrollado: conserva PERT y cargas sin certificar productividad ni fechas.
+allocation = {}
+listed_allocation = None
+prepilot = {}
+listed_prepilot = None
+cells_model = {}
+for cells in rows('registros/plan_alcance_roadmap.md'):
+    if len(cells) == 6 and cells[0] in epics:
+        values = tuple(map(number, cells[1:]))
+        check(all(v >= 0 for v in values), f'Carga negativa: {cells[0]}')
+        check(abs(sum(values[:4])-values[4]) < Decimal('0.0003'), f'Suma por etapa incorrecta: {cells[0]}')
+        check(abs(values[4]-epics[cells[0]][3]) < Decimal('0.0001'), f'La distribución altera PERT: {cells[0]}')
+        allocation[cells[0]] = values
+    elif len(cells) == 6 and cells[0] == 'Total':
+        listed_allocation = tuple(map(number, cells[1:]))
+    elif len(cells) == 3 and cells[0] in epics:
+        prepilot[cells[0]] = tuple(map(number, cells[1:]))
+    elif len(cells) == 3 and cells[0] == 'Total':
+        listed_prepilot = tuple(map(number, cells[1:]))
+    elif len(cells) == 3 and re.fullmatch(r'CEL-\d\d', cells[0]):
+        cells_model[cells[0]] = number(cells[1])
+check(set(allocation) == set(epics), 'La matriz de etapas debe cubrir todas las épicas, una vez.')
+if allocation and listed_allocation:
+    computed = tuple(sum(v[i] for v in allocation.values()) for i in range(5))
+    check(all(abs(a-b) < Decimal('0.0003') for a,b in zip(computed,listed_allocation)), 'Totales de asignación por etapa incorrectos.')
+    check(listed_allocation == (Decimal('47.7'),Decimal('23'),Decimal('5'),Decimal('28.3'),Decimal('104')), 'Cargas propuestas distintas de las conciliadas con el equipo.')
+    if len(capacity) == 3:
+        check(listed_allocation[0] == capacity['F1'][1] and listed_allocation[1] == capacity['F2'][1], 'F1/F2 no coinciden con estimación.')
+        check(sum(listed_allocation[2:4]) == capacity['F3'][1], 'Campaña/R3 no suman F3.')
+    f3_capacity = 4*len([16,*range(18,27)])
+    campaign_capacity = 4+2  # Sprint 16 y primera mitad del 18.
+    check(f3_capacity-campaign_capacity == 34, 'Revisar separación de capacidad antes/después de G2.')
+    check(listed_allocation[2] <= 6 and listed_allocation[3] <= 34, 'Carga excede capacidad propuesta de campaña/R3.')
+else:
+    check(False, 'Falta total de matriz por etapa.')
+check(set(prepilot) == {k for k,v in allocation.items() if v[0] > 0}, 'Corte piloto debe incluir todas las épicas con carga F1.')
+if prepilot and listed_prepilot:
+    check(tuple(sum(v[i] for v in prepilot.values()) for i in range(2)) == listed_prepilot, 'Total del corte piloto incorrecto.')
+    check(listed_prepilot == (Decimal('36'),Decimal('11.7')), 'Corte piloto distinto de 36/11,7.')
+    check(36 <= 4*5+3*6, 'Corte piloto excede capacidad hasta sprint 8.')
+    for ident,values in prepilot.items():
+        check(all(v >= 0 for v in values) and abs(sum(values)-allocation[ident][0]) < Decimal('0.0001'), f'Corte piloto no conserva carga F1: {ident}')
+else:
+    check(False, 'Falta corte piloto verificable.')
+check(len(cells_model) == 9, 'Faltan parámetros del mecanismo de altas propuesto.')
+if len(cells_model) == 9:
+    c = lambda i: cells_model[f'CEL-{i:02d}']
+    check(c(1) == sum(waves[1:]), 'Modelo de altas distinto de 58 tiendas.')
+    needed = c(1)*c(3)*c(6)
+    effective = c(2)*c(3)*c(4)*c(5)
+    gross = c(2)*c(3)*c(4)
+    epic_gross = c(7)*c(8)*c(9)
+    check(0 < c(5) <= 1 and needed <= effective, 'Altas no caben bajo disponibilidad propuesta.')
+    check(gross <= epic_gross and c(7) == allocation['E11'][1], 'Células no caben en E11/R2 o se cambia su asignación.')
+    check((needed,effective,gross,epic_gross) == (116,135,180,210), 'Operaciones de dimensionamiento de altas cambiaron; revisar narrativa.')
+
 members = [cells[0] for cells in rows('EQUIPO.md') if cells[0] not in {'Integrante', '---'}]
 check(len(members) == 4 and len(set(members)) == 4, 'La nómina activa debe contener cuatro integrantes distintos.')
 
@@ -235,4 +291,5 @@ if errors:
 print(f'OK: {len(paths)} archivos, siete entregables, pauta 100%, {transcripts} transcripciones y {segments} segmentos.')
 print(f'OK: fuentes, {presentations} presentaciones, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
 print('OK: WSJF, PERT, categorías presupuestarias, tramos y cargas; mapa de 12 láminas/25 minutos.')
-print('REVISAR: calendario de equipos, carga por épica/rol, fronteras de costo y límites del experimento; no se certifica confianza de fecha.')
+print('OK: asignación por épica/etapa, corte de primera salida y dimensión propuesta de 58 altas sin duplicar E11.')
+print('REVISAR: ratificación de alcance/calendario, dedicación por especialidad, costos y exposición monetaria del experimento; no se certifica confianza de fecha.')

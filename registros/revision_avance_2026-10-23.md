@@ -2,6 +2,8 @@
 
 **Conviene actualizar la propuesta con este avance.** WSJF, estimación por épica, capacidad escalonada, presupuesto y financiación reemplazan las tablas ilustrativas/incompletas de 05 y 06. Se conserva el [texto recibido](../insumos/avance_equipo_2026-10-23.md); las precisiones de esta revisión no se atribuyen a sus autores como acuerdos ya aceptados.
 
+Actualización posterior del mismo día: Maverick desarrolla [alcance/roadmap y plan de apoyo](plan_alcance_roadmap.md). Ya hay una propuesta de calendario, reparto por épica/etapa, funciones, corte piloto y mecanismo de altas. Los hallazgos siguientes conservan el diagnóstico de la integración inicial; revisión de especialidades, contratos/costos y ratificación colectiva siguen pendientes. No presentar aquellas propuestas nuevas como datos recibidos del equipo.
+
 ## Qué mejora y se incorpora
 
 - WSJF ordena opciones y se complementa con precedencias y restricciones obligatorias. No es necesario conservar nuestra matriz ponderada como otro ranking vigente.

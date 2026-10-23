@@ -53,14 +53,16 @@ Es razonable presentar las aproximaciones como sensibilidad del ejercicio. No so
 | --- | --- | ---: | ---: | ---: |
 | F1 | R1: sprints 2–11; 5 equipos en 2–5 y 6 en 6–11 | 56 | 47,7 | 85,18% |
 | F2 | R2: sprints 12–15, 6 equipos | 24 | 23,0 | 95,83% |
-| F3 | Poscongelamiento: sprint 16 y 18–26, 4 equipos | 40 | 33,3 | 83,25% |
+| F3 | Campaña y R3: sprint 16 y 18–26, 4 equipos | 40 | 33,3 | 83,25% |
 | Total | 24 sprints efectivos | 120 | 104,0 | 86,67% |
 
-La suma está correcta. R1/R2 conjunto: 70,7/80 = 88,375%. El 96% de R2 sigue siendo una restricción real del plan propuesto: adelantar trabajo requiere interfaces, ambiente, personas y aceptación disponibles. Falta una matriz por épica → R0/R1/R2/campaña/R3 y por especialidad; 47,7/23/33,3 son asignaciones recibidas, no esa demostración.
+La suma está correcta. R1/R2 conjunto: 70,7/80 = 88,375%. El 96% de R2 sigue siendo una restricción real del plan propuesto: adelantar trabajo requiere interfaces, ambiente, personas y aceptación disponibles. El [plan de apoyo de Maverick](../registros/plan_alcance_roadmap.md) ya propone una matriz por épica → R0/R1/R2/campaña/R3, conservando estas cargas y medias PERT. Distingue funciones y ventanas, pero requiere revisar dedicación por especialidad; no es una medición ni una asignación de personas contratadas.
 
 **Conciliación pendiente de calendario/costo:** 840/120 = 7 MM es asignación media por equipo-sprint efectivo, no una tarifa exacta de dos semanas pagadas. Al sumar arranque (5 equipos) y estabilización (4) se obtienen 129 equipo-sprints pagados. Con 26 sprints en 12 meses, equivalen a 59,54 equipo-meses; a 14 MM serían 833,54 MM, cerca del supuesto redondeado 840. Un calendario mensual alternativo de 5 equipos en M1/M2, 6 en M3–M7 y 4 en M8–M12 suma 60 equipo-meses/840, pero no reproduce automáticamente las mismas ventanas de sprints. Elegir un calendario y explicar redondeos; no mezclar dos sprints exactos por mes con 26 anuales.
 
-Aclarar además cuándo se reduce a cuatro equipos: la fuente dice después de campaña, pero su tabla lo hace desde sprint 16. F3 incluye preparación/soporte de M8 financiados por tramo 2 y R3 desde M9/G2; sus 40 unidades no son capacidad R3 autorizada sin restricciones. No comprometer contenido R3 antes de G2 por tener personal disponible.
+La propuesta desarrollada de 07 conserva cuatro equipos desde sprint 16, antes de campaña; debe ratificarse que cubran soporte. Resuelve como propuesta la ambigüedad de la fuente, que decía «después de campaña». Separa capacidad 6 para campaña y 34 para R3 posterior a G2, con cargas 5/28,3. Sus 40 unidades no son capacidad R3 autorizada sin restricciones. No comprometer contenido R3 antes de G2 por tener personal disponible.
+
+El plan de apoyo propone 52 semanas/26 sprints y conserva 840 como provisión redondeada, con diferencia 6,4615 MM dentro de COST-01 frente al cálculo de 833,5385. No se agrega otra reserva. Rogelio debe revisar contrato, calendario civil y coste por mes antes de aceptar esa convención; la asignación de funciones del roadmap no reemplaza esa revisión.
 
 El modelo anterior de cinco brigadas queda como alternativa histórica de dimensionamiento local, no otra dotación que se añada a los 840. Si se reutiliza, incorporarlo a E11/roles/periodos y decidir si son equipos compartidos o costo externo incluido. No sumar horas de sus brigadas y equipo-sprints para el mismo trabajo.
 
@@ -107,4 +109,4 @@ Reestimar con evidencia de cada equipo/flujo en VT-01 y gates. El inicio del spr
 
 Monte Carlo se plantea solo cuando haya histórico suficiente, comparable y razonablemente estable; seis a ocho semanas por sí solas no lo garantizan. Reservas requieren aprobación del comité y no financian alcance nuevo por defecto. Recortar E9 altera objetivo de devolución; no declarar todo R3 prescindible sin actualizar Charter/beneficios.
 
-Antes de cerrar: un calendario consistente de dotación/costo, matriz de carga por épica/tramo/rol, fronteras de doble conteo y asignación de categorías a PAQ. El piloto Ship-from-store pasa a **3 a 5 tiendas** como propone el equipo, con duración/pedidos/exposición por acordar en G2. Nuestras condiciones anteriores de 2 tiendas/30 MM no son límites vigentes ni gastos que se añadan a esta estimación.
+Antes de cerrar: revisar calendario/carga propuestos en 07, dedicación por especialidad, fronteras de doble conteo y asignación de categorías a PAQ y meses. El piloto Ship-from-store conserva **3 a 5 tiendas** como propone el equipo; 04 concreta máximo cuatro semanas/300 pedidos como hipótesis para ratificación. El techo monetario de exposición se autoriza en G2 antes de iniciar. Nuestras condiciones anteriores de 2 tiendas/30 MM no son límites vigentes ni gastos que se añadan a esta estimación.

@@ -47,7 +47,7 @@ El [antecedente del 22](escenario_provisional.md) conserva cantidades y reglas p
 | SUP-14 | Piloto 10 tiendas/1 CD/2 familias; expansión 68 tiendas/hasta 3 CD con mismas familias; selección en M1 | Equipo revisa frontera; Operaciones/Logística valida sitios, catálogo elegible e interfaces en VT-01 | Ajustar selección/cobertura y actualizar costos/beneficios; no asumir que un CD cubre toda la red. |
 | SUP-15 | Antecedente de habilitación del 22: cinco brigadas/dos días, no dotación vigente adicional | No imponerlo al plan 5/6/4 equipos; si se reutiliza, integrarlo a E11 y calendario sin sumar dos veces | Elegir otro mecanismo de habilitación y costearlo con aceptación de operación. |
 | SUP-16 | Umbrales M5: −20% relativo en cancelación y −25% en preparación, adopción >80% por tienda, cuatro semanas y piso 1.000 pedidos/fase | Equipo/dueños de beneficio revisan razonabilidad; antes de abrir ratificar bases, denominadores y suficiencia. Piso no es garantía estadística | Si no comparable/suficiente, informar inconcluso; si no hay mejora o solo instalación, no declarar valor cumplido. |
-| SUP-17 | Actualizado con avance del 23: experimento Ship-from-store en 3 a 5 tiendas; condiciones 2 tiendas/30 MM del 22 retiradas | Definir duración, pedidos, exposición y economía comparables antes de G2; E10 ya incluido en esfuerzo | Diferir/parar por riesgo, falta de economía evaluable o recursos; no prometer escala nacional. |
+| SUP-17 | Base del equipo: experimento Ship-from-store en 3 a 5 tiendas; Maverick concreta inicio en tres, hasta cinco tras primera semana operable, máximo cuatro semanas/300 pedidos | Ratificar estos límites y autorizar techo monetario de exposición/economía en G2; E10 ya incluido en esfuerzo; no recuperar 2 tiendas/30 MM como límite vigente | Diferir/parar por riesgo, falta de economía evaluable o recursos; no prometer escala nacional. |
 
 ## Condiciones de la estimación recibida el 23
 
@@ -56,7 +56,17 @@ El [antecedente del 22](escenario_provisional.md) conserva cantidades y reglas p
 | SUP-18 | Tabla 26 sprints/año y 24 efectivos con dotación escalonada representa 120 equipo-sprints y aproximadamente 60 equipo-meses | Un calendario de fechas, arranque/estabilización, dotación por periodo/rol y costo; 7 MM es asignación media por unidad efectiva, no tarifa exacta de dos semanas | Recalcular capacidad, carga y presupuesto; no afirmar confianza de fecha con suma de esfuerzo. |
 | SUP-19 | Rangos de categorías 1.215/1.330/1.500 y reserva 170 no duplican equipos/proveedor ni omiten costos | Contrastar como supuestos; fronteras OMS/WMS/seguridad/rollout/gobierno, mensualización y PAQ; no hay cotizaciones o históricos verificados | Reestimar antes de comprometer, revisar reserva y alcance; extremo alto ya consume toda reserva. |
 
-## Incorporación de clase 3
+## Desarrollo de alcance y roadmap del 23
+
+Maverick completa 04/07 con [plan de apoyo](plan_alcance_roadmap.md). SUP-14 se usa como hipótesis de diseño explícita para redactar cobertura, no como acuerdo del equipo. SUP-16 mantiene sus umbrales; la salida se programa al terminar semana 16, observación 17–20 y G1 hasta 22, en lugar de asumir instalación al inicio de M4. La propuesta sigue dentro de M5 si se cumple la ventana.
+
+| ID | Supuesto nuevo de planificación | Revisión necesaria | Si falla |
+| --- | --- | --- | --- |
+| SUP-20 | Calendario de referencia 52 semanas/26 sprints; cuatro equipos desde 16 antes de campaña; matriz 47,7/23/5/28,3 que conserva PERT 104 | Grupo/Rogelio revisan fechas civiles, especialidades, soporte y contratos; la provisión 840 no prueba dedicación disponible | Reestimar dotación/costo/fechas y elevar cambio sin ocultar reducción previa a campaña. |
+| SUP-21 | Tres células de dos funciones, treinta días y 75% efectivo; un día de célula por tienda; dedicación dentro de 3,5 equipo-sprints de E11/R2 | Calibrar con piloto y verificar viajes, turnos y coste dentro de COST-01/COST-06, sin nuevas brigadas automáticas | Si tarda 1,5 días se requieren 39 de altas; con dos, 52. Resolver capacidad/cobertura/plazo en G1. |
+| SUP-22 | Flujo mínimo aceptable requiere 36 equipo-sprints hasta semana 16 contra capacidad 38, con 11,7 restantes después | Tecnología/Operaciones revisan corte funcional y datos; no posponer controles imprescindibles ni asumir muestra suficiente | Recalcular primera salida y evidencia M5 antes de mantener compromiso; no declarar valor con demo o muestra insuficiente. |
+
+## Incorporación docente y límites
 
 Se incorporan [aportes docentes trazables](aportes_clase_03.md) a problema, interesados, alcance, aceptación/DoD, dependencias, actualización del plan y técnicas de estimación/flujo. La clase admite formular con supuestos numéricos explícitos; no valida para ZEUS las cantidades de los ejercicios ni convierte 10/68 en compromiso aprobado. La incorporación docente mantuvo SUP-01 a SUP-13 y responsables; la revisión posterior del 22 agrega SUP-14 a SUP-17. No se modifica automáticamente cobertura ni se sustituye el avance del equipo.
 
@@ -71,5 +81,6 @@ Precisiones operativas propuestas para revisión: alcance integrado por Maverick
 | 21-10-2026 | Clase 3 y presentaciones 03 a 06 incorporadas; trazabilidad, dependencias y prácticas de estimación/flujo desarrolladas | Propuestas para revisión; no cambia objetivos ni acredita pruebas empresariales. |
 | 22-10-2026 | Escenario provisional concretado por autorización de Maverick; base de capacidad y guion en Markdown | Pendiente de revisión grupal y estimación de Rogelio; no hay aprobación empresarial. |
 | 23-10-2026 | Actualización del equipo integrada: WSJF, esfuerzo/capacidad, presupuesto y tramos; prioridad sobre límites de apoyo del 22 | Cálculos verificados; calendario, asignación de épicas y frontera de costos requieren conciliación. |
+| 23-10-2026 | Parte de Maverick desarrollada: catálogo/aceptación, historias, calendario, matriz por épica/etapa, corte piloto y mecanismo de altas dentro de E11 | Propuesta lista para revisión; SUP-20/21/22 y límites de SUP-17 no acreditan acuerdo, rendimiento ni aprobación empresarial. |
 
 Registrar decisiones efectivamente aceptadas, motivo, evidencia y documentos afectados. La [revisión de integración](integracion_avance_equipo.md) conserva los fundamentos de cada ajuste.

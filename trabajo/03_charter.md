@@ -34,9 +34,9 @@ Reemplazo del ERP o reemplazo completo del WMS; se permiten adaptaciones acotada
 | Release | Propuesta del equipo integrada | Condición |
 | --- | --- | --- |
 | R0, M1/M2 | Formulación, arquitectura, selección/contratación escalonada OMS, prueba de integración y base | No sustituye primera entrega de valor. |
-| R1, hasta M5 | Piloto C&C en 10 tiendas, 1 CD y 2 familias de productos, con habilitación al inicio de M4 y evaluación hasta M5 | Sitios, volumen, métricas y operación aceptados; número 10 es supuesto. |
+| R1, hasta M5 | Piloto C&C en 10 tiendas, 1 CD y 2 familias de productos, con primera salida al fin de semana 16, durante M4, y evaluación hasta M5 | Sitios, volumen, métricas y operación aceptados; número 10 es supuesto. |
 | R2, hasta M7 | Objetivo C&C en las 68 tiendas, listo para campaña M8 | Ampliar 58 tiendas en olas, hasta 3 CD y las mismas 2 familias, solo si capacidad, coste y operación lo sostienen. El caso no exige esa fecha de cobertura. |
-| R3, hasta M12 | Devoluciones, ampliación de observabilidad y piloto Ship-from-store | Gate M9: experimento de 3 a 5 tiendas según avance del equipo; duración, pedidos y exposición se acuerdan con costo antes de iniciar. No posponer toda observabilidad a R3. |
+| R3, hasta M12 | Devoluciones, ampliación de observabilidad y piloto Ship-from-store | Gate M9: experimento de 3 a 5 tiendas; propuesta de Maverick de máximo cuatro semanas/300 pedidos, con techo monetario de exposición y costo autorizados antes de iniciar. No posponer toda observabilidad a R3. |
 
 Si el objetivo 68/M7 no es defendible, el grupo debe cambiarlo explícitamente con su impacto. No se lo reemplaza por la cobertura 5/20/35 del escenario anterior por conveniencia.
 
@@ -92,7 +92,7 @@ G0/M1: aprobación de arquitectura inicial y selección/contratación OMS por hi
 
 ## Precisiones pendientes para cerrar el mandato
 
-Se da prioridad a la [revisión del avance del 23](../registros/revision_avance_2026-10-23.md): WSJF, nueva base de esfuerzo/costo y experimento de 3 a 5 tiendas. Piloto de 1 CD/2 familias y umbrales SUP-16 son refinamientos propuestos anteriormente, sin ratificación en el texto nuevo. Confirmarlos o ajustarlos junto con la base de estimación; la geografía 68 tiendas no define por sí sola todo el catálogo ni costo.
+Se da prioridad a la [revisión del avance del 23](../registros/revision_avance_2026-10-23.md): WSJF, nueva base de esfuerzo/costo y experimento de 3 a 5 tiendas. La propuesta desarrollada de Maverick concreta 1 CD/2 familias piloto, hasta tres CD para las mismas familias en expansión, calendario y matriz por épica en 04/07. Los umbrales SUP-16 se mantienen como hipótesis académica; el grupo debe ratificarlos y Rogelio contrastar dedicaciones/costos; la geografía 68 tiendas no define por sí sola todo el catálogo ni costo.
 
 Las devoluciones ≥85% en casos elegibles siguen siendo objetivo M12. Si se difieren E9 o integraciones necesarias, revisar este Charter y los beneficios; no afirmar que todo R3 puede recortarse sin impacto. La observabilidad básica y controles se mantienen desde R1 aunque se difiera centralización adicional.
 

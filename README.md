@@ -6,6 +6,8 @@ Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete do
 
 Se mantienen B/híbrido, piloto 10/M5 y objetivo 68/M7. El experimento R3 pasa a 3–5 tiendas según el equipo. Los límites de apoyo del 22 (brigadas, 2 tiendas/30 MM) quedan como antecedente, sin agregarse al nuevo presupuesto. Catálogo/CD y umbrales piloto anteriores requieren ratificación. No se presume aprobación colectiva ni empresarial.
 
+**Parte de Maverick desarrollada:** [alcance/backlog](trabajo/04_alcance_y_backlog.md) y [roadmap](trabajo/07_roadmap.md) ya incluyen catálogo propuesto, aceptación, historias, límites experimentales, calendario y olas. El [plan de apoyo](registros/plan_alcance_roadmap.md) distribuye las 104 unidades por épica/etapa y dimensiona 58 altas con tres células dentro de E11. El contenido está listo para revisión; faltan ratificación del grupo y contraste de Rogelio sobre especialidades, contratos y costos. No representa capacidad empresarial validada.
+
 **Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
 
 ## Incorporarse al trabajo

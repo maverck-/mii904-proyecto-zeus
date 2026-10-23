@@ -29,3 +29,5 @@ El [escenario provisional](registros/escenario_provisional.md) deja cantidades y
 ## Actualización del 23 de octubre
 
 Se integra el nuevo WSJF y la estimación recibida con [comparación](registros/revision_avance_2026-10-23.md). Rogelio y Maverick deben conciliar calendario, carga por épica/rol y fronteras de costos; los totales ya están cuantificados. El apoyo del 22 no impone brigadas ni límites experimentales distintos del nuevo avance.
+
+Maverick completa posteriormente 04/07 con el [plan de apoyo](registros/plan_alcance_roadmap.md): alcance, historias/aceptación, calendario, distribución de épicas, corte piloto y tres células dentro de E11. La revisión pendiente es del grupo y de Rogelio sobre dedicación por especialidad/costo; no se atribuye aprobación colectiva al contenido redactado.

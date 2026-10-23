@@ -43,7 +43,7 @@ Lectura: E8a es pequeña y reduce exposición; E4 aporta valor visible pero depe
 | R1, evidencia hasta M5 | E1, flujos necesarios E2/E3, E8a y piloto E4/E5 en 10 tiendas; E6/E11 desde inicio | Proponer uso M4 para evaluar hasta M5; medir valor y aceptación, no solo instalación. |
 | R2, hasta M7 | E4/E5 en 68 tiendas, E7 carga/contingencia, E11 preparación y adopción | Costo, personal y operaciones aceptados antes de VE-01; sostener objetivos sin forzar salidas no operables. |
 | Campaña, aproximadamente M8 | Estabilización y soporte; congelamiento propuesto desde aceptación R2/VE-01 en M7 hasta fin de campaña | Sin nuevas funcionalidades ordinarias en producción; excepciones críticas controladas según 07. Dotación confirmada; no tratar este periodo como capacidad R3 libre. |
-| R3, M9 a M12 tras G2 | E9, E8b, E10 en 3 a 5 tiendas, integraciones no imprescindibles y ruteo avanzado de OMS | Solo trabajo efectivamente diferible; definir límites, costo y aceptación antes de iniciar. |
+| R3, M9 a M12 tras G2 | E9, E8b, E10 en 3 a 5 tiendas, integraciones no imprescindibles y ruteo avanzado de OMS | Solo trabajo efectivamente diferible; revisar límites de cuatro semanas/300 pedidos propuestos en 04, costo y aceptación antes de iniciar. |
 
 ## 5.4 Compromisos y adaptación
 
@@ -53,8 +53,8 @@ E10, ruteo avanzado e incrementos opcionales son primeras opciones de diferimien
 
 ## 5.5 Decisiones defendibles
 
-Ship-from-store no entra en primer release: se prioriza como experimento R3 en **3 a 5 tiendas**, siguiendo el nuevo avance. Nuestras propuestas previas de dos tiendas/tope 30 MM quedan sin efecto como restricciones vigentes. Límites de duración, pedidos y exposición deben definirse en G2 con costo real del escenario, sin sumar gasto de E10 otra vez sobre equipos ya presupuestados.
+Ship-from-store no entra en primer release: se prioriza como experimento R3 en **3 a 5 tiendas**, siguiendo el nuevo avance. Nuestras propuestas previas de dos tiendas/tope 30 MM quedan sin efecto como restricciones vigentes. 04 concreta como propuesta de Maverick máximo cuatro semanas y 300 pedidos; G2 debe autorizar estos límites y el techo monetario de exposición con costo real del escenario, sin sumar gasto de E10 otra vez sobre equipos ya presupuestados.
 
 IA/recomendaciones y data platform corporativa completa quedan fuera por falta de necesidad/valor incremental demostrado para esta primera hipótesis y por dependencias de datos. No afirmar que IA jamás pueda mover KPI. Datos mínimos, eventos de stock/pedidos y tableros de gates sí están en E2/E8. No se elimina identidad/acceso obligatorio al excluir una plataforma nueva.
 
-La tabla [E/CAP/PAQ de 04](04_alcance_y_backlog.md) conecta este lenguaje con los IDs anteriores. Validaciones pendientes: calendario único, carga por épica/tramo/rol y fronteras de costo de 06. Método y narrativa WSJF ya se incorporan como base prioritaria.
+La tabla [E/CAP/PAQ de 04](04_alcance_y_backlog.md) conecta este lenguaje con los IDs anteriores. El plan de apoyo de 04/07 ya propone calendario, carga por épica/tramo y funciones. Validaciones pendientes: dedicación por especialidad, contratos y fronteras de costo de 06. Método y narrativa WSJF ya se incorporan como base prioritaria.
