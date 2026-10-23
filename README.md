@@ -2,7 +2,7 @@
 
 Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete documentos de trabajo en Markdown, fuentes y registros para construir y defender una propuesta común.
 
-**Estado al 21 de octubre: ESC-02 integra el avance recibido del equipo como base principal.** Diagnóstico/Business Case, enfoque y Charter están integrados; alcance y roadmap se alinean con piloto 10/M5, objetivo 68/M7 y R3 condicionado. Priorización requiere revisión y estimación requiere nueva cuantificación. Son borradores con supuestos, no decisiones colectivas aprobadas. Se incorporaron la clase 3 y las presentaciones 03 a 06; ver [aportes aplicados](registros/aportes_clase_03.md).
+**Estado al 22 de octubre: ESC-02 integra el avance recibido del equipo como base principal.** Diagnóstico/Business Case, enfoque y Charter están integrados; alcance y roadmap se alinean con piloto 10/M5, objetivo 68/M7 y R3 condicionado. Se concretó el [escenario provisional](registros/escenario_provisional.md): piloto 1 CD/2 familias, base de brigadas, umbrales M5 y experimento delimitado. Priorización requiere revisión y estimación requiere nueva cuantificación. Son borradores con supuestos, no decisiones colectivas aprobadas. Se incorporaron la clase 3 y las presentaciones 03 a 06; ver [aportes aplicados](registros/aportes_clase_03.md).
 
 **Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
 
@@ -20,13 +20,15 @@ Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete do
 | [registros/](registros/acuerdos_y_supuestos.md) | Supuestos/decisiones, [riesgos](registros/riesgos.md) y [revisión de integración](registros/integracion_avance_equipo.md). |
 | [insumos/](insumos/README.md) | Enunciado, pauta, avance recibido y presentaciones 03 a 06. |
 | [transcripciones/](transcripciones/README.md) | Clases 1 a 3, seis partes con tiempos. |
-| [presentacion/](presentacion/README.md) | Orientación de exposición y defensa; archivo final pendiente. |
+| [presentacion/](presentacion/README.md) | Mapa/guion de 12 láminas y 25 minutos, anexos y defensa; archivo final pendiente. |
 | [typst/](typst/README.md) | Ejemplo y módulos locales para eventual informe. |
 | [PLAN.md](PLAN.md) | Orden y condiciones para cerrar. |
 
 ## Alcance de la propuesta
 
 B modular sigue siendo una base revisable. Se conserva el avance del equipo con correcciones trazables: observabilidad mínima desde R1, viabilidad técnica temprana, metas y ventanas explícitas, escala condicionada y Ship-from-store experimental en R3. El escenario anterior ESC-01 queda en Git; sus costos y cobertura no son vigentes para este plan.
+
+La [base de capacidad](registros/escenario_provisional.md) propone cinco brigadas para las 58 altas, seis semanas de expansión y dos protegidas, y entrega cantidades para costear. Es un modelo bajo supuestos, distinto de disponibilidad confirmada.
 
 La estimación sigue abierta: 1.350 MM CLP es referencia B y 1.500 MM es techo del caso. Faltan rangos por paquete, capacidad, reserva y tramos. No afirmar que la nueva cobertura cabe en esos montos. Al ser una empresa ficticia, validación académica significa revisar razonabilidad/coherencia; pruebas con proveedores/tiendas se describen como futuro hipotético.
 

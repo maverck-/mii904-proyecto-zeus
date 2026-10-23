@@ -1,6 +1,6 @@
 # Presentación y defensa
 
-Fuente: enunciado, p. 9. Máximo 35 minutos, estructura recomendada 25 de exposición y 10 de defensa. Hasta 12 láminas principales más anexos es una sugerencia. Definir contenido antes de construir el archivo final.
+Fuente: enunciado, p. 9. Máximo 35 minutos, estructura recomendada 25 de exposición y 10 de defensa. Hasta 12 láminas principales más anexos es una sugerencia. El [mapa y guion en Markdown](mapa_y_guion.md) desarrolla 12 láminas, 25 minutos, mensajes, fuentes, visuales sugeridos, anexos y preguntas de defensa. Es borrador para revisión; todavía no se construye el archivo final.
 
 ## Secuencia de contenido para acordar
 
@@ -12,4 +12,4 @@ Cada integrante debe explicar qué se construye, qué cambia en operación, cóm
 
 Ensayar cambios de presupuesto, retraso de WMS y falta de adopción. Mostrar qué cambia en alcance, costo, beneficios y roadmap y quién decide. La exposición se cierra con una recomendación y una decisión solicitada, sin presentar propuestas como aprobaciones ya realizadas.
 
-Pendientes: medio y plantilla final, reparto de exposición, anexos y ensayo. Si se produce un informe, el soporte de [Typst](../typst/README.md) está preparado por separado.
+Pendientes: integrar estimación y monto inicial en láminas 10/12, confirmar medio/plantilla, reparto de exposición y realizar ensayo. Anexos están identificados en el guion; falta montarlos en el formato final. Si se produce un informe, el soporte de [Typst](../typst/README.md) está preparado por separado.

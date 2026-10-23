@@ -1,6 +1,6 @@
 # 1. Diagnóstico estratégico y Business Case
 
-**ESC-02: versión integrada desde el avance del equipo, 21-10-2026.** Se priorizan su diagnóstico, alternativa B, objetivos y secuencia. Los complementos y correcciones están en la [revisión de integración](../registros/integracion_avance_equipo.md). El [texto recibido](../insumos/avance_equipo_2026-10-21.md) se conserva como antecedente; la pauta y los hechos los establece el enunciado.
+**ESC-02: versión integrada desde el avance del equipo, revisión 22-10-2026.** Se priorizan su diagnóstico, alternativa B, objetivos y secuencia. Los complementos y correcciones están en la [revisión de integración](../registros/integracion_avance_equipo.md). El [texto recibido](../insumos/avance_equipo_2026-10-21.md) se conserva como antecedente; la pauta y los hechos los establece el enunciado.
 
 ## 1.1 Problemas y oportunidad
 
@@ -70,13 +70,15 @@ Se preservan los objetivos del Charter del equipo, proponiendo horizonte/cobertu
 
 Los denominadores y reglas son propuestas: confirmar antes de comparar la base corporativa con tiendas piloto. En KPI-02 no reemplazar <2 minutos por un percentil favorable sin explicitar el cambio de criterio; observar también frecuencia/duración de incumplimientos. KPI-04 deja una brecha de 5 puntos porcentuales frente a la meta estratégica: el grupo debe justificar el objetivo parcial o elevarlo con costo/plazo coherentes. Los datos solo respaldan 64% corporativo, no una base piloto idéntica.
 
-Para G1/M5 se propone que el piloto esté en uso, KPI-06 supere 80%, haya mejora de cancelación/preparación frente a base comparable y no deterioro material de la operación. Fijar magnitud mínima de mejora y suficiencia de evidencia antes de abrir el piloto; no reutilizar automáticamente las metas intermedias de ESC-01 ni aceptar cualquier oscilación como valor probado. La exactitud de inventario se sigue como habilitador (91% y meta estratégica ≥98%), sin duplicar el beneficio económico de cancelaciones.
+Para G1/M5 se desarrolla SUP-16 en el [escenario provisional del 22 de octubre](../registros/escenario_provisional.md): cancelación al menos 20% menor en términos relativos y preparación media al menos 25% menor que sus respectivas bases comparables, adopción >80% por conjunto y tienda, servicio operable y evidencia evaluable. Si la base ya cumple una meta final, conservarla sin deterioro. Estos umbrales nuevos son supuestos didácticos para revisión; no vienen del enunciado ni se heredan automáticamente de ESC-01.
 
-Ventana de trabajo propuesta: base por tienda/familia/flujo, piloto en M4 y evaluación de cuatro semanas hasta M5, con volumen suficiente y conteos. Contrastar cambios de demanda/mix y controles comparables cuando sea viable. Un antes/después no prueba causalidad. Si solo hay go-live al final de M5 o evidencia insuficiente, el requisito de valor no queda demostrado. La disponibilidad porcentual no autoriza interrupciones planificadas de tiendas/e-commerce.
+Se propone habilitar 10 tiendas, 1 CD y 2 familias al inicio de M4, y evaluar cuatro semanas de uso hasta M5, frente a cuatro semanas de base comparable. Piso operacional propuesto: 1.000 pedidos elegibles con seguimiento completo por fase; no es potencia estadística calculada ni garantía causal. Reportar conteos, mix, diferencias por tienda y datos faltantes. Sin evidencia suficiente el resultado es inconcluso, no una primera entrega de valor demostrada.
+
+La exactitud de inventario se sigue como habilitador, sin duplicar beneficio económico. Observar disponibilidad en ventana definida de 28 días, sin autorizar interrupciones planificadas. Ejemplos condicionales de umbrales: 7,8% × 0,80 = 6,24%; 7,2 h × 0,75 = 5,4 h, solo si las bases piloto coincidieran con las corporativas. Las metas finales <2% y <3 h a M12 se mantienen. Un antes/después no demuestra atribución causal ni acredita resultado para todo el catálogo.
 
 ## 1.6 Costos, riesgos, supuestos y solicitud
 
-Techo preliminar: 1.500 MM CLP. Referencia B: 1.350 MM. El equipo propone financiación por tramos. La distribución de presupuesto, reservas y primer tramo quedan a reestimar por Rogelio con el alcance 10/68 tiendas, cinco equipos supuestos, OMS comprado y experimento R3. Los totales de ESC-01 no validan ese alcance y se retiran como presupuesto vigente.
+Techo preliminar: 1.500 MM CLP. Referencia B: 1.350 MM. El equipo propone financiación por tramos. La distribución de presupuesto, reservas y primer tramo quedan a reestimar por Rogelio con el alcance 10/68 tiendas, cinco equipos supuestos, OMS comprado y experimento R3. El límite de exposición incremental experimental se propone en 30 MM CLP, incluido en el total y sujeto a G2; no es una estimación realizada. Los totales de ESC-01 no validan ese alcance y se retiran como presupuesto vigente.
 
 La [estimación](06_estimacion.md) conserva método y una tabla para la nueva cobertura. Contemplar licencias por uso/tienda, trabajo interno, integración, datos, formación, operación/transición, seguridad, despliegue y experimento, sin doble conteo. Faltan volumen, margen y flujos para ROI/VAN/payback numéricos. Beneficio potencial = pedidos recuperables × margen incremental, más costos realmente evitados, menos gasto incremental; ajustar sustitución de canal y capacidad liberada, que no es ahorro de caja automático.
 

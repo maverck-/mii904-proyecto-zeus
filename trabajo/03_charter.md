@@ -1,6 +1,6 @@
 # 3. Project Charter
 
-**ZEUS: Plataforma Omnicanal Modular. ESC-02, propuesta integrada desde el equipo, 21-10-2026.** Las condiciones empresariales aún no están autorizadas. La [revisión de integración](../registros/integracion_avance_equipo.md) identifica correcciones y decisiones pendientes.
+**ZEUS: Plataforma Omnicanal Modular. ESC-02, propuesta integrada desde el equipo, revisión 22-10-2026.** Las condiciones empresariales aún no están autorizadas. La [revisión de integración](../registros/integracion_avance_equipo.md) identifica correcciones y decisiones pendientes.
 
 ## Propósito y contribución
 
@@ -19,7 +19,7 @@ Contribuye a las metas estratégicas de 35% de ventas digitales, NPS ≥+48, pun
 | KPI-05 | Disponibilidad e-commerce ≥99,9%, protegida en Black Friday | Campaña M8 y ventanas regulares acordadas | Meta del caso y criterio operativo propuesto. |
 | KPI-06 | >80% de pedidos C&C preparados mediante la aplicación | Piloto y cada ola aceptada; validar fechas por release | Criterio de adopción propuesto por equipo. |
 
-El horizonte M12 y la cobertura/ventanas se proponen para hacer verificables los objetivos. En G1/M5 debe existir evidencia de primera entrega de valor, no solo una instalación. Definiciones y evaluación en [01](01_diagnostico_y_business_case.md). Resolver magnitud mínima de mejora del piloto antes de abrirlo; una oscilación sin evidencia no demuestra beneficio.
+El horizonte M12 y la cobertura/ventanas se proponen para hacer verificables los objetivos. En G1/M5 debe existir evidencia de primera entrega de valor, no solo una instalación. Definiciones y evaluación en [01](01_diagnostico_y_business_case.md). SUP-16 propone para M5 reducciones relativas de 20% en cancelación y 25% en preparación frente a bases comparables, salvo base ya mejor que meta final, con adopción >80% por tienda y evidencia suficiente; revisar antes de autorizar. No equivale a las metas finales de M12.
 
 ## Alcance incluido
 
@@ -34,9 +34,9 @@ Reemplazo del ERP o reemplazo completo del WMS; se permiten adaptaciones acotada
 | Release | Propuesta del equipo integrada | Condición |
 | --- | --- | --- |
 | R0, M1/M2 | Formulación, arquitectura, selección/contratación escalonada OMS, prueba de integración y base | No sustituye primera entrega de valor. |
-| R1, hasta M5 | Piloto C&C en 10 tiendas, proponiendo uso desde M4 para medir hasta M5 | Sitios, volumen, métricas y operación aceptados; número 10 es supuesto. |
-| R2, hasta M7 | Objetivo C&C en las 68 tiendas, listo para campaña M8 | Ampliar 58 tiendas en olas solo si capacidad, coste y operación lo sostienen. El caso no exige esa fecha de cobertura. |
-| R3, hasta M12 | Devoluciones, ampliación de observabilidad y piloto Ship-from-store | Gate M9, costo y límites del experimento por aprobar. No posponer toda observabilidad a R3. |
+| R1, hasta M5 | Piloto C&C en 10 tiendas, 1 CD y 2 familias de productos, con habilitación al inicio de M4 y evaluación hasta M5 | Sitios, volumen, métricas y operación aceptados; número 10 es supuesto. |
+| R2, hasta M7 | Objetivo C&C en las 68 tiendas, listo para campaña M8 | Ampliar 58 tiendas en olas, hasta 3 CD y las mismas 2 familias, solo si capacidad, coste y operación lo sostienen. El caso no exige esa fecha de cobertura. |
+| R3, hasta M12 | Devoluciones, ampliación de observabilidad y piloto Ship-from-store | Gate M9: experimento propuesto de 2 tiendas, máximo 4 semanas/200 pedidos y exposición incremental ≤30 MM CLP incluida en presupuesto; estimación por completar. No posponer toda observabilidad a R3. |
 
 Si el objetivo 68/M7 no es defendible, el grupo debe cambiarlo explícitamente con su impacto. No se lo reemplaza por la cobertura 5/20/35 del escenario anterior por conveniencia.
 
@@ -87,6 +87,10 @@ Se retiran los totales 1.215/1.700 MM y dedicaciones de ESC-01 como cifras vigen
 G0/M1: aprobación de arquitectura inicial y selección/contratación OMS por hitos, con financiación y validación técnica condicionadas. VT-01/M2: revisión de viabilidad antes del piloto/escala. G1/M5: evidencia de primera entrega y decisión de ampliar. VE-01/M7: preparación, cobertura segura y congelamiento de cambios de alto riesgo, con excepciones críticas controladas. Campaña aproximadamente M8. G2/M9: beneficios/forecast y financiación de R3. Cierre M12: aceptación y traspaso con responsables de beneficios pendientes.
 
 Éxito propuesto: objetivos medidos, adopción >80%, ejecución dentro del costo autorizado compatible con techo, riesgos críticos de seguridad tratados y campaña operable. «Sin interrupciones» es objetivo de continuidad, no garantía anticipada de resultado. Para aprobación de release exigir pruebas y soporte, además de medir disponibilidad con ventana definida.
+
+## Precisión del escenario del 22 de octubre
+
+El [escenario provisional del 22 de octubre](../registros/escenario_provisional.md) desarrolla SUP-14 a SUP-17: selección de familias, aceptación por sitio/ola, base de brigadas y CD, umbrales M5 y experimento. Se conserva devolución ≥85% en casos elegibles a M12 como aporte parcial, sin prometer el ≥90% corporativo ni la misma población de medición. Ampliar catálogo o Ship-from-store nacional requiere cambio explícito y nueva estimación. No hay consenso grupal ni disponibilidad empresarial acreditados por esta actualización.
 
 ## Solicitud de autorización
 

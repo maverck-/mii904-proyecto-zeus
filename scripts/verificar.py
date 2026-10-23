@@ -161,13 +161,47 @@ check(source_digest is not None, 'Falta hash del avance recibido.')
 if source_digest:
     check(hashlib.sha256((root/'insumos/avance_equipo_2026-10-21.md').read_bytes()).hexdigest() == source_digest.group(1), 'El avance preservado cambió; editar la integración en trabajo/.')
 
+# Cantidades de habilitación: comprobar relaciones sin validar productividad/dotación.
+parameters = {}
+listed_calculations = {}
+for cells in rows('registros/escenario_provisional.md'):
+    if re.fullmatch(r'PAR-\d\d', cells[0]):
+        parameters[cells[0]] = number(cells[1])
+    elif re.fullmatch(r'CAL-\d\d', cells[0]):
+        listed_calculations[cells[0]] = number(cells[1])
+check(len(parameters) == 15, 'Revisar los quince parámetros del modelo de habilitación.')
+if len(parameters) == 15:
+    q = lambda n: parameters[f'PAR-{n:02d}']
+    extra = q(2)-q(1)
+    required = extra*q(3)*q(4)
+    effective = q(5)*q(3)*q(6)*q(7)
+    expected_calculations = {
+        'CAL-01': extra, 'CAL-02': required, 'CAL-03': effective,
+        'CAL-04': effective // (q(3)*q(4)),
+        'CAL-05': q(5)*q(3)*q(8)*q(7),
+        'CAL-06': q(1)*q(3)*q(4), 'CAL-07': q(2)*q(9)*q(10),
+        'CAL-08': q(13)*q(14)*q(15),
+        'CAL-09': q(5)*q(3)*(q(6)+q(8)), 'CAL-10': effective-required,
+    }
+    check(listed_calculations == expected_calculations, 'Cantidades calculadas no corresponden a parámetros de habilitación.')
+    check(q(11)*q(3)*q(12) >= expected_calculations['CAL-06'], 'Capacidad de piloto insuficiente bajo parámetros.')
+    check(0 < q(7) <= 1, 'Disponibilidad efectiva debe estar entre 0 y 1.')
+    check(effective >= required, 'La expansión no cabe en ventana planificada bajo los parámetros actuales.')
+
+slides = []
+for cells in rows('presentacion/mapa_y_guion.md'):
+    if len(cells) == 7 and cells[0].isdigit():
+        slides.append((int(cells[0]), number(cells[1])))
+check([n for n, minutes in slides] == list(range(1,13)), 'El mapa debe conservar doce láminas numeradas en orden.')
+check(sum(minutes for n, minutes in slides) == 25, 'El mapa debe sumar 25 minutos de exposición.')
+
 for error in errors:
     print('ERROR:', error)
 if errors:
     sys.exit(1)
 print(f'OK: {len(paths)} archivos, siete entregables, pauta 100%, {transcripts} transcripciones y {segments} segmentos.')
 print(f'OK: fuentes, {presentations} presentaciones, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
-print('OK: puntajes numéricos, acumulados de olas y referencias del escenario integrado.')
+print('OK: puntajes, acumulados de olas, relaciones de capacidad y referencias; mapa de 12 láminas/25 minutos.')
 if pending_costs:
     print(f'PENDIENTE: {len(pending_costs)} paquetes sin costo; total, reserva, capacidad y financiación requieren revisión. No se certifica una estimación terminada.')
 else:

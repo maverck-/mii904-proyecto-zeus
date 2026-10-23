@@ -19,3 +19,7 @@ La autoría individual de los primeros tres documentos no se infiere del texto r
 - Sábado 24: entrega/presentación documentada; confirmar formato y hora de carga en el aula.
 
 Cada responsable verifica su contenido y sus vínculos con los demás frentes. Todos deben dominar la propuesta completa. Inscripción del grupo en aula y permisos de GitHub son gestiones independientes; actualizar la nómina de la entrega con los cuatro integrantes activos.
+
+## Avance del 22 de octubre
+
+El [escenario provisional](registros/escenario_provisional.md) deja cantidades y aceptación propuestas de alcance/roadmap para revisar con Rogelio. El [mapa/guion](presentacion/mapa_y_guion.md) prepara 12 láminas/25 minutos y defensa. No atribuye aprobación a los otros integrantes ni cierra costos pendientes.

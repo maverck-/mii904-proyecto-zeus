@@ -44,7 +44,22 @@ SUP-02 conserva cinco equipos de implementación como supuesto recibido; faltan 
 
 Persona-meses = suma de FTE por rol y periodo × meses. Costo de trabajo = persona-meses × tarifa por rol, cuando se use ese método. Separar trabajo de proveedor incluido en contrato y capacidad interna. Horas de formación/operación por tienda se estiman con participantes × horas y cobertura de turnos; registrar costos de oportunidad aunque no sean desembolso externo.
 
-Base cuantitativa de despliegue: **10 piloto + 58 adicionales = 68**. Cuatro olas propuestas de 15/15/14/14 durante M6/M7. Es un promedio de 29 altas por mes, sin demostrar disponibilidad semanal ni tiempos de estabilización. Calcular brigadas, horas por tienda, paralelismo y soporte. Si no caben, modificar cobertura/fecha con su efecto en el Business Case. No forzar cantidades para que sumen el techo.
+## Cantidades de apoyo listas para costear
+
+El [escenario provisional del 22 de octubre](../registros/escenario_provisional.md) concreta alcance y capacidad sin inventar tarifas. Son supuestos de apoyo a la estimación de Rogelio, que puede cambiarlos dejando su impacto.
+
+| Componente | Cantidad propuesta / unidad | Imputación y cuidado de costo |
+| --- | --- | --- |
+| Habilitación piloto | 40 jornadas-persona; 2 brigadas × 2 personas × 10 días hábiles | PAQ-04; soporte y preparación previos no quedan absorbidos automáticamente. |
+| Expansión, trabajo local | 232 jornadas-persona de trabajo requerido para 58 tiendas | PAQ-04; no sumarlas otra vez si ya se paga la disponibilidad de brigadas. |
+| Brigadas disponibles para expansión y margen | 5 × 2 × 40 = 400 jornadas-persona de disponibilidad nominal; 320 efectivas al 80% | Costear según contrato/dedicación: incluye 30 días de expansión y 10 protegidos. Trabajo requerido no equivale a facturación. |
+| Personal local formado | 1.632 horas-participante: 240 piloto y 1.392 expansión | PAQ-04; horas de participantes diferentes de formadores incluidos en brigadas. Costear turnos/oportunidad sin asumir 408 nuevas contrataciones. |
+| Preparación de CD | Hasta 30 jornadas-persona para los 3 CD: 10 piloto y 20 adicionales | PAQ-02; revisar complejidad real y recursos de integración compartidos. |
+| Experimento Ship-from-store | 2 tiendas, 4 semanas/200 pedidos máximos; exposición incremental propuesta ≤30 MM CLP | Estimar subpartidas PAQ-05 y recurrentes de PAQ-07; el límite incluye todo el incremento, dentro del techo general, sin duplicar componentes reutilizados. |
+
+Costos por brigada deben aclarar viajes, equipamiento, disponibilidad y soporte. El factor 80% no elimina el pago del tiempo no productivo; para contrato por disponibilidad se costean jornadas nominales. Identificar si la dotación se contrata aparte o sale de los cinco equipos de implementación, reduciendo capacidad concurrente de desarrollo. Licencias por tienda/usuario/pedido crecen con fechas de alta; cobertura nacional se limita a las familias incluidas, no todo el catálogo.
+
+El modelo muestra 58 altas con 240 jornadas-persona efectivas planificadas frente a 232 requeridas, y 80 efectivas adicionales de margen. No garantiza que cinco equipos nominales sostengan construcción, revisiones CISO/QA, operación y brigadas a la vez. La prueba de asequibilidad sigue pendiente del costo total, reserva y financiación; 29 altas por mes es ritmo requerido, no histórico observado.
 
 ## Presupuesto, reserva y autorización por completar
 

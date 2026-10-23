@@ -46,3 +46,5 @@ Las anécdotas sobre costos de nube, modalidades contractuales o legislación il
 Rogelio: cuantificar estimación, revisar capacidad/puntajes y financiación. Maverick: cerrar CD/familias, aceptación por ola y dependencias del alcance/roadmap. Equipo: resolver metas piloto, devolución parcial y límites experimentales; integrar presentación/ensayo y confirmar formato/hora de carga.
 
 En el material revisado de clase 3 no se identifica una nueva fecha ni obligación de informe adicional. Se conserva entrega/presentación del 24 de octubre respaldada por clase 2 y pauta; viernes 23 sigue siendo cierre interno propuesto. La transcripción automática no fue cotejada con audio y no equivale a una solución docente aprobada para ZEUS.
+
+Actualización 22 de octubre: CD/familias, aceptación por ola, umbrales y límites experimentales ya tienen propuesta en el [escenario provisional](escenario_provisional.md). Siguen pendientes de revisión del equipo y costo; no son incógnitas sin una alternativa de trabajo.

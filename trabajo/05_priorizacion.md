@@ -32,7 +32,7 @@ Total 100%. Puntaje = suma de nota × peso / 100. Este reparto puede cambiar; no
 | CAP-08 | 3 | 2 | 2 | 2 | 3 | 3 | 2 | 2,50 |
 | CAP-09 | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
 
-Los seis puntajes numéricos conservan el juicio inicial para que Rogelio lo revise, no una nueva evaluación demostrada de ESC-02. CAP-07 requiere revisar costo/capacidad al pasar a 68 tiendas; CAP-08 depende de la elegibilidad y CAP-09 todavía no tiene alcance experimental suficiente para puntuar. No asignar notas para justificar retrospectivamente una decisión.
+Los seis puntajes numéricos conservan el juicio inicial para que Rogelio lo revise, no una nueva evaluación demostrada de ESC-02. CAP-07 requiere revisar costo/capacidad al pasar a 68 tiendas; CAP-08 depende de la elegibilidad y CAP-09 ahora tiene límites SUP-17 en el [escenario provisional del 22 de octubre](../registros/escenario_provisional.md), pero requiere que Rogelio evalúe costo/capacidad y confirme sus notas, sin rellenarlas para forzar el orden. No asignar notas para justificar retrospectivamente una decisión.
 
 Inventario y pedidos puntúan alto por su vínculo con cancelación y flujo operativo. CAP-01 se ejecuta antes aunque tenga menor puntaje, porque sin viabilidad/base no puede comprometerse el resto. C&C entrega valor visible, pero depende de inventario/pedidos/controles/adopción. CAP-07 consume más coordinación y tiendas; se expande tras evidencia. CAP-08 añade reglas de devolución que pueden posponerse frente a M5/M8.
 
