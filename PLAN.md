@@ -14,6 +14,8 @@ La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md
 | 6 | Exposición | Pauta de construcción con 12 láminas/25 minutos, evidencia, visuales, rúbrica y anexos | Equipo: acordar estructura y contenido; después construir las láminas y preparar el guion/ensayo. |
 | 7 | Entrega | Fuentes y pauta organizadas | Confirmar hora/formato de carga y nómina activa de cuatro. |
 
+La [auditoría de pauta y stakeholders](registros/auditoria_pauta_2026-10-23.md) prioriza retorno/evidencia económica, capacidad por turno y especialidad, regla WSJF y resolución de tensiones. El Charter y la pauta de construcción ya incorporan la trazabilidad; el estado sigue condicionado a ratificación y factibilidad.
+
 ## Revisar y cerrar hoy
 
 1. Revisar la [comparación del nuevo avance](registros/revision_avance_2026-10-23.md): cálculos correctos y diferencias de evidencia/calendario.

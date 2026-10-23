@@ -8,6 +8,8 @@ La [pauta de construcción](pauta_construccion.md) es la referencia de esta fase
 
 El enunciado, p. 9, fija máximo 35 minutos y recomienda 25 de exposición más 10 de defensa. Sugiere hasta 12 láminas principales y anexos. La propuesta de estructura adopta esas referencias, incluyendo apertura y cierre dentro de las 12; no agrega requisitos de formato al aula.
 
+La [auditoría de pauta y stakeholders](../registros/auditoria_pauta_2026-10-23.md) refuerza la lámina 6: mostrar tensiones, reglas y autoridad. La matriz de trece va en anexo; retorno/costo y capacidad local permanecen visibles donde afectan la decisión.
+
 ## Orden de trabajo
 
 1. Acordar títulos, secuencia y cobertura de la rúbrica usando la pauta.

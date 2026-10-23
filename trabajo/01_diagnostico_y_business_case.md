@@ -42,6 +42,8 @@ Hitos obligatorios del escenario empresarial: horizonte 12 meses, valor dentro d
 
 Recomendamos B porque conserva ERP/WMS y permite organizar inventario, pedidos y C&C en entregas sucesivas. Su inversión y plazo son referencias preliminares del enunciado (p. 7); no acreditan que la cobertura de 68 tiendas y el experimento adicional quepan en el presupuesto. Si la integración o capacidad no sostienen el plan, revisar cobertura, secuencia o alternativa con criterios explícitos.
 
+C también aborda inventario, pedidos y C&C con menor inversión preliminar. Conservar ERP/WMS o entregar el flujo inicial por etapas no demuestra por sí solo una ventaja exclusiva de B. La preferencia por B responde a la cobertura y evolución modular que propone el grupo para los doce meses; debe contrastarse con C bajo fronteras y costos comparables, incluyendo operación e integraciones. Su horizonte de 5 a 7 meses no prueba que C incumpla valor M5, del mismo modo que el horizonte de B no prueba que lo cumpla. Si B no sostiene viabilidad, valor temprano o costo, reconsiderar C y ajustar explícitamente cobertura/objetivos, sin afirmar una superioridad económica ya demostrada.
+
 ## 1.4 Entregables, resultados, beneficios y valor
 
 | Capacidad / output | Outcome esperado | Beneficio medible | Valor estratégico y condición |
@@ -89,3 +91,17 @@ Riesgos principales: integración/API, stock, WMS, dotación/sitios, campaña, s
 R3 incluye un experimento de Ship-from-store en **3 a 5 tiendas**. El documento 04 propone detener la ejecución al cumplir cuatro semanas o 300 pedidos, lo que ocurra primero, sujeto a ratificación. E10 ya forma parte del esfuerzo incluido en la capacidad presupuestada. G2 debe autorizar techo monetario de exposición y frontera de costos antes de iniciar. Ver [revisión del avance del 23](../registros/revision_avance_2026-10-23.md).
 
 Faltan volumen, margen y flujos para ROI/VAN/payback numéricos. Beneficio potencial = pedidos recuperables × margen incremental, más costos realmente evitados, menos gasto incremental; ajustar sustitución de canal y costos de oportunidad, que no son ahorro de caja automático. El presupuesto es ahora una base cuantificada para discutir inversión, no prueba de esos beneficios.
+
+## 1.7 Evidencia económica para Finanzas y sponsor
+
+El caso exige atender retorno y control de inversión además de resultados operativos (pp. 6/7). La ficha para cada decisión de inversión debe relacionar beneficio, costo a término y alternativas con evidencia o supuestos explícitos:
+
+| Elemento | Evidencia o supuesto necesario | Uso en la decisión |
+| --- | --- | --- |
+| Demanda y cobertura | Pedidos elegibles, canales, tiendas y volumen comparable por periodo | Dimensionar qué parte de la operación puede beneficiarse; no aplicar una mejora piloto a toda la empresa. |
+| Contribución económica | Margen incremental de pedidos recuperables, sustitución de canal y costos de atención/logística | Distinguir ventas retenidas de beneficio neto; no duplicar el mismo pedido como varios beneficios. |
+| Eficiencia | Tiempo activo de trabajo, capacidad liberada y costos efectivamente evitables | Separar mejora de preparación de ahorro de caja; menor tiempo transcurrido no acredita reducción de personal o gasto. |
+| Costo y compromisos | Contratos, licencias, consumo, transición, horas de tienda, gasto comprometido/restante y reserva disponible | Actualizar forecast por categoría/periodo y costo a término, sin duplicar inversión y operación ya incluidas en 1.330. |
+| Opciones y sensibilidad | B/C con alcance comparable; demoras, demanda o costos distintos de la base | Decidir mantener, acotar, cambiar o detener compromisos futuros y explicitar impacto sobre beneficios. |
+
+Finanzas y los dueños de beneficio proponen los rangos aceptables con sponsor/comité; no hay umbral de retorno aprobado en el material. En el ejercicio puede defenderse una hipótesis económica condicionada, pero no afirmarse rentabilidad demostrada. La pauta pide beneficios, costos, riesgos, supuestos y recomendación, sin exigir ROI/VAN u otra fórmula financiera específica. El primer tramo propuesto sigue sujeto a sus condiciones técnicas, contractuales y operativas; no se transforma por esta ficha en una inversión aprobada.

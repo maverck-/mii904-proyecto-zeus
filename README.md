@@ -8,6 +8,8 @@ El [alcance](trabajo/04_alcance_y_backlog.md) y el [roadmap](trabajo/07_roadmap.
 
 **Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
 
+La [auditoría contra pauta y stakeholders](registros/auditoria_pauta_2026-10-23.md) identifica cobertura documental y pendientes de profundidad. La [matriz de trece interesados](registros/matriz_stakeholders.md) conecta intereses/tensiones del caso con respuestas y evidencia. Cobertura de rúbrica no equivale a nota obtenida ni a satisfacción validada.
+
 ## Incorporarse al trabajo
 
 1. Leer la [pauta](insumos/pauta.md), el [estado de entregables](trabajo/README.md) y las [responsabilidades](EQUIPO.md).

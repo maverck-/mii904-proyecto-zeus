@@ -12,6 +12,8 @@ Los siete componentes de la p. 8 del enunciado forman una propuesta común: prob
 | 6 | [Estimación](06_estimacion.md) | PERT 104, capacidad 120, categorías 1.330 + reserva 170, tramos 675/345/310 | Rogelio: calendario único, carga por épica/rol, frontera de costos y mensualización. |
 | 7 | [Roadmap](07_roadmap.md) | Parte de Maverick desarrollada: releases, calendario relativo, olas, carga por épica/etapa, primera salida y tres células dentro de E11 | Equipo/Rogelio: revisar dedicación por especialidad y fechas/contratos; primera salida al 95% y R2 al 96% son restricciones explícitas. |
 
+La [auditoría contra la pauta](../registros/auditoria_pauta_2026-10-23.md) distingue cobertura y profundidad pendiente. El Charter se complementa con la [matriz de trece stakeholders](../registros/matriz_stakeholders.md); la respuesta de diseño no implica aprobación ni satisfacción real.
+
 ## Revisar juntos
 
 Leer [ajustes con fundamento](../registros/integracion_avance_equipo.md) y [supuestos](../registros/acuerdos_y_supuestos.md). Conservar o cambiar propuestas explícitamente; cualquier cambio de cobertura actualiza costo/roadmap/beneficios. ESC-01 y sus cifras anteriores quedan como antecedente en Git.

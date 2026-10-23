@@ -33,6 +33,8 @@ E6 seguridad, E7 preparación de campaña y E11 rollout/adopción no se descarta
 
 Los cocientes usan valores completos y se muestran con un decimal. E2 y E9 parecen empatados por redondeo: 2,4 y 2,375 sin redondear. Las notas y tamaños son juicio del equipo; la corrección aritmética no prueba prioridad óptima. Registrar la regla de tamaño y revisarla cuando se refinan épicas.
 
+Para hacer reproducibles los tamaños se propone una **regla candidata por ratificar**: aproximar la media PERT de referencia de cada épica al valor más cercano de la escala 1, 2, 3, 5, 8, 13, 20 y, en empate, usar el mayor. Reproduce los nueve tamaños recibidos: por ejemplo, 4 pasa a 5 por empate y 17 pasa a 20. Es una reconstrucción compatible con la tabla, no evidencia de que ese haya sido el procedimiento original. Rogelio/equipo deben ratificarla o documentar otro fundamento. Normaliza este ejercicio de priorización; no convierte story points ni productividad entre equipos en unidades equivalentes.
+
 Lectura: E8a es pequeña y reduce exposición; E4 aporta valor visible pero depende de E1/E2/E3. E2 y E3 se adelantan por dependencia aunque su ratio sea menor. La compra OMS en G0 se propone por hitos y aceptación, sin dar por probada integración de antemano.
 
 ## 5.3 Secuencia resultante
@@ -50,6 +52,8 @@ Lectura: E8a es pequeña y reduce exposición; E4 aporta valor visible pero depe
 Se propone comprometer el flujo R1, la cobertura 68/M7 y la preparación de campaña, sujetos a autorización de capacidad/costo. PO reordena detalle dentro de límites; sponsor/comité cambia compromiso, fecha, cobertura o presupuesto. Ni el piloto ni el corte de R3 pueden modificarse silenciosamente si alteran evidencia/objetivos.
 
 E10, ruteo avanzado e incrementos opcionales son primeras opciones de diferimiento. E9 sostiene objetivo ≥85% al primer contacto a M12: recortarlo implica revisar Charter/Business Case, no solo borrar backlog. E6, observabilidad básica y continuidad no se eliminan para liberar capacidad.
+
+La presión de Comercial por funcionalidades se contrasta con integración y deuda técnica indispensable para sostener el flujo. No diferir E2/E3 imprescindibles solo por su WSJF ni agregar modernización no necesaria como «deuda técnica» sin justificación. PO y equipos adaptan detalle dentro de límites; la [matriz de stakeholders](../registros/matriz_stakeholders.md) identifica cuándo la tensión exige decisión de Tecnología/Operaciones o sponsor/comité.
 
 ## 5.5 Decisiones defendibles
 

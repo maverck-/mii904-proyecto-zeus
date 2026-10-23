@@ -36,6 +36,8 @@ Las cuatro olas organizan la expansión propuesta hasta 68/M7. Su ejecución dep
 
 Se proponen treinta días hábiles de altas y diez posteriores de estabilización/carga/VE-01 dentro de los cuarenta de referencia de M6/M7. Cada ola exige aceptación por sitio según 04 y revisión de estabilidad antes de la siguiente. Un sitio fallido no se cuenta como habilitado; una aceptación parcial actualiza la cobertura real y el forecast.
 
+La entrada a cada ola debe contrastar dos capacidades distintas: habilitación del sitio y operación diaria por turno después de abrir. Gerencias de tienda y Logística presentan dotación, carga habitual, dedicación al nuevo flujo y disponibilidad WMS/CD, según 04. Una célula capaz de instalar/configurar no demuestra que la tienda absorba preparación, retiro y excepciones. Sin esa evidencia, Operaciones no acepta el alta y PM eleva el efecto en cobertura/fecha; no se presume sobretiempo para sostener el plan.
+
 Mecanismo propuesto: tres células de dos funciones durante treinta días, con disponibilidad efectiva 75% y un día de célula por tienda. Ofrecen 135 persona-días efectivos frente a 116 requeridos. Su dedicación bruta 180 cabe dentro de 210 de E11/R2, sin cobrarla otra vez. La disponibilidad de esas funciones todavía debe confirmarse. Calibrar tiempos con el piloto y confirmar que perfiles, viajes/soporte y turnos caben en COST-01/COST-06.
 
 Si el promedio fuera 1,5 días por tienda se requieren 39 días de altas; si fueran dos, 52. Ambos desvían la ventana de treinta y el segundo supera los cuarenta totales. G1 debe resolver refuerzo autorizado, secuencia o cobertura; no consumir silenciosamente la preparación de campaña. El [dimensionamiento y sensibilidad](../registros/plan_alcance_roadmap.md) explicitan estas operaciones.

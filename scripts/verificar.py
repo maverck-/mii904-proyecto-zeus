@@ -284,12 +284,29 @@ for cells in rows('presentacion/pauta_construccion.md'):
 check([n for n, minutes in slides] == list(range(1,13)), 'La pauta de construcción propone doce láminas numeradas en orden.')
 check(sum(minutes for n, minutes in slides) == 25, 'La pauta de construcción debe sumar los 25 minutos propuestos.')
 
+# Cobertura documental de interesados; no acredita satisfacción o aceptación.
+stakeholders = {}
+for cells in rows('registros/matriz_stakeholders.md'):
+    if len(cells) == 7 and re.fullmatch(r'STK-\d\d', cells[0]):
+        check(cells[0] not in stakeholders, f'Stakeholder duplicado: {cells[0]}')
+        check(all(cells[i] for i in range(1,7)), f'Campos de interés/tensión/respuesta vacíos: {cells[0]}')
+        stakeholders[cells[0]] = cells[1].split(', p. ')[0]
+expected_stakeholders = [
+    'Gerente General / Sponsor', 'Gerente Comercial', 'Gerente de Operaciones',
+    'Gerente de Logística', 'Gerente de Tecnología', 'CISO', 'Gerente de Finanzas',
+    'Gerentes de Tienda', 'Product Owner E-commerce', 'Arquitectura Empresarial',
+    'Equipos de desarrollo', 'Proveedor WMS', 'Proveedor Cloud',
+]
+check(stakeholders == {f'STK-{i:02d}': name for i,name in enumerate(expected_stakeholders,1)},
+      'La matriz debe conservar los trece stakeholders oficiales de pp. 6/7.')
+
 for error in errors:
     print('ERROR:', error)
 if errors:
     sys.exit(1)
-print(f'OK: {len(paths)} archivos, siete entregables, pauta 100%, {transcripts} transcripciones y {segments} segmentos.')
+print(f'OK: {len(paths)} archivos, siete entregables, pesos de rúbrica 100%, {transcripts} transcripciones y {segments} segmentos.')
 print(f'OK: fuentes, {presentations} presentaciones, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
 print('OK: WSJF, PERT, categorías presupuestarias, tramos y cargas; pauta de 12 láminas/25 minutos.')
 print('OK: asignación por épica/etapa, corte de primera salida y dimensión propuesta de 58 altas sin duplicar E11.')
+print('OK: trece stakeholders con interés, tensión, respuesta y evidencia previstos; no certifica satisfacción ni nota.')
 print('REVISAR: ratificación de alcance/calendario, dedicación por especialidad, costos y exposición monetaria del experimento; no se certifica confianza de fecha.')

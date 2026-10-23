@@ -46,24 +46,27 @@ La cobertura 68/M7 es un compromiso propuesto, condicionado a capacidad, costo y
 | --- | --- |
 | Comité Ejecutivo | Gates, financiación y aceptación de cambios de la referencia aprobada que afecten inversión/beneficio. |
 | Sponsor Gerente General | Propósito, prioridades y cambios de fecha/alcance mayor dentro de límites; escalar los que alteran condiciones del caso. |
+| Gerente Comercial | Resultados de conversión, ventas y experiencia; revisar con PO el valor y costo de oportunidad sin desplazar controles/habilitadores indispensables. |
 | PM de ZEUS | Coordinar frentes, dependencias, riesgos, cambios y forecast. ZEUS se trata aquí como proyecto con frentes; no se presupone un programa formal sin definirlo. |
 | PO e-commerce y función PO/representante de tiendas | Priorizar backlog por release dentro de objetivos y límites acordados. El rol adicional de tiendas es propuesta organizacional. |
-| Gerente de Tecnología / Arquitectura Empresarial | Estándares, interfaces y viabilidad técnica. |
+| Gerente de Tecnología | Integración y modernización compatibles con continuidad; coordinar viabilidad y operación técnica. |
+| Arquitectura Empresarial | Estándares y desacoplamiento; justificar decisiones y controles sin duplicar evidencia o crear gates por defecto para cada historia. |
 | CISO | Controles y facultad de detener release ante riesgo crítico. |
 | Logística / Operaciones / gerencias de tienda | Beneficios, dotación, capacidad y aceptación operacional; pueden impedir una salida no operable. |
 | Finanzas | Costo total, forecast, reservas y liberación financiera con comité. |
 | Proveedores WMS, OMS y cloud | Compromisos, integración, licencias y soporte según contrato. OMS comprado es supuesto del equipo. |
 
-Interesados adicionales: Comercial, equipos de desarrollo y usuarios de las tiendas. Los equipos empresariales propuestos son distintos de los cuatro integrantes académicos.
+Los trece stakeholders de las pp. 6/7 del enunciado están trazados en la [matriz de intereses, tensiones y respuesta](../registros/matriz_stakeholders.md). Comercial y equipos de desarrollo son interesados oficiales del caso; clientes y usuarios operativos se añaden como participantes de validación de necesidad/uso. Los equipos empresariales propuestos son distintos de los cuatro integrantes académicos.
 
-La sesión 03, p. 11, pide mostrar decisiones y dependencias además de listar interesados. Se propone este vínculo de participación, sin atribuir validaciones ya realizadas:
+La sesión 03, p. 11, pide mostrar decisiones y dependencias además de listar interesados. Se proponen las siguientes reglas para resolver tensiones; la matriz enlazada conserva los trece intereses, su respuesta y la evidencia pendiente, sin atribuir aprobaciones reales:
 
-| Interesado | Impacto / aportación | Decisión o dependencia que debe coordinarse |
+| Intereses en tensión | Regla propuesta | Autoridad y evidencia |
 | --- | --- | --- |
-| Clientes y personal de tiendas | Viven compra, preparación, retiro y devolución | Feedback y aceptación del flujo con PO/Operaciones; no aprueban por sí solos cambios de presupuesto. |
-| Gerencias de tienda / Logística | Absorben formación, turnos, stock y carga | Disponibilidad y aceptación de cada sitio/ola; condición de operabilidad. |
-| Proveedores ERP/WMS/OMS | Condicionan datos, interfaz y soporte | Hitos contractuales y evidencia antes de VT-01/olas; PM/Tecnología coordinan. |
-| Finanzas, CISO y Arquitectura | Evalúan costo, exposición y viabilidad | Evidencia para comité y aceptación de controles/arquitectura según derechos anteriores. |
+| Velocidad del sponsor frente a estabilidad/seguridad | Revisar funcionalidad, cobertura o fecha antes de omitir condiciones de salida | PM presenta opciones; CISO/Operaciones pueden impedir salida crítica/no operable; sponsor/comité decide compromisos compatibles con restricciones. |
+| Funcionalidad comercial frente a integración/deuda técnica | Proteger habilitadores imprescindibles y controles; priorizar opcionales por valor y capacidad | Comercial/PO/Tecnología revisan evidencia y dependencias de 05; comité acepta cambios mayores. |
+| Autonomía PO/desarrollo frente a estándares y controles | Decidir detalle dentro de límites y reutilizar la evidencia de calidad; no elevar cada historia al comité | PO/equipos con Arquitectura/CISO según riesgo; foro de 02 resuelve bloqueos y PM escala impactos mayores. |
+| Escalabilidad cloud frente a inversión/continuidad | Justificar cloud selectivo por necesidad y costo total; el proveedor no determina el alcance | Tecnología/Arquitectura proponen; Finanzas/CISO/Operaciones revisan; autoridad de cambio según impacto. |
+| Expansión comercial frente a capacidad de tiendas/WMS | Aceptar cada sitio con turnos, stock, formación, interfaces y soporte; calibrar ritmo antes de escalar | Operaciones/Tiendas/Logística y proveedor presentan evidencia; G1/olas revisan forecast y PM escala cambios. |
 
 Si cambia un objetivo, límite o financiación, actualizar este Charter y comunicar a los interesados afectados; no dejar el cambio solo en una reunión (clase 3, parte 2, 55:53 a 57:57). El detalle operativo permanece en 04 a 07.
 

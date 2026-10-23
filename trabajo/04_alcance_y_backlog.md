@@ -31,6 +31,8 @@ Fuera: reemplazo ERP o WMS completo, IA/recomendaciones, data platform corporati
 
 Interfaces: ERP, WMS, POS, e-commerce, pagos, logística y CRM en cuanto afecten flujo/conciliación. Cada una necesita dueño, contrato, prueba, recuperación y soporte. Mantener un sistema no elimina su trabajo de integración.
 
+Cloud selectivo se justifica por necesidad del flujo, capacidad y costo total, con revisión de Tecnología/Arquitectura, Finanzas, CISO y Operaciones. La propuesta del proveedor no convierte una migración amplia en alcance incluido; cualquier cambio de frontera debe evaluarse y autorizarse con impacto en PAQ/categorías de costo.
+
 ## Alcance fijo, adaptable y condicionado
 
 | Tratamiento | Elementos de esta propuesta | Regla de decisión |
@@ -130,6 +132,8 @@ Backlog inicial propuesto para refinar dentro de las épicas ya estimadas, sin a
 ### Aceptación por sitio, por release y del proyecto
 
 Cada tienda/CD debe presentar evidencia de datos y reservas, roles/turnos formados, pedido completo probado, conciliación, alertas con atención, soporte y reversión. Tecnología/CISO revisan controles y Operaciones acepta el sitio. Un sitio que no cumple permanece cerrado para el nuevo flujo; no se cuenta como alta aceptada.
+
+La capacidad de habilitar tiendas no demuestra capacidad para operarlas a diario. Antes de cada alta se propone contrastar, por turno, pedidos previstos y dedicación activa por pedido, más formación/excepciones/soporte, contra horas disponibles después del trabajo habitual. Las 7,2 h de preparación del caso y la meta <3 h miden tiempo del flujo; no se convierten automáticamente en horas de mano de obra. Confirmar dotación, reemplazos y costo con Tiendas/Operaciones en COST-06 o aporte interno declarado, sin asumir sobretiempo gratuito ni duplicar E11. Si no cabe la operación, ajustar proceso, dotación o cobertura antes de aceptar el sitio.
 
 La aceptación del release reúne sitios, funciones y calidad, además de las métricas de uso/mejora que correspondan. G1 requiere evidencia de valor según 01/SUP-16; VE-01 exige preparación de campaña. Al cierre M12, sponsor y Operaciones reciben capacidades aceptadas, documentación, soporte, pendientes y responsables de beneficios, con resultados y brechas visibles. La entrega de software no reemplaza esas condiciones.
 
