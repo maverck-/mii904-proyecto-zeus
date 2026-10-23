@@ -13,6 +13,8 @@ Según sesión 04, pp. 5 a 8, y clase 3, parte 2, 10:44 a 17:49 ([aportes](../re
 
 El producto continúa evolucionando tras M12. El proyecto no termina con instalar software: requiere aceptación, transferencia y responsables para beneficios pendientes. Ambos alcances se costean sin duplicar trabajo.
 
+Ejemplo para redactar la frontera: el alcance incluye el servicio de disponibilidad y reserva de inventario, sus interfaces y la gestión de excepciones (CAP-02). La actualización web en menos de dos minutos es una meta medible de ese servicio (KPI-02), con horizonte y método definidos en 01/03; escribir solo la meta no identifica qué se construye ni qué se acepta en cada release.
+
 ## Fronteras y cobertura
 
 Incluye OMS adquirido/configurado e integrado, contratos API/datos, inventario y reserva, pedidos trazables, Click & Collect (C&C), app de preparación en tienda, formación, continuidad, soporte, seguridad, observabilidad y medición. En R3: devoluciones elegibles, ampliación de observabilidad y experimento limitado de Ship-from-store sujeto a G2/M9. La instrumentación básica y controles empiezan con el primer flujo, no en R3.
@@ -105,5 +107,7 @@ DoD propuesta: criterio funcional, pruebas necesarias, controles, telemetría, d
 Ejemplo de distinción: aceptar CAP-04 exige que un pedido reservable pueda prepararse y retirarse con estados/permiso correctos y que se mida su uso; la DoD exige además pruebas, revisión de seguridad, telemetría, documentación y reversión. Cumplir la función sin esa calidad no habilita liberar; cumplir DoD sin uso/mejora no acredita beneficio.
 
 ## Cambios y acuerdos pendientes
+
+Maverick integra este documento y los cuatro integrantes revisan inclusiones, exclusiones y diferimientos antes de cerrar la propuesta. Si el diagnóstico o la evaluación de alternativas cambia esa frontera, actualizar también Business Case, Charter, priorización, estimación y roadmap; no limitar la corrección a una lista de backlog.
 
 Revisar con Rogelio catálogo/CD, reparto de épicas por release/rol, aceptación por ola y experimento de 3 a 5 tiendas. Nuestro modelo previo de cinco brigadas no es un recurso confirmado adicional ni un requisito a sumar al nuevo presupuesto. Ratificar o sustituir SUP-14/SUP-16 en la base de alcance. PO ordena dentro de límites; PM integra impacto; sponsor/comité acepta cambios de cobertura comprometida, costo, fecha o beneficio. CISO y Operaciones deciden sobre exposición crítica y operabilidad. Actualizar estimación y roadmap al cambiar alcance.

@@ -43,6 +43,8 @@ Citar enunciado por página y transcripción por clase, parte y tiempo. Diferenc
 
 Un ítem de backlog sigue propuesto hasta acordar su inclusión. No sustituir los datos del retail por cifras del ejercicio financiero de onboarding. Una comprobación del script valida operaciones/documentos, no factibilidad empresarial.
 
+También se puede aportar una sección desde Word o Google Docs, indicando el documento afectado, el texto propuesto y las dudas pendientes. Quien integra lleva el cambio al Markdown canónico y pide revisión del contenido incorporado. No hay sincronización automática: resolver diferencias antes de generar una versión para entregar y evitar copias finales contradictorias. No es necesario cambiar de herramienta para participar.
+
 ## Archivos derivados y Typst
 
 Editar contenido en Markdown. Decidir si habrá informe antes de pasarlo al formato final. Versionar módulos propios `.typ`; guardar compilaciones en `build/`, ignorado por Git. La muestra técnica y su compilación están en [Typst](typst/README.md).

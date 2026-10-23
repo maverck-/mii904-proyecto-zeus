@@ -17,7 +17,7 @@
 1. Revisar la [comparación del nuevo avance](registros/revision_avance_2026-10-23.md): cálculos correctos y diferencias de evidencia/calendario.
 2. Rogelio/Maverick: un calendario dotación/costo, matriz de carga por épica/tramo/rol y cobertura de preparación/campaña M8. El 88% conjunto no elimina R2 al 96%.
 3. Definir fronteras entre 840 de equipos y OMS/WMS/seguridad/formación/gobierno; distribuir 675/345/310 por categorías/mes. Reserva 170 no se cuenta dos veces.
-4. Ratificar catálogo/CD/umbrales piloto anteriores y límites del nuevo experimento 3–5 tiendas. Recortar devolución exige cambiar objetivo/beneficios.
+4. Los cuatro revisan inclusiones/exclusiones preparadas por Maverick; ratificar catálogo/CD/umbrales piloto anteriores y límites del nuevo experimento 3–5 tiendas. Revisar acompañamiento y disponibilidad para adoptar las prácticas, así como alertas/respuesta y congelamiento posterior a R2/VE-01. Recortar devolución exige cambiar objetivo/beneficios.
 5. Revisar cifras y límites en [mapa/guion](presentacion/mapa_y_guion.md), confirmar formato/hora, montar archivo y ensayar 25 + 10. La estimación ya existe; falta conciliación, no inventar otro total.
 
 Las decisiones deben registrarse como aceptadas, corregidas o rechazadas con fundamento. Las aprobaciones de una empresa ficticia se proponen, no se simulan como realizadas. Las responsabilidades están en [EQUIPO.md](EQUIPO.md).

@@ -43,11 +43,19 @@ Sin sexto equipo, la fuente plantea refuerzo mediante reserva o priorizar tienda
 | G0 | M1 | Arquitectura inicial, OMS por hitos y primer tramo propuesto 675 MM; flujo categoría/mes por conciliar | Comité/sponsor con Finanzas y Arquitectura. |
 | VT-01 | Final M2 | Prueba de interfaces/datos, OMS, capacidad, controles y forecast antes de piloto | Tecnología/Arquitectura, CISO, Operaciones; PM escala desvíos al comité. |
 | G1 | M5 | Evidencia de primera entrega de valor y decisión de expandir con costo/capacidad aceptados | Comité/sponsor y dueños de beneficio. |
-| VE-01 | M7 | Cobertura segura, carga, recuperación, soporte y preparación de campaña; congelar cambios de alto riesgo | Operaciones/Tecnología/CISO y sponsor. |
+| VE-01 | M7, después de aceptar R2 | Cobertura segura, carga, recuperación, soporte y preparación de campaña; iniciar congelamiento propuesto | Operaciones/Tecnología/CISO y sponsor. |
 | G2 | M9 | Revisar beneficios, campaña, forecast y financiación de devoluciones/experimento R3 | Comité/sponsor, Finanzas y dueños de beneficio. |
 | Cierre | M12 | Aceptación, transferencia, costo y beneficios pendientes con responsables | Sponsor/Operaciones y dueños de beneficio. |
 
 VT-01 y VE-01 son revisiones técnicas/operacionales adicionales a los gates del equipo. El contrato OMS de G0 requiere hitos de prueba/aceptación, para no asumir resueltas APIs/licencias antes de validar. Reglas de devoluciones pueden analizarse antes de M9, pero gasto/compromiso R3 requiere autorización y estimación.
+
+### Preparación operativa y congelamiento propuestos
+
+E8a debe permitir detectar stock desactualizado, pedidos detenidos y fallos del servicio desde R1. Antes de abrir, probar que las alertas llegan a un responsable, que existe un procedimiento de respuesta y que se puede recuperar o revertir el flujo. Antes de cada ola, revisar su cobertura y capacidad de atención; VE-01 añade carga representativa de campaña y prueba de respuesta/recuperación. E8b en R3 amplía la centralización, no inaugura el monitoreo.
+
+Para compatibilizar despliegue R2 y protección de campaña, se propone iniciar el congelamiento después de aceptar R2 y superar VE-01 dentro de M7, hasta terminar Black Friday aproximadamente en M8. Las fechas exactas dependen del calendario confirmado. Durante esa ventana no se despliegan funcionalidades ordinarias nuevas en producción; correcciones críticas de seguridad o continuidad requieren evaluación y autorización de Operaciones/Tecnología/CISO, con escalamiento al sponsor si cambian compromisos. Esto precisa la regla general de congelar cambios de alto riesgo y requiere ratificación.
+
+Continúan monitoreo, soporte y estabilización con dotación prevista. El análisis o la preparación en ambientes no productivos solo usa capacidad y gasto autorizados; no convierte M8 en un release R3 ni anticipa financiación de G2. Si R2 no se acepta a tiempo, escalar cobertura, fecha y costo: no superponer automáticamente despliegues ordinarios con el congelamiento para conservar la cifra 68/M7.
 
 ## Dependencias y acciones
 

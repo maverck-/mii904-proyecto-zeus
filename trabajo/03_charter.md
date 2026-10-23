@@ -86,7 +86,7 @@ Estas cifras sustituyen la tabla sin cuantificar y los escenarios de costo de ES
 
 ## Hitos y criterios de salida
 
-G0/M1: aprobación de arquitectura inicial y selección/contratación OMS por hitos, con financiación y validación técnica condicionadas. VT-01/M2: revisión de viabilidad antes del piloto/escala. G1/M5: evidencia de primera entrega y decisión de ampliar. VE-01/M7: preparación, cobertura segura y congelamiento de cambios de alto riesgo, con excepciones críticas controladas. Campaña aproximadamente M8. G2/M9: beneficios/forecast y financiación de R3. Cierre M12: aceptación y traspaso con responsables de beneficios pendientes.
+G0/M1: aprobación de arquitectura inicial y selección/contratación OMS por hitos, con financiación y validación técnica condicionadas. VT-01/M2: revisión de viabilidad antes del piloto/escala. G1/M5: evidencia de primera entrega y decisión de ampliar. VE-01/M7, después de aceptar R2: preparación, cobertura segura e inicio del congelamiento propuesto hasta el fin de campaña, con excepciones críticas controladas y soporte activo. Campaña aproximadamente M8, con fechas por confirmar. La regla de producción y su ratificación se detallan en [07](07_roadmap.md). G2/M9: beneficios/forecast y financiación de R3. Cierre M12: aceptación y traspaso con responsables de beneficios pendientes.
 
 Éxito propuesto: objetivos medidos, adopción >80%, ejecución dentro del costo autorizado compatible con techo, riesgos críticos de seguridad tratados y campaña operable. «Sin interrupciones» es objetivo de continuidad, no garantía anticipada de resultado. Para aprobación de release exigir pruebas y soporte, además de medir disponibilidad con ventana definida.
 

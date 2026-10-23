@@ -56,3 +56,11 @@ Charter define mandato; EDT PAQ costo y cobertura; backlog CAP prioridades; road
 La clase 3 pide conectar gobierno, puente y entrega (sesión 03, p. 15; sesión 04, p. 20; [aplicación](../registros/aportes_clase_03.md)). En la revisión semanal, PO y equipos presentan terminados, bloqueos, evidencia y trabajo próximo; PM/Arquitectura actualizan dependencias y forecast del roadmap. Si cambia costo, cobertura, fecha o beneficio comprometido, PM eleva impacto al sponsor/comité antes de modificar la referencia aprobada. La decisión vuelve al backlog y a los documentos afectados. No mantener una fecha ejecutiva inalterada mientras el equipo ya pronostica otra.
 
 Para APIs/integración, proponer políticas Kanban explícitas: entrada con interfaz/dueño y aceptación definidos; límites WIP acordados según capacidad por especialidad; bloqueos visibles con responsable; priorizar terminar o desbloquear antes de abrir más trabajo. Medir terminados, tiempo de ciclo y antigüedad/bloqueos según 07. Los límites numéricos deben justificarse con SUP-02, no copiarse del tablero de ejemplo (sesión 06, pp. 11 a 17).
+
+## 2.9 Adopción de las prácticas
+
+La madurez desigual del caso no implica que todos desconozcan agilidad. Como complemento propuesto, en R0 se revisan experiencia, disponibilidad de PO/tiendas y capacidad de los equipos. Acordar una forma inicial de trabajar: entrada al backlog, criterios de aceptación y DoD, responsables de decisión, límites WIP y tratamiento de bloqueos. Usar trabajo real del primer flujo para practicarla y ajustarla.
+
+Asignar una función de facilitación para acompañar a los equipos y remover impedimentos; no asumir una contratación adicional ni convertirla en jefatura de tareas. Confirmar quién la realiza y con qué dedicación. PO y representantes de tienda deben disponer de tiempo para decidir y revisar, además de asistir a reuniones.
+
+En las primeras iteraciones, revisar terminados, tiempos de espera, bloqueos y utilidad del feedback. Ajustar prácticas según esa evidencia; contar ceremonias o mantener ocupación alta no demuestra mejora. Formación, facilitación y participación consumen capacidad: conciliarlas con los 840 MM de equipos y las fronteras de COST-06/COST-07 en 06, sin sumar otro cargo automáticamente. Esta adopción propuesta sigue pendiente de revisión del equipo.

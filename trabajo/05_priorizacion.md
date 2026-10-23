@@ -42,7 +42,7 @@ Lectura: E8a es pequeña y reduce exposición; E4 aporta valor visible pero depe
 | R0, M1 y verificación técnica hasta M2 | Arquitectura, contratación OMS escalonada, acuerdo WMS, entornos y controles base | G0/M1 y VT-01/M2; «mes 0» no añade un mes no costeado al horizonte. |
 | R1, evidencia hasta M5 | E1, flujos necesarios E2/E3, E8a y piloto E4/E5 en 10 tiendas; E6/E11 desde inicio | Proponer uso M4 para evaluar hasta M5; medir valor y aceptación, no solo instalación. |
 | R2, hasta M7 | E4/E5 en 68 tiendas, E7 carga/contingencia, E11 preparación y adopción | Costo, personal y operaciones aceptados antes de VE-01; sostener objetivos sin forzar salidas no operables. |
-| Campaña, aproximadamente M8 | Estabilización y soporte, sin cambios funcionales de alto riesgo | Disponibilidad/continuidad y dotación confirmadas; no tratar este periodo como capacidad R3 libre. |
+| Campaña, aproximadamente M8 | Estabilización y soporte; congelamiento propuesto desde aceptación R2/VE-01 en M7 hasta fin de campaña | Sin nuevas funcionalidades ordinarias en producción; excepciones críticas controladas según 07. Dotación confirmada; no tratar este periodo como capacidad R3 libre. |
 | R3, M9 a M12 tras G2 | E9, E8b, E10 en 3 a 5 tiendas, integraciones no imprescindibles y ruteo avanzado de OMS | Solo trabajo efectivamente diferible; definir límites, costo y aceptación antes de iniciar. |
 
 ## 5.4 Compromisos y adaptación

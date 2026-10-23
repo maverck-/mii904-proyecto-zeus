@@ -62,6 +62,8 @@ Se incorporan [aportes docentes trazables](aportes_clase_03.md) a problema, inte
 
 ## Control de cambios
 
+Precisiones operativas propuestas para revisión: alcance integrado por Maverick y revisado por los cuatro; adopción de prácticas según madurez/capacidad en 02; alertas y respuesta desde R1; congelamiento desde aceptación R2/VE-01 hasta fin de campaña según 07. No modifican los totales recibidos el 23 ni acreditan aprobación colectiva. Su dedicación y costo deben conciliarse con SUP-02/SUP-18/SUP-19.
+
 | Fecha | Actualización | Estado |
 | --- | --- | --- |
 | 20-10-2026 | ESC-01: escenario anterior con otra cobertura, costos y exclusiones | Sustituido como propuesta vigente; conservado en Git. |
