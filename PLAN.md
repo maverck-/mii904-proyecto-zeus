@@ -16,6 +16,10 @@ La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md
 
 La [auditoría de pauta y stakeholders](registros/auditoria_pauta_2026-10-23.md) prioriza retorno/evidencia económica, capacidad por turno y especialidad, regla WSJF y resolución de tensiones. El Charter y la pauta de construcción ya incorporan la trazabilidad; el estado sigue condicionado a ratificación y factibilidad.
 
+Como complemento solicitado el 23, ya están disponibles [fuentes públicas sobre logística/valor](insumos/evidencia_logistica_y_valor.md) y un [modelo económico con sensibilidad ilustrativa](registros/modelo_retorno_logistico.md). Se precisan proceso físico/WMS, promesa y acompañamiento de tiendas en 01/02/04/06/07, con SUP-23/24/25. Esta ampliación mejora el argumento, pero no cierra retorno local o suficiencia de dotación. Rogelio/Maverick deben contrastar inclusión en E1–E5/E11 y costos antes de ratificar; no se reduce la base de equipos por analogía ni se incorpora H3/TMS al alcance.
+
+La [revisión de cierre de auditoría](registros/cierre_auditoria_2026-10-23.md) recoge las correcciones actuales y decisiones pendientes. La [base de ejecución](registros/base_ejecucion.md) ya integra cuarta célula, campo/traslados y sexto equipo anticipado; su verificador calcula la respuesta de costo. Prioridad: ratificar recursos/CD y precios, confrontar B/C con volumen cubierto/margen y estabilizar el contenido que pasa a presentación.
+
 ## Revisar y cerrar hoy
 
 1. Revisar la [comparación del nuevo avance](registros/revision_avance_2026-10-23.md): cálculos correctos y diferencias de evidencia/calendario.

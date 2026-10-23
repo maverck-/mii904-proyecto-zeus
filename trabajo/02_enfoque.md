@@ -53,7 +53,7 @@ El contrato OMS en M1 se plantea con hitos de validación y aceptación; no asum
 
 Revisión de sprint cada dos semanas con responsables de tienda piloto y PO de e-commerce; revisión semanal de métricas de flujo y bloqueos; foro de integración semanal PM/PO/Arquitectura para dependencias. Son propuestas del equipo y requieren disponibilidad, SUP-02.
 
-El calendario de 06/07 propone equipos de unas seis personas: cinco en sprints 1–5, seis en 6–15 y cuatro desde 16, antes de campaña. Debe confirmarse que esa reducción permita sostener soporte y continuidad. Son equipos empresariales distintos de los cuatro integrantes académicos, sin disponibilidad/productividad comprobadas. La estimación relativa no sustituye carga por especialidad ni convierte equipos heterogéneos en capacidad perfectamente intercambiable.
+El calendario de 06/07 propone equipos de unas seis personas: cinco en sprints 1–4, seis en 5–15 y cuatro desde 16; el sexto arranca en el 5 y entrega desde el 6, antes de campaña. Debe confirmarse que esa reducción permita sostener soporte y continuidad. Son equipos empresariales distintos de los cuatro integrantes académicos, sin disponibilidad/productividad comprobadas. La estimación relativa no sustituye carga por especialidad ni convierte equipos heterogéneos en capacidad perfectamente intercambiable.
 
 ## 2.7 Puente de artefactos y autoridad
 
@@ -78,3 +78,9 @@ En las primeras iteraciones, revisar terminados, tiempos de espera, bloqueos y u
 La tensión entre estándares y autonomía se gestiona con límites explícitos y evidencia compartida. PO y equipos deciden orden, detalle y solución dentro del mandato y los estándares; una misma evidencia de DoD, interfaz o seguridad sirve a la revisión de salida correspondiente. Arquitectura/CISO intervienen según riesgo, sin agregar por defecto un gate ejecutivo a cada historia. El foro semanal existente resuelve dependencias; un bloqueo crítico se escala sin esperar esa reunión. Si las esperas por aprobación deterioran el flujo, revisar el mecanismo y mantener el control necesario, no duplicarlo.
 
 El proveedor WMS conserva su lógica contractual/tradicional: acordar entregas, interfaces y ventanas de prueba que permitan integrar incrementos internos, sin asumir que adoptará Scrum. Para cloud, Tecnología/Arquitectura comparan servicios administrados con las opciones existentes por necesidad, escalabilidad, continuidad, seguridad y costo total; la preferencia del proveedor no autoriza ampliar arquitectura o presupuesto. Estas reglas responden a los intereses y tensiones de las pp. 6/7, detallados en la [matriz de stakeholders](../registros/matriz_stakeholders.md).
+
+## 2.11 Aprendizaje temprano sobre operación y promesa
+
+La [evidencia complementaria](../insumos/evidencia_logistica_y_valor.md) orienta una hipótesis conjunta de producto y logística. En las primeras iteraciones se propone probar reserva, disponibilidad WMS y preparación con usuarios operativos, medir y decidir mantener, corregir o descartar una solución. Un MVP debe completar un flujo acotado con controles y reversión; una demostración o una etiqueta comercial no prueban beneficio.
+
+Se mantienen los sprints propuestos y el gobierno híbrido por las dependencias, contratos, financiación y continuidad de ZEUS. El aprendizaje no exige esperar al gate financiero para corregir una historia dentro del mandato. La velocidad de experimentación protege stock, datos y operación; no se atribuye esta forma de trabajo como política verificada de otra empresa. Logística/Tiendas participan en aceptación y feedback, con dedicación estimada y separada de desarrollo.

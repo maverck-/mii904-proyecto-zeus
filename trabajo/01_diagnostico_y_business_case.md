@@ -10,6 +10,8 @@ Se separa problema de solución conforme a sesión 03, pp. 6/7, y clase 3, parte
 
 El diagnóstico relaciona tres condiciones: actualización de stock web entre 45 y 120 minutos, datos de clientes/productos desalineados y visibilidad limitada de pedidos en tiendas. Pueden contribuir a cancelaciones y dificultades de atención, junto con reglas operativas, dotación y conciliaciones. El caso no permite separar el efecto de cada causa; esa relación se mantiene como hipótesis por contrastar.
 
+La revisión complementaria refuerza el diagnóstico logístico: contrastar inventario físico, movimientos WMS, esperas de preparación, cupos y dotación, además de sincronización y estados digitales. Logística y Operaciones son corresponsables del resultado con Tecnología; instalar un OMS no demuestra que esa cadena pueda cumplir su promesa. Se mantiene B modular con ERP/WMS conservados y adaptaciones acotadas, sujetas a viabilidad.
+
 ERP y WMS deben mantenerse bajo las restricciones del caso. Evitar reemplazarlos limita el alcance de cambio, pero obliga a integrar y gestionar legacy; no demuestra por sí solo un menor costo total. La oportunidad es construir una experiencia omnicanal confiable con servicios reutilizables, coordinando personas, operación y tecnología (enunciado, pp. 3 a 5).
 
 ## 1.2 Drivers estratégicos, métricas e hitos
@@ -33,16 +35,20 @@ Hitos obligatorios del escenario empresarial: horizonte 12 meses, valor dentro d
 
 ## 1.3 Alternativas y recomendación
 
-| Alternativa | Inversión preliminar | Horizonte del caso | Evaluación |
-| --- | ---: | --- | --- |
-| A. Reemplazo integral | 1.850 MM CLP | 12 a 18 meses | Excede el techo en 350 MM y puede exceder los 12 meses. No recomendada con restricciones actuales. |
-| B. Plataforma modular | 1.350 MM CLP | 9 a 12 meses | Mantiene ERP/WMS e incorpora APIs, gestión de pedidos y capacidades digitales; base del equipo, condicionada a viabilidad, valor M5 y costo. |
-| C. MVP focalizado | 800 MM CLP | 5 a 7 meses | Menor exposición inicial, pero no prueba valor dentro de M5 ni incluye necesariamente el despliegue nacional y R3 propuestos. |
-| Diferir / no actuar | Sin monto informado | Por evaluar | Evita comprometer inversión inmediata, manteniendo problemas y costo de oportunidad. No equivale a costo cero. |
+**Recomendación:** B modular escalonada como hipótesis de inversión, con comparación de costo/beneficio frente a C antes de ampliar compromisos. El criterio decisivo es el valor adicional de cobertura, devolución y evolución sostenible frente a su costo y exposición. Si C satisface los mismos requisitos y ofrece mayor valor neto, se recomienda C. La preferencia por B no demuestra esa diferencia económica.
 
-Recomendamos B porque conserva ERP/WMS y permite organizar inventario, pedidos y C&C en entregas sucesivas. Su inversión y plazo son referencias preliminares del enunciado (p. 7); no acreditan que la cobertura de 68 tiendas y el experimento adicional quepan en el presupuesto. Si la integración o capacidad no sostienen el plan, revisar cobertura, secuencia o alternativa con criterios explícitos.
+| Criterio | A: 1.850 MM / 12–18 meses | B: 1.350 MM / 9–12 meses | C: 800 MM / 5–7 meses | Diferir |
+| --- | --- | --- | --- | --- |
+| Techo 1.500 / horizonte 12 meses | Excede costo y puede exceder plazo | Compatible en referencia; propuesta propia base 1.330 más reserva 170 | Compatible en referencia; costo total comparable por definir | Mantiene caja inicial, conserva costo de oportunidad |
+| Primera evidencia de valor M5 | Requiere corte temprano no demostrado | R1 propuesto, con capacidad y medición por sostener | Requiere corte temprano; plazo total no impide ni prueba valor M5 | No demuestra la mejora requerida |
+| Preparación Black Friday | Cambio amplio eleva exposición | Olas y salida operable condicionadas a recursos | Menor foco inicial; debe presupuestar campaña e integración | Conserva problemas y exposición actuales |
+| Cobertura | Detalle no especificado por el caso | Propuesta 10 piloto; meta 68 condicionada | Cobertura no especificada; comparar misma población/catálogo | Sin ampliación de capacidad demostrada |
+| Evolución y desacoplamiento | Evaluar suite frente a ERP conservado | Diseñar contratos reutilizables y devolución elegible | También debe cumplir la condición de APIs; evolución adicional por dimensionar | Complejidad actual continúa |
+| Riesgo económico/operativo | Alta exposición inicial | Mayor programa de cambio que C; justificar por beneficio incremental | Menor inversión preliminar, alcance comparado por confirmar | No elimina riesgos ni equivale a costo cero |
 
-C también aborda inventario, pedidos y C&C con menor inversión preliminar. Conservar ERP/WMS o entregar el flujo inicial por etapas no demuestra por sí solo una ventaja exclusiva de B. La preferencia por B responde a la cobertura y evolución modular que propone el grupo para los doce meses; debe contrastarse con C bajo fronteras y costos comparables, incluyendo operación e integraciones. Su horizonte de 5 a 7 meses no prueba que C incumpla valor M5, del mismo modo que el horizonte de B no prueba que lo cumpla. Si B no sostiene viabilidad, valor temprano o costo, reconsiderar C y ajustar explícitamente cobertura/objetivos, sin afirmar una superioridad económica ya demostrada.
+Las descripciones, montos y horizontes A/B/C son referencias de p. 7; las evaluaciones y fronteras son propuestas del grupo. R0–R2 de B comparte el núcleo inventario/pedidos/C&C de C. T1+T2 suma 1.020 MM para piloto, expansión y campaña; supera en 220 la referencia C de 800, sin acreditar diferencia de costo a igual cobertura. T3 suma 310 para R3 y trabajo transversal: tampoco equivale exclusivamente al costo incremental de devolución.
+
+Antes de autorizar compromisos posteriores, comparar B y C para la misma cobertura, calidad, adopción y horizonte económico. Medir contribución esperada, costo de servir y costo a término; justificar el incremento si se conserva B. G2 permite reordenar o detener nuevas obligaciones según contrato. Si se difiere devolución, actualizar KPI-04/Charter y sus beneficios. Conservar ERP, usar APIs o entregar por etapas son criterios compartidos, no ventajas exclusivas de B.
 
 ## 1.4 Entregables, resultados, beneficios y valor
 
@@ -65,10 +71,12 @@ Se preservan los objetivos del Charter del equipo, proponiendo horizonte/cobertu
 | KPI-02 | Tiempo desde cambio confirmado de inventario hasta publicación web consistente | <2 min a M12 en interfaces cubiertas | Tecnología/Operaciones |
 | KPI-03 | Promedio de tiempo desde pedido confirmado a listo para retiro/despacho, separado por flujo | <3 h a M12 en operación cubierta | Logística/Tiendas |
 | KPI-04 | Devoluciones elegibles resueltas al primer contacto / devoluciones elegibles | ≥85% a M12, propuesta del equipo; referencia estratégica ≥90% | Operaciones/Comercial |
-| KPI-05 | Tiempo de servicio disponible / ventana de observación acordada | ≥99,9% en campaña y seguimiento regular con ventanas definidas | Tecnología/Operaciones |
+| KPI-05 | Disponibilidad de servicios ZEUS críticos, con prueba transaccional y ventana acordadas | ≥99,9% propuesto; vigilar también disponibilidad e-commerce extremo a extremo y contribución a su meta corporativa ≥99,9% | Tecnología/Operaciones |
 | KPI-06 | Pedidos C&C preparados mediante la app / pedidos C&C preparados de cohorte | >80% en piloto y cada ola aceptada, plazo operativo propuesto para revisión | Operaciones/Tiendas |
 
 Los denominadores y reglas son propuestas: confirmar antes de comparar la base corporativa con tiendas piloto. En KPI-02 no reemplazar <2 minutos por un percentil favorable sin explicitar el cambio de criterio; observar también frecuencia/duración de incumplimientos.
+
+KPI-05 distingue servicio ZEUS y experiencia completa: ambas mediciones conservan incidentes y dependencias. Acordar disponibilidad funcional del flujo C&C, además de respuesta técnica. Ante falla, permitir navegación/compra por flujos existentes compatibles o suspender la oferta C&C afectada con información clara; no confirmar stock incierto ni prometer continuidad sin una reversión probada. Delimitar ZEUS no elimina su responsabilidad por degradación causada al canal.
 
 KPI-04 y la meta estratégica difieren nominalmente en 5 puntos porcentuales, pero sus poblaciones son distintas. Esa resta no mide una brecha corporativa ni demuestra el aporte del proyecto. El grupo debe justificar la meta parcial y contrastarla con la cobertura definida en 04. El 64% es una base corporativa, no una base verificada de casos elegibles.
 
@@ -76,17 +84,19 @@ Para decidir la expansión en G1/M5, SUP-16 propone los siguientes criterios, pe
 
 La propuesta desarrollada de 04/07 habilita 10 tiendas, 1 CD y 2 familias al finalizar la semana 16, durante M4, y evalúa uso en semanas 17–20, frente a base comparable propuesta en 9–12; G1 al cierre de semana 22. Son bloques relativos de planificación por ratificar, no fechas civiles confirmadas. Piso operacional propuesto: 1.000 pedidos elegibles con seguimiento completo por fase; no es potencia estadística calculada ni garantía causal. Reportar conteos, mix, diferencias por tienda y datos faltantes. Sin evidencia suficiente el resultado es inconcluso, no una primera entrega de valor demostrada.
 
+Para medición G1 se propone seleccionar en R0 tiendas no piloto comparables y seguir las mismas familias en semanas 9–12 y 17–20, registrando promociones, mix, stock y carga. Evaluar contaminación por CD compartido y tendencias previas antes de interpretar diferencias como efecto causal. KPI-03 compara confirmación a listo en el mismo tipo de flujo: verificar si C&C ya existe. Si es nuevo y falta base comparable, medir desempeño absoluto/uso del nuevo flujo y usar otro resultado comparable para evidenciar valor; la reducción relativa de 25% no se calcula contra las 7,2 h corporativas por inferencia. G1 deberá ratificar esa sustitución antes de abrir el piloto, conservando la meta final <3 h.
+
 La exactitud de inventario se sigue como habilitador, sin duplicar beneficio económico. Observar disponibilidad en ventana definida de 28 días, sin autorizar interrupciones planificadas. Ejemplos condicionales de umbrales: 7,8% × 0,80 = 6,24%; 7,2 h × 0,75 = 5,4 h, solo si las bases piloto coincidieran con las corporativas. Las metas finales <2% y <3 h a M12 se mantienen. Un antes/después no demuestra atribución causal ni acredita resultado para todo el catálogo.
 
 ## 1.6 Costos, riesgos, supuestos y solicitud
 
-Se integra el presupuesto preliminar del equipo: **base 1.330 MM CLP + contingencia 170 = marco total 1.500 MM**, igual al techo del caso. Referencia B: 1.350 MM. Extremos declarados de categorías: 1.215 a 1.500 MM, sin reserva adicional sobre el extremo alto. Son valores supuestos del ejercicio, no cotizaciones verificadas.
+Se integra el presupuesto preliminar del equipo: **base 1.330 MM CLP + contingencia 170 = marco total 1.500 MM**, igual al techo del caso. Referencia B: 1.350 MM. La sensibilidad revisada de categorías es 1.215 a 1.668 MM al añadir +20% al costo de equipos; el extremo bruto excede el techo en 168. La [base integrada](../registros/base_ejecucion.md) propone reducción cancelable y topes que llevan el estrés a 1.497,0923; si no se consiguen, revisar cobertura o alternativa antes de comprometer más de 1.500. Son valores supuestos del ejercicio, no cotizaciones verificadas.
 
 La [estimación 06](06_estimacion.md) incluye 104 equipo-sprints esperados y capacidad efectiva propuesta 120, con refuerzo temporal del sexto equipo. Los totales y el WSJF son aritméticamente consistentes. El [plan de apoyo de alcance/roadmap](../registros/plan_alcance_roadmap.md) propone calendario, carga por épica/tramo y funciones sin alterar los totales. Rogelio debe contrastar dedicación por especialidad y fronteras de costos externos versus capacidad propia. No inferir confianza de fecha 80–95% por sumar esfuerzo.
 
 Financiación base recibida: **675 MM en G0/M1**, 345 en G1/M5 y 310 en G2/M9; contingencia 170 por riesgo y autorización del comité. Son cuotas propuestas; falta asignación categoría/mes para verificar obligaciones. Se solicita el primer tramo de 675 condicionado a arquitectura, contrato por hitos y revisión técnica VT-01, sin simular aprobación empresarial.
 
-Riesgos principales: integración/API, stock, WMS, dotación/sitios, campaña, sobrecosto y seguridad. Si se consumen los 170 para alcanzar el extremo alto de categorías, no quedan los mismos 170 disponibles para otro riesgo. Primeras opciones de diferimiento son capacidades opcionales/experimento, sin eliminar condiciones del flujo ni objetivo de devolución sin cambio formal.
+Riesgos principales: integración/API, stock, WMS, dotación/sitios, campaña, sobrecosto y seguridad. Una subida aislada de 20% en equipos consume 168 de los 170 de reserva; el extremo bruto supera el techo y activa la escalera de contratación/topes de 06. Primeras opciones de diferimiento son capacidades opcionales/experimento, sin eliminar condiciones del flujo ni objetivo de devolución sin cambio formal.
 
 R3 incluye un experimento de Ship-from-store en **3 a 5 tiendas**. El documento 04 propone detener la ejecución al cumplir cuatro semanas o 300 pedidos, lo que ocurra primero, sujeto a ratificación. E10 ya forma parte del esfuerzo incluido en la capacidad presupuestada. G2 debe autorizar techo monetario de exposición y frontera de costos antes de iniciar. Ver [revisión del avance del 23](../registros/revision_avance_2026-10-23.md).
 
@@ -105,3 +115,12 @@ El caso exige atender retorno y control de inversión además de resultados oper
 | Opciones y sensibilidad | B/C con alcance comparable; demoras, demanda o costos distintos de la base | Decidir mantener, acotar, cambiar o detener compromisos futuros y explicitar impacto sobre beneficios. |
 
 Finanzas y los dueños de beneficio proponen los rangos aceptables con sponsor/comité; no hay umbral de retorno aprobado en el material. En el ejercicio puede defenderse una hipótesis económica condicionada, pero no afirmarse rentabilidad demostrada. La pauta pide beneficios, costos, riesgos, supuestos y recomendación, sin exigir ROI/VAN u otra fórmula financiera específica. El primer tramo propuesto sigue sujeto a sus condiciones técnicas, contractuales y operativas; no se transforma por esta ficha en una inversión aprobada.
+
+## 1.8 Evidencia externa y proyección de la hipótesis logística
+
+La [revisión de fuentes públicas](../insumos/evidencia_logistica_y_valor.md) es un complemento autorizado. EXT-01/02 estudian logística de despacho en marketplaces; aportan contexto competitivo, con transferencia limitada al C&C comprometido. EXT-03 estudia la promesa comunicada y sus efectos posteriores a la compra. Para R1 la hipótesis se acota a disponibilidad confiable, preparación y cumplimiento de la ventana de retiro; mejorar despacho domiciliario o replicar sus porcentajes queda fuera de la inferencia. Lectura realizada: resúmenes y metadatos del editor, sin revisión integral. [EXT-01](https://pubsonline.informs.org/doi/10.1287/mnsc.2019.3411), [EXT-02](https://pubsonline.informs.org/doi/10.1287/msom.2021.1045), [EXT-03](https://pubsonline.informs.org/doi/10.1287/msom.2021.0174).
+
+
+Propuesta: comunicar disponibilidad, punto de retiro y ventana únicamente cuando inventario, preparación y capacidad permitan sostenerlos. La confiabilidad puede ser atributo comercial; ofrecer entrega más rápida requiere comprobar el flujo correspondiente. La primera liberación conserva el alcance C&C y no incorpora despacho nacional o ruteo avanzado por esta hipótesis.
+
+El [modelo de retorno logístico](../registros/modelo_retorno_logistico.md) separa recuperación por menor cancelación, posible conversión adicional y costos. Incluye volumen requerido para equilibrio y recuperación, participación de las familias y reglas para proyectar flujo/retorno sin duplicar pedidos o presupuesto. Sus parámetros de ejemplo son sensibilidades, ajenos al forecast vigente. El retorno sigue pendiente de datos locales y conciliación de costos.

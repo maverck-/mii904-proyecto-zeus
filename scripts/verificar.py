@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Comprueba el contenido portable, la pauta y las fuentes compartidas."""
 from pathlib import Path
-from decimal import Decimal
+from decimal import Decimal, ROUND_CEILING
 import hashlib
 import re
 import sys
@@ -146,7 +146,7 @@ if len(funding) == 4 and len(budget) == 4:
     check(sum(funding[k] for k in ['T1','T2','T3']) == budget['Base de categorías'],'Tramos no suman base.')
     check(funding['RES'] == budget['Reserva de contingencia'],'Reserva de tramos distinta de presupuesto.')
 if len(capacity) == 3 and epics:
-    check(sum(c[0] for c in capacity.values()) == 120, 'Revisar capacidad efectiva propuesta 120.')
+    check(all(c[0] > 0 for c in capacity.values()), 'Capacidad por tramo debe ser positiva.')
     check(abs(sum(c[1] for c in capacity.values())-sum(e[3] for e in epics.values())) < Decimal('0.01'),'Cargas por tramo no suman esfuerzo.')
 
 ratios = {}
@@ -208,17 +208,13 @@ if allocation and listed_allocation:
     if len(capacity) == 3:
         check(listed_allocation[0] == capacity['F1'][1] and listed_allocation[1] == capacity['F2'][1], 'F1/F2 no coinciden con estimación.')
         check(sum(listed_allocation[2:4]) == capacity['F3'][1], 'Campaña/R3 no suman F3.')
-    f3_capacity = 4*len([16,*range(18,27)])
-    campaign_capacity = 4+2  # Sprint 16 y primera mitad del 18.
-    check(f3_capacity-campaign_capacity == 34, 'Revisar separación de capacidad antes/después de G2.')
-    check(listed_allocation[2] <= 6 and listed_allocation[3] <= 34, 'Carga excede capacidad propuesta de campaña/R3.')
+
 else:
     check(False, 'Falta total de matriz por etapa.')
 check(set(prepilot) == {k for k,v in allocation.items() if v[0] > 0}, 'Corte piloto debe incluir todas las épicas con carga F1.')
 if prepilot and listed_prepilot:
     check(tuple(sum(v[i] for v in prepilot.values()) for i in range(2)) == listed_prepilot, 'Total del corte piloto incorrecto.')
     check(listed_prepilot == (Decimal('36'),Decimal('11.7')), 'Corte piloto distinto de 36/11,7.')
-    check(36 <= 4*5+3*6, 'Corte piloto excede capacidad hasta sprint 8.')
     for ident,values in prepilot.items():
         check(all(v >= 0 for v in values) and abs(sum(values)-allocation[ident][0]) < Decimal('0.0001'), f'Corte piloto no conserva carga F1: {ident}')
 else:
@@ -233,7 +229,113 @@ if len(cells_model) == 9:
     epic_gross = c(7)*c(8)*c(9)
     check(0 < c(5) <= 1 and needed <= effective, 'Altas no caben bajo disponibilidad propuesta.')
     check(gross <= epic_gross and c(7) == allocation['E11'][1], 'Células no caben en E11/R2 o se cambia su asignación.')
-    check((needed,effective,gross,epic_gross) == (116,135,180,210), 'Operaciones de dimensionamiento de altas cambiaron; revisar narrativa.')
+
+
+# Base vigente: los resultados se calculan desde parámetros y calendario Markdown.
+base_params = {}
+calendar = {}
+stress_rows = {}
+field_cost_rows = {}
+for cells in rows('registros/base_ejecucion.md'):
+    if len(cells) == 3 and re.fullmatch(r'BASE-\d\d', cells[0]):
+        base_params[cells[0]] = number(cells[1])
+    elif len(cells) == 4 and re.fullmatch(r'S\d\d', cells[0]):
+        calendar[int(cells[0][1:])] = tuple(map(number, cells[1:]))
+    elif len(cells) == 5 and re.fullmatch(r'EST-\d\d', cells[0]):
+        stress_rows[cells[0]] = tuple(map(number, cells[2:]))
+    elif len(cells) == 3 and cells[0] in {
+        'Veinte persona-días de preparación adicional', 'Bolsa de traslados de cuatro células',
+        'Resto para formación, adopción y operación/transición', 'Total COST-06'}:
+        field_cost_rows[cells[0]] = number(cells[1])
+check(set(base_params) == {f'BASE-{i:02d}' for i in range(1,27)}, 'Faltan parámetros de base de ejecución.')
+check(set(calendar) == set(range(1,27)), 'El calendario debe contener S01 a S26 una vez.')
+check(len(stress_rows) == 6, 'Faltan pasos del escenario de estrés.')
+base_results = {}
+if len(base_params) == 26 and len(calendar) == 26 and len(capacity) == 3 and len(cells_model) == 9:
+    bp = lambda i: base_params[f'BASE-{i:02d}']
+    for sprint, (paid, reserved, effective_units) in calendar.items():
+        check(0 <= reserved <= paid and paid-reserved == effective_units,
+              f'Calendario inconsistente en S{sprint:02d}.')
+    paid_units = sum(v[0] for v in calendar.values())
+    effective_units = sum(v[2] for v in calendar.values())
+    rate = bp(5)*bp(3)/bp(4)
+    teams_cost = paid_units*rate
+    check(abs(teams_cost-categories['COST-01'][0]) < Decimal('0.00001'),
+          'Calendario pagado no concilia COST-01; revisar tarifa o presupuesto.')
+    f1_end, f2_end, gate2_sprint = map(int, [bp(7),bp(8),bp(9)])
+    calculated_capacity = {
+        'F1':sum(v[2] for s,v in calendar.items() if 1 < s <= f1_end),
+        'F2':sum(v[2] for s,v in calendar.items() if f1_end < s <= f2_end),
+        'F3':sum(v[2] for s,v in calendar.items() if s > f2_end),
+    }
+    check(all(calculated_capacity[k] == capacity[k][0] for k in calculated_capacity),
+          'Capacidad de 06 distinta del calendario vigente.')
+    check(effective_units == sum(v[0] for v in capacity.values()), 'Total efectivo distinto del calendario.')
+    early_capacity = sum(v[2] for s,v in calendar.items() if s <= int(bp(6)))
+    early_load = listed_prepilot[0]
+    check(early_load <= early_capacity, 'El corte piloto excede capacidad efectiva con arranque.')
+    campaign_capacity = sum(v[2] for s,v in calendar.items() if f2_end < s < gate2_sprint)
+    campaign_capacity += calendar[gate2_sprint][2]*bp(10)
+    later_capacity = calculated_capacity['F3']-campaign_capacity
+    check(listed_allocation[2] <= campaign_capacity and listed_allocation[3] <= later_capacity,
+          'Carga campaña/R3 excede capacidad calculada por calendario.')
+    # La celda comparada informa habilitación y otra aporta acompañamiento.
+    expected_cell_params = {1:bp(14),2:bp(11),3:bp(12),4:bp(17),5:bp(13),
+                            6:bp(15)/bp(12),7:allocation['E11'][1],8:bp(1),9:bp(2)}
+    check(all(cells_model[f'CEL-{i:02d}'] == value for i,value in expected_cell_params.items()),
+          'Parámetros CEL distintos de la base vigente.')
+    required_habilitation = bp(14)*bp(15)
+    required_hypercare = bp(14)*bp(16)
+    required_field = required_habilitation+required_hypercare
+    daily_capacity = bp(11)*bp(12)*bp(13)
+    available_field = daily_capacity*bp(17)
+    active_days = (required_field/daily_capacity).to_integral_value(rounding=ROUND_CEILING)
+    total_days = active_days+bp(20)
+    gross_cells = bp(11)*bp(12)*bp(17)
+    internal_gross = allocation['E11'][1]*bp(1)*bp(2)
+    check(required_field <= available_field and active_days <= bp(17) and total_days <= bp(21),
+          'Habilitación/acompañamiento no caben en la base de células.')
+    check(gross_cells+bp(18) == internal_gross+bp(19),
+          'Preparación/células no concilian E11 y campo externo; no consumir holgura R2 por inferencia.')
+    extra_field_cost = bp(19)*rate/(bp(1)*bp(2))
+    remaining_change_cost = categories['COST-06'][0]-extra_field_cost-bp(22)
+    expected_field_costs = {
+        'Veinte persona-días de preparación adicional':extra_field_cost,
+        'Bolsa de traslados de cuatro células':bp(22),
+        'Resto para formación, adopción y operación/transición':remaining_change_cost,
+        'Total COST-06':categories['COST-06'][0],
+    }
+    check(set(field_cost_rows) == set(expected_field_costs), 'Falta descomposición de COST-06.')
+    check(all(abs(field_cost_rows.get(k,Decimal('-1'))-v) <= Decimal('0.0001')
+              for k,v in expected_field_costs.items()), 'COST-06 no concilia campo, viajes y resto.')
+    check(remaining_change_cost >= 0, 'Campo/viajes exceden COST-06.')
+    # Leer el estrés y los topes; no convertir sus condiciones en ofertas reales.
+    check(abs(categories['COST-01'][2]-teams_cost*(1+bp(23))) < Decimal('0.0001'),
+          'Estrés COST-01 no concilia tarifa y calendario.')
+    periods_after_gate2 = bp(4)-bp(9)+(1-bp(10))
+    canceled_cost = periods_after_gate2*rate*(1+bp(23))
+    reduced_later_capacity = later_capacity-periods_after_gate2
+    reduced_later_load = listed_allocation[3]-epics['E10'][3]-epics['E8b'][3]
+    check(reduced_later_load <= reduced_later_capacity, 'R3 reducido no cabe tras retirar el equipo.')
+    reductions = [Decimal(0),Decimal(0),canceled_cost,
+                  categories['COST-02'][2]-bp(24),categories['COST-03'][2]-bp(25),
+                  categories['COST-04'][2]-bp(26)]
+    check(all(value >= 0 for value in reductions), 'Tope superior al extremo de referencia.')
+    stress_total = sum(v[2] for v in categories.values())
+    raw_stress = stress_total
+    ceiling = budget['Marco preliminar total']
+    for i,reduction in enumerate(reductions,1):
+        stress_total -= reduction
+        expected_row = (reduction,stress_total,max(Decimal(0),stress_total-ceiling))
+        actual = stress_rows.get(f'EST-{i:02d}')
+        check(actual is not None and all(abs(a-b) <= Decimal('0.0001') for a,b in zip(actual,expected_row)),
+              f'Escalera de estrés EST-{i:02d} no corresponde a calendario/categorías/topes.')
+    check(stress_total <= ceiling, 'Las palancas propuestas todavía exceden el techo; falta decisión.')
+    base_results = dict(paid=paid_units,effective=effective_units,pilot_load=early_load,
+                        pilot_capacity=early_capacity,pilot_usage=early_load/early_capacity*100,
+                        field_required=required_field,field_available=available_field,
+                        days=total_days,window=bp(21),raw_stress=raw_stress,
+                        mitigated_stress=stress_total,ceiling=ceiling)
 
 members = [cells[0] for cells in rows('EQUIPO.md') if cells[0] not in {'Integrante', '---'}]
 check(len(members) == 4 and len(set(members)) == 4, 'La nómina activa debe contener cuatro integrantes distintos.')
@@ -307,6 +409,10 @@ if errors:
 print(f'OK: {len(paths)} archivos, siete entregables, pesos de rúbrica 100%, {transcripts} transcripciones y {segments} segmentos.')
 print(f'OK: fuentes, {presentations} presentaciones, enlaces y nómina de cuatro; sin rutas personales, contactos o capturas detectados.')
 print('OK: WSJF, PERT, categorías presupuestarias, tramos y cargas; pauta de 12 láminas/25 minutos.')
-print('OK: asignación por épica/etapa, corte de primera salida y dimensión propuesta de 58 altas sin duplicar E11.')
+print('OK: calendario, campo externo, acompañamiento y escalera de estrés calculados desde base_ejecucion.md.')
 print('OK: trece stakeholders con interés, tensión, respuesta y evidencia previstos; no certifica satisfacción ni nota.')
-print('REVISAR: ratificación de alcance/calendario, dedicación por especialidad, costos y exposición monetaria del experimento; no se certifica confianza de fecha.')
+if base_results:
+    b = base_results
+    print(f"BASE: {b['paid']:g} pagados/{b['effective']:g} efectivos; corte {b['pilot_load']:g}/{b['pilot_capacity']:g} ({b['pilot_usage']:.2f}%); campo {b['field_required']:g}/{b['field_available']:g}; actividad/preparación {b['days']:g}/{b['window']:g} días.")
+    print(f"ESTRÉS MM: bruto {b['raw_stress']:g}; con reducción/topes condicionados {b['mitigated_stress']:.4f}; techo {b['ceiling']:g}.")
+print('REVISAR: ratificación de base, recursos de campo, traslados, precios máximos/cancelabilidad y datos de beneficio. Sin aprobación empresarial ni confianza de fecha certificada.')

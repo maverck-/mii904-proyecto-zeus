@@ -23,3 +23,7 @@ SHA-256 del avance preservado: `d4c6a7e6ddd3127bafd5d1fad91da821bb990ad5cd4cea6f
 [Avance recibido](avance_equipo_2026-10-23.md), incluyendo WSJF, esfuerzo, capacidad, presupuesto y tramos. Se prioriza como nueva base con [correcciones y diferencias explícitas](../registros/revision_avance_2026-10-23.md).
 
 SHA-256 del avance del 23: `306b8348e7769bc471d31454421354e945fef9c732e6fe67c4434abf2ec4c05f`.
+
+## Evidencia externa complementaria de logística y valor
+
+La [revisión focalizada](evidencia_logistica_y_valor.md) incorpora fuentes académicas, corporativas y técnicas públicas, a solicitud expresa del usuario. Conserva método/alcance de consulta, referencias y límites de transferencia. No modifica fuentes docentes ni publica asesorías o conversaciones privadas. El [modelo de retorno](../registros/modelo_retorno_logistico.md) contiene fórmulas y sensibilidad ilustrativa; no es un forecast aprobado de ZEUS.

@@ -1,0 +1,46 @@
+# Evidencia complementaria: logística, promesa comercial y valor
+
+**Revisión focalizada del 23-10-2026.** Se busca contrastar si velocidad y confiabilidad de entrega pueden contribuir a ventas y diferenciación comercial. La incorporación de fuentes externas fue solicitada expresamente para complementar ZEUS. No modifica el enunciado ni representa evidencia de resultados de la empresa ficticia. Es una búsqueda narrativa breve, no una revisión sistemática ni un estado del arte exhaustivo.
+
+## Conclusión aplicable
+
+La evidencia seleccionada permite sostener una hipótesis de valor comercial de la logística, con efectos que dependen del contexto y del cumplimiento de expectativas. Para ZEUS proponemos relacionar stock confiable, preparación y promesa cumplible con pedidos completados y contribución económica. La magnitud local sigue sin estimarse con datos propios. La recomendación B se mantiene condicionada, incorporando proceso físico, WMS, operación de tiendas y capacidad de soporte.
+
+## Fuentes académicas y alcance de lectura
+
+Se verificaron títulos, autores, DOI, método y hallazgo declarado contra páginas del editor INFORMS. El alcance consultado son los resúmenes públicos y metadatos editoriales; no se revisaron íntegramente artículos, anexos, código o datos. Los años siguientes corresponden al volumen de revista; la publicación anticipada puede tener un año anterior. No se ejecutaron consultas bibliométricas/API, evaluación formal de sesgo, verificación de retractaciones o auditoría de financiación/conflictos de interés. No deben describirse como controles realizados.
+
+| ID | Referencia y acceso | Diseño y hallazgo declarado | Límite para ZEUS |
+| --- | --- | --- | --- |
+| EXT-01 | Cui, R., Li, M. y Li, Q. (2020). *Value of High-Quality Logistics: Evidence from a Clash Between SF Express and Alibaba*. Management Science, 66(9), 3879–3902. [Editor y DOI](https://pubsonline.informs.org/doi/10.1287/mnsc.2019.3411). Publicación anticipada: 2019. | Experimento natural, diferencias en diferencias, 129.448 SKU. La retirada de SF Express durante 42 horas se asoció en la estimación con una caída de ventas del 14,56%. | Aporta evidencia cuasiexperimental sobre una opción logística; no identifica solo velocidad ni demuestra un aumento simétrico al mejorarla. No trasladar ese porcentaje. |
+| EXT-02 | Deshpande, V. y Pendem, P. K. (2023). *Logistics Performance, Ratings, and Its Impact on Customer Purchasing Behavior and Sales in E-Commerce Platforms*. Manufacturing & Service Operations Management, 25(3), 827–845. [Editor y DOI](https://pubsonline.informs.org/doi/10.1287/msom.2021.1045). Publicación anticipada: 2022. | Datos observacionales de más de 15 millones de pedidos Tmall/Cainiao y modelos de calificación/elección. Estiman +13,3% de ventas diarias de vendedores al reducir de tres a dos días los pedidos de tres días, aproximadamente 35% de la muestra. | Es un contrafactual del modelo en esa plataforma, no un aumento experimental observado ni una elasticidad universal. No usarlo como forecast local. |
+| EXT-03 | Cui, R., Lu, Z., Sun, T. y Golden, J. M. (2024). *Sooner or Later? Promising Delivery Speed in Online Retail*. Manufacturing & Service Operations Management, 26(1), 233–251. [Editor y DOI](https://pubsonline.informs.org/doi/10.1287/msom.2021.0174). Publicación anticipada: 2023. | Variación exógena de la promesa informada en Collage.com, sin cambiar velocidad física, y diferencias en diferencias. La promesa más rápida elevó ventas/beneficio, pero también devoluciones y redujo retención. | Distingue comunicación de capacidad real. Respalda evaluar efectos posteriores a la compra; no justificar sobrepromesas ni atribuir al WMS un efecto aislado. |
+
+EXT-01/03 ofrecen identificación cuasiexperimental declarada; EXT-02 es evidencia observacional/modelada. La lectura de resúmenes no permite auditar sus supuestos de identificación. Los contextos China y productos fotográficos estadounidenses limitan la transferencia a retail chileno. Los tres trabajos sostienen mecanismos y límites, no un porcentaje para ZEUS.
+
+## Fuentes públicas de industria y tecnología
+
+| ID | Fuente primaria consultada | Qué respalda / qué no respalda |
+| --- | --- | --- |
+| EXT-04 | Falabella, *Conoce Envío directo por seller (Chile)*, sin fecha visible. [Ayuda oficial](https://ayudaseller.falabella.com/articles/es/Knowledge/Conoce-Falabella-Directo-Chile). | Vincula preparación/despacho rápido con etiquetas de llegada y visibilidad comercial. Publicita hasta 24% más ventas, sin método verificable en la página consultada: afirmación comercial, excluida del cálculo de ZEUS. No acredita arquitectura interna, H3, tamaño de equipos o su metodología. |
+| EXT-05 | Mercado Libre, *About MELI*, apartado Logistics, sin fecha visible. [Relaciones con inversionistas](https://investor.mercadolibre.com/about-meli). | La empresa presenta su red logística como ventaja competitiva y la relaciona con tráfico, conversión y ventas. Es declaración corporativa, no evaluación causal independiente ni coeficiente de retorno; no demuestra uso de hexágonos. |
+| EXT-06 | Brodsky, I. (27-06-2018). *H3: Uber’s Hexagonal Hierarchical Spatial Index*. [Uber Engineering](https://www.uber.com/us/en/blog/h3/). | Documenta indexación geográfica jerárquica y análisis espacial para asignación/precios en Uber. No confirma adopción en Falabella/Mercado Libre. Una malla no sustituye cálculo de rutas, tiempos viales, stock o capacidad. |
+| EXT-07 | Oracle, *Third-Party Logistics and Warehouse Management Systems*. [Documentación](https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/25d/famml/third-party-logistics-and-warehouse-management-systems.html). | Describe gestión de recursos/movimientos de almacén e intercambio de solicitudes y confirmaciones con WMS. Referencia funcional de proveedor, no arquitectura de ZEUS ni garantía comercial. |
+| EXT-08 | Oracle, *What is Order Management?* [Referencia funcional](https://www.oracle.com/scm/order-management/what-is-order-management/). | Describe captura, seguimiento y cumplimiento de pedidos. Apoya distinguir orquestación de pedidos de ejecución física en almacén; las fronteras concretas deben acordarse entre sistemas. |
+| EXT-09 | Oracle, *What Is a Transportation Management System?* [Referencia funcional](https://www.oracle.com/scm/logistics/transportation-management/what-is-transportation-management-system/). | Describe planificación y ejecución del transporte. Ayuda a evitar que WMS se presente como responsable único de entrega domiciliaria o ruteo. No recomienda adquirir un TMS en ZEUS. |
+
+Las fuentes de empresa/proveedor describen su propia oferta y tienen interés comercial. Se usan como ejemplos de práctica o definiciones, con menor fuerza para inferir retorno. Acceso web: 23-10-2026. Las páginas sin fecha pueden cambiar; no atribuirles vigencia histórica no comprobada.
+
+## Hipótesis y ajustes de la propuesta
+
+1. **Logística y WMS desde R0.** Mapear stock físico, sincronización, reserva, preparación y entrega/retiro; identificar dónde se acumulan espera y errores. Logística acepta proceso y datos junto con Tecnología. Conservar el WMS exige probar sus interfaces y adaptar lo necesario dentro del alcance.
+2. **Promesa basada en capacidad.** Para R1 proponer disponibilidad y ventana fija de retiro con datos vigentes, horario y admisión operativa acotada. Cupos dinámicos y selección automática de otro punto requieren alcance/estimación posterior. La selección de un OMS no resuelve por sí sola el cumplimiento físico. La primera liberación conserva C&C; mejoras de despacho no se agregan automáticamente al alcance.
+3. **Recursos según función.** Revisar el número de equipos de software con entregables y especialidades. Separar esa capacidad de habilitación local, acompañamiento intensivo tras apertura y operación diaria por turno. Esta revisión no acredita que una dotación menor sostenga los mismos 104 equipo-sprints.
+4. **Aprendizaje temprano y protegido.** Probar pronto interfaces y flujo con tiendas, medir y decidir continuar, corregir o detener. Los experimentos mantienen controles de stock, datos, continuidad y reversión. Mantener híbrido se justifica por dependencias/contratos/financiación y aprendizaje, no por una metodología atribuida a otra empresa.
+5. **Geografía proporcional al problema.** Empezar por zonas de servicio existentes, puntos elegibles, tiempos/cupos y trazabilidad. H3 queda como opción a evaluar si aparece una necesidad demostrable; no se incorpora un motor de ruteo ni un nuevo entregable estimado.
+
+## Afirmaciones que permanecen sin verificar
+
+No se ha confirmado que Falabella y Mercado Libre usen H3 o una misma división hexagonal; que una dotación concreta sea suficiente en ZEUS; ni que una empresa tenga como filosofía formal «fallar rápido». Las observaciones informales orientan preguntas de diseño, sin publicarse como entrevista o evidencia empresarial. Tampoco existe un efecto de conversión, margen o ROI propio de ZEUS. El [modelo económico](../registros/modelo_retorno_logistico.md) permite discutir escenarios sin suplir esos datos.
+
+No se copian conversaciones, nombres de informantes, material privado ni artículos completos. Esta nota conserva enlaces y síntesis de fuentes públicas.

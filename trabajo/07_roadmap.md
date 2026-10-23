@@ -18,13 +18,13 @@ Observabilidad mínima, seguridad, soporte y formación se incorporan desde R1 y
 
 Se propone una convención de 52 semanas/26 sprints: M1–M5 cubren semanas 1–22; M6/M7, 23–30; M8, 31–35; M9–M12, 36–52. Es una distribución de planificación, no fechas civiles confirmadas. G0 ocurre en M1; VT-01 al finalizar la semana 8; G1 al finalizar la semana 22; VE-01 al finalizar la semana 30 y G2 al inicio de la semana 36. Confirmar feriados/turnos y fecha externa antes de fijar compromisos.
 
-Para primera salida al terminar semana 16 se asignan 36 equipo-sprints a un flujo mínimo completo contra 38 disponibles. Uso previsto 94,74%: es una ventana exigente, no una garantía. Las 11,7 unidades restantes de F1 completan cobertura/estabilización hasta G1. El [desglose por épica](../registros/plan_alcance_roadmap.md) separa ambas partes: solo puede diferirse trabajo que no sea necesario para aceptar el flujo expuesto.
+Para primera salida al terminar semana 16 se asignan 36 equipo-sprints a un flujo mínimo completo contra 38 disponibles. Uso 94,74%; el sexto equipo arranca en sprint 5 y produce desde el 6, con disponibilidad desde semana 9. Se resuelve la rampa dentro de 840 MM sin colchón de redondeo. Las 11,7 unidades restantes de F1 completan cobertura/estabilización hasta G1. El [desglose por épica](../registros/plan_alcance_roadmap.md) separa ambas partes: solo puede diferirse trabajo que no sea necesario para aceptar el flujo expuesto.
 
 Base comparable propuesta: semanas 9–12; uso observado: 17–20; análisis y G1 hasta semana 22. SUP-16 propone mejora relativa de 20% en cancelación y 25% en preparación, adopción >80% por tienda y evidencia suficiente. Si el flujo usable se retrasa, recalcular la ventana de evidencia antes de mantener M5; no etiquetar una demo como valor.
 
 ## Olas propuestas para revisar capacidad
 
-Las cuatro olas organizan la expansión propuesta hasta 68/M7. Su ejecución depende de la evidencia del piloto, de los recursos y de la aceptación de cada sitio.
+Las cuatro olas desarrollan la meta condicionada 68/M7. Cuatro células ofrecen 150 persona-días efectivos para 145 de habilitación/acompañamiento; actividad agregada 25 jornadas más diez de preparación cabe en cuarenta. Las 25 jornadas se distribuyen dentro de treinta de olas, con cinco de margen para viajes/relevo/espera. E11/R2 aporta 210 brutos y COST-06 veinte de campo, con preparación preservada. G1 ratifica recursos, sitios y cobertura sobre el mecanismo ya definido.
 
 | Ola | Ventana propuesta | Tiendas adicionales | Total acumulado | Condición previa |
 | --- | --- | ---: | ---: | --- |
@@ -38,17 +38,19 @@ Se proponen treinta días hábiles de altas y diez posteriores de estabilizació
 
 La entrada a cada ola debe contrastar dos capacidades distintas: habilitación del sitio y operación diaria por turno después de abrir. Gerencias de tienda y Logística presentan dotación, carga habitual, dedicación al nuevo flujo y disponibilidad WMS/CD, según 04. Una célula capaz de instalar/configurar no demuestra que la tienda absorba preparación, retiro y excepciones. Sin esa evidencia, Operaciones no acepta el alta y PM eleva el efecto en cobertura/fecha; no se presume sobretiempo para sostener el plan.
 
-Mecanismo propuesto: tres células de dos funciones durante treinta días, con disponibilidad efectiva 75% y un día de célula por tienda. Ofrecen 135 persona-días efectivos frente a 116 requeridos. Su dedicación bruta 180 cabe dentro de 210 de E11/R2, sin cobrarla otra vez. La disponibilidad de esas funciones todavía debe confirmarse. Calibrar tiempos con el piloto y confirmar que perfiles, viajes/soporte y turnos caben en COST-01/COST-06.
+La [precisión logística de alcance](04_alcance_y_backlog.md) añade al control existente mapa de esperas/movimientos, responsabilidades WMS/OMS, promesa compatible con cupos y acompañamiento intensivo tras apertura. R0/VT-01 prueba la cadena física/digital con Logística; R1 calibra tiempos y dedicaciones; cada ola exige stock conciliado y cobertura de atención local/remota hasta salida operativa aceptada. No liberar una célula al siguiente sitio suponiendo que el anterior dejó de necesitar soporte. Revisar solapamiento y costo en E11/COST-06 antes de ratificar el ritmo; si no caben, ajustar olas/cobertura con la autoridad existente.
 
-Si el promedio fuera 1,5 días por tienda se requieren 39 días de altas; si fueran dos, 52. Ambos desvían la ventana de treinta y el segundo supera los cuarenta totales. G1 debe resolver refuerzo autorizado, secuencia o cobertura; no consumir silenciosamente la preparación de campaña. El [dimensionamiento y sensibilidad](../registros/plan_alcance_roadmap.md) explicitan estas operaciones.
+Mecanismo: cuatro células de dos funciones, 25 jornadas equivalentes y disponibilidad efectiva 75%. Demanda 116 de habilitación más 29 de acompañamiento frente a 150 efectivos. Los 230 brutos de células/preparación se financian con 210 de E11 y veinte de campo en COST-06; viajes tienen bolsa propuesta de diez MM dentro de esa categoría. Calibrar con piloto y ratificar perfiles, relevo y aceptación de cada CD.
+
+Si habilitar cada tienda demanda 1,5 días de célula, con acompañamiento se requieren 34 jornadas de actividad y diez de preparación, total 44; con dos días se requieren 54 en total. Ambos exceden cuarenta. G1 debe resolver refuerzo autorizado, secuencia o cobertura; no consumir silenciosamente la preparación de campaña. El [dimensionamiento y sensibilidad](../registros/plan_alcance_roadmap.md) explicitan estas operaciones.
 
 ## Capacidad y financiación recibidas del equipo
 
 R0/R1 propone capacidad 56/carga 47,7; R2 24/23; campaña y R3 40/33,3 equipo-sprints. Total 120/104. R2 usa 95,83% y R1/R2 conjunto 88,375%; el promedio no elimina el pico. La matriz de apoyo asigna cada épica sin modificar su PERT y separa campaña 5 de R3 28,3. También identifica funciones y ventanas; falta contrastar dedicación real por especialidad con Rogelio.
 
-Financiación recibida: G0 675, G1 345 y G2 310 MM, más reserva 170, marco total 1.500. M8 pertenece a tramo 2 y protege campaña; R3 se autoriza desde G2/M9. La opción propuesta conserva seis equipos en sprints 6–15 y cuatro desde 16, antes de campaña. F3 reserva capacidad 6 para campaña y 34 para R3 posterior a G2; sprint 17 está pagado y dedicado a estabilización, fuera de las 120 unidades efectivas. Rogelio debe revisar contratos y costo mensual: no se declara aprobada esa reducción ni cobertura de soporte.
+Financiación recibida: G0 675, G1 345 y G2 310 MM, más reserva 170, marco total 1.500. M8 pertenece a tramo 2 y protege campaña; R3 se autoriza desde G2/M9. La opción propuesta conserva seis equipos en sprints 5–15, con arranque del sexto en el 5 y cuatro desde 16, antes de campaña. F3 reserva capacidad 6 para campaña y 34 para R3 posterior a G2; sprint 17 está pagado y dedicado a estabilización, fuera de las 120 unidades efectivas. Rogelio debe revisar contratos y costo mensual: no se declara aprobada esa reducción ni cobertura de soporte.
 
-Si no se dispone del sexto equipo, las opciones son reforzar capacidad con autorización de uso de reserva o priorizar tiendas de mayor venta y completar después de campaña. Es una contingencia que modifica cobertura/plazo: sponsor/comité debe decidirla y actualizar Charter/beneficios; no constituye el compromiso base ni una renuncia anticipada a 68/M7.
+Si no se dispone del sexto equipo, las opciones son reforzar capacidad con autorización de uso de reserva o priorizar tiendas de mayor venta y completar después de campaña. Es una contingencia que modifica cobertura/plazo: sponsor/comité debe decidirla y actualizar Charter/beneficios; es una contingencia frente a la meta condicionada 68/M7.
 
 ## Gates financieros y revisiones de salida
 
@@ -87,6 +89,12 @@ Cadena que condiciona M5: acceso y viabilidad → inventario/reservas y pedidos 
 Si el costo previsto supera el techo, revisar alcance y financiación antes de comprometer gasto. La falta de stock confiable o adopción suficiente obliga a corregir antes de ampliar, aunque el despliegue técnico esté terminado.
 
 ## Dependencias con evidencia y responsable
+
+### Cadena de hitos y respuesta ante atraso
+
+Cadena de referencia: compra OMS propuesta semana 4 → VT-01 semana 8 → salida usable semana 16 → observación semanas 17–20 → G1 semana 22 → olas autorizadas → VE-01 semana 30 → campaña aproximadamente semanas 31–35. Los intervalos incluyen trabajo y medición; no son holguras CPM calculadas. El análisis entre observación y G1 ocupa dos semanas; el escenario original reserva diez días hábiles para corrección/VE-01. La base de cuatro células requiere 35 jornadas agregadas de actividad/preparación dentro de cuarenta; los cinco días restantes se distribuyen dentro de las ventanas de olas. Esa diferencia es margen de planificación, no holgura CPM calculada.
+
+Al atrasarse compra, integración o salida, recalcular la ventana de observación y el trabajo pendiente antes de ratificar M5. Como contingencia, evaluar CAP-02 sobre el canal existente para las mismas familias, con stock físico conciliado y medición de cancelaciones comparables. Publicar stock más rápido por sí solo no acredita valor. Su viabilidad, esfuerzo y resultado deben demostrarse; sustituir el piloto C&C por ese flujo exige decisión de sponsor/comité y actualización de Charter/beneficios. Si ninguna vía entrega valor en M5, declarar la incompatibilidad y revisar alternativa, no mover la restricción por redacción.
 
 Las dependencias externas también requieren coordinación del proyecto (sesión 04, p. 9, y sesión 06, pp. 5 a 8). La tabla identifica responsable, evidencia y momento necesario.
 

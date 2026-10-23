@@ -25,7 +25,7 @@ Revisión académica: comprobar razonabilidad, coherencia y defensa con el caso.
 | ID | Supuesto de ESC-02 | Revisión académica | Validación empresarial hipotética / momento | Si falla |
 | --- | --- | --- | --- | --- |
 | SUP-01 | ERP/WMS permiten integración acotada por APIs y, donde sea viable, eventos | Defender interfaces y opciones sin suponer solución conocida | Tecnología/proveedores prueban consistencia, carga, recuperación y contratos en VT-01/M2 | Revisar arquitectura, plazo, alcance y B. |
-| SUP-02 | Equipos de unas seis personas, con dotación propuesta de cinco en sprints 1–5, seis en 6–15 y cuatro desde 16 antes de campaña, pueden sostener la secuencia | Estimar tamaños, dedicaciones, especialidades y concurrencia en 06; no equivalen a cuatro alumnos | Sponsor/Operaciones confirman dotación antes de comprometer R1/olas | Limitar WIP, cobertura o secuencia y reestimar. |
+| SUP-02 | Equipos de unas seis personas, con dotación propuesta de cinco en sprints 1–4, seis en 5–15, con arranque del sexto en el 5 y cuatro desde 16 antes de campaña, pueden sostener la secuencia | Estimar tamaños, dedicaciones, especialidades y concurrencia en 06; no equivalen a cuatro alumnos | Sponsor/Operaciones confirman dotación antes de comprometer R1/olas | Limitar WIP, cobertura o secuencia y reestimar. |
 | SUP-03 | Hay datos comparables y volumen para evaluar unas cuatro semanas de piloto | Definir cohortes, denominadores y sesgos en 01 | Dueños de beneficio fijan base y suficiencia de evidencia antes del piloto | No declarar valor demostrado con evidencia insuficiente. |
 | SUP-04 | Flujo usable desde M4 y evidencia de valor hasta G1/M5 | Revisar precedencias y ventana; plazo total de B no prueba primera entrega | PM/Operaciones comprueban uso y KPI en G1 | Revisar inversión y declarar si requisito de valor no se cumple. |
 | SUP-05 | Diez tiendas piloto y expansión a 68 en M7 son operables; cuatro olas adicionales de 15/15/14/14 como propuesta de integración | Justificar 58 altas en dos meses, selección de sitios y capacidad; catálogo/CD de SUP-14 por ratificar; capacidad vigente a conciliar en SUP-18, sin sumar brigadas de SUP-15 | Operaciones autoriza cada ola y dependencias de CD antes de exponer clientes | Mantener solo cobertura segura y modificar compromiso explícitamente. |
@@ -46,15 +46,15 @@ El [antecedente del 22](escenario_provisional.md) conserva cantidades y reglas p
 | --- | --- | --- | --- |
 | SUP-14 | Piloto 10 tiendas/1 CD/2 familias; expansión 68 tiendas/hasta 3 CD con mismas familias; selección en M1 | Equipo revisa frontera; Operaciones/Logística valida sitios, catálogo elegible e interfaces en VT-01 | Ajustar selección/cobertura y actualizar costos/beneficios; no asumir que un CD cubre toda la red. |
 | SUP-15 | Antecedente de habilitación del 22: cinco brigadas/dos días, no dotación vigente adicional | No imponerlo al plan 5/6/4 equipos; si se reutiliza, integrarlo a E11 y calendario sin sumar dos veces | Elegir otro mecanismo de habilitación y costearlo con aceptación de operación. |
-| SUP-16 | Umbrales M5: −20% relativo en cancelación y −25% en preparación, adopción >80% por tienda, cuatro semanas y piso 1.000 pedidos/fase | Equipo/dueños de beneficio revisan razonabilidad; antes de abrir ratificar bases, denominadores y suficiencia. Piso no es garantía estadística | Si no comparable/suficiente, informar inconcluso; si no hay mejora o solo instalación, no declarar valor cumplido. |
+| SUP-16 | Umbrales M5: −20% relativo en cancelación y −25% en preparación, adopción >80% por tienda, cuatro semanas y piso 1.000 pedidos/fase | Equipo/dueños de beneficio revisan razonabilidad; antes de abrir ratificar bases, denominadores y suficiencia. Piso no es garantía estadística; verificar base C&C y tiendas de comparación concurrente. Si C&C es nuevo, ratificar antes del piloto otro resultado comparable para G1 | Si no comparable/suficiente, informar inconcluso; si no hay mejora o solo instalación, no declarar valor cumplido. |
 | SUP-17 | Base del equipo: experimento Ship-from-store en 3 a 5 tiendas; Maverick concreta inicio en tres, hasta cinco tras primera semana operable, máximo cuatro semanas/300 pedidos | Ratificar estos límites y autorizar techo monetario de exposición/economía en G2; E10 ya incluido en esfuerzo; no recuperar 2 tiendas/30 MM como límite vigente | Diferir/parar por riesgo, falta de economía evaluable o recursos; no prometer escala nacional. |
 
 ## Condiciones de la estimación recibida el 23
 
 | ID | Supuesto a validar | Revisión requerida | Si falla |
 | --- | --- | --- | --- |
-| SUP-18 | Tabla 26 sprints/año y 24 efectivos con dotación escalonada representa 120 equipo-sprints y aproximadamente 60 equipo-meses | Un calendario de fechas, arranque/estabilización, dotación por periodo/rol y costo; 7 MM es asignación media por unidad efectiva, no tarifa exacta de dos semanas | Recalcular capacidad, carga y presupuesto; no afirmar confianza de fecha con suma de esfuerzo. |
-| SUP-19 | Rangos de categorías 1.215/1.330/1.500 y reserva 170 no duplican equipos/proveedor ni omiten costos | Contrastar como supuestos; fronteras OMS/WMS/seguridad/rollout/gobierno, mensualización y PAQ; no hay cotizaciones o históricos verificados | Reestimar antes de comprometer, revisar reserva y alcance; extremo alto ya consume toda reserva. |
+| SUP-18 | Calendario de 26 sprints, 130 equipo-sprints pagados y diez reservados representa 120 efectivos y 60 equipo-meses; sexto disponible semana 9 | Un calendario de fechas, arranque/estabilización, dotación por periodo/rol y costo; 7 MM es asignación media por unidad efectiva, no tarifa exacta de dos semanas | Recalcular capacidad, carga y presupuesto; no afirmar confianza de fecha con suma de esfuerzo. |
+| SUP-19 | Base 1.330, reserva 170 y sensibilidad revisada 1.215–1.668, incluyendo +20% en equipos, requieren revisión sin duplicación | Contrastar como supuestos; fronteras OMS/WMS/seguridad/rollout/gobierno, mensualización y PAQ; no hay cotizaciones o históricos verificados | Reestimar antes de comprometer, revisar reserva y alcance; el extremo bruto excede techo en 168; la escalera condicionada de reducción/topes alcanza 1.497,0923. |
 
 ## Desarrollo de alcance y roadmap del 23
 
@@ -63,8 +63,20 @@ Maverick completa 04/07 con [plan de apoyo](plan_alcance_roadmap.md). SUP-14 se 
 | ID | Supuesto nuevo de planificación | Revisión necesaria | Si falla |
 | --- | --- | --- | --- |
 | SUP-20 | Calendario de referencia 52 semanas/26 sprints; cuatro equipos desde 16 antes de campaña; matriz 47,7/23/5/28,3 que conserva PERT 104 | Grupo/Rogelio revisan fechas civiles, especialidades, soporte y contratos; la provisión 840 no prueba dedicación disponible | Reestimar dotación/costo/fechas y elevar cambio sin ocultar reducción previa a campaña. |
-| SUP-21 | Tres células de dos funciones, treinta días y 75% efectivo; un día de célula por tienda; dedicación dentro de 3,5 equipo-sprints de E11/R2 | Calibrar con piloto y verificar viajes, turnos y coste dentro de COST-01/COST-06, sin nuevas brigadas automáticas | Si tarda 1,5 días se requieren 39 de altas; con dos, 52. Resolver capacidad/cobertura/plazo en G1. |
+| SUP-21 | Cuatro células, 25 jornadas equivalentes, 75% efectivo; 145/150 persona-días efectivos con acompañamiento; preparación transversal treinta brutos preservados | E11/R2 aporta 210 brutos y COST-06 veinte adicionales de campo; bolsa de traslados diez MM dentro de la base 45. Ratificar perfiles y calibrar piloto | Con 1,5 días de célula por tienda se requieren 44 días totales; con dos, 54. Cambiar recursos/cobertura antes de comprometer. |
 | SUP-22 | Flujo mínimo aceptable requiere 36 equipo-sprints hasta semana 16 contra capacidad 38, con 11,7 restantes después | Tecnología/Operaciones revisan corte funcional y datos; no posponer controles imprescindibles ni asumir muestra suficiente | Recalcular primera salida y evidencia M5 antes de mantener compromiso; no declarar valor con demo o muestra insuficiente. |
+
+## Complemento logístico y económico del 23
+
+Maverick solicita complementar B con antecedentes de industria y búsqueda de fuentes públicas. La [revisión de evidencia](../insumos/evidencia_logistica_y_valor.md) y el [modelo de retorno](modelo_retorno_logistico.md) separan fuentes externas, hipótesis y ejemplo numérico. La preferencia expresada por B no acredita aceptación de todos sus parámetros por el grupo ni aprobación de la empresa ficticia.
+
+| ID | Hipótesis / precisión propuesta | Revisión y validación previstas | Si falla |
+| --- | --- | --- | --- |
+| SUP-23 | R1 se acota a reserva simple y ventana fija de retiro; mapear proceso y probar WMS/OMS con stock conciliado. Cupos dinámicos y punto alternativo automático fuera de las 104 unidades | Logística/Tecnología aceptan contratos de movimiento/reserva y pruebas en VT-01; Rogelio/Maverick contrastan esfuerzo/costo antes de darlo por incluido | Revisar diseño, alcance y estimación; no sustituir WMS completo ni agregar TMS/ruteo automáticamente. |
+| SUP-24 | Acompañamiento supuesto 0,5 persona-día efectivo por alta: 29 para 58; total 145 frente a 150, cuatro células | 25 jornadas de actividad más diez de preparación dentro de cuarenta; COST-06 asigna 2,1538 MM a campo y diez a traslados dentro de 45; resto 32,8462 | Si fallan disponibilidad, costo o relevo, revisar cobertura con Operaciones; 68/M7 sigue como meta condicionada. |
+| SUP-25 | Una promesa más confiable puede contribuir a conversión, retención y contribución neta, además de reducir cancelaciones | Evidencia externa apoya explorar el mecanismo, no su magnitud local; Comercial/Finanzas definen sesiones, tasas, margen y costos por cohorte, observables en piloto/gates | Mantener hipótesis condicionada, informar resultado inconcluso o ajustar inversión; los escenarios ilustrativos no demuestran retorno. |
+
+La búsqueda no confirmó uso de hexágonos en Falabella/Mercado Libre ni suficiencia de dotación o políticas internas. H3 queda como opción no seleccionada y las conversaciones privadas permanecen fuera del repositorio. Se conserva esfuerzo de referencia 104: cupos dinámicos quedan fuera; stock físico/conteos y acompañamiento requieren conciliación. La base anticipa el sexto equipo a semana 9/sprint 5 y conserva 120 efectivos con 840 MM exactos, sin colchón de redondeo. Estrés bruto 1.668 y respuesta condicionada a reducción/topes 1.497,0923 frente a techo 1.500. La envolvente y los tramos se conservan como propuesta.
 
 ## Incorporación docente y límites
 
@@ -75,6 +87,8 @@ La [auditoría contra pauta y stakeholders](auditoria_pauta_2026-10-23.md) regis
 ## Control de cambios
 
 Precisiones operativas propuestas para revisión: alcance integrado por Maverick y revisado por los cuatro; adopción de prácticas según madurez/capacidad en 02; alertas y respuesta desde R1; congelamiento desde aceptación R2/VE-01 hasta fin de campaña según 07. No modifican los totales recibidos el 23 ni acreditan aprobación colectiva. Su dedicación y costo deben conciliarse con SUP-02/SUP-18/SUP-19.
+
+La [base integrada](base_ejecucion.md) sustituye las sensibilidades anteriores de tres células y arranque tardío. La preferencia B se mantiene; estos parámetros son propuesta para ratificación colectiva.
 
 | Fecha | Actualización | Estado |
 | --- | --- | --- |

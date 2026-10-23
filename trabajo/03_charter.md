@@ -16,7 +16,7 @@ Se espera que contribuya a las metas estratégicas de 35% de ventas digitales, N
 | KPI-02 | Actualización web de 45 a 120 min a <2 min | M12, interfaces cubiertas | Meta del caso; precisión de método en 01. |
 | KPI-03 | Preparación media <3 h; referencia corporativa actual: 7,2 h | M12, separar flujos de retiro/despacho | Meta del caso; validar base por cohorte. |
 | KPI-04 | Resolución al primer contacto ≥85% en casos elegibles; referencia corporativa actual: 64% | M12, casos elegibles del alcance | Objetivo propuesto del equipo; meta estratégica ≥90%, diferencia nominal de 5 pp entre metas con poblaciones distintas. |
-| KPI-05 | Disponibilidad e-commerce ≥99,9%, protegida en Black Friday | Campaña M8 y ventanas regulares acordadas | Meta del caso y criterio operativo propuesto. |
+| KPI-05 | Servicios ZEUS críticos ≥99,9%; seguimiento del e-commerce extremo a extremo | Campaña M8 y ventanas regulares; meta corporativa e-commerce ≥99,9% se conserva | Delimitación propuesta: ZEUS controla sus servicios y gestiona dependencias con operación del canal. |
 | KPI-06 | >80% de pedidos C&C preparados mediante la aplicación | Piloto y cada ola aceptada; validar fechas por release | Criterio de adopción propuesto por equipo. |
 
 El horizonte M12 y la cobertura/ventanas se proponen para hacer verificables los objetivos. En G1/M5 debe existir evidencia de primera entrega de valor, no solo una instalación. Definiciones y evaluación en [01](01_diagnostico_y_business_case.md). SUP-16 propone para M5 reducciones relativas de 20% en cancelación y 25% en preparación frente a bases comparables, salvo base ya mejor que meta final, con adopción >80% por tienda y evidencia suficiente; revisar antes de autorizar. No equivale a las metas finales de M12.
@@ -38,7 +38,7 @@ Reemplazo del ERP o reemplazo completo del WMS; se permiten adaptaciones acotada
 | R2, hasta M7 | Objetivo C&C en las 68 tiendas, listo para campaña M8 | Ampliar 58 tiendas en olas, hasta 3 CD y las mismas 2 familias, solo si capacidad, costo y operación lo sostienen. El caso no exige esa fecha de cobertura. |
 | R3, hasta M12 | Devoluciones, ampliación de observabilidad y piloto Ship-from-store | Gate M9: experimento de 3 a 5 tiendas; propuesta de Maverick de máximo cuatro semanas/300 pedidos, con techo monetario de exposición y costo autorizados antes de iniciar. No posponer toda observabilidad a R3. |
 
-La cobertura 68/M7 es un compromiso propuesto, condicionado a capacidad, costo y operación. Si no resulta defendible, debe modificarse junto con sus efectos sobre beneficios, financiación y fechas.
+La cobertura 68/M7 es una meta de expansión condicionada. G1 fija la cobertura previa a campaña con capacidad, CD, costo y acompañamiento conciliados. Ese número pasa a ser compromiso cuando se autoriza; sus cambios actualizan beneficios, financiación y fechas. La [base de ejecución](../registros/base_ejecucion.md) aporta un mecanismo de cuatro células con acompañamiento y preparación, sujeto a recursos/costo/aceptación por sitio.
 
 ## Roles y derechos de decisión
 
@@ -80,7 +80,7 @@ Riesgos: exactitud de stock insuficiente (91% corporativo como condición base),
 
 ## Presupuesto y financiación
 
-Presupuesto preliminar propuesto: **1.330 MM CLP + 170 MM de contingencia = 1.500 MM**, sin exceder nominalmente el techo. Referencia B del caso: 1.350 MM. Rango de categorías supuesto 1.215 a 1.500; el extremo alto consume toda la reserva. No existen cotizaciones o históricos verificados detrás de esos montos.
+Presupuesto preliminar propuesto: **1.330 MM CLP + 170 MM de contingencia = 1.500 MM**, sin exceder nominalmente el techo. Referencia B del caso: 1.350 MM. Sensibilidad de categorías revisada 1.215 a 1.668 al añadir estrés +20% en equipos; el extremo bruto excede el techo en 168. La respuesta propuesta de reducción/topes lo lleva a 1.497,0923 si se obtienen esas condiciones contractuales; si fallan, revisar cobertura/alternativa antes de comprometer gasto. No existen cotizaciones o históricos verificados detrás de esos montos.
 
 Propuesta de financiación: **675 MM en G0/M1** para R0/R1, 345 en G1/M5 para R2/campaña y 310 en G2/M9 para R3; reserva 170 gestionada por comité. La [estimación 06](06_estimacion.md) documenta 104 equipo-sprints y capacidad propuesta 120, así como la conciliación pendiente de calendario/roles, costos que podrían duplicarse y cuotas por categoría. El marco preliminar no acredita financiación ya aprobada ni confianza garantizada de fecha.
 

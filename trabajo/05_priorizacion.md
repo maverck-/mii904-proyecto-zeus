@@ -39,6 +39,8 @@ Lectura: E8a es pequeña y reduce exposición; E4 aporta valor visible pero depe
 
 ## 5.3 Secuencia resultante
 
+Sensibilidad del denominador: usar directamente medias PERT, en lugar de tamaños discretizados, cambia E1/E4 a 4,0909/4,0714, E2/E3 a 2,8235/2,6000 y E10/E9 a 2,0625/2,0000. Son escalas distintas y el orden es sensible; se conserva la regla recibida para ratificación. Las dependencias siguen adelantando inventario/interfaces frente a C&C, y el experimento continúa condicionado a G2. E8a es condición obligatoria del servicio, igual que E6/E7/E11: se conserva su ratio en la tabla como trazabilidad, fuera de una decisión de omitir controles por ranking.
+
 | Release / hito | Contenido del equipo integrado | Condición |
 | --- | --- | --- |
 | R0, M1 y verificación técnica hasta M2 | Arquitectura, contratación OMS escalonada, acuerdo WMS, entornos y controles base | G0/M1 y VT-01/M2; «mes 0» no añade un mes no costeado al horizonte. |
@@ -49,7 +51,7 @@ Lectura: E8a es pequeña y reduce exposición; E4 aporta valor visible pero depe
 
 ## 5.4 Compromisos y adaptación
 
-Se propone comprometer el flujo R1, la cobertura 68/M7 y la preparación de campaña, sujetos a autorización de capacidad/costo. PO reordena detalle dentro de límites; sponsor/comité cambia compromiso, fecha, cobertura o presupuesto. Ni el piloto ni el corte de R3 pueden modificarse silenciosamente si alteran evidencia/objetivos.
+Se propone comprometer el flujo R1 y la preparación de campaña, sujetos a autorización de capacidad/costo. Las 68 tiendas/M7 son una meta condicionada; G1 fija la cobertura previa a campaña tras conciliar capacidad, CD y acompañamiento. PO reordena detalle dentro de límites; sponsor/comité cambia compromiso, fecha, cobertura o presupuesto. Ni el piloto ni el corte de R3 pueden modificarse silenciosamente si alteran evidencia/objetivos.
 
 E10, ruteo avanzado e incrementos opcionales son primeras opciones de diferimiento. E9 sostiene objetivo ≥85% al primer contacto a M12: recortarlo implica revisar Charter/Business Case, no solo borrar backlog. E6, observabilidad básica y continuidad no se eliminan para liberar capacidad.
 

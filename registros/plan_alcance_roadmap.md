@@ -1,6 +1,6 @@
 # Desarrollo del alcance y roadmap de Maverick
 
-**Propuesta académica completa para revisión, 23-10-2026.** Apoya los documentos [04](../trabajo/04_alcance_y_backlog.md) y [07](../trabajo/07_roadmap.md). Conserva las medias PERT, capacidad, presupuesto y tramos recibidos el 23. Las distribuciones, ventanas y mecanismos siguientes son supuestos de planificación; no provienen del profesor ni acreditan dotación, productividad o aprobación del grupo.
+**Propuesta académica completa para revisión, 23-10-2026.** Apoya los documentos [04](../trabajo/04_alcance_y_backlog.md) y [07](../trabajo/07_roadmap.md). Conserva las medias PERT y tramos recibidos; integra cuatro células y sexto equipo anticipado según la [base de ejecución](base_ejecucion.md). Las distribuciones, ventanas y mecanismos siguientes son supuestos de planificación; no provienen del profesor ni acreditan dotación, productividad o aprobación del grupo.
 
 ## Convención de calendario y autorización
 
@@ -21,13 +21,11 @@ Se usan 52 semanas de referencia y 26 sprints de dos semanas. Los meses siguient
 | M11 | 44 a 48 | Medir devoluciones y ejecutar experimento autorizado, máximo cuatro semanas. |
 | M12 | 49 a 52 | Evaluar experimento, objetivos, transferencia y cierre con responsables. |
 
-Se proponen cinco equipos en sprints 1–5, seis en 6–15 y cuatro en 16–26. La reducción ocurre **antes de campaña**, desde semana 31; esa es la opción explícita para conservar la tabla recibida, pendiente de aceptar su cobertura de soporte. Si Operaciones exige seis equipos durante campaña, reestimar y autorizar el costo en vez de afirmar que ya está incluido.
+Se proponen cinco equipos en sprints 1–4, seis en 5–15 y cuatro en 16–26. El sexto está disponible en semana 9 y usa el sprint 5 para arranque; produce desde el 6. El sprint 1 reserva cinco unidades de arranque y el 17 cuatro de estabilización. El calendario completo, parámetros y cálculo se conservan en la [base de ejecución](base_ejecucion.md).
 
-Capacidad efectiva F1: 4 × 5 + 6 × 6 = 56 en sprints 2–11. F2: 4 × 6 = 24 en 12–15. F3: 10 × 4 = 40 en 16 y 18–26. Sprint 1 usa cinco equipos para arranque y sprint 17 cuatro para estabilización: están pagados, pero se excluyen de las 120 unidades efectivas. El trabajo reservado de esos dos sprints no se cuenta otra vez en la matriz de carga efectiva.
+F1 conserva 56 efectivos, F2 24 y F3 40. Campaña dispone de seis efectivos y R3 posterior a G2 de 34; el sprint 18 se divide a mitad de periodo. Se pagan 130 equipo-sprints, diez reservados sin producción y 120 efectivos. La conversión 130 × 12/26 × 14 da 840 MM exactos: COST-01 queda sin colchón de redondeo. La reducción a cuatro equipos antes de campaña requiere ratificación de funciones/soporte por Operaciones.
 
-F3 se separa en campaña, con capacidad 6 (sprint 16 completo y primera semana del 18), y R3 después de G2, con capacidad 34 (segunda semana del 18 y sprints 19–26). Sprint 18 cruza M8/M9; no autoriza trabajo R3 durante su primera semana.
-
-El calendario suma 129 equipo-sprints pagados. Con 26 periodos por 12 meses, son 59,5385 equipo-meses; a 14 MM se obtienen 833,5385 MM. Se propone conservar 840 como provisión redondeada, con diferencia 6,4615 MM dentro de COST-01. No son reserva nueva ni tarifa de 7 MM por cada sprint pagado. Rogelio debe revisar condiciones contractuales y flujo financiero; esta conciliación es una convención propuesta, no una cotización.
+En el escenario de respuesta al estrés se difieren E10/E8b y se reduce un equipo solo después de G2, con contrato cancelable/prorrata. La capacidad posterior pasa a 25,5 frente a esfuerzo 18,9667; las 104 unidades siguientes representan la referencia completa, no el alcance reducido.
 
 ## Distribución de esfuerzo por etapa
 
@@ -53,7 +51,7 @@ Las cargas F1/F2/F3 son exactamente 47,7/23/33,3 antes del redondeo de filas. Ca
 
 ### Primera salida usable antes de medir
 
-No se supone que las 47,7 unidades estén terminadas al inicio de M4. Se propone un corte mínimo de 36 hasta el fin del sprint 8, semana 16, contra capacidad efectiva acumulada 38: 94,74% de uso. Las 11,7 restantes se distribuyen en sprints 9–11, con capacidad 18, para completar cobertura, estabilizar y preparar expansión. Es un punto exigente del plan y debe contrastarse con Tecnología antes de comprometerlo.
+Se propone un corte mínimo de 36 hasta el fin del sprint 8, semana 16, contra capacidad efectiva 38: **94,74%** de uso. El sexto equipo arranca en sprint 5 y produce desde el 6. Las 11,7 unidades posteriores a salida se distribuyen en sprints 9–11, con capacidad 18, para completar cobertura, estabilizar y preparar expansión. El corte conserva la ventana de observación hasta M5 bajo la disponibilidad asumida en semana 9.
 
 | Épica con carga F1 | Hasta primera salida, semana 16 | Después de salida, hasta G1 |
 | --- | ---: | ---: |
@@ -79,7 +77,7 @@ Base de cuatro semanas propuesta en semanas 9–12; uso comparable en 17–20; a
 | Tecnología/integración y proveedor WMS | Datos, interfaces, reservas, conciliación y recuperación; desde R0 y cada ola | E1/E2/E3 y COST-01; cambios específicos del proveedor en COST-03, sin duplicar horas. |
 | PO e-commerce y representante de tiendas | Criterios, prioridades y aceptación funcional; disponibles desde M1 | Dedicación empresarial explícita entre COST-01/COST-07, según roles y frontera de costo. |
 | QA, seguridad y operación técnica | Pruebas, controles, alertas, carga y atención; antes de cada exposición | E6/E7/E8a; separar pentest externo COST-05 y herramientas COST-04. |
-| Habilitación local/remota | Tres células de dos funciones durante treinta días de olas | Dedicación dentro de E11 y COST-01/COST-06; no sumar nuevas brigadas. |
+| Habilitación local/remota | Cuatro células de dos funciones, 25 jornadas equivalentes dentro de las ventanas de olas | E11/COST-01 aporta 210 persona-días brutos; COST-06 financia veinte adicionales de preparación de campo y traslados. |
 | Personal y gerencia de tienda/CD | Preparación de datos, turnos, formación y aceptación del sitio | Costo y reemplazo de turnos dentro de COST-06 o aporte interno declarado; confirmar antes de G1. |
 | PM/Arquitectura/Finanzas y facilitación | Dependencias, forecast, autorización y acompañamiento | COST-07 o dedicación ya incluida en equipos; una persona no se cobra en ambos. |
 
@@ -87,30 +85,34 @@ La tabla asigna funciones y ventanas, sin inventar nombres empresariales ni FTE 
 
 ## Dimensionamiento propuesto de las 58 altas
 
-En los cuarenta días hábiles de referencia de M6/M7 se destinan treinta a altas y diez a corrección/VE-01. Se proponen tres células, cada una con una función técnica remota y una de habilitación operativa. Un sitio consume en promedio un día de célula, es decir, dos persona-días. Es hipótesis a calibrar con las diez tiendas piloto; viaje, turnos, CD y configuración especial pueden invalidarla.
+Cuatro células completan habilitación y acompañamiento con 25 jornadas equivalentes de actividad, distribuidas en los treinta días de olas. Se conservan diez días posteriores para corrección/VE-01, dentro de cuarenta. La dedicación se programa por sitio y relevo, sin reservar a las ocho funciones a tiempo completo durante los treinta días.
 
 | Parámetro | Valor propuesto | Uso |
 | --- | ---: | --- |
-| CEL-01 | 58 | Tiendas adicionales. |
-| CEL-02 | 3 | Células, sin contratación adicional automática. |
-| CEL-03 | 2 | Personas/funciones por célula. |
-| CEL-04 | 30 | Días hábiles de habilitación. |
+| CEL-01 | 58 | Altas adicionales. |
+| CEL-02 | 4 | Células. |
+| CEL-03 | 2 | Funciones por célula. |
+| CEL-04 | 25 | Jornadas equivalentes de actividad. |
 | CEL-05 | 0,75 | Disponibilidad efectiva supuesta. |
-| CEL-06 | 1 | Días de célula por tienda. |
-| CEL-07 | 3,5 | Equipo-sprints de E11 asignados a R2. |
+| CEL-06 | 1 | Día de célula de habilitación por tienda, dos persona-días. |
+| CEL-07 | 3,5 | Equipo-sprints de E11/R2. |
 | CEL-08 | 6 | Personas por equipo de referencia. |
-| CEL-09 | 10 | Días hábiles por sprint de referencia. |
+| CEL-09 | 10 | Días hábiles por sprint. |
 
-Requerimiento: 58 × 2 × 1 = 116 persona-días efectivos. Disponibilidad: 3 × 2 × 30 × 0,75 = 135; diferencia 19 para reintentos/aceptación. La dedicación bruta de células es 180 persona-días y cabe en 3,5 × 6 × 10 = 210 de E11/R2; los 30 brutos restantes cubren preparación/formación transversal. No sumar 210 y 180: el segundo es parte del primero. Estas funciones deben existir en la dotación o en COST-06 con frontera explícita; no son recursos demostrados por la operación aritmética.
+Habilitación 116 + acompañamiento 29 = **145 persona-días efectivos**, frente a **150** disponibles. Células: 200 persona-días brutos; preparación transversal: treinta. De ese total de 230, E11/R2 aporta 210 y COST-06 veinte de campo. Se conserva la carga de desarrollo R2 de 23/24. La [base](base_ejecucion.md) asigna 2,1538 MM para ese campo y una bolsa propuesta de diez MM de traslados dentro de los 45 de COST-06; el resto disponible es 32,8462.
 
-| Tiempo medio por tienda | Días de célula requeridos | Días hábiles de altas necesarios | Decisión frente a ventana de 30 |
-| --- | ---: | ---: | --- |
-| 1 día | 58 | 26 | Cabe bajo supuestos, sujeto a precedencias y disponibilidad. |
-| 1,5 días | 87 | 39 | Consume nueve días adicionales y casi todo el colchón de preparación; escalar. |
-| 2 días | 116 | 52 | No cabe en M6/M7 con este mecanismo; revisar capacidad/cobertura/fecha. |
+| Habilitación por tienda | Demanda efectiva, incluido acompañamiento | Jornadas equivalentes de células, redondeadas arriba | Más diez días de preparación |
+| --- | ---: | ---: | ---: |
+| Un día de célula | 145 | 25 | 35 |
+| 1,5 días de célula | 203 | 34 | 44 |
+| Dos días de célula | 261 | 44 | 54 |
 
-No trasladar al proyecto la geografía o tiempos de viaje que el enunciado no informa. Agrupar sitios por interfaz/CD y soporte; abrir un CD adicional exige su propia aceptación antes de la ola. Si el piloto desmiente el rendimiento, actualizar olas y decisión en G1 sin prometer 68 por suma de tiendas.
+La primera fila cabe bajo los supuestos; las otras requieren reducir cobertura o reestimar recursos antes de comprometer. El 75% y la valoración de campo son hipótesis, no rendimiento observado ni salario cotizado.
+
+La geografía del caso va de Arica a Punta Arenas (p. 3). Agrupar tiendas por región/CD, combinar referentes locales con apoyo técnico remoto y cotizar itinerarios contra la bolsa. CD2/CD3 se preparan/prueban en ventana propuesta 17–22, con tareas en E2/E11 y proveedor antes de sus olas. Identificar localidad, CD, traslado, turno y responsable en la programación; la cobertura nacional no se demuestra con capacidad agregada.
+
+La aceptación por patrón y listas delegadas evita reunir a todos los especialistas por cada tienda. Cada ola conserva datos, formación, soporte y estabilidad como condiciones. Si tiempos o costos exceden la base, sponsor/comité cambia cobertura/fecha con impacto explícito en beneficios.
 
 ## Estado para integrar y defender
 
-El anexo desarrolla: frontera/catálogo, backlog/EDT, aceptación, releases, calendario relativo, dependencia, olas, capacidad propuesta y respuestas a desvíos. Falta revisión colectiva del alcance y contraste de Rogelio sobre especialidades, precios/contratos y flujo por tramo. La fecha de carga y el formato final siguen sujetos al aula. No se declara ejecución, financiación o aprobación empresarial.
+El anexo integra frontera, aceptación, calendario y olas con una base cuantificada de cuatro células y sexto equipo anticipado. Falta revisión colectiva del alcance y contraste de Rogelio sobre especialidades, precios/contratos y flujo por tramo. La fecha de carga y el formato final siguen sujetos al aula. No se declara ejecución, financiación o aprobación empresarial.
