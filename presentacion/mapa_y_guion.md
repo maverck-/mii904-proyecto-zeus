@@ -1,83 +1,47 @@
-# Mapa y guion de la presentación ZEUS
+# Mapa de consulta para diseño y defensa de ZEUS
 
-Borrador de contenido, 23 de octubre de 2026. **No es el archivo final de presentación.** Aplicar revisión del equipo y sustituir pendientes antes de entregar. Se basa en los siete documentos y la [revisión del avance actualizado](../registros/revision_avance_2026-10-23.md).
+**Versión vigente, 23-10-2026.** Se conserva el nombre del archivo por compatibilidad con enlaces anteriores. La [pauta de construcción](pauta_construccion.md) contiene los únicos títulos, tiempos y composiciones vigentes. Este mapa sirve para revisar el argumento y localizar el respaldo; el guion oral se redactará después de construir las láminas.
 
-## Contrato de comunicación
+La versión anterior quedó sustituida: sus tres células y el rango de costo que terminaba en 1.500 no describen la base actual. Las fuentes vigentes son los siete documentos de trabajo, la [base de ejecución](../registros/base_ejecucion.md) y los [aportes de clase 4](../registros/aportes_clase_04.md). Los cambios no significan aprobación del equipo o de la empresa ficticia.
 
-Audiencia: docentes actuando como Comité Ejecutivo de M-GesPro Retail. Propósito: permitir evaluar y autorizar una intervención con límites, valor, costo e incertidumbre visibles. Mensaje central: **proponemos B modular para validar C&C en 10 tiendas y ampliar a 68 antes de campaña, con financiación y expansión condicionadas a evidencia y capacidad**.
+## Lectura del argumento
 
-Perfil de decisión ejecutiva con defensa académica, exposición narrada. Corpus cerrado: enunciado, clases y aporte del equipo. Ningún dato simula resultados reales. Formato/plantilla finales por confirmar; para preparar contenido se supone proyección o pantalla compartida horizontal. Diseño legible, títulos con mensaje, una composición principal por lámina y detalle en anexos. No convertir cada Markdown en una lámina.
+| Bloque | Láminas de la pauta | Qué debe quedar claro | Respaldo |
+| --- | --- | --- | --- |
+| Recomendación y valor | 1–3 | B es una propuesta para comprobar valor; los síntomas del caso y los umbrales del piloto tienen poblaciones/estados distintos. | [01](../trabajo/01_diagnostico_y_business_case.md), anexo A. |
+| Alternativa, enfoque y mandato | 4–6 | B debe justificar el incremento frente a C; prácticas y derechos de decisión responden a tensiones concretas. | [01](../trabajo/01_diagnostico_y_business_case.md), [02](../trabajo/02_enfoque.md), [03](../trabajo/03_charter.md), anexos F/H. |
+| Alcance y prioridades | 7–8 | R1 es reserva simple/ventana fija; un ratio alto no elimina dependencias ni controles. | [04](../trabajo/04_alcance_y_backlog.md), [05](../trabajo/05_priorizacion.md), anexos B/C. |
+| Recursos y calendario | 9–10 | La capacidad no certifica fechas; cuatro células y sexto equipo anticipado sostienen una meta condicionada. El estrés solo cabe con reducción/topes. | [06](../trabajo/06_estimacion.md), [07](../trabajo/07_roadmap.md), [base](../registros/base_ejecucion.md), anexos D/E. |
+| Respuesta y autorización | 11–12 | La evidencia puede frenar escala/inversión; se solicita el primer tramo, con límites y autoridad para continuar. | [riesgos](../registros/riesgos.md), [03](../trabajo/03_charter.md), anexos D/F. |
 
-Pauta: máximo 35 minutos; exposición propuesta 25 y defensa 10; hasta 12 láminas principales sugeridas (enunciado p. 9). Los tiempos siguientes suman 25 minutos, incluyendo apertura/cierre. No añadir una portada o agenda extra fuera de ese presupuesto.
+## Formato del guion que se preparará después
 
-## Secuencia de láminas
+Por lámina: persona que habla y texto exacto que debe decir. Las transiciones van dentro del texto hablado. Añadir únicamente una nota breve para preguntas cuando haga falta precisar un dato, un límite o una fuente. No agregar apartados de salida, instrucciones escénicas ni explicaciones sobre el propio guion por defecto.
 
-| N.º | Minutos | Título propuesto / función | Contenido esencial visible | Visual sugerido | Fuente / estado | Detalle fuera de lámina |
-| --- | ---: | --- | --- | --- | --- | --- |
-| 1 | 1 | Proponemos B modular con inversión y escala condicionadas a evidencia | 10 tiendas piloto → 68/M7; valor M5 y campaña M8; autorización por tramos | Ruta resumida con tres hitos | Recomendación del equipo/escenario, no resultado | Fronteras y condiciones en notas/07. |
-| 2 | 2 | Las brechas de inventario y preparación deterioran la promesa omnicanal | Cancelación 7,8%; preparación 7,2 h; stock web 45–120 min | Tres indicadores con consecuencia operativa | Enunciado pp. 3/4; causalidad por validar | Resto de bases/KPI en 01. |
-| 3 | 2 | Mediremos uso y mejora del flujo antes de financiar la expansión | M5: uso, mejora y bases comparables; umbrales piloto por ratificar; metas M12 separadas | Cadena entregable → uso → resultado → decisión | 01 y SUP-16 previo por ratificar; metas finales <2% y <3 h a M12 | Denominadores, piso de observación y límites en anexo. |
-| 4 | 2 | B combina evolución modular con las restricciones del caso | A 1.850 MM/12–18 meses; B 1.350/9–12; C 800/5–7; no actuar tiene costo de oportunidad | Comparación compacta con restricción de techo/plazo | Enunciado pp. 5/7; B preliminar, no estimación validada | Ventajas, riesgos y alternativa diferir en 01. |
-| 5 | 2 | Conectaremos gobierno y entrega mediante un mismo roadmap | Gobierno: financiación/controles; puente: releases/dependencias; entrega: Kanban/Scrum/feedback | Tres capas conectadas con retorno de evidencia | 02 y presentaciones 03/04; prácticas propuestas | Cadencias y DoD en 02/04. |
-| 6 | 2 | Sponsor, PO y operación deciden sobre compromisos distintos | Sponsor/comité: inversión y cambio mayor; PO: orden; CISO/Operación: salida segura/operable | Matriz breve decisión → autoridad | Charter 03, roles propuestos sobre stakeholders del caso | Mapa de interesados y reglas de cambio en 03. |
-| 7 | 3 | El alcance inicial cubre un flujo completo con catálogo acotado | Piloto: diez tiendas/un CD/dos familias; expansión: 68/hasta tres CD/mismo catálogo | Frontera in/out/interfaces y flujo completo | 04: hipótesis de diseño desarrollada, pendiente de ratificación | CAP/PAQ, seis historias, aceptación y experimento en anexo. |
-| 8 | 2 | Priorizamos dependencias y controles para obtener valor temprano | Viabilidad → inventario/pedidos → C&C → escala; controles/adopción desde inicio | Secuencia con transversales | 05: WSJF del equipo, notas propuestas y cocientes verificados | Matriz completa y decisión experimental en anexo. |
-| 9 | 3 | Proponemos cuatro olas con aceptación antes de congelar cambios | 10 → 25 → 40 → 54 → 68; treinta días de altas y diez de preparación; R2 23/24 | Roadmap M1–M12 con zoom de despliegue | 07 y plan de apoyo; rendimiento y dedicación por validar | Calendario, matriz de esfuerzo, células, sensibilidad y corte piloto al 95% en anexo. |
-| 10 | 3 | El presupuesto debe cubrir capacidad, operación y reserva | Base 1.330 + reserva 170 = 1.500 MM; rango 1.215–1.500; 840 en capacidad | Puente de categorías a presupuesto y consumo de reserva | 06: cifras recibidas como supuestos; frontera de costos por conciliar | Cantidades, tarifas supuestas y sensibilidad en anexo. |
-| 11 | 2 | La evidencia puede detener escala o experimento antes de comprometer más gasto | Integración/stock/capacidad; G1 y VE-01; experimento 3–5 tiendas con límites propuestos por ratificar en G2 | Tres riesgos con señal y respuesta | Riesgos y SUP-17 actualizado; límites y techo monetario por autorizar en G2 | Sensibilidades y criterios de parada en anexo. |
-| 12 | 1 | Solicitamos autorizar un primer tramo con condiciones verificables | Primer tramo propuesto 675 MM; VT-01 técnico y evidencia M5; resto 345/310 y reserva por comité | Primer tramo 675 MM, decisiones y condiciones | Charter 03; montos propuestos, pagos/calendario por conciliar | Preguntas y respaldo; no afirmar aprobación ya obtenida. |
+Las filas siguientes son respaldo de contenido para preparar la defensa. No se copian completas al guion ni obligan a agregar notas a cada lámina. Los expositores se asignan cuando el equipo acuerde los relevos.
 
-Láminas 10 y 12 ya tienen cifras del equipo. Antes del archivo final, conciliar calendario/costo, frontera de proveedores y flujo por categoría/tramo. Presentar 1.330/170/675 como propuesta recibida, no cotización o aprobación. No usar los P80/P95 del esfuerzo como garantía de plazo.
+## Preguntas que la presentación debe poder responder
 
-## Guion de apoyo y transiciones
-
-Estas notas orientan la explicación; no son párrafos para pegar en las láminas ni una locución completa de 25 minutos.
-
-1. **Recomendación:** presentar la decisión B y sus condiciones antes del detalle. Distinguir capacidad tecnológica de cambio operativo y presupuesto preliminar de gasto autorizado.
-2. **Problema:** explicar la compra que luego se cancela y el pedido que tarda en prepararse, sin afirmar que toda cancelación se explica por latencia. Son síntomas relacionados cuya contribución causal se verifica.
-3. **Valor:** una app instalada es output; uso por tienda es adopción; menor cancelación/preparación es outcome. Las reducciones propuestas se comparan con la cohorte piloto, no automáticamente con promedios corporativos. M5 no exige cumplir ya todos los objetivos M12.
-4. **Alternativas:** A rebasa techo; C reduce amplitud pero su plazo no demuestra valor antes de M5; B permite secuenciar si integración y capacidad funcionan. No actuar difiere exposición inmediata y mantiene problemas. Los montos comparados provienen del caso, no de cotizaciones nuestras.
-5. **Enfoque:** la restricción ERP y los controles requieren gobierno, mientras UX/adopción requieren aprendizaje. Mostrar cómo un bloqueo cambia forecast y vuelve al comité; evitar dos planes paralelos. Ante madurez desigual, proponer acompañamiento inicial, PO disponible y facilitación dentro de capacidad/costo, no solo nombrar ceremonias.
-6. **Mandato:** PO decide dentro de límites. Cambiar cobertura, fecha o costo comprometidos exige autoridad del Charter. Quienes operan tiendas deben aceptar preparación y soporte; el sponsor no reemplaza a usuarios.
-7. **Alcance:** producto son capacidades; proyecto incluye datos, pruebas, formación, transición y aceptación. Se propone acotar a dos familias/un CD piloto y hasta tres CD en expansión. Es una hipótesis de cobertura por ratificar con el grupo. Los CD adicionales consumen integración y aceptación. Explicar el límite de devolución elegible y experimento, sin llenar la lámina con todas las historias.
-8. **Prioridad:** la matriz sostiene conversación, no un orden automático. Viabilidad puede ir primero aunque su score sea menor. Seguridad y continuidad no se eliminan para mejorar atractivo de una capacidad.
-9. **Roadmap:** primera salida propuesta al terminar semana 16, durante M4; uso semanas 17–20 y G1 al cierre de M5; expansión M6/M7; campaña M8 y R3 tras G2. La matriz ya conserva 104 y separa campaña 5/R3 28,3. La primera salida usa 36/38, cerca de 95%, y R2 23/24, cerca de 96%; requieren revisión por especialidad. Las tres células están dentro de E11; no agregar brigadas históricas. Congelamiento después de R2/VE-01 hasta fin de campaña, con soporte y alertas atendidas. Llevar cálculo y sensibilidad al anexo.
-10. **Costo:** con la estimación recibida, explicar base de estimación, unidad, rangos, recurrentes, reserva y adverso. Mostrar qué se decide si excede techo. Las jornadas disponibles se pagan según contrato, aunque no todas sean trabajo productivo; evitar duplicarlas con equipos de construcción.
-11. **Riesgo/aprendizaje:** escoger integración, exactitud y capacidad como amenazas dominantes y explicar acción, no solo nombre. El experimento propone cuatro semanas/300 pedidos; G2 debe ratificarlos y autorizar límite monetario; puede terminar inconcluso o detenido.
-12. **Autorización:** cerrar con primer tramo propuesto de 675 MM y alcance que cubre, evidencia de salida y quién decide liberar el siguiente tramo. No solicitar una autorización total sin límites mientras se reconoce incertidumbre de costo.
-
-## Anexos que deben respaldar la defensa
-
-| Anexo | Contenido ya disponible / ubicación | Pendiente |
+| Pregunta | Criterio de respuesta y límite | Lámina / anexo |
 | --- | --- | --- |
-| A | KPI, denominadores y bases de M5: 01; umbrales SUP-16 previos por ratificar | Aprobación académica del equipo; datos empresariales serían trabajo futuro. |
-| B | CAP/PAQ, aceptación y fronteras: 04 | Ratificar catálogo/CD, historias y aceptación propuestos en 04. |
-| C | WSJF de épicas: 05 | Rogelio/equipo revisan notas, tamaños y dependencias. |
-| D | Esfuerzo, capacidad, categorías y tramos recibidos: 06 | Contrastar calendario y matriz propuestos por Maverick, dedicaciones por especialidad y fronteras de costos. |
-| E | Roadmap, gates y riesgos: 07 y registro de riesgos | Revisión de recursos y efecto de cambios en conjunto. |
-| F | Fuentes: enunciado con páginas, presentaciones y transcripciones con tiempos | No agregar referencias externas ni ejemplos como datos de ZEUS. |
+| ¿Por qué B frente a C? | R0–R2 comparte el núcleo de C; comparar igual cobertura/calidad, costo a término y beneficio incremental de devolución/evolución. Faltan volumen/margen para superioridad económica demostrada. | 4, H. |
+| ¿Por qué híbrido? | WMS requiere hitos y pruebas; producto admite incrementos y feedback; dependencias se gestionan por flujo. Un bloqueo modifica forecast y puede exigir una decisión ejecutiva. | 5, F/E. |
+| ¿Cómo se escala de 10 a 68? | Cuatro olas, cuatro células, habilitación y acompañamiento explícitos, campo adicional en COST-06 y calibración con piloto. La capacidad diaria de tiendas/CD se acepta aparte. Si el esfuerzo por sitio crece, revisar cobertura/fecha. | 10, E. |
+| ¿El esfuerzo demuestra la fecha? | 104/120 es comparación aritmética. Corte piloto 36/38 y R2 23/24 requieren especialidades y dependencias disponibles; no hay CPM detallado ni probabilidad validada de fecha. | 9/10, D/E. |
+| ¿Qué permite el sexto equipo anticipado? | Disponibilidad en semana 9, arranque en sprint 5 y producción desde el 6; 130 unidades pagadas, 120 efectivas y 840 MM exactos, sin colchón de redondeo. | 10, D/E. |
+| ¿Qué ocurre si el costo llega a 1.668? | Diferir E10/E8b habilita cancelar un equipo tras G2; los topes OMS/WMS/cloud completan la respuesta hasta 1.497,0923. Sin esas condiciones, revisar cobertura/arquitectura o C antes de superar techo. No sumar ahorros por esfuerzo y por contrato dos veces. | 9, D. |
+| ¿Qué pasa si falla WMS o el stock físico? | Corregir interfaz/conciliación y recalcular salida/observación; no exponer reservas no confiables ni declarar una demo como valor. VT-01 y aceptación operativa son evidencia para decidir. | 10/11, E/F. |
+| ¿Cómo se demuestra valor M5? | Uso, mejora y operación aceptada, contra base y comparación concurrente; cuatro semanas/piso de pedidos no garantizan causalidad. Si falta comparación válida de C&C, ratificar otro resultado comparable antes del piloto. | 3, A. |
+| ¿La logística ya demuestra retorno? | Es una hipótesis plausible; el cálculo usa volumen, margen, cobertura efectiva por pedidos y gasto incremental. Los estudios externos no dan el efecto local y la sensibilidad ilustrativa no es forecast. | 3/4/9, H. |
+| ¿Por qué 85% en devolución frente a 90% estratégico? | El proyecto trata casos elegibles y la meta corporativa tiene otra población. Justificar cobertura y contribución; no presentar cinco puntos como brecha corporativa medida. | 7, A/B. |
+| ¿Ship-from-store es opcional? | El experimento es condicionado y diferible, 3–5 tiendas, cuatro semanas/300 pedidos como límites propuestos y exposición monetaria autorizada en G2. Devolución sostiene KPI-04; no retirar todo R3 como si fuera prescindible. | 7/11, B/D. |
+| ¿Quién cambia una fecha? | PM actualiza/comunica forecast y opciones; sponsor/comité autoriza cambios de compromiso conforme al Charter. PO reordena dentro de límites; CISO/Operaciones bloquean una salida crítica/no operable. | 5/6/12, F. |
+| ¿Qué pasa con 20% menos presupuesto? | Nuevo techo 1.200 MM. Revisar costo comparable de alternativas, contratos evitables, cobertura y horizonte; recortar tareas no ahorra caja automáticamente. Conservar controles y continuidad. | 4/9/12, D/H. |
 
-## Preguntas para ensayar
+Ante un cambio de condición: identificar objetivo/compromiso afectado, seguir dependencias, recalcular capacidad/costo/beneficio y presentar opciones con autoridad de decisión. El diseño debe facilitar encontrar el anexo correspondiente. Estas respuestas son criterios de defensa, no una locución ni párrafos para pegar en las láminas.
 
-- **¿Por qué B y no C?** B conserva evolución modular y amplitud que busca el equipo. La preferencia depende de primera entrega y asequibilidad; si la integración/recursos no la sostienen se revisa, sin despreciar C por ser más acotada.
-- **¿Por qué no desplegar todo desde el comienzo?** Para contrastar datos, flujo y adopción en cohorte acotada antes de exponer la red. Esto no elimina el objetivo 68/M7: condiciona su ejecución.
-- **¿La capacidad demuestra la fecha?** No por sí sola. El equipo propone 120 equipo-sprints frente a esfuerzo 104, pero R2 usa 23/24. Ya hay matriz por épica/etapa y calendario propuestos; falta validar dependencias y dedicación por especialidad. Las aproximaciones normales 108,13/112,12 son sensibilidad del esfuerzo bajo supuestos, no garantía de campaña.
-- **¿Qué pasa si WMS se retrasa?** Revisar viabilidad/precedencias en VT-01, efecto en uso M4 y evidencia M5, costo y alternativa. No llamar primera entrega a una demostración aislada ni omitir la dependencia externa.
-- **¿Por qué devolver al 85% si la estrategia pide 90%?** Es objetivo parcial del equipo para casos elegibles en R3. La diferencia nominal de cinco puntos entre metas no es una brecha corporativa medida, porque las poblaciones difieren. Debe justificarse por el foco y alcance de esta intervención. Si no se defiende esa decisión, se revisa objetivo con alcance/costo, sin cambiar silenciosamente el indicador.
-- **¿Por qué IA/data platform no entran?** No se ha demostrado que sean necesarias para la primera hipótesis; datos operacionales e instrumentación sí entran. Incorporarlas exige valor y costo de oportunidad explícitos.
-- **¿Ship-from-store está fuera?** Está fuera del primer release y del despliegue nacional comprometido; R3 incluye experimento condicionado de 3 a 5 tiendas. Se propone detener al cumplir cuatro semanas o 300 pedidos, lo que ocurra primero, y G2 debe ratificarlo y autorizar exposición monetaria; E10 ya está incluido en capacidad.
-- **¿Qué ocurre con 20% menos presupuesto?** Nuevo techo 1.200 MM. Comparar con estimación real del escenario, no asumir que «recortar 20% de tareas» produce el mismo ahorro. Revisar experimentación, amplitud y secuencia; conservar controles y continuidad.
-- **¿Los mil pedidos prueban causalidad?** No. Es un piso operacional propuesto; reportar incertidumbre, mix y comparabilidad. Sin evidencia suficiente el resultado es inconcluso.
-- **¿Quién cambia una fecha?** PM analiza y comunica forecast; sponsor/comité autoriza cambio de compromiso conforme a Charter. PO puede reordenar dentro de límites, no reescribir el presupuesto o meta de cobertura por su cuenta.
-- **¿Cómo adoptarán el enfoque con madurez desigual?** Revisar experiencia y disponibilidad en R0, acordar prácticas mínimas y quién facilita, y mejorar con terminados/bloqueos/feedback. La dedicación consume la capacidad presupuestada; no se presupone un nuevo cargo ni un equipo ya entrenado.
-- **¿La observabilidad puede esperar a R3?** E8a acompaña R1: señal, responsable y respuesta probada. Antes de campaña se revisan carga y recuperación. E8b amplía centralización; no reemplaza la preparación operativa previa.
-- **¿Cómo pasan de diez a 68 tiendas?** Cuatro olas de 15/15/14/14, con tres células de dos funciones durante treinta días y diez de preparación. A 75% efectivo y un día de célula por tienda, hay 135 persona-días para 116 requeridos, dentro de E11/R2. Es supuesto a calibrar: a dos días por sitio, se necesitarían 52 días de altas y el plan no cabe sin cambios.
-- **¿Por qué primera salida en semana 16?** El corte mínimo propuesto requiere 36 unidades frente a 38 disponibles; deja semanas 17–20 para observar y hasta 22 para decidir. Si falta una función o control imprescindible, no se libera y se recalcula evidencia M5. No equivale a una fecha garantizada.
+## Cierre de contenido antes de entregar
 
-Ante un cambio de condición durante la defensa: identificar el compromiso afectado, seguir sus dependencias, revisar capacidad/costo/beneficio, presentar opciones y señalar quién decide. Después explicar qué cambiaría en los documentos y el roadmap; no responder solo con el nombre de una metodología.
+El equipo ratifica catálogo/CD, umbrales del piloto, devolución elegible, dotación y límites experimentales. Rogelio concilia capacidad por especialidad, categorías/tramos y fronteras con proveedores. El caso no trae datos de volumen/margen: mantener su efecto en la recomendación como incertidumbre explícita, sin fabricar resultados.
 
-## Ensayo y responsabilidades
-
-Rogelio prepara defensa de WSJF/estimación y sus límites; Maverick de alcance/roadmap. Bryam y Alejandro coordinan diagnóstico/Business Case/enfoque/Charter según su reparto real, que no se infiere aquí. Acordar quién abre/cierra y los relevos; todos responden preguntas de cualquier parte.
-
-Ensayo 1: recorrer títulos y detectar contradicciones, sin diseño. Ensayo 2: exposición cronometrada de 25 minutos con cambios de escenario y 10 de defensa. Viernes 23: integrar correcciones, anexos y formato final. Sábado 24: entrega/presentación documentada; verificar antes hora/formato del aula y nómina activa de cuatro.
+La estructura permite iniciar diseño mientras esas propuestas permanezcan rotuladas. Después se acuerdan relevos, se redacta el guion y se ensaya 25 + 10. Confirmar hora/formato del aula y enviar la presentación al exponer, según clase 4.

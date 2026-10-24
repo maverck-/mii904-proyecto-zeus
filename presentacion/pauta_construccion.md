@@ -1,64 +1,96 @@
 # Pauta para construir la presentación de ZEUS
 
-**Propuesta de estructura para revisión del equipo, 23-10-2026.** Esta pauta define qué debe comunicar cada lámina y cómo organizar su evidencia. La presentación y el guion oral se prepararán después de acordar esta estructura. Los contenidos de referencia son los siete documentos de `trabajo/`, con sus supuestos y decisiones pendientes.
+**Versión para iniciar diseño, 23-10-2026.** Integra la base de ejecución vigente y la clase 4. Quedan definidos recorrido, títulos, evidencia visible, composiciones, anexos y reglas de precisión. Se puede avanzar al diseño conservando las etiquetas de propuesta; la ratificación del equipo y el formato/hora del aula siguen abiertos. El archivo de presentación y el guion oral corresponden a la fase siguiente.
 
 ## 1. Propósito y condiciones
 
 La audiencia son los docentes actuando como Comité Ejecutivo de M-GesPro Retail. Al finalizar, deben poder evaluar la recomendación B, sus límites, recursos, riesgos y condiciones para autorizar el primer tramo. El foco es defender una propuesta ejecutable y revisable, con una línea clara entre problema, valor, alcance e inversión.
 
-Mensaje central propuesto: **desarrollar B modular por etapas, comprobar valor en diez tiendas y ampliar la cobertura antes de campaña solo con evidencia, capacidad y operación aceptadas**.
+Mensaje central: **proponemos B modular para validar valor en diez tiendas y ampliar antes de campaña con operación y recursos aceptados; la inversión continúa solo si integración, costo y beneficio justifican mantener B frente a C**.
+
+Perfil de decisión ejecutiva con defensa académica. El recorrido parte de la recomendación, explica problema/valor, compara alternativas, concreta enfoque/mandato/alcance y termina en recursos, calendario, riesgos y autorización. No convierte los capítulos del informe en una lista de temas.
 
 | Aspecto | Base para construir |
 | --- | --- |
 | Duración | La pauta oficial fija máximo 35 minutos y recomienda 25 de exposición + 10 de defensa. |
 | Cantidad | Proponemos 12 láminas principales, incluyendo apertura y cierre; el enunciado las sugiere, no las impone como obligación. Anexos fuera del recorrido principal. |
 | Formato | Propuesta de trabajo: horizontal 16:9, para exposición narrada y proyección/pantalla compartida. Confirmar medio, plantilla y formato de entrega en aula. |
-| Fuentes | Enunciado, materiales docentes y propuesta del equipo; por solicitud expresa, se añade [evidencia pública complementaria](../insumos/evidencia_logistica_y_valor.md) de logística/valor. El enunciado prevalece y cada dato/cálculo conserva fuente y alcance; la sensibilidad de retorno no es forecast. |
+| Fuentes | Corpus disponible del proyecto: enunciado, clases 1 a 4, propuesta del equipo y [evidencia pública ya incorporada](../insumos/evidencia_logistica_y_valor.md). No se requiere nueva investigación para diseñar. El enunciado prevalece; la sensibilidad de retorno no es forecast. |
 | Estado | Distinguir datos del caso, metas, supuestos y decisiones propuestas. No hay resultados empresariales ejecutados ni cotizaciones verificadas. |
 | Secuencia de trabajo | Acordar estructura → seleccionar evidencia → construir láminas → revisar coherencia/legibilidad → preparar guion → ensayar. |
 
 Condiciones oficiales: [enunciado](../insumos/enunciado-zeus-etapa1.pdf), pp. 8/9, y [resumen de pauta](../insumos/pauta.md). Las indicaciones visuales de este documento son recomendaciones de construcción del equipo.
 
+### Formato del guion posterior
+
+La simplicidad solicitada se refiere al formato del guion: por lámina, identificar a la persona que habla y escribir únicamente lo que debe decir. Las transiciones necesarias forman parte de ese mismo texto. No añadir introducciones sobre cómo usar el guion, apartados de «Salida», comentarios de producción ni indicaciones escénicas por defecto.
+
+Solo cuando aporte a una pregunta probable, incluir al final **«Nota para preguntas, no se lee»**, con la precisión, cifra o fuente necesaria. Mantenerla breve y separada del texto hablado. No repetir en ella el documento técnico completo ni agregar una nota a todas las láminas por obligación.
+
+Esta preferencia no exige recortar explicaciones necesarias ni eliminar contenido de la pauta. La pauta organiza la construcción y su respaldo; el guion se redactará después, sobre las láminas, con expositores acordados por el equipo.
+
 ## 2. Estructura propuesta: 12 láminas, 25 minutos
 
-Los títulos son de trabajo y podrán ajustarse al construir. Cada lámina tiene una función principal, un contenido mínimo y un destino para el detalle. Los tiempos distribuyen la atención; todavía no son un guion ni un reparto de expositores.
+Los títulos siguientes son el texto base para diseñar. Se pueden acortar conservando su afirmación y nivel de certeza. Cada lámina tiene una función principal y una composición dominante. Los tiempos son un presupuesto de atención, sin reparto de expositores ni locución redactada.
 
-| N.º | Minutos | Función y título de trabajo | Evidencia mínima visible | Recurso visual sugerido | Fuente y estado | Detalle fuera del cuerpo principal |
+| N.º | Minutos | Función y título para diseño | Evidencia mínima visible | Composición principal | Fuente y estado | Detalle fuera del cuerpo principal |
 | --- | ---: | --- | --- | --- | --- | --- |
-| 1 | 1 | **Recomendación:** proponemos B modular con inversión y escala condicionadas | ZEUS y equipo; diez tiendas piloto → objetivo 68/M7; evidencia de valor M5 | Apertura con recomendación y una ruta de tres hitos | [01](../trabajo/01_diagnostico_y_business_case.md), [03](../trabajo/03_charter.md): propuesta | Contexto institucional y referencias ampliadas. Integrar portada aquí. |
-| 2 | 2 | **Problema:** inventario y pedidos desalineados deterioran la promesa omnicanal | Cancelación por stock 7,8%; preparación 7,2 h; actualización web 45–120 min; efecto operativo | Tres indicadores junto al flujo compra → preparación → retiro | Enunciado pp. 3/4 y [01](../trabajo/01_diagnostico_y_business_case.md): datos del caso; causas por contrastar | Resto de bases, restricciones y diagnóstico detallado. |
-| 3 | 2 | **Valor:** evaluaremos uso y mejora antes de ampliar la inversión | Drivers: crecimiento digital, eficiencia y satisfacción; entregable → uso → mejora → decisión; M5 y M12 separados | Cadena de valor con dos horizontes de evaluación | [01](../trabajo/01_diagnostico_y_business_case.md), SUP-16: hipótesis y umbrales por ratificar | Fórmulas KPI, cohortes, muestra y comparabilidad. |
-| 4 | 2 | **Alternativas:** recomendamos B con condiciones de viabilidad y valor | A: 1.850 MM/12–18 meses; B: 1.350/9–12; C: 800/5–7; criterio para recomendar y reconsiderar | Tabla breve de alternativas, con techo y valor temprano como criterios | Enunciado pp. 5/7 y [01](../trabajo/01_diagnostico_y_business_case.md): referencias preliminares | Evaluación completa y opción de diferir/no actuar. |
-| 5 | 2 | **Enfoque:** conectamos controles formales con aprendizaje de producto | Aportes/tensiones de predictivo, ágil e híbrido; prácticas elegidas según componente | Comparación de tres lógicas con elección híbrida destacada y prácticas asignadas por componente | [02](../trabajo/02_enfoque.md): recomendación justificada | Cadencias, DoD, madurez y función de facilitación. |
-| 6 | 2 | **Mandato:** proponemos reglas para resolver intereses en tensión | Sponsor Gerente General; dos tensiones: velocidad frente a operación/seguridad y funcionalidad frente a integración; regla y autoridad de decisión | Dos filas tensión → regla → autoridad, con límites del mandato | [03](../trabajo/03_charter.md), [matriz de stakeholders](../registros/matriz_stakeholders.md): intereses del caso y respuestas propuestas | Trece stakeholders, derechos completos y gestión de cambios. |
-| 7 | 3 | **Alcance:** el primer flujo será completo y el catálogo acotado | Diez tiendas/un CD/dos familias; expansión a 68/hasta tres CD/mismas familias; inclusiones/exclusiones críticas | Flujo inventario → pedido → preparación → retiro, con frontera y controles transversales | [04](../trabajo/04_alcance_y_backlog.md): cobertura e interfaces propuestas | CAP/PAQ/HU, aceptación, devoluciones elegibles y límites del experimento. |
-| 8 | 2 | **Prioridad:** el WSJF orienta y las dependencias condicionan el orden | Ejemplo de ranking frente a secuencia ejecutable; viabilidad/interfaces → stock/pedidos → C&C/app; seguridad, observabilidad y adopción acompañan | Secuencia de capacidades con condiciones transversales; selección reducida del WSJF | [05](../trabajo/05_priorizacion.md): puntajes del equipo y condiciones | Matriz WSJF completa, escalas y regla de tamaño pendiente de confirmar. |
-| 9 | 3 | **Recursos:** la base requiere capacidad, presupuesto y reserva explícitos | Esfuerzo de referencia 104; 120 efectivos con sexto equipo desde sprint 5; base 1.330 + reserva 170 = techo 1.500 MM; estrés bruto 1.668 → 1.497,0923 con reducción/topes condicionados; retorno por contrastar | Composición presupuestaria principal y comparación de esfuerzo/capacidad subordinada, con unidades separadas | [06](../trabajo/06_estimacion.md): cálculos consistentes; contratos y fronteras por conciliar | PERT por épica, escenarios, categorías, dedicaciones y financiación detallada. |
-| 10 | 3 | **Roadmap:** la escala pasa por evidencia y aceptación antes de campaña | R0/R1/R2/R3; piloto M4/evidencia M5; expansión M6/M7; campaña M8; R3 tras G2/M9 | Línea M1–M12 con gates y olas; destacar 36/38 con arranque anticipado, 23/24 y 145/150 persona-días con cuatro células | [07](../trabajo/07_roadmap.md), [plan de apoyo](../registros/plan_alcance_roadmap.md): calendario supuesto | Semanas/sprints, matriz de carga, células y sensibilidad de altas. |
-| 11 | 2 | **Riesgos y evidencia:** integración, stock y capacidad pueden frenar la escala | Tres riesgos dominantes; señal observable, respuesta y decisión de continuar/corregir/diferir | Matriz breve causa/evento → señal → acción/autoridad | [riesgos](../registros/riesgos.md), [07](../trabajo/07_roadmap.md): escenarios y controles propuestos | Registro completo y criterios de parada del experimento. |
-| 12 | 1 | **Decisión:** solicitamos un primer tramo sujeto a condiciones verificables | 675 MM para R0/R1; VT-01 y G1 como controles; siguientes tramos 345/310 y reserva por autorización | Solicitud de decisión con monto, alcance inicial y condiciones | [03](../trabajo/03_charter.md), [06](../trabajo/06_estimacion.md): solicitud propuesta | Flujo por categoría/mes/tramo pendiente de conciliar. |
+| 1 | 1 | **ZEUS: B modular, piloto y expansión con evidencia** | ZEUS y equipo activo; empezar en 10 tiendas; ampliar solo después de evaluar el piloto | Apertura con nombre del proyecto y recorrido probar → evaluar → ampliar | [01](../trabajo/01_diagnostico_y_business_case.md), [03](../trabajo/03_charter.md): propuesta | Nómina completa en apertura o pie; sin portada/agenda adicional. |
+| 2 | 2 | **El cliente compra, pero la promesa puede fallar** | Cancelación por stock 7,8%; preparación 7,2 h; actualización web 45–120 min | Tres datos junto a una compra que pasa a preparación y retiro | Enunciado pp. 3/4 y [01](../trabajo/01_diagnostico_y_business_case.md); causas por contrastar | Exactitud 91% y diagnóstico físico/digital ampliado al anexo A. |
+| 3 | 2 | **Primero comprobamos si el piloto mejora el servicio** | Tres umbrales propuestos: cancelación −20% relativo, preparación −25% relativo y adopción >80%; comparación válida | Entrega → uso → mejora → decisión, con los umbrales al lado | [01](../trabajo/01_diagnostico_y_business_case.md), SUP-16; hipótesis, no resultados | Cohortes/control concurrente, denominadores y metas M12 al anexo A; retorno al H. |
+| 4 | 2 | **B debe justificar su mayor inversión frente a C** | A 1.850 MM/12–18 meses; B 1.350/9–12; C 800/5–7. Devolución elegible distingue el alcance adicional propuesto de B | Comparación de tres alternativas y una frase: mantener B si justifica su costo adicional | Enunciado pp. 5/7 y [01](../trabajo/01_diagnostico_y_business_case.md): referencias del caso y evaluación del equipo | Comparación completa, diferir/no actuar y costo/beneficio incremental al anexo H. |
+| 5 | 2 | **Combinamos control de inversión y entregas pequeñas** | Acordar contratos y límites; construir/probar por partes; ajustar con evidencia. Las dependencias conectan las tres decisiones | Ciclo sencillo acordar → entregar y probar → ajustar; una práctica concreta por paso | [02](../trabajo/02_enfoque.md), clases 3/4: tailoring propuesto | Comparación de enfoques, cadencias, DoD y política WIP al anexo F. |
+| 6 | 2 | **Acelerar requiere una operación segura** | Quién decide: inversión/cambio mayor, orden del trabajo y salida operativa; dos tensiones con su regla | Dos filas breves con interés en tensión, regla y responsable | [03](../trabajo/03_charter.md), [matriz](../registros/matriz_stakeholders.md): mandato y respuesta propuestos | Trece stakeholders y tensiones de Finanzas/Tiendas/proveedores al anexo F; se retoman en 7/9/10. |
+| 7 | 3 | **El primer flujo termina con el retiro en tienda** | 10 tiendas, 1 CD y 2 familias; reserva simple y ventana fija; formación/soporte incluidos | Stock y reserva → pedido → preparación → retiro; franja inferior para operación/controles | [04](../trabajo/04_alcance_y_backlog.md), SUP-23: alcance propuesto | R3: devolución elegible y experimento SFS; CAP/PAQ/HU y aceptación al anexo B. |
+| 8 | 2 | **Primero resolvemos lo que permite avanzar** | Integrar stock/pedidos habilita el retiro; la prioridad combina valor, urgencia, riesgo y esfuerzo; los controles acompañan | Cadena de habilitación con una nota: un puntaje alto no elimina una dependencia | [05](../trabajo/05_priorizacion.md), [07](../trabajo/07_roadmap.md): puntajes y relaciones propuestos | Dos ratios como ejemplo, WSJF completo, tamaños y sensibilidad al anexo C; relaciones FS/SS al E. |
+| 9 | 3 | **El presupuesto llega al límite del caso** | 1.330 base + 170 reserva = 1.500 MM; estrés 1.668 → 1.497,1 solo con reducción contractual/topes, margen 2,9 MM | Una barra de presupuesto y una línea de estrés condicionado; sin tablas completas | [06](../trabajo/06_estimacion.md), [base](../registros/base_ejecucion.md): supuestos y cálculo, sin cotizaciones | 104/120 equipo-sprints, PERT, 840 de equipos, escalera exacta y tramos al anexo D; sin mezclar unidades. |
+| 10 | 3 | **La expansión depende de tiendas listas para operar** | Piloto M4, evaluación M5, meta 68/M7, campaña M8 y devolución/experimento después; cuatro células propuestas | Cronograma M1–M12 y zoom de expansión con condición de aceptación por sitio | [07](../trabajo/07_roadmap.md), [base](../registros/base_ejecucion.md): calendario propuesto | 36/38 y 23/24; campo 145/150, 35/40 días, semanas y dotación al anexo E; en el cuerpo solo el mecanismo y su condición. |
+| 11 | 2 | **Si falla una condición, corregimos antes de ampliar** | Integración, stock físico y capacidad: señal de problema, acción y quién decide | Tres filas cortas problema → respuesta → decisión | [riesgos](../registros/riesgos.md), [07](../trabajo/07_roadmap.md): escenarios propuestos | Registro completo y límites de experimento al anexo F/B. |
+| 12 | 1 | **Pedimos autorizar la primera etapa** | 675 MM para R0/R1; verificar integración, evaluar piloto y decidir si continuar | Monto y alcance solicitado con tres condiciones expresadas en lenguaje directo | [03](../trabajo/03_charter.md), [06](../trabajo/06_estimacion.md): autorización propuesta | Mensualización y obligaciones aún por conciliar al anexo D; preguntas al terminar. |
 
 La secuencia comienza con la recomendación, la fundamenta y vuelve a la decisión solicitada. Estimación precede al roadmap para que las fechas se interpreten junto con recursos e incertidumbre. No agregar portada, agenda o separadores que amplíen las 12 láminas sin redistribuir el contenido y los tiempos.
 
-## 3. Reglas para construir los elementos más sensibles
+## 3. Contenido y precisión al diseñar
 
-**Lámina 3: mostrar valor sin simular resultados.** Separar el flujo entregado, la adopción y la mejora que se espera medir. M5 es primera evidencia de valor, mientras M12 reúne objetivos finales. Si se muestran reducciones relativas de 20%/25% y adopción >80%, rotularlas como umbrales propuestos. La meta ≥85% de devolución elegible no es comparable directamente con ≥90% corporativo; la definición completa queda en anexo.
+### Valor y alternativas, láminas 2 a 4
 
-**Láminas 4 y 9: distinguir referencia y presupuesto.** Los 1.350 MM de B son una referencia del caso; 1.330 + 170 = 1.500 MM es la estimación integrada del equipo. Mantener esa distinción visible para evitar una contradicción aparente. El estrés bruto llega a 1.668; la escalera de reducción cancelable/topes propuestos llega a 1.497,0923 solo si se obtienen las condiciones. Mostrar esa dependencia y el margen estrecho. La reserva de 170 se consume una sola vez.
+La confiabilidad del stock físico y la capacidad de tienda forman parte del problema junto con integración y latencia. No atribuir todas las cancelaciones a una única causa ni confundir pedido listo con entrega domiciliaria. El alcance base es C&C, compra digital con retiro en tienda.
 
-**Lámina 5: comparar para justificar.** Mostrar brevemente qué aporta cada lógica y por qué se combinan prácticas en ZEUS. La comparación es el elemento principal; una relación breve con gobierno, roadmap y entrega debe mostrar cómo se conectan control y aprendizaje. Evitar una lista de ceremonias o presentar otros enfoques como incapaces de controlar contratos o aprender.
+En la lámina 3, rotular los umbrales **«Propuestos para G1/M5»** y explicitar **«contra base comparable del piloto»**. Las cuatro semanas observadas y el piso operacional de 1.000 pedidos por fase quedan en anexo A, sin presentarlos como potencia estadística. Si C&C es nuevo y no tiene base comparable, debe ratificarse el resultado alternativo antes de abrir el piloto. Las metas finales <2% en cancelación, <3 h en preparación y ≥85% en devolución elegible corresponden a M12 y a poblaciones delimitadas; no son resultados del piloto.
 
-**Lámina 6: explicar la tensión, no solo nombrar al stakeholder.** Cada caso visible debe mostrar qué intereses compiten, qué se protege o adapta y quién decide. La matriz completa de trece va al anexo F. Retomar autonomía frente a controles en 5/8, capacidad de tiendas en 7/10 y retorno/inversión frente a expansión cloud en 9/12, sin agregar otra lámina ni convertir preferencias en obligaciones de alcance.
+La lámina 4 debe reconocer que R0–R2 de B comparte el núcleo inventario/pedidos/C&C de C. Las APIs y el cumplimiento de restricciones no son ventajas exclusivas de B. Devoluciones y evolución adicional pueden justificarla si su valor incremental compensa su costo a igual cobertura/calidad. Mostrar **«Retorno incremental por validar»** junto a la recomendación. No calcular ROI con cifras ilustrativas ni importar porcentajes de estudios de despacho domiciliario al piloto C&C. El anexo H contiene el mecanismo de retorno y el factor de cobertura efectiva por pedidos.
 
-**Lámina 7: representar alcance de producto y de proyecto.** El flujo funcional ocupa el centro; formación, datos, controles, soporte y reversión aparecen como condiciones transversales. Identificar exclusiones esenciales: reemplazo ERP/WMS completo, IA y data platform completa. Situar Ship-from-store fuera del primer release, como experimento condicionado en R3; no rotularlo como exclusión total del proyecto.
+### Enfoque, autoridad y alcance, láminas 5 a 8
 
-**Lámina 8: separar puntaje y precedencia.** Un puntaje favorable no permite iniciar C&C sin inventario/pedidos ni eliminar controles. Usar pocos ejemplos del ranking para explicar esa decisión; la tabla completa queda en respaldo. No sumar puntajes de equipos distintos ni convertir el costo de retraso relativo en dinero.
+En 5, cada práctica lleva una razón del contexto y un intercambio de evidencia: un bloqueo de API afecta el release y el forecast; PO prioriza desbloquear y PM eleva impacto si cambia un compromiso. La clase 4 no impone híbrido: la justificación es nuestra. WIP significa trabajo iniciado sin terminar; incluye bloqueados. Los límites se acuerdan por especialidad, sin copiar la regla personal 80/20 o dos proyectos del docente.
 
-**Lámina 9: separar unidades e incertidumbres.** No colocar equipo-sprints y MM CLP sobre un mismo eje o sumarlos. PERT describe esfuerzo esperado, no una probabilidad validada de entregar en fecha. La base conserva 120 efectivos al adelantar el arranque del sexto equipo al sprint 5, con 840 MM exactos y sin redondeo disponible. Mostrar pico de R2 y cuatro células; veinte persona-días de campo están en COST-06, separados de desarrollo. Finanzas recibe presupuesto y forecast, pero el retorno sigue siendo hipótesis: no presentar las mejoras operativas como rentabilidad demostrada.
+En 6, presentar reglas de decisión, no un organigrama completo. CISO/Operaciones pueden impedir una salida crítica/no operable; sponsor/comité decide cambios mayores de alcance, costo o fecha dentro de las restricciones. PO adapta orden/detalle dentro de esos límites. Retomar Finanzas en 9/12 y Tiendas/Logística en 7/10, para mostrar tensiones con respuestas concretas. Anexo F conserva los trece stakeholders.
 
-**Lámina 10: distinguir fecha objetivo y condición de salida.** Mostrar M5/M7/M8/M9/M12, no todos los sprints. El detalle de las cuatro olas puede aparecer como una ampliación pequeña de R2. El congelamiento comienza después de aceptar R2 y superar VE-01, no al inicio automático de M7. Las fechas relativas, tiempos por tienda y disponibilidad son supuestos, no rendimiento observado. Diferenciar capacidad de habilitación de capacidad diaria por turno; el temor de Tiendas a recibir nuevas funciones sin dotación debe tener respuesta explícita.
+En 7, el centro es el flujo completo; su franja inferior representa formación, stock conciliado, controles, soporte y reversión. Usar como exclusiones visibles IA y data platform completa; ERP conservado/WMS adaptado se dibujan en la frontera. Cupos dinámicos y punto alternativo automático quedan fuera de las 104 unidades. R3 debe aparecer como continuación acotada: devolución elegible y experimento Ship-from-store (SFS) 3–5 tiendas, cuatro semanas/300 pedidos como máximos propuestos; techo monetario por autorizar en G2. No declarar todo R3 opcional: retirar devolución exige cambiar objetivo y beneficio.
 
-**Láminas 11 y 12: conectar riesgo con decisión.** Cada riesgo debe llevar a una señal, una respuesta y un responsable. El cierre retoma la autorización del primer tramo y qué evidencia condiciona continuar. No presentar los tramos como financiación ya aprobada.
+En 8, explicar la dependencia con la cadena del flujo. Los ratios E4/E2 quedan en el anexo C como ejemplo del cálculo de prioridad; no son probabilidades ni dinero. La cadena es conceptual y permite solapar trabajo compatible con contratos de interfaz acordados; no se representa una ruta crítica CPM calculada. Seguridad, observabilidad mínima y adopción acompañan el flujo, aunque una épica tenga menor ratio. Escalas y sensibilidad permanecen en anexo C.
+
+### Recursos y fechas, láminas 9 y 10
+
+En 9, conservar dos lecturas jerárquicas: marco base/reserva y respuesta al estrés. La escalera completa va al anexo D; en el cuerpo son suficientes inicio, resultado condicionado y palancas. Texto visible: **«Requiere diferir opcionales, reducir capacidad cancelable tras G2 y obtener topes OMS/WMS/cloud»**. El resultado 1.497,1 y margen 2,9 no son ofertas aceptadas ni una nueva reserva. Si fallan las condiciones, comité revisa cobertura/arquitectura o C antes de superar 1.500.
+
+Los 1.350 MM de B en 4 son referencia del caso; los 1.330 + 170 en 9 son presupuesto del equipo. La reserva se consume una vez. Diferir E10/E8b no ahorra caja hasta reducir capacidad contratada. No sumar 104 equipo-sprints a los 840 MM de equipos ni usar un eje común entre esfuerzo y dinero.
+
+En 10, priorizar el cronograma y un zoom de R2; evitar que cada sprint compita con los hitos. El zoom muestra acumulados **10 → 25 → 40 → 54 → 68**, con **«Meta condicionada»**. Nota visible de mecanismo: **«4 células propuestas; aceptación y soporte antes de ampliar»**. El cálculo 145/150 persona-días y los veinte adicionales de campo/traslados dentro de COST-06 van al anexo E. El agregado de 35 jornadas cabe en 40 bajo supuestos; las 25 de actividad se distribuyen dentro de los 30 días de olas, además de diez de corrección/VE-01. No sumar otra vez los cinco días de margen.
+
+Las comparaciones **«Piloto 36/38»** y **«R2 23/24»**, sus porcentajes 94,74%/95,83% y los cálculos van al anexo E. En la lámina basta señalar que las ventanas tienen poco margen y dependen de especialidades disponibles. Disponibilidad del sexto equipo desde semana 9, arranque en sprint 5 y producción desde el 6 son condiciones. El mecanismo de células cubre habilitación/acompañamiento; la operación diaria por turno requiere capacidad propia aceptada. Congelamiento después de R2/VE-01 hasta fin de campaña, con excepciones críticas controladas. M5/M7 son meses empresariales relativos, distintos de la entrega académica.
+
+### Riesgos y decisión, láminas 11 y 12
+
+En 11, usar señales verificables: prueba de interfaz fallida, discrepancias físicas que impiden reservar con confianza y capacidad/soporte insuficientes por sitio. Cada fila termina en una acción y autoridad. Evitar un semáforo de riesgo «resuelto», porque el proyecto es una propuesta. El sobrecosto ya tiene respuesta visible en 9.
+
+En 12, pedir el primer tramo **675 MM para R0/R1**. VT-01 es revisión técnica y G1 decide continuar la inversión con evidencia; no se supone que el docente haya aprobado esos hitos adicionales. La asignación por categoría/mes y las obligaciones contractuales se deben conciliar antes de comprometer el gasto. La exposición termina con una decisión explícita, sin otra lámina de cierre o agradecimientos.
+
+### Fuente de cifras para el diseñador
+
+Copiar cantidades de la [base de ejecución](../registros/base_ejecucion.md) y de 01/04/05/06/07. En el cuerpo, dinero en **MM CLP**, como máximo un decimal cuando aporta; en anexos conservar la precisión necesaria para reproducir. Escribir 1.497,1 en lámina y 1.497,0923 en el cálculo, con redondeo indicado. Una cifra histórica del avance recibido no reemplaza la propuesta vigente.
+
+Las [clases 3](../registros/aportes_clase_03.md) y [4](../registros/aportes_clase_04.md) respaldan los criterios de planificación. Sus ejemplos de onboarding, percentiles o dotaciones no son datos de ZEUS. La distinción estimación/objetivo/compromiso y línea base/forecast debe poder explicarse en defensa; no necesita una lámina teórica adicional.
 
 ## 4. Cobertura de la rúbrica
 
@@ -86,31 +118,39 @@ Son respaldo para consulta, no láminas adicionales que deban exponerse dentro d
 | A. Medición | KPI, denominadores, bases comparables, umbrales M5 y metas M12 | [01](../trabajo/01_diagnostico_y_business_case.md), SUP-16 | Precisar uso, mejora, cobertura y límites de causalidad. |
 | B. Alcance y aceptación | CAP/PAQ/HU, frontera, DoD y aceptación por tienda/release | [04](../trabajo/04_alcance_y_backlog.md) | Mostrar qué significa habilitar una tienda o completar el flujo. |
 | C. Priorización | WSJF completo, escalas y precedencias | [05](../trabajo/05_priorizacion.md) | Defender por qué el ranking no se ejecuta mecánicamente. |
-| D. Estimación y costos | PERT, esfuerzo/capacidad, categorías y tramos, con limitaciones | [06](../trabajo/06_estimacion.md) | Sustentar cantidades y explicar reserva/doble conteo. |
-| E. Planificación | Calendario, carga por épica/etapa, corte piloto, olas, cuatro células, campo/traslados en COST-06 y sensibilidad | [plan de apoyo](../registros/plan_alcance_roadmap.md), [07](../trabajo/07_roadmap.md) | Revisar primera salida, 58 altas y protección de campaña. |
+| D. Estimación y costos | Seis campos de base de estimación; PERT, 130 pagados/120 efectivos, 840 MM exactos, categorías/tramos y escalera 1.668 → 1.602,0923 → 1.542,0923 → 1.512,0923 → 1.497,0923 | [06](../trabajo/06_estimacion.md), [base](../registros/base_ejecucion.md) | Mostrar disponibilidad semana 9, redondeo consumido, obligaciones y condiciones de ahorro. |
+| E. Planificación | Calendario, carga por épica/etapa, relaciones FS/SS, corte piloto 36/38, R2 23/24, olas/células, campo/traslados y sensibilidad | [plan de apoyo](../registros/plan_alcance_roadmap.md), [07](../trabajo/07_roadmap.md) | Revisar primera salida, 58 altas y protección de campaña. |
 | F. Gobierno, interesados y riesgo | Matriz de trece stakeholders, tensiones, respuestas, derechos de decisión, supuestos y riesgos | [matriz](../registros/matriz_stakeholders.md), [03](../trabajo/03_charter.md), [supuestos](../registros/acuerdos_y_supuestos.md), [riesgos](../registros/riesgos.md) | Defender el trade-off y su autoridad, no solo enumerar participantes. |
-| G. Fuentes | Enunciado por página; materiales docentes y transcripciones con tiempos | [insumos](../insumos/README.md), [transcripciones](../transcripciones/README.md) | Distinguir antecedente oficial, concepto docente y supuesto del equipo. |
+| G. Fuentes | Enunciado por página; materiales docentes y transcripciones de clases 1 a 4 con tiempos; referencias externas ya incorporadas con sus límites | [insumos](../insumos/README.md), [transcripciones](../transcripciones/README.md) | Distinguir antecedente oficial, concepto docente y supuesto del equipo. |
+| H. Business Case y retorno | B/C a igual cobertura; hipótesis de contribución, volumen/margen, cobertura efectiva por pedidos y costos sin duplicación | [01](../trabajo/01_diagnostico_y_business_case.md), [modelo](../registros/modelo_retorno_logistico.md), [evidencia](../insumos/evidencia_logistica_y_valor.md) | Mostrar qué falta para justificar inversión; los umbrales ilustrativos 6.334/4.250 pedidos no son forecast de ZEUS. |
 
 Las conversaciones privadas, antecedentes personales y capturas de mensajería quedan fuera de la presentación y sus anexos.
 
-## 6. Criterios visuales de construcción
+## 6. Sistema visual listo para aplicar
 
-Usar una composición dominante por lámina y mantener estables los márgenes, títulos, fuentes y unidades. Como punto de partida para 16:9 sin plantilla: títulos de 30–36 pt y cuerpo de 22–26 pt, ajustables a la sala y al medio. Reducir contenido o enviarlo a anexos antes de reducir el texto. Son referencias de diseño, no requisitos de la universidad.
+Formato inicial **16:9 horizontal**, exposición narrada y exportación estática legible. La herramienta y el formato final se eligen según aula/acceso del equipo; esta pauta no impone PPTX, Google Slides ni Typst. No se dispone de plantilla institucional validada; usar nombre del curso/universidad como texto y no recrear sellos o logos.
 
-Preferir una familia tipográfica y fondo claro con alto contraste. Usar color para apoyar la jerarquía y acompañarlo de etiquetas: «Dato del caso», «Meta» o «Supuesto». No depender solo de rojo/verde ni usar color como si acreditara avance realizado.
+| Elemento | Decisión de diseño propuesta |
+| --- | --- |
+| Lectura | Título con mensaje arriba; un gráfico/diagrama/tabla dominante en el centro; condición decisiva y fuente legible abajo. Márgenes constantes, sin marco decorativo. |
+| Tipografía | Inter si está disponible y exporta correctamente; alternativa Arial. Títulos 30–36 pt, cuerpo 22–26, rótulos 18–20 y fuente 12–14 como punto de partida para sala. Reducir contenido antes que tamaño. |
+| Color | Fondo claro #F5F7FA o blanco; texto #1F2933; azul #16344D para estructura, verde azulado #11796C para propuesta destacada y ámbar oscuro #A35B17 para condiciones/riesgos. Etiquetas escritas además de color; validar contraste al construir. |
+| Composiciones | Apertura/decisión: 1/12; evidencia de proceso: 2/3/7/8; comparación: 4/6/11; ciclo de trabajo: 5; presupuesto: 9; cronograma con zoom: 10. No convertir todas las láminas en tarjetas. |
+| Datos | Barras monetarias desde cero y misma escala para comparaciones; capacidades en anotación separada. Etiquetas directas, unidades y redondeo visibles. Sin 3D, velocímetros ni gráficos de ROI inventado. |
+| Estado | «Dato del caso», «Umbral propuesto», «Meta condicionada» o «Escenario» según corresponda. No usar marcas de completado, semáforos de avance ejecutado ni fotos para simular una implementación. |
+| Fuentes | Ejemplos: «Enunciado, p. 4»; «Propuesta del equipo, 06; base 23-10-2026». El anexo G permite localizar documento/página/tiempo. La fuente no se reduce a texto ilegible. |
+| Accesibilidad/exportación | Orden de lectura lógico y texto alternativo cuando el formato lo permita; significado independiente del color y de animaciones. Revisar cortes, solapamientos, sustitución tipográfica y estado estático al exportar, sin navegador. |
 
-Limitar las composiciones a apertura/cierre, comparación, flujo, cronograma y evidencia cuantitativa. El recurso visual debe explicar la decisión; evitar imágenes genéricas de retail, capturas de tablas densas o diagramas sin relación con el mensaje.
-
-Cada cifra debe conservar unidad, población, horizonte y fuente. Incluir una referencia breve legible junto al elemento o en el pie, por ejemplo «Enunciado, p. 4» o «Propuesta del equipo, 06». No representar metas como barras de resultados ya alcanzados. Si el contenido necesita leerse durante mucho tiempo, mover el detalle al anexo.
+Usar «retiro en tienda», «gestión de pedidos» y «gestión de almacén» en el recorrido principal; añadir C&C, OMS o WMS al primer uso cuando la precisión lo requiera. Reservar CAP/PAQ/HU, FS/SS y los identificadores E1–E11 para anexos. Reutilizar los nombres sin acumular siglas. Los títulos y el gráfico sostienen el mensaje; las explicaciones extensas pertenecen al guion futuro o al anexo.
 
 ## 7. Preparación y revisión de la estructura
 
 | Paso | Trabajo de esta fase | Condición para avanzar |
 | --- | --- | --- |
-| 1 | Revisar títulos y orden sin diseño | El recorrido explica recomendación, fundamento y decisión sin saltos ni repeticiones. |
+| 1 | Usar los títulos y orden de esta versión para el primer diseño | Cambiar secuencia solo si mejora el argumento y conserva rúbrica/tiempos. |
 | 2 | Confirmar alcance, supuestos y cifras que se usarán | Coinciden con los documentos vigentes; las discrepancias se resuelven allí antes de copiarlas. |
 | 3 | Seleccionar la evidencia y el recurso visual de cada lámina | Cada elemento sostiene el mensaje; el detalle secundario tiene anexo asignado. |
-| 4 | Elegir medio/plantilla y distribuir construcción | Compatibles con aula y accesos del equipo; responsabilidades aceptadas por los integrantes. |
+| 4 | Aplicar el sistema visual y distribuir construcción | Se puede iniciar diseño con propuestas rotuladas; confirmar herramienta/accesos y exportación final del aula. |
 | 5 | Construir y revisar la presentación, en una fase posterior | Contenido legible, fuentes presentes y cálculos/fechas consistentes. |
 | 6 | Preparar el guion y realizar ensayo, después de acordar estructura y láminas | La exposición se ajusta al recorrido y conserva tiempo para defensa. |
 
@@ -120,14 +160,19 @@ Antes de construir, deben quedar claras la cobertura y las decisiones que el gru
 
 ## 8. Lista de control de esta pauta
 
-- [ ] Se acuerdan los 12 títulos y el orden propuesto.
-- [ ] Se reconocen los ocho criterios de la rúbrica en el recorrido principal.
-- [ ] Los 25 minutos incluyen apertura y cierre; los anexos son para consulta.
-- [ ] Cada lámina tiene una función y un recurso visual principal.
+- [x] Se definieron 12 títulos, secuencia, evidencia, visuales y destinos del detalle.
+- [ ] El equipo ratifica los mensajes y las propuestas que defenderá.
+- [x] Los ocho criterios de la rúbrica están trazados al recorrido principal.
+- [x] El presupuesto de 25 minutos incluye apertura y cierre; los anexos son para consulta.
+- [x] Cada lámina tiene una función y una composición principal especificadas.
 - [ ] Cada dato, meta y supuesto conserva fuente y nivel de certeza.
+- [ ] La lámina se entiende sin descifrar una lista de siglas ni leer el documento técnico.
+- [ ] El guion posterior contiene persona y texto hablado por lámina; solo añade notas breves para preguntas cuando aporten.
 - [ ] Las limitaciones que afectan la decisión permanecen visibles en el cuerpo principal.
 - [ ] Los intereses y tensiones tienen respuesta, autoridad y evidencia prevista; la matriz incluye los trece stakeholders oficiales.
-- [ ] Los anexos tienen contenido y fuente definidos.
+- [x] Los anexos A a H tienen contenido, fuente y uso definidos.
 - [ ] El medio y el formato del aula están confirmados antes de construir el archivo final.
 
-El [mapa anterior con notas de guion](mapa_y_guion.md) se conserva como antecedente. Esta pauta es la referencia de estructura para la fase actual; el guion se retomará después, ajustado a las láminas que se acuerden.
+El [mapa de consulta y defensa](mapa_y_guion.md) usa esta misma numeración y remite a las fuentes vigentes. La pauta es la única referencia de títulos, tiempos y composición; el guion se redactará sobre las láminas construidas.
+
+La clase 4 pide hacer llegar la presentación al momento de exponer (parte 2, 2:38:34 a 2:38:53). Entrega/presentación documentada: **sábado 24-10-2026**. Confirmar formato y hora de carga; no se identifica obligación de un informe adicional.

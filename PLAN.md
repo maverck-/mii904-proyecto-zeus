@@ -11,7 +11,7 @@ La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md
 | 3 | Priorización | WSJF recibido con nueve ratios, dependencias y obligatorias | Rogelio: revisar pesos/notas contra escala/costo y justificar orden. |
 | 4 | Estimación | PERT 104, capacidad propuesta 120, base 1.330/reserva 170 y tramos | Rogelio: conciliar calendario/recursos, cargas por épica/rol y fronteras de costos; totales ya están. |
 | 5 | Roadmap y riesgos | Parte de Maverick redactada: calendario 52 semanas, cargas por épica 47,7/23/5/28,3, corte piloto y células de habilitación | Grupo/Rogelio revisan contratos/especialidades y viabilidad de ventanas al 95%/96%. |
-| 6 | Exposición | Pauta de construcción con 12 láminas/25 minutos, evidencia, visuales, rúbrica y anexos | Equipo: acordar estructura y contenido; después construir las láminas y preparar el guion/ensayo. |
+| 6 | Exposición | Pauta actualizada con clase 4/base vigente: 12 títulos/25 minutos, composiciones, sistema visual y anexos A–H | Iniciar diseño con propuestas rotuladas; equipo ratifica mensajes y acuerda relevos, luego guion/ensayo. |
 | 7 | Entrega | Fuentes y pauta organizadas | Confirmar hora/formato de carga y nómina activa de cuatro. |
 
 La [auditoría de pauta y stakeholders](registros/auditoria_pauta_2026-10-23.md) prioriza retorno/evidencia económica, capacidad por turno y especialidad, regla WSJF y resolución de tensiones. El Charter y la pauta de construcción ya incorporan la trazabilidad; el estado sigue condicionado a ratificación y factibilidad.

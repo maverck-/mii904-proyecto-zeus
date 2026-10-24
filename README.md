@@ -28,7 +28,7 @@ La [revisión de cierre](registros/cierre_auditoria_2026-10-23.md) actualiza el 
 | [registros/](registros/acuerdos_y_supuestos.md) | Supuestos/decisiones, [riesgos](registros/riesgos.md) y [revisión de integración](registros/integracion_avance_equipo.md). |
 | [insumos/](insumos/README.md) | Enunciado, pauta, avance recibido y presentaciones 03 a 06. |
 | [transcripciones/](transcripciones/README.md) | Clases 1 a 4, ocho partes con tiempos. |
-| [presentacion/](presentacion/README.md) | Pauta de construcción: 12 láminas/25 minutos, rúbrica, evidencia, visuales y anexos; presentación y guion en una fase posterior. |
+| [presentacion/](presentacion/README.md) | Pauta lista para iniciar diseño: 12 títulos/25 minutos, base/clase 4, composiciones, sistema visual y anexos A–H; guion posterior a las láminas. |
 | [typst/](typst/README.md) | Ejemplo y módulos locales para eventual informe. |
 | [PLAN.md](PLAN.md) | Orden y condiciones para cerrar. |
 
