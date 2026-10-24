@@ -124,6 +124,8 @@ Son respaldo para consulta, no láminas adicionales que deban exponerse dentro d
 | G. Fuentes | Enunciado por página; materiales docentes y transcripciones de clases 1 a 4 con tiempos; referencias externas ya incorporadas con sus límites | [insumos](../insumos/README.md), [transcripciones](../transcripciones/README.md) | Distinguir antecedente oficial, concepto docente y supuesto del equipo. |
 | H. Business Case y retorno | B/C a igual cobertura; hipótesis de contribución, volumen/margen, cobertura efectiva por pedidos y costos sin duplicación | [01](../trabajo/01_diagnostico_y_business_case.md), [modelo](../registros/modelo_retorno_logistico.md), [evidencia](../insumos/evidencia_logistica_y_valor.md) | Mostrar qué falta para justificar inversión; los umbrales ilustrativos 6.334/4.250 pedidos no son forecast de ZEUS. |
 
+En Figma Slides, la sección «Anexos» contiene cinco láminas de respaldo, construidas el 23-10-2026 para las preguntas más probables: A (medición), D (estimación y costos), E (calendario y capacidad), F (cambios de condición) y H (B frente a C con volumen requerido). F toma la tabla de respuestas de la [revisión de cierre](../registros/cierre_auditoria_2026-10-23.md); la matriz de trece interesados se consulta en el repositorio. B, C y G se responden desde sus documentos de origen.
+
 Las conversaciones privadas, antecedentes personales y capturas de mensajería quedan fuera de la presentación y sus anexos.
 
 ## 6. Sistema visual listo para aplicar
@@ -170,7 +172,7 @@ Antes de construir, deben quedar claras la cobertura y las decisiones que el gru
 - [x] El guion contiene persona y texto hablado por lámina; solo añade notas breves para preguntas cuando aporten. El reparto es propuesto.
 - [x] Las limitaciones que afectan la decisión permanecen visibles en el cuerpo principal.
 - [x] Los intereses y tensiones tienen respuesta, autoridad y evidencia prevista; la matriz incluye los trece stakeholders oficiales.
-- [ ] Los anexos A a H están construidos como láminas de respaldo.
+- [x] Los anexos de respaldo prioritarios A, D, E, F y H están construidos; B, C y G quedan en sus documentos de origen.
 - [x] Los anexos A a H tienen contenido, fuente y uso definidos.
 - [ ] El medio y el formato del aula están confirmados antes de construir el archivo final.
 

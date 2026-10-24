@@ -44,4 +44,4 @@ Ante un cambio de condición: identificar objetivo/compromiso afectado, seguir d
 
 El equipo ratifica catálogo/CD, umbrales del piloto, devolución elegible, dotación y límites experimentales. Rogelio concilia capacidad por especialidad, categorías/tramos y fronteras con proveedores. El caso no trae datos de volumen/margen: mantener su efecto en la recomendación como incertidumbre explícita, sin fabricar resultados.
 
-Las láminas están construidas con esas propuestas rotuladas y el guion está listo para ensayar. Falta acordar relevos, ensayar 25 + 10 y preparar los anexos A a H. Confirmar hora/formato del aula y enviar la presentación al exponer, según clase 4.
+Las láminas están construidas con esas propuestas rotuladas y el guion está listo para ensayar. Los anexos A, D, E, F y H ya están en Figma como respaldo; F reúne las respuestas ante cambios de condición. Falta acordar relevos y ensayar 25 + 10. Confirmar hora/formato del aula y enviar la presentación al exponer, según clase 4.
