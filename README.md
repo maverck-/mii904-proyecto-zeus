@@ -31,7 +31,8 @@ La [revisión de cierre](registros/cierre_auditoria_2026-10-23.md) actualiza el 
 | [insumos/](insumos/README.md) | Enunciado, pauta, avance recibido y presentaciones 03 a 06. |
 | [transcripciones/](transcripciones/README.md) | Clases 1 a 4, ocho partes con tiempos. |
 | [presentacion/](presentacion/README.md) | Pauta aplicada en las 12 láminas de Figma Slides (25 minutos), guion por lámina, mapa de preguntas y cinco anexos de respaldo construidos. |
-| [typst/](typst/README.md) | Ejemplo y módulos locales para eventual informe. |
+| [documento/](documento/README.md) | Documento de respaldo en PDF con los siete componentes en versión de entrega, generado con Pandoc y Typst. |
+| [typst/](typst/README.md) | Estilo, fuentes, filtro y ejemplo para compilar el documento de respaldo. |
 | [PLAN.md](PLAN.md) | Orden y condiciones para cerrar. |
 
 ## Alcance de la propuesta

@@ -4,6 +4,11 @@ La propuesta se desarrolla en Markdown. Este directorio contiene un ejemplo téc
 
 ## Qué se versiona
 
+- [documento_respaldo.typ](documento_respaldo.typ): portada e índice del [documento de respaldo](../documento/README.md); el cuerpo lo genera Pandoc desde `documento/respaldo.md`.
+- [modulos/estilo_zeus.typ](modulos/estilo_zeus.typ): estilo alineado con la presentación (colores, tipografía, tablas, franja y portada).
+- [filtros/zeus.lua](filtros/zeus.lua): filtro de Pandoc que convierte los bloques `::: franja` y agrega el import del estilo.
+- `fuentes/`: Manrope e IBM Plex Mono descargadas de Google Fonts, con sus licencias OFL. `recursos/`: logo PUCV exportado de la presentación.
+- [compilar_documento.py](../scripts/compilar_documento.py): compila el documento en `documento/ZEUS_documento_respaldo.pdf`.
 - [modulos/base.typ](modulos/base.typ): configuración inicial editable, metadatos y bloques de estado/fuente.
 - [ejemplo.typ](ejemplo.typ): muestra compilable que prueba importación, tabla, bloques y lectura de un Markdown como texto literal.
 - [.vscode/extensions.json](../.vscode/extensions.json): recomendación opcional de Tinymist para el editor. No incluye el binario de la extensión.

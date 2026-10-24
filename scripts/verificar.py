@@ -14,9 +14,10 @@ def check(ok, message):
         errors.append(message)
 
 paths = [p for p in root.rglob('*') if p.is_file() and not ({'.git', 'build', 'local'} & set(p.relative_to(root).parts))]
+allowed_images = {Path('typst/recursos/logo-pucv-blanco.png')}  # logo de la portada del documento de respaldo
 for path in paths:
     relative = path.relative_to(root)
-    check(path.suffix.lower() not in {'.png', '.jpg', '.jpeg', '.webp', '.html', '.mp4'}, f'Revisar inclusión no prevista: {relative}')
+    check(path.suffix.lower() not in {'.png', '.jpg', '.jpeg', '.webp', '.html', '.mp4'} or relative in allowed_images, f'Revisar inclusión no prevista: {relative}')
     if path.suffix not in {'.md', '.typ', '.json'}:
         continue
     text = path.read_text()
