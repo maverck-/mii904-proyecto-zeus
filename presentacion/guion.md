@@ -72,7 +72,7 @@
 
 > Para ordenar las épicas usamos un puntaje que combina valor, urgencia, reducción de riesgo y esfuerzo. El puntaje ordena las opciones, y las dependencias fijan qué puede empezar. Partimos por la integración con ERP, WMS y POS, con contratos de interfaz. Sobre ella construimos un stock y una reserva consistentes, que permiten prometer. Luego viene la gestión de pedidos, con estados trazables y conciliación. El retiro en tienda y la app tienen el mayor valor visible y salen cuando lo anterior funciona. Mientras tanto, el trabajo compatible avanza en paralelo si las interfaces ya están acordadas.
 >
-> Seguridad, observabilidad mínima y adopción con formación acompañan el flujo desde el inicio, aunque tengan menor puntaje, porque toda salida a producción las necesita.
+> Seguridad, observabilidad mínima y adopción con formación acompañan el flujo desde el inicio, aunque tengan menor puntaje, porque toda salida a producción necesita estos criterios.
 
 **Nota para preguntas, no se lee:** la matriz WSJF y su sensibilidad están en 05 y en el anexo C. Con medias PERT en el denominador cambian los pares E1/E4, E2/E3 y E10/E9; la secuencia se mantiene por dependencia y obligatoriedad.
 
