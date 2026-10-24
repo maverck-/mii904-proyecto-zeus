@@ -1,6 +1,6 @@
 # Pauta para construir la presentación de ZEUS
 
-**Versión para iniciar diseño, 23-10-2026.** Integra la base de ejecución vigente y la clase 4. Quedan definidos recorrido, títulos, evidencia visible, composiciones, anexos y reglas de precisión. Se puede avanzar al diseño conservando las etiquetas de propuesta; la ratificación del equipo y el formato/hora del aula siguen abiertos. El archivo de presentación y el guion oral corresponden a la fase siguiente.
+**Versión aplicada en el diseño, 23-10-2026.** Integra la base de ejecución vigente y la clase 4. Las 12 láminas están construidas en Figma Slides con este recorrido, títulos, evidencia y composición, y el [guion](guion.md) sigue la misma numeración. Siguen abiertos la ratificación del equipo, los anexos A a H y el formato/hora del aula.
 
 ## 1. Propósito y condiciones
 
@@ -21,28 +21,28 @@ Perfil de decisión ejecutiva con defensa académica. El recorrido parte de la r
 
 Condiciones oficiales: [enunciado](../insumos/enunciado-zeus-etapa1.pdf), pp. 8/9, y [resumen de pauta](../insumos/pauta.md). Las indicaciones visuales de este documento son recomendaciones de construcción del equipo.
 
-### Formato del guion posterior
+### Formato del guion
 
 La simplicidad solicitada se refiere al formato del guion: por lámina, identificar a la persona que habla y escribir únicamente lo que debe decir. Las transiciones necesarias forman parte de ese mismo texto. No añadir introducciones sobre cómo usar el guion, apartados de «Salida», comentarios de producción ni indicaciones escénicas por defecto.
 
 Solo cuando aporte a una pregunta probable, incluir al final **«Nota para preguntas, no se lee»**, con la precisión, cifra o fuente necesaria. Mantenerla breve y separada del texto hablado. No repetir en ella el documento técnico completo ni agregar una nota a todas las láminas por obligación.
 
-Esta preferencia no exige recortar explicaciones necesarias ni eliminar contenido de la pauta. La pauta organiza la construcción y su respaldo; el guion se redactará después, sobre las láminas, con expositores acordados por el equipo.
+Esta preferencia no exige recortar explicaciones necesarias ni eliminar contenido de la pauta. El [guion](guion.md) aplica este formato sobre las láminas construidas, con un reparto de expositores propuesto hasta que el equipo acuerde los relevos.
 
 ## 2. Estructura propuesta: 12 láminas, 25 minutos
 
-Los títulos siguientes son el texto base para diseñar. Se pueden acortar conservando su afirmación y nivel de certeza. Cada lámina tiene una función principal y una composición dominante. Los tiempos son un presupuesto de atención, sin reparto de expositores ni locución redactada.
+Los títulos siguientes son los aplicados en las láminas. Se pueden acortar conservando su afirmación y nivel de certeza. Cada lámina tiene una función principal y una composición dominante. Los tiempos son un presupuesto de atención, sin reparto de expositores ni locución redactada.
 
 | N.º | Minutos | Función y título para diseño | Evidencia mínima visible | Composición principal | Fuente y estado | Detalle fuera del cuerpo principal |
 | --- | ---: | --- | --- | --- | --- | --- |
-| 1 | 1 | **ZEUS: B modular, piloto y expansión con evidencia** | ZEUS y equipo activo; empezar en 10 tiendas; ampliar solo después de evaluar el piloto | Apertura con nombre del proyecto y recorrido probar → evaluar → ampliar | [01](../trabajo/01_diagnostico_y_business_case.md), [03](../trabajo/03_charter.md): propuesta | Nómina completa en apertura o pie; sin portada/agenda adicional. |
-| 2 | 2 | **El cliente compra, pero la promesa puede fallar** | Cancelación por stock 7,8%; preparación 7,2 h; actualización web 45–120 min | Tres datos junto a una compra que pasa a preparación y retiro | Enunciado pp. 3/4 y [01](../trabajo/01_diagnostico_y_business_case.md); causas por contrastar | Exactitud 91% y diagnóstico físico/digital ampliado al anexo A. |
+| 1 | 1 | **ZEUS: B Modular, piloto y expansión con evidencia** | ZEUS, curso, fecha y equipo activo con primer nombre y primer apellido; empezar en 10 tiendas; ampliar solo después de evaluar el piloto | Portada de la plantilla base: fondo oscuro, logo PUCV y recorrido probar → evaluar → ampliar | [01](../trabajo/01_diagnostico_y_business_case.md), [03](../trabajo/03_charter.md): propuesta | Nombres completos en [EQUIPO.md](../EQUIPO.md); sin portada/agenda adicional. |
+| 2 | 2 | **Stock y preparación debilitan la promesa al cliente** | Cancelación por stock 7,8%; preparación 7,2 h; actualización web 45–120 min | Tres datos junto a una compra que pasa a preparación y retiro | Enunciado pp. 3/4 y [01](../trabajo/01_diagnostico_y_business_case.md); causas por contrastar | Exactitud 91% y diagnóstico físico/digital ampliado al anexo A. |
 | 3 | 2 | **Primero comprobamos si el piloto mejora el servicio** | Tres umbrales propuestos: cancelación −20% relativo, preparación −25% relativo y adopción >80%; comparación válida | Entrega → uso → mejora → decisión, con los umbrales al lado | [01](../trabajo/01_diagnostico_y_business_case.md), SUP-16; hipótesis, no resultados | Cohortes/control concurrente, denominadores y metas M12 al anexo A; retorno al H. |
 | 4 | 2 | **B debe justificar su mayor inversión frente a C** | A 1.850 MM/12–18 meses; B 1.350/9–12; C 800/5–7. Devolución elegible distingue el alcance adicional propuesto de B | Comparación de tres alternativas y una frase: mantener B si justifica su costo adicional | Enunciado pp. 5/7 y [01](../trabajo/01_diagnostico_y_business_case.md): referencias del caso y evaluación del equipo | Comparación completa, diferir/no actuar y costo/beneficio incremental al anexo H. |
 | 5 | 2 | **Combinamos control de inversión y entregas pequeñas** | Acordar contratos y límites; construir/probar por partes; ajustar con evidencia. Las dependencias conectan las tres decisiones | Ciclo sencillo acordar → entregar y probar → ajustar; una práctica concreta por paso | [02](../trabajo/02_enfoque.md), clases 3/4: tailoring propuesto | Comparación de enfoques, cadencias, DoD y política WIP al anexo F. |
 | 6 | 2 | **Acelerar requiere una operación segura** | Quién decide: inversión/cambio mayor, orden del trabajo y salida operativa; dos tensiones con su regla | Dos filas breves con interés en tensión, regla y responsable | [03](../trabajo/03_charter.md), [matriz](../registros/matriz_stakeholders.md): mandato y respuesta propuestos | Trece stakeholders y tensiones de Finanzas/Tiendas/proveedores al anexo F; se retoman en 7/9/10. |
 | 7 | 3 | **El primer flujo termina con el retiro en tienda** | 10 tiendas, 1 CD y 2 familias; reserva simple y ventana fija; formación/soporte incluidos | Stock y reserva → pedido → preparación → retiro; franja inferior para operación/controles | [04](../trabajo/04_alcance_y_backlog.md), SUP-23: alcance propuesto | R3: devolución elegible y experimento SFS; CAP/PAQ/HU y aceptación al anexo B. |
-| 8 | 2 | **Primero resolvemos lo que permite avanzar** | Integrar stock/pedidos habilita el retiro; la prioridad combina valor, urgencia, riesgo y esfuerzo; los controles acompañan | Cadena de habilitación con una nota: un puntaje alto no elimina una dependencia | [05](../trabajo/05_priorizacion.md), [07](../trabajo/07_roadmap.md): puntajes y relaciones propuestos | Dos ratios como ejemplo, WSJF completo, tamaños y sensibilidad al anexo C; relaciones FS/SS al E. |
+| 8 | 2 | **Integración y stock habilitan el retiro en tienda** | Integrar stock/pedidos habilita el retiro; la prioridad combina valor, urgencia, riesgo y esfuerzo; los controles acompañan | Cadena de habilitación con una nota: un puntaje alto no elimina una dependencia | [05](../trabajo/05_priorizacion.md), [07](../trabajo/07_roadmap.md): puntajes y relaciones propuestos | Dos ratios como ejemplo, WSJF completo, tamaños y sensibilidad al anexo C; relaciones FS/SS al E. |
 | 9 | 3 | **El presupuesto llega al límite del caso** | 1.330 base + 170 reserva = 1.500 MM; estrés 1.668 → 1.497,1 solo con reducción contractual/topes, margen 2,9 MM | Una barra de presupuesto y una línea de estrés condicionado; sin tablas completas | [06](../trabajo/06_estimacion.md), [base](../registros/base_ejecucion.md): supuestos y cálculo, sin cotizaciones | 104/120 equipo-sprints, PERT, 840 de equipos, escalera exacta y tramos al anexo D; sin mezclar unidades. |
 | 10 | 3 | **La expansión depende de tiendas listas para operar** | Piloto M4, evaluación M5, meta 68/M7, campaña M8 y devolución/experimento después; cuatro células propuestas | Cronograma M1–M12 y zoom de expansión con condición de aceptación por sitio | [07](../trabajo/07_roadmap.md), [base](../registros/base_ejecucion.md): calendario propuesto | 36/38 y 23/24; campo 145/150, 35/40 días, semanas y dotación al anexo E; en el cuerpo solo el mecanismo y su condición. |
 | 11 | 2 | **Si falla una condición, corregimos antes de ampliar** | Integración, stock físico y capacidad: señal de problema, acción y quién decide | Tres filas cortas problema → respuesta → decisión | [riesgos](../registros/riesgos.md), [07](../trabajo/07_roadmap.md): escenarios propuestos | Registro completo y límites de experimento al anexo F/B. |
@@ -128,13 +128,13 @@ Las conversaciones privadas, antecedentes personales y capturas de mensajería q
 
 ## 6. Sistema visual listo para aplicar
 
-Formato inicial **16:9 horizontal**, exposición narrada y exportación estática legible. La herramienta y el formato final se eligen según aula/acceso del equipo; esta pauta no impone PPTX, Google Slides ni Typst. No se dispone de plantilla institucional validada; usar nombre del curso/universidad como texto y no recrear sellos o logos.
+Formato **16:9 horizontal**, lienzo de 1920 × 1080 en Figma Slides, para exposición narrada y exportación estática legible. La base visual es la plantilla de una presentación anterior de Maverick: se conservan tipografía, jerarquía, componentes y el logo PUCV de la portada, y se retira su fondo decorativo. No se recrean sellos ni logos nuevos. El formato de entrega se confirma según aula.
 
-| Elemento | Decisión de diseño propuesta |
+| Elemento | Decisión de diseño aplicada |
 | --- | --- |
 | Lectura | Título con mensaje arriba; un gráfico/diagrama/tabla dominante en el centro; condición decisiva y fuente legible abajo. Márgenes constantes, sin marco decorativo. |
-| Tipografía | Inter si está disponible y exporta correctamente; alternativa Arial. Títulos 30–36 pt, cuerpo 22–26, rótulos 18–20 y fuente 12–14 como punto de partida para sala. Reducir contenido antes que tamaño. |
-| Color | Fondo claro #F5F7FA o blanco; texto #1F2933; azul #16344D para estructura, verde azulado #11796C para propuesta destacada y ámbar oscuro #A35B17 para condiciones/riesgos. Etiquetas escritas además de color; validar contraste al construir. |
+| Tipografía | Manrope para títulos y cuerpo; IBM Plex Mono para numeración. Antetítulo 40 px, título 56, bajada 32, cuerpo 24–30 y nota al pie 24. Reducir contenido antes que tamaño. |
+| Color | Fondo #FAFBFF en las láminas de contenido y portada oscura de la plantilla; texto #000614; azul #2569ED para estructura y énfasis; ámbar #D97606 y #A55A05 para condiciones, riesgos y techo; tarjetas blancas con borde #D9DEEA y franja #E8EFFD. Etiquetas escritas además de color. |
 | Composiciones | Apertura/decisión: 1/12; evidencia de proceso: 2/3/7/8; comparación: 4/6/11; ciclo de trabajo: 5; presupuesto: 9; cronograma con zoom: 10. No convertir todas las láminas en tarjetas. |
 | Datos | Barras monetarias desde cero y misma escala para comparaciones; capacidades en anotación separada. Etiquetas directas, unidades y redondeo visibles. Sin 3D, velocímetros ni gráficos de ROI inventado. |
 | Estado | «Dato del caso», «Umbral propuesto», «Meta condicionada» o «Escenario» según corresponda. No usar marcas de completado, semáforos de avance ejecutado ni fotos para simular una implementación. |
@@ -151,8 +151,8 @@ Usar «retiro en tienda», «gestión de pedidos» y «gestión de almacén» en
 | 2 | Confirmar alcance, supuestos y cifras que se usarán | Coinciden con los documentos vigentes; las discrepancias se resuelven allí antes de copiarlas. |
 | 3 | Seleccionar la evidencia y el recurso visual de cada lámina | Cada elemento sostiene el mensaje; el detalle secundario tiene anexo asignado. |
 | 4 | Aplicar el sistema visual y distribuir construcción | Se puede iniciar diseño con propuestas rotuladas; confirmar herramienta/accesos y exportación final del aula. |
-| 5 | Construir y revisar la presentación, en una fase posterior | Contenido legible, fuentes presentes y cálculos/fechas consistentes. |
-| 6 | Preparar el guion y realizar ensayo, después de acordar estructura y láminas | La exposición se ajusta al recorrido y conserva tiempo para defensa. |
+| 5 | Construir y revisar la presentación: hecho en Figma Slides el 23-10-2026 | Contenido legible, fuentes presentes y cálculos/fechas consistentes. |
+| 6 | Preparar el guion y realizar ensayo: [guion](guion.md) disponible, ensayo pendiente | La exposición se ajusta al recorrido y conserva tiempo para defensa. |
 
 Para revisar contenido se propone que Rogelio contraste 8/9 y sus anexos; Maverick 7/10; Bryam y Alejandro coordinen 2–6 conforme a su reparto real. Apertura, riesgo y cierre se revisan entre todos. Esto no asigna todavía expositores ni tiempos individuales.
 
@@ -165,14 +165,15 @@ Antes de construir, deben quedar claras la cobertura y las decisiones que el gru
 - [x] Los ocho criterios de la rúbrica están trazados al recorrido principal.
 - [x] El presupuesto de 25 minutos incluye apertura y cierre; los anexos son para consulta.
 - [x] Cada lámina tiene una función y una composición principal especificadas.
-- [ ] Cada dato, meta y supuesto conserva fuente y nivel de certeza.
+- [x] Cada dato, meta y supuesto conserva fuente y nivel de certeza.
 - [ ] La lámina se entiende sin descifrar una lista de siglas ni leer el documento técnico.
-- [ ] El guion posterior contiene persona y texto hablado por lámina; solo añade notas breves para preguntas cuando aporten.
-- [ ] Las limitaciones que afectan la decisión permanecen visibles en el cuerpo principal.
-- [ ] Los intereses y tensiones tienen respuesta, autoridad y evidencia prevista; la matriz incluye los trece stakeholders oficiales.
+- [x] El guion contiene persona y texto hablado por lámina; solo añade notas breves para preguntas cuando aporten. El reparto es propuesto.
+- [x] Las limitaciones que afectan la decisión permanecen visibles en el cuerpo principal.
+- [x] Los intereses y tensiones tienen respuesta, autoridad y evidencia prevista; la matriz incluye los trece stakeholders oficiales.
+- [ ] Los anexos A a H están construidos como láminas de respaldo.
 - [x] Los anexos A a H tienen contenido, fuente y uso definidos.
 - [ ] El medio y el formato del aula están confirmados antes de construir el archivo final.
 
-El [mapa de consulta y defensa](mapa_y_guion.md) usa esta misma numeración y remite a las fuentes vigentes. La pauta es la única referencia de títulos, tiempos y composición; el guion se redactará sobre las láminas construidas.
+El [mapa de consulta y defensa](mapa_y_guion.md) usa esta misma numeración y remite a las fuentes vigentes. La pauta es la única referencia de títulos, tiempos y composición; el [guion](guion.md) sigue las láminas construidas.
 
 La clase 4 pide hacer llegar la presentación al momento de exponer (parte 2, 2:38:34 a 2:38:53). Entrega/presentación documentada: **sábado 24-10-2026**. Confirmar formato y hora de carga; no se identifica obligación de un informe adicional.

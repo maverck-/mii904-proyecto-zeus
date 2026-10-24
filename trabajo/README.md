@@ -18,7 +18,7 @@ La [auditoría contra la pauta](../registros/auditoria_pauta_2026-10-23.md) dist
 
 Leer [ajustes con fundamento](../registros/integracion_avance_equipo.md) y [supuestos](../registros/acuerdos_y_supuestos.md). Conservar o cambiar propuestas explícitamente; cualquier cambio de cobertura actualiza costo/roadmap/beneficios. ESC-01 y sus cifras anteriores quedan como antecedente en Git.
 
-Los archivos organizan fuentes de contenido. No implican siete documentos formales obligatorios: la pauta pide propuesta y defensa integrada. Presentación e informe eventual son formatos posteriores; confirmar requerimientos de aula.
+Los archivos organizan fuentes de contenido. No implican siete documentos formales obligatorios: la pauta pide propuesta y defensa integrada. La presentación ya está construida, con su guion en [presentacion/](../presentacion/README.md); un informe eventual sería un formato posterior. Confirmar requerimientos de aula.
 
 CAP identifica capacidades; PAQ paquetes de costo; KPI indicadores; R releases; G gates financieros; VT-01 revisión técnica y VE-01 preparación del evento. Dato del caso requiere página/tiempo; propuesta y supuesto requieren revisión; acuerdo requiere decisión efectivamente comunicada.
 

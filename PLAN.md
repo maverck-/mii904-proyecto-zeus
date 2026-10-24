@@ -11,7 +11,7 @@ La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md
 | 3 | Priorización | WSJF recibido con nueve ratios, dependencias y obligatorias | Rogelio: revisar pesos/notas contra escala/costo y justificar orden. |
 | 4 | Estimación | PERT 104, capacidad propuesta 120, base 1.330/reserva 170 y tramos | Rogelio: conciliar calendario/recursos, cargas por épica/rol y fronteras de costos; totales ya están. |
 | 5 | Roadmap y riesgos | Parte de Maverick redactada: calendario 52 semanas, cargas por épica 47,7/23/5/28,3, corte piloto y células de habilitación | Grupo/Rogelio revisan contratos/especialidades y viabilidad de ventanas al 95%/96%. |
-| 6 | Exposición | Pauta actualizada con clase 4/base vigente: 12 títulos/25 minutos, composiciones, sistema visual y anexos A–H | Iniciar diseño con propuestas rotuladas; equipo ratifica mensajes y acuerda relevos, luego guion/ensayo. |
+| 6 | Exposición | 12 láminas construidas en Figma Slides según la pauta y [guion](presentacion/guion.md) por lámina con reparto propuesto | Equipo ratifica mensajes, acuerda relevos y ensaya 25 + 10; preparar anexos A–H. |
 | 7 | Entrega | Fuentes y pauta organizadas | Confirmar hora/formato de carga y nómina activa de cuatro. |
 
 La [auditoría de pauta y stakeholders](registros/auditoria_pauta_2026-10-23.md) prioriza retorno/evidencia económica, capacidad por turno y especialidad, regla WSJF y resolución de tensiones. El Charter y la pauta de construcción ya incorporan la trazabilidad; el estado sigue condicionado a ratificación y factibilidad.
@@ -26,7 +26,7 @@ La [revisión de cierre de auditoría](registros/cierre_auditoria_2026-10-23.md)
 2. Revisar el [plan desarrollado de Maverick](registros/plan_alcance_roadmap.md): ya hay calendario, carga por épica/tramo y funciones, con capacidad de campaña separada de R3. Rogelio contrasta dedicación por especialidad y contratos/costo. El 88% conjunto no elimina R2 al 96% ni la primera salida al 95%.
 3. Definir fronteras entre 840 de equipos y OMS/WMS/seguridad/formación/gobierno; distribuir 675/345/310 por categorías/mes. Reserva 170 no se cuenta dos veces.
 4. Los cuatro revisan inclusiones/exclusiones preparadas por Maverick; ratificar catálogo/CD/umbrales piloto anteriores y límites del nuevo experimento 3–5 tiendas. Revisar acompañamiento y disponibilidad para adoptar las prácticas, así como alertas/respuesta y congelamiento posterior a R2/VE-01. Recortar devolución exige cambiar objetivo/beneficios.
-5. Acordar la [pauta de construcción](presentacion/pauta_construccion.md) y confirmar formato/hora. Después construir las láminas, preparar el guion y ensayar 25 + 10. La estimación ya existe; la revisión pendiente es de conciliación.
+5. Revisar las láminas construidas según la [pauta de construcción](presentacion/pauta_construccion.md) y el [guion](presentacion/guion.md); confirmar formato/hora, acordar relevos y ensayar 25 + 10. La estimación ya existe; la revisión pendiente es de conciliación.
 
 Las decisiones deben registrarse como aceptadas, corregidas o rechazadas con fundamento. Las aprobaciones de una empresa ficticia se proponen, no se simulan como realizadas. Las responsabilidades están en [EQUIPO.md](EQUIPO.md).
 

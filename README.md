@@ -6,6 +6,8 @@ Repositorio de la primera etapa de ZEUS, caso M-GesPro Retail. Contiene siete do
 
 El [alcance](trabajo/04_alcance_y_backlog.md) y el [roadmap](trabajo/07_roadmap.md) desarrollan catálogo, aceptación, historias, experimento, calendario y olas. El [plan de apoyo](registros/plan_alcance_roadmap.md) distribuye el esfuerzo y dimensiona habilitación; cuatro células con campo en COST-06 permiten programar la meta condicionada de 58 altas adicionales bajo los supuestos de la base. Falta ratificar alcance y criterios de éxito, contrastar dedicación por especialidad y conciliar contratos/costos. La [revisión editorial y argumental](registros/revision_editorial_2026-10-23.md) distingue correcciones realizadas y asuntos que requieren decisión del grupo.
 
+**Presentación: las 12 láminas están construidas en Figma Slides** según la [pauta](presentacion/pauta_construccion.md), y el [guion](presentacion/guion.md) por lámina está listo para ensayar con un reparto propuesto. Faltan acordar relevos, ensayar y preparar los anexos A a H. Maverick comparte el archivo de Figma con el equipo.
+
 **Entrega y presentación: 24 de octubre de 2026**, según clase 2, parte 2, 1:10:32 a 1:10:44. La clase 4 pide enviar la presentación al exponer (parte 2, 2:38:34 a 2:38:53). Objetivo interno: versión lista y ensayada el viernes 23. Confirmar formato y hora de carga en aula. Pauta: máximo 35 minutos, recomendados 25 de exposición y 10 de defensa; sugerencia de hasta 12 láminas principales más anexos.
 
 La [auditoría contra pauta y stakeholders](registros/auditoria_pauta_2026-10-23.md) identifica cobertura documental y pendientes de profundidad. La [matriz de trece interesados](registros/matriz_stakeholders.md) conecta intereses/tensiones del caso con respuestas y evidencia. Cobertura de rúbrica no equivale a nota obtenida ni a satisfacción validada.
@@ -28,7 +30,7 @@ La [revisión de cierre](registros/cierre_auditoria_2026-10-23.md) actualiza el 
 | [registros/](registros/acuerdos_y_supuestos.md) | Supuestos/decisiones, [riesgos](registros/riesgos.md) y [revisión de integración](registros/integracion_avance_equipo.md). |
 | [insumos/](insumos/README.md) | Enunciado, pauta, avance recibido y presentaciones 03 a 06. |
 | [transcripciones/](transcripciones/README.md) | Clases 1 a 4, ocho partes con tiempos. |
-| [presentacion/](presentacion/README.md) | Pauta lista para iniciar diseño: 12 títulos/25 minutos, base/clase 4, composiciones, sistema visual y anexos A–H; guion posterior a las láminas. |
+| [presentacion/](presentacion/README.md) | Pauta aplicada en las 12 láminas de Figma Slides (25 minutos), guion por lámina, mapa de preguntas y anexos A–H por preparar. |
 | [typst/](typst/README.md) | Ejemplo y módulos locales para eventual informe. |
 | [PLAN.md](PLAN.md) | Orden y condiciones para cerrar. |
 

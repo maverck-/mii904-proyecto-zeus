@@ -1,6 +1,6 @@
 # Mapa de consulta para diseño y defensa de ZEUS
 
-**Versión vigente, 23-10-2026.** Se conserva el nombre del archivo por compatibilidad con enlaces anteriores. La [pauta de construcción](pauta_construccion.md) contiene los únicos títulos, tiempos y composiciones vigentes. Este mapa sirve para revisar el argumento y localizar el respaldo; el guion oral se redactará después de construir las láminas.
+**Versión vigente, 23-10-2026.** Se conserva el nombre del archivo por compatibilidad con enlaces anteriores. La [pauta de construcción](pauta_construccion.md) contiene los únicos títulos, tiempos y composiciones vigentes. Este mapa sirve para revisar el argumento y localizar el respaldo; el texto hablado por lámina está en el [guion](guion.md).
 
 La versión anterior quedó sustituida: sus tres células y el rango de costo que terminaba en 1.500 no describen la base actual. Las fuentes vigentes son los siete documentos de trabajo, la [base de ejecución](../registros/base_ejecucion.md) y los [aportes de clase 4](../registros/aportes_clase_04.md). Los cambios no significan aprobación del equipo o de la empresa ficticia.
 
@@ -14,11 +14,11 @@ La versión anterior quedó sustituida: sus tres células y el rango de costo qu
 | Recursos y calendario | 9–10 | La capacidad no certifica fechas; cuatro células y sexto equipo anticipado sostienen una meta condicionada. El estrés solo cabe con reducción/topes. | [06](../trabajo/06_estimacion.md), [07](../trabajo/07_roadmap.md), [base](../registros/base_ejecucion.md), anexos D/E. |
 | Respuesta y autorización | 11–12 | La evidencia puede frenar escala/inversión; se solicita el primer tramo, con límites y autoridad para continuar. | [riesgos](../registros/riesgos.md), [03](../trabajo/03_charter.md), anexos D/F. |
 
-## Formato del guion que se preparará después
+## Formato del guion
 
-Por lámina: persona que habla y texto exacto que debe decir. Las transiciones van dentro del texto hablado. Añadir únicamente una nota breve para preguntas cuando haga falta precisar un dato, un límite o una fuente. No agregar apartados de salida, instrucciones escénicas ni explicaciones sobre el propio guion por defecto.
+El [guion](guion.md) indica por lámina la persona que habla y el texto exacto que debe decir. Las transiciones van dentro del texto hablado. Añadir únicamente una nota breve para preguntas cuando haga falta precisar un dato, un límite o una fuente. No agregar apartados de salida, instrucciones escénicas ni explicaciones sobre el propio guion por defecto.
 
-Las filas siguientes son respaldo de contenido para preparar la defensa. No se copian completas al guion ni obligan a agregar notas a cada lámina. Los expositores se asignan cuando el equipo acuerde los relevos.
+Las filas siguientes son respaldo de contenido para preparar la defensa. No se copian completas al guion ni obligan a agregar notas a cada lámina. El reparto de expositores del guion es una propuesta hasta que el equipo acuerde los relevos.
 
 ## Preguntas que la presentación debe poder responder
 
@@ -44,4 +44,4 @@ Ante un cambio de condición: identificar objetivo/compromiso afectado, seguir d
 
 El equipo ratifica catálogo/CD, umbrales del piloto, devolución elegible, dotación y límites experimentales. Rogelio concilia capacidad por especialidad, categorías/tramos y fronteras con proveedores. El caso no trae datos de volumen/margen: mantener su efecto en la recomendación como incertidumbre explícita, sin fabricar resultados.
 
-La estructura permite iniciar diseño mientras esas propuestas permanezcan rotuladas. Después se acuerdan relevos, se redacta el guion y se ensaya 25 + 10. Confirmar hora/formato del aula y enviar la presentación al exponer, según clase 4.
+Las láminas están construidas con esas propuestas rotuladas y el guion está listo para ensayar. Falta acordar relevos, ensayar 25 + 10 y preparar los anexos A a H. Confirmar hora/formato del aula y enviar la presentación al exponer, según clase 4.
