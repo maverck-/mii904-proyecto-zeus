@@ -22,9 +22,11 @@
 
 > Antes de ampliar, comprobamos en 4 pasos si el piloto mejora el servicio. Primero entregamos el flujo completo en 10 tiendas al terminar la semana 16. Luego medimos el uso, y proponemos que más de 80% de los retiros se preparen con la aplicación en cada tienda. Después medimos la mejora frente a una base comparable del propio piloto. Buscamos reducir la cancelación en al menos 20% y el tiempo de preparación en al menos 25%. Con esa evidencia, en G1, al cierre del mes 5, el Comité decide si amplía, corrige o detiene la inversión.
 >
+> Este resultado también tiene un efecto comercial. Cada pedido que deja de cancelarse es una venta que conservamos, y un retiro confiable ayuda a que el cliente vuelva a comprar. En el piloto medimos cuántos pedidos recuperamos, el margen que aportan y lo que cuesta atenderlos. Con esos datos, el Comité verá en G1 el retorno que hoy el caso no permite calcular.
+>
 > Estos umbrales son nuestra propuesta para el mes 5. En el mes 12 evaluamos las metas finales en la operación cubierta, que son cancelar menos de 2% de los pedidos y prepararlos en menos de 3 horas. Si no logramos una base válida para comparar, informamos el resultado como inconcluso y la expansión queda condicionada. Con este criterio comparamos ahora las alternativas.
 
-**Nota para preguntas, no se lee:** los umbrales son reducciones relativas a la base. Si la base fuera la del caso, por ejemplo, la cancelación tendría que bajar de 7,8% a 6,24% o menos, y la preparación de 7,2 a 5,4 horas o menos. Base en semanas 9 a 12 y uso en 17 a 20, con tiendas no piloto de las mismas familias como comparación concurrente. El piso de 1.000 pedidos por fase es operacional, sin potencia estadística calculada. Si C&C es nuevo, el resultado alternativo se ratifica antes de abrir el piloto (anexo A).
+**Nota para preguntas, no se lee:** los umbrales son reducciones relativas a la base. Si la base fuera la del caso, por ejemplo, la cancelación tendría que bajar de 7,8% a 6,24% o menos, y la preparación de 7,2 a 5,4 horas o menos. Base en semanas 9 a 12 y uso en 17 a 20, con tiendas no piloto de las mismas familias como comparación concurrente. El piso de 1.000 pedidos por fase es operacional, sin potencia estadística calculada. Si C&C es nuevo, el resultado alternativo se ratifica antes de abrir el piloto (anexo A). No proyectamos una ganancia en pesos porque faltan volumen, margen y costos incrementales. El anexo E muestra cuántos pedidos recuperados al mes harían falta para recuperar la inversión con supuestos ilustrativos, 6.334 en 36 meses o 4.250 en 60. La meta de 35% es la participación del canal digital en las ventas.
 
 ## Lámina 4 · B resuelve la causa del problema dentro del techo
 
@@ -80,7 +82,7 @@
 
 **Rogelio** · 3 min
 
-> El presupuesto que proponemos tiene una base de 1.330 millones y una reserva de 170. Suma 1.500, justo el techo del caso. La estimación de esfuerzo, 104 equipo-sprints frente a una capacidad de 120, está en el anexo, y aquí nos concentramos en el dinero.
+> El presupuesto que proponemos tiene una base de 1.330 millones y una reserva de 170. Suma 1.500, justo el techo del caso. El esfuerzo estimado es de 104 equipo-sprints frente a una capacidad de 120, y aquí nos concentramos en el dinero.
 >
 > También probamos un escenario de estrés. Si los equipos cuestan 20% más y cada categoría llega a su extremo alto, el costo sube a 1.668 millones, 168 sobre el techo y más de lo que cubre la reserva. Para volver bajo el techo tendríamos que diferir los opcionales, reducir capacidad cancelable después de G2 y conseguir topes de precio para la gestión de pedidos, el WMS y el cloud, las 3 cosas a la vez. Con eso el escenario queda en 1.497,1 millones y deja un margen de 2,9. Es un margen estrecho, y esas condiciones todavía hay que negociarlas. Si alguna falla, el Comité ajusta cobertura o arquitectura antes de pasar los 1.500. Todas estas cifras son supuestos del ejercicio y ninguna viene de una cotización.
 
