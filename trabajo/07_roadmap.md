@@ -73,6 +73,18 @@ Para compatibilizar despliegue R2 y protección de campaña, se propone iniciar 
 
 Continúan monitoreo, soporte y estabilización con dotación prevista. El análisis o la preparación en ambientes no productivos solo usa capacidad y gasto autorizados; no convierte M8 en un release R3 ni anticipa financiación de G2. Si R2 no se acepta a tiempo, escalar cobertura, fecha y costo: no superponer automáticamente despliegues ordinarios con el congelamiento para conservar la cifra 68/M7.
 
+### Operación y soporte por etapa
+
+El modelo de tres niveles de [04](04_alcance_y_backlog.md) acompaña cada etapa. El primer nivel crece con las tiendas activas; la guardia de plataforma se mantiene y se refuerza en campaña.
+
+| Etapa | Soporte | Evidencia antes de avanzar | Responsable |
+| --- | --- | --- | --- |
+| R0, M1 y M2 | Definir dueño del servicio, niveles, guiones, procedimientos operativos y acuerdos de nivel de servicio | Modelo aprobado y herramientas de alertas e incidentes listas en VT-01 | Tecnología con Operaciones |
+| R1, piloto | Mesa con guiones de ZEUS, referente por turno en las 10 tiendas, soporte de aplicación y guardia | Mesa lista antes de la semana 16; parámetros de incidentes medidos en semanas 17 a 20 | Dueño del servicio |
+| R2, olas | Referentes formados por ola y mesa ajustada según la regla de dimensionamiento | Soporte aceptado en cada sitio antes de contarlo como alta | Dueño del servicio con Operaciones |
+| Campaña, M8 | Guardia reforzada y sala de seguimiento desde VE-01 hasta el fin de Black Friday | Prueba de respuesta y recuperación en VE-01 | Tecnología, Operaciones y CISO |
+| R3 y cierre | Backlog de mejoras desde problemas recurrentes y traspaso a un equipo estable | Acuerdos de nivel de servicio, responsables y presupuesto recurrente definidos en M12 | Sponsor y dueño del servicio |
+
 ## Dependencias y acciones
 
 Cadena que condiciona M5: acceso y viabilidad → inventario/reservas y pedidos → C&C usable → ventana de evidencia. Parte de integración/pedidos puede solaparse una vez acordados contratos y capacidad. No es una ruta crítica CPM calculada: faltan duraciones detalladas, holguras y recursos.
@@ -104,6 +116,7 @@ Las dependencias externas también requieren coordinación del proyecto (sesión
 | Stock, turnos, espacio y formación por tienda/CD | Operaciones/Logística/gerencias de tienda | Preparación y aceptación del sitio, roles y soporte | Antes del piloto y de cada ola; condiciona altas. |
 | CISO/Arquitectura y ambientes de prueba | Tecnología/CISO | Controles, integración, carga y recuperación | Cada release y VE-01; las revisiones consumen capacidad. |
 | Regla de devolución y conciliación | Comercial/Finanzas/Operaciones | Elegibilidad, estados y aceptación | Antes de CAP-08/R3; no suponer que reglas aparecen al construir. |
+| Operación y soporte del servicio | Dueño del servicio en Tecnología con Operaciones | Niveles, guiones, guardia y mesa preparados; regla de dimensionamiento calibrada | Antes del piloto; se amplía por ola, se refuerza en campaña y se traspasa en M12. |
 | Dotación/contratos/costo por tramo | PM/Finanzas/proveedores | FTE por periodo, compromisos y forecast a término | G0, G1 y G2; cinco equipos nominales no garantizan especialistas disponibles. |
 
 ### Relaciones lógicas propuestas

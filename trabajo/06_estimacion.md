@@ -25,7 +25,7 @@ La base de estimación queda trazable en seis campos:
 | Alcance | Catálogo, exclusiones y aceptación de 04; R1 usa reserva simple y ventana fija, sin cupos dinámicos. |
 | Datos | Caso oficial y avance del equipo; cantidades PERT, dotación y precios son supuestos. Faltan históricos, contratos y medición de dedicaciones. |
 | Método | Técnicas de 6.1, PERT de 6.2 y calendario de la base; no hay simulación de fechas ejecutada. |
-| Supuestos | SUP-01 a SUP-25 y parámetros de la base de ejecución, con revisión y respuesta si fallan. |
+| Supuestos | SUP-01 a SUP-26 y parámetros de la base de ejecución, con revisión y respuesta si fallan. |
 | Riesgos | [Registro de riesgos](../registros/riesgos.md), integración, cuellos por especialidad, operación y sensibilidad de costos de este documento. |
 | Rango y confianza | Esfuerzo O/P 68–160 y costo 1.215–1.668 MM como escenarios; 6.3 limita las aproximaciones probabilísticas. No hay P80 de fecha validado. |
 
@@ -82,6 +82,8 @@ El calendario del [plan de apoyo](../registros/plan_alcance_roadmap.md) utiliza 
 La provisión distingue pago y producción: 130 pagados menos diez reservados = 120 efectivos. Son 60 equipo-meses a 14 MM, **840 exactos**, sin colchón de redondeo. El anticipo del sexto equipo consume el redondeo previo, sin agregar gasto sobre COST-01 bajo esta convención. La disponibilidad en semana 9 es supuesto contractual. El cociente 840/120 = 7 MM es asignación por unidad efectiva, no tarifa por sprint pagado; esa tarifa es 14 × 12/26 = 6,4615 MM.
 
 Las cuatro células tienen 200 persona-días brutos de actividad y treinta de preparación. E11/R2 aporta 210; los veinte restantes son capacidad de campo en COST-06. Se preserva holgura de R2 y se distingue ese campo del trabajo de desarrollo. Dentro de COST-06 = 45 MM se asignan 2,1538 a veinte persona-días de campo, diez a una bolsa de traslados y 32,8462 al resto de adopción/formación/operación. Son asignaciones académicas pendientes de ratificación/cotización, no gastos adicionales sumados de nuevo a 1.330.
+
+**Soporte durante el proyecto.** El modelo de [04](04_alcance_y_backlog.md) se financia con las categorías existentes: la guardia de plataforma y el soporte de aplicación los prestan los equipos de COST-01, incluido el sprint 17 de estabilización en campaña; el soporte del partner forma parte de COST-02; las herramientas de observabilidad, de COST-04; la formación de referentes locales, de COST-06. La mesa de ayuda corporativa absorbe el primer nivel con guiones de ZEUS (SUP-26). Si la regla de dimensionamiento medida en el piloto exige agentes adicionales, ese refuerzo queda fuera de la base 1.330 y G1 lo autoriza con cargo a la reserva o ajustando cobertura (R-17). El equipo estable posterior al mes 12 es costo recurrente del negocio y entra en el horizonte económico.
 
 ## 6.5 Presupuesto preliminar por categoría
 

@@ -48,7 +48,7 @@
 
 **Alejandro** · 2 min
 
-> El mandato define quién decide. El Comité y el sponsor deciden la inversión y los cambios mayores de alcance, costo o fecha. El Product Owner ordena el trabajo dentro de esos límites. Y el CISO y Operaciones pueden detener una salida a producción ante un riesgo crítico o si una tienda no puede operarla.
+> El mandato define quién decide. El Comité y el sponsor deciden la inversión y los cambios mayores de alcance, costo o fecha. El Product Owner ordena el trabajo dentro de esos límites. Y el CISO y Operaciones pueden detener una salida a producción ante un riesgo crítico o si una tienda no puede operarla. La operación del servicio tiene un dueño en Tecnología, que coordina el soporte durante el proyecto y lo recibe al cierre.
 >
 > El caso describe tensiones entre interesados, y aquí mostramos la regla para 2 de ellas. El sponsor quiere velocidad, mientras Operaciones y el CISO buscan estabilidad y seguridad. En ese caso ajustamos funcionalidad, cobertura o fecha antes de omitir una condición de salida. Comercial empuja nuevas funcionalidades y Tecnología necesita integración. Ahí protegemos stock, integración y controles, y las mejoras opcionales compiten por la capacidad disponible. Las tensiones de Finanzas y de los gerentes de tienda las retomamos en recursos y en el roadmap. Maverick sigue con el alcance.
 
@@ -56,7 +56,7 @@
 
 **Maverick** · 3 min
 
-> Bueno, el primer flujo comienza con el stock, que se reserva sobre un inventario conciliado. Luego el pedido queda trazable en la gestión de pedidos y la tienda lo prepara con una app y una ventana fija de retiro. El flujo termina cuando el cliente retira su pedido en la tienda y se registra la entrega. Cada tienda abre con formación, stock conciliado, controles, soporte y la posibilidad de revertir.
+> Bueno, el primer flujo comienza con el stock, que se reserva sobre un inventario conciliado. Luego el pedido queda trazable en la gestión de pedidos y la tienda lo prepara con una app y una ventana fija de retiro. El flujo termina cuando el cliente retira su pedido en la tienda y se registra la entrega. Antes de habilitar el retiro en cada tienda, capacitamos al personal, conciliamos el stock y aseguramos controles y soporte. Si surge un problema importante, podemos suspender el nuevo flujo y atender los pedidos pendientes.
 >
 > El piloto partiría acotado, con solo 10 tiendas, 1 centro de distribución y 2 familias de productos, y su primera salida es al terminar la semana 16. Elegimos las familias por su peso en pedidos digitales, cancelaciones y contribución, y porque su stock se puede auditar.
 >
@@ -92,9 +92,11 @@
 
 > Con esos recursos armamos el calendario. En los meses 1 y 2 preparamos la base y probamos la integración. Al cierre del mes 2, la revisión técnica VT-01 confirma si las interfaces sostienen el piloto. El piloto sale al terminar la semana 16, en el mes 4, y G1 decide al cierre del mes 5. Si G1 lo autoriza, expandimos en los meses 6 y 7 en 4 olas, y pasamos de 10 tiendas a 25, 40, 54 y 68. Al cierre del mes 7, la revisión VE-01 confirma la preparación para la campaña, y desde ahí congelamos cambios hasta que termina Black Friday, aproximadamente en el mes 8. R3 comienza después de G2, en el mes 9.
 >
+> Debajo de los releases está el soporte. En el piloto ya opera una mesa con guiones de ZEUS, un referente por turno en cada tienda y una guardia de plataforma. El soporte de tiendas crece con cada ola, la guardia se refuerza en campaña y en el mes 12 el servicio pasa a un equipo estable de operación, que también recoge las mejoras.
+>
 > Cada ola avanza solo con tiendas listas para operar. Proponemos 4 células de habilitación, y una célula pasa a la siguiente tienda cuando la anterior queda aceptada y con soporte. Las 68 tiendas son una meta condicionada. Si el piloto muestra que cada tienda toma más tiempo, ajustamos olas o cobertura antes de comprometer la campaña. Las ventanas tienen poco margen y requieren especialistas disponibles y un sexto equipo desde la semana 9. Además, cada tienda necesita capacidad propia aceptada para operar el retiro en todos sus turnos. Alejandro presenta qué hacemos si falla alguna de estas condiciones.
 
-**Nota para preguntas, no se lee:** habilitación y acompañamiento suman 145 persona-días frente a 150 disponibles, en 35 de 40 días hábiles. El corte del piloto usa 36 de 38 equipo-sprints y R2, 23 de 24 (base de ejecución, 07, anexo E).
+**Nota para preguntas, no se lee:** habilitación y acompañamiento suman 145 persona-días frente a 150 disponibles, en 35 de 40 días hábiles. El corte del piloto usa 36 de 38 equipo-sprints y R2, 23 de 24 (base de ejecución, 07, anexo E). El soporte de primer nivel crece con las tiendas activas y los pedidos; el de aplicación y la guardia de plataforma crecen con los servicios críticos. La regla de dimensionamiento de la mesa se calibra en el piloto y, si exige más agentes, G1 autoriza el refuerzo con cargo a la reserva (04, SUP-26, R-17).
 
 ## Lámina 11 · Si falla una condición, corregimos antes de ampliar
 

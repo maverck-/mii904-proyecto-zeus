@@ -53,6 +53,7 @@ La cobertura 68/M7 es una meta de expansión condicionada. G1 fija la cobertura 
 | Arquitectura Empresarial | Estándares y desacoplamiento; justificar decisiones y controles sin duplicar evidencia o crear gates por defecto para cada historia. |
 | CISO | Controles y facultad de detener release ante riesgo crítico. |
 | Logística / Operaciones / gerencias de tienda | Beneficios, dotación, capacidad y aceptación operacional; pueden impedir una salida no operable. |
+| Operación y soporte del servicio | Dueño del servicio en Tecnología, con tres niveles: referente por tienda y mesa de ayuda; soporte de aplicación de los equipos de producto y del partner OMS; guardia de plataforma con observabilidad. Gestiona incidentes, problemas y mejoras, y recibe el servicio al cierre. Detalle en [04](04_alcance_y_backlog.md). |
 | Finanzas | Costo total, forecast, reservas y liberación financiera con comité. |
 | Proveedores WMS, OMS y cloud | Compromisos, integración, licencias y soporte según contrato. OMS comprado es supuesto del equipo. |
 
@@ -74,7 +75,7 @@ Si cambia un objetivo, límite o financiación, actualizar este Charter y comuni
 
 Techo máximo preliminar **1.500 MM CLP**, horizonte 12 meses, valor dentro de los primeros cinco meses, Black Friday aproximadamente M8; ERP no reemplazado, WMS solo modificado, continuidad y controles obligatorios (enunciado p. 5).
 
-Supuestos: APIs/eventos útiles del ERP, cumplimiento del proveedor WMS, OMS de mercado, dotación escalonada 5/6/4, diez tiendas piloto, escalamiento a 68, evidencia a M5 y recursos para el experimento. Todos requieren validación académica de coherencia y validación empresarial hipotética descrita en el [registro](../registros/acuerdos_y_supuestos.md).
+Supuestos: APIs/eventos útiles del ERP, cumplimiento del proveedor WMS, OMS de mercado, dotación escalonada 5/6/4, diez tiendas piloto, escalamiento a 68, evidencia a M5, recursos para el experimento y una mesa de ayuda corporativa capaz de absorber el primer nivel de soporte (SUP-26). Todos requieren validación académica de coherencia y validación empresarial hipotética descrita en el [registro](../registros/acuerdos_y_supuestos.md).
 
 Riesgos: exactitud de stock insuficiente (91% corporativo como condición base), retrasos de WMS, capacidad de tiendas/equipos, campaña, sobrecosto y bloqueo por seguridad. La inexactitud puede generar reservas sin existencias y afectar promesas, cancelaciones y adopción. [Registro de riesgos](../registros/riesgos.md).
 
@@ -94,7 +95,7 @@ Propuesta de financiación: **675 MM en G0/M1** para R0/R1, 345 en G1/M5 para R2
 | VE-01/M7 | R2 aceptado, cobertura segura y preparación de campaña; iniciar congelamiento propuesto con soporte activo. |
 | Campaña/M8 | Proteger continuidad y promesas; confirmar fecha externa. Excepciones críticas controladas según [07](07_roadmap.md). |
 | G2/M9 | Beneficios y previsión actualizados, con autorización de financiación y condiciones de R3. |
-| Cierre/M12 | Aceptación y transferencia, con responsables de beneficios pendientes. |
+| Cierre/M12 | Aceptación y transferencia a un equipo estable de operación y producto, con dueño del servicio y responsables de beneficios pendientes. |
 
 Éxito propuesto: objetivos medidos, adopción >80%, ejecución dentro del costo autorizado compatible con techo, riesgos críticos de seguridad tratados y campaña operable. «Sin interrupciones» es objetivo de continuidad, no garantía anticipada de resultado. Para aprobación de release exigir pruebas y soporte, además de medir disponibilidad con ventana definida.
 

@@ -12,6 +12,7 @@ La propuesta respeta las condiciones del caso: techo preliminar de 1.500 MM CLP,
 | Expansión | Meta condicionada de 68 tiendas en el mes 7, en cuatro olas con cuatro células |
 | Campaña | Congelamiento de cambios desde VE-01 hasta el fin de Black Friday |
 | Evolución | Devolución elegible y experimento acotado de despacho desde tienda, tras G2 |
+| Operación y soporte | Dueño del servicio y tres niveles de soporte desde el piloto; traspaso a un equipo estable en el mes 12 |
 | Presupuesto | Base de 1.330 MM más reserva de 170 MM, igual al techo de 1.500 MM |
 | Solicitud | Primer tramo de 675 MM para R0 y R1, sujeto a VT-01 y G1 |
 
@@ -199,6 +200,7 @@ ZEUS contribuye a las metas de 35% de ventas digitales, NPS ≥ +48, entregas a 
 | Gerente de Tecnología y Arquitectura | Integración, estándares y desacoplamiento compatibles con la continuidad |
 | CISO | Controles de seguridad y facultad de detener una salida ante riesgo crítico |
 | Operaciones, Logística y gerencias de tienda | Beneficios, dotación y aceptación operacional; pueden impedir una salida no operable |
+| Operación y soporte del servicio | Dueño del servicio en Tecnología; coordina referentes, mesa de ayuda, soporte de aplicación y guardia de plataforma, y recibe el servicio al cierre |
 | Finanzas | Costo total, forecast, reservas y liberación de tramos con el Comité |
 | Proveedores WMS, OMS y cloud | Compromisos, integración, licencias y soporte según contrato |
 
@@ -232,7 +234,7 @@ El anexo C recoge los trece interesados del caso con su interés, tensión y res
 | VE-01 | Fin del mes 7 | R2 aceptado, cobertura segura y preparación de campaña; inicia el congelamiento |
 | Campaña | Mes 8 | Continuidad y promesas protegidas, con excepciones críticas controladas |
 | G2 | Inicio del mes 9 | Beneficios y forecast actualizados; autorización de R3 |
-| Cierre | Mes 12 | Aceptación, transferencia y responsables de los beneficios pendientes |
+| Cierre | Mes 12 | Aceptación, traspaso a un equipo estable de operación y producto, y responsables de los beneficios pendientes |
 
 **Criterios de éxito:** objetivos medidos según la sección 1.5, adopción superior a 80%, ejecución dentro del costo autorizado y del techo, riesgos críticos de seguridad tratados y campaña operable.
 
@@ -324,7 +326,21 @@ La apertura incluye acompañamiento intensivo, con referente local por turno y e
 
 La definición de terminado exige criterio funcional, pruebas, controles, telemetría, documentación, soporte, reversión y aceptación operacional. Cumplir la función y la definición de terminado habilita la salida; el beneficio se acredita después con uso y métricas.
 
-## 4.9 Experimento de despacho desde tienda
+## 4.9 Operación y soporte del servicio
+
+El servicio necesita un equipo que lo opere durante el proyecto y después del mes 12. Proponemos un dueño del servicio en Tecnología y tres niveles de soporte.
+
+| Nivel | Quién lo presta | Qué atiende | Con qué crece |
+|:----------------|:------------------------------|:------------------------------|:----------------------|
+| Primer nivel, tiendas | Referente local por turno en cada tienda habilitada y mesa de ayuda corporativa con guiones de ZEUS | Uso de la app, estados de pedido, retiro y excepciones simples | Tiendas activas, turnos y pedidos diarios |
+| Segundo nivel, aplicación | Analistas funcionales de los equipos de producto y soporte del partner OMS | Fallas de flujo, datos, conciliación y configuración | Volumen de incidentes y servicios integrados |
+| Tercer nivel, plataforma | Guardia rotativa de los equipos de desarrollo, apoyada en la observabilidad | Disponibilidad, integraciones, eventos y recuperación | Servicios críticos y horario de operación; se refuerza en campaña |
+
+El primer nivel crece con el número de tiendas; el segundo y el tercero crecen con los servicios críticos, por eso no se multiplican por tienda. Durante el proyecto, los equipos que construyen cada servicio también lo operan.
+
+Para el primer nivel proponemos la regla: agentes de mesa por turno = tiendas activas × incidentes por tienda y turno × minutos por incidente / minutos disponibles por agente y turno. Los parámetros se miden en el piloto, entre las semanas 17 y 20, y se recalculan antes de cada ola. La operación participa en la definición de terminado con procedimientos operativos, alertas con responsable, reversión probada y guion de atención. Los incidentes y problemas recurrentes alimentan el backlog de mejoras. Al cierre, el servicio pasa a un equipo estable de operación y producto, con dueño, acuerdos de nivel de servicio y presupuesto recurrente fuera del proyecto.
+
+## 4.10 Experimento de despacho desde tienda
 
 El experimento parte en tres tiendas, se amplía a cinco solo tras una primera semana operable y termina al cumplir cuatro semanas o 300 pedidos elegibles, lo que ocurra primero. Se ejecuta en el mes 11, con stock del catálogo acordado, operador logístico y conciliación definidos. Registra cumplimiento, cancelación, esfuerzo de tienda, transporte y margen incremental. Se detiene ante pérdidas no conciliadas, exposición crítica, promesas insostenibles o perjuicio al retiro en tienda. Antes de iniciar, G2 autoriza su techo monetario de exposición.
 
@@ -434,6 +450,8 @@ Proponemos cinco equipos en los sprints 1 a 4, seis en los sprints 5 a 15 y cuat
 
 El corte del piloto usa 36 de 38 equipo-sprints disponibles hasta la semana 16 (94,74%) y R2 usa 23 de 24 (95,83%). Ambas ventanas tienen poco margen y dependen de especialidades disponibles.
 
+El soporte durante el proyecto se financia con las categorías existentes. La guardia de plataforma y el soporte de aplicación los prestan los equipos de la capacidad contratada, incluido el sprint 17 de estabilización en campaña; el soporte del partner forma parte del contrato OMS; las herramientas, de cloud y observabilidad; la formación de referentes, de adopción y despliegue local. La mesa corporativa absorbe el primer nivel con guiones de ZEUS. Si la regla medida en el piloto exige agentes adicionales, ese refuerzo queda fuera de la base y G1 lo autoriza con cargo a la reserva o ajustando la cobertura. El equipo estable posterior al mes 12 es un costo recurrente del negocio y entra en el horizonte económico.
+
 ## 6.5 Presupuesto por categoría
 
 | Categoría, MM CLP | Base | O | P |
@@ -520,7 +538,17 @@ Proponemos cuatro células de dos funciones, con 75% de disponibilidad efectiva.
 
 El congelamiento comienza al aceptar R2 y superar VE-01, al final del mes 7, y dura hasta que termina Black Friday, aproximadamente en el mes 8. En esa ventana no se despliegan funcionalidades nuevas en producción; las correcciones críticas de seguridad o continuidad requieren autorización de Operaciones, Tecnología y CISO. Continúan el monitoreo, el soporte y la estabilización con la dotación prevista.
 
-## 7.6 Dependencias
+## 7.6 Operación y soporte por etapa
+
+| Etapa | Soporte | Evidencia antes de avanzar | Responsable |
+|:--------------|:------------------------------|:------------------------------|:----------------|
+| R0, meses 1 y 2 | Dueño del servicio, niveles, guiones, procedimientos y acuerdos de nivel de servicio | Modelo aprobado y herramientas de alertas e incidentes listas en VT-01 | Tecnología con Operaciones |
+| R1, piloto | Mesa con guiones de ZEUS, referente por turno en las 10 tiendas, soporte de aplicación y guardia | Mesa lista antes de la semana 16; incidentes medidos en las semanas 17 a 20 | Dueño del servicio |
+| R2, olas | Referentes formados por ola y mesa ajustada según la regla de dimensionamiento | Soporte aceptado en cada sitio antes de contarlo como alta | Dueño del servicio con Operaciones |
+| Campaña, mes 8 | Guardia reforzada y sala de seguimiento desde VE-01 hasta el fin de Black Friday | Prueba de respuesta y recuperación en VE-01 | Tecnología, Operaciones y CISO |
+| R3 y cierre | Mejoras desde problemas recurrentes y traspaso a un equipo estable | Acuerdos de nivel de servicio, responsables y presupuesto recurrente en el mes 12 | Sponsor y dueño del servicio |
+
+## 7.7 Dependencias
 
 | Dependencia | Coordinación | Evidencia requerida | Momento |
 |:------------------------|:----------------------|:------------------------------|:------------------------|
@@ -528,11 +556,12 @@ El congelamiento comienza al aceptar R2 y superar VE-01, al final del mes 7, y d
 | Stock, turnos, espacio y formación | Operaciones, Logística y gerencias de tienda | Preparación y aceptación de cada sitio | Antes del piloto y de cada ola |
 | CISO, Arquitectura y ambientes de prueba | Tecnología y CISO | Controles, integración, carga y recuperación | Cada release y VE-01 |
 | Reglas de devolución y conciliación | Comercial, Finanzas y Operaciones | Elegibilidad, estados y aceptación | Antes de R3 |
+| Operación y soporte del servicio | Dueño del servicio con Operaciones | Niveles, guiones, guardia y mesa preparados | Antes del piloto; crece por ola y se refuerza en campaña |
 | Dotación, contratos y costo por tramo | PM, Finanzas y proveedores | Dotación por periodo, compromisos y forecast | G0, G1 y G2 |
 
 La cadena que condiciona el mes 5 es contrato OMS (semana 4), VT-01 (semana 8), salida del piloto (semana 16), observación (semanas 17 a 20) y G1 (semana 22). Si se atrasa un eslabón, se recalcula la ventana de evidencia antes de mantener el compromiso del mes 5. Como contingencia, se evalúa publicar stock conciliado de las mismas familias en el canal existente y medir cancelaciones comparables; sustituir el piloto requiere decisión del Comité.
 
-## 7.7 Señales de flujo
+## 7.8 Señales de flujo
 
 | Señal | Definición | Decisión que apoya |
 |:----------------|:------------------------------------|:------------------------------------|
@@ -559,6 +588,7 @@ La cadena que condiciona el mes 5 es contrato OMS (semana 4), VT-01 (semana 8), 
 | SUP-22 | El flujo mínimo requiere 36 de 38 equipo-sprints hasta la semana 16 | Tecnología y Operaciones revisan el corte | Recalcular la primera salida |
 | SUP-23 | R1 con reserva simple y ventana fija de retiro | Logística y Tecnología prueban en VT-01 | Revisar diseño y estimación |
 | SUP-25 | Una promesa confiable contribuye a conversión y contribución neta | Comercial y Finanzas miden por cohorte | Mantener la hipótesis condicionada |
+| SUP-26 | La mesa corporativa absorbe el primer nivel de soporte con guiones de ZEUS | Incidentes por tienda medidos en el piloto y regla aplicada antes de cada ola | Refuerzo autorizado en G1 o ajuste de olas |
 
 ## B. Registro de riesgos
 
@@ -575,6 +605,7 @@ La cadena que condiciona el mes 5 es contrato OMS (semana 4), VT-01 (semana 8), 
 | R-10 | Costos subestimados; costo a término sobre el techo | Reestimación, compras por hitos y topes | Finanzas y PM | Estimación sobre el límite |
 | R-15 | Promesa más agresiva que el stock y la capacidad; incumplimiento | Ventana fija, stock conciliado y medición de promesa cumplida | Comercial y Logística | Punto o ventana no sostenible |
 | R-16 | Contrato OMS tarda más de cuatro semanas; valor del mes 5 en riesgo | Requisitos en R0, contrato por hitos y seguimiento semanal | PM y Tecnología con Compras | Sin contrato al cierre de la semana 4 |
+| R-17 | Soporte dimensionado para el piloto y no para 68 tiendas o campaña; incidentes sin atención | Tres niveles con dueño, regla calibrada, referentes por ola y guardia reforzada | Dueño del servicio con Operaciones | Tiempos de atención sobre lo acordado |
 
 ## C. Interesados del caso
 
@@ -587,7 +618,7 @@ La cadena que condiciona el mes 5 es contrato OMS (semana 4), VT-01 (semana 8), 
 | Gerente de Tecnología | Arquitectura sostenible e integración | Modernización frente a continuidad | ERP conservado, APIs reutilizables y cloud selectivo |
 | CISO | Seguridad y resiliencia | Puede detener liberaciones | Controles en la definición de terminado y bloqueo de salida |
 | Gerente de Finanzas | Retorno y control de inversión | Exige evidencia económica y forecast | Tramos, reserva, volumen requerido y gasto evitable por gate |
-| Gerentes de Tienda | Operación local y dotación | Temen nuevas funciones sin capacidad | Formación por turno, acompañamiento y aceptación del sitio |
+| Gerentes de Tienda | Operación local y dotación | Temen nuevas funciones sin capacidad | Formación por turno, acompañamiento, aceptación del sitio y soporte continuo con referente y mesa |
 | PO E-commerce | Valor y priorización | Autonomía para adaptar el backlog | Decide orden y detalle dentro de los límites |
 | Arquitectura Empresarial | Estándares y desacoplamiento | Puede introducir gates y controles | Evidencia común en VT-01 y definición de terminado |
 | Equipos de desarrollo | Flujo y autonomía | Reducir dependencias y burocracia | Límites de trabajo en curso y controles proporcionales |

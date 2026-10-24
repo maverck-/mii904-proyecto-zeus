@@ -158,6 +158,22 @@ La definición de terminado (DoD) propuesta exige criterio funcional, pruebas ne
 
 Ejemplo de distinción: aceptar CAP-04 exige que un pedido reservable pueda prepararse y retirarse con estados/permiso correctos y que se mida su uso; la DoD exige además pruebas, revisión de seguridad, telemetría, documentación y reversión. Cumplir la función sin esa calidad no habilita liberar; cumplir DoD sin uso/mejora no acredita beneficio.
 
+## Operación y soporte del servicio
+
+El servicio necesita un equipo que lo opere durante el proyecto y después del mes 12. Esta función concreta CAP-06 y PAQ-07: un dueño del servicio en Tecnología y tres niveles de soporte con responsables y escalamiento explícitos.
+
+| Nivel | Quién lo presta | Qué atiende | Con qué crece |
+| --- | --- | --- | --- |
+| Primer nivel, tiendas | Referente local por turno en cada tienda habilitada y mesa de ayuda corporativa con guiones de ZEUS | Uso de la app, estados de pedido, retiro y excepciones simples | Tiendas activas, turnos y pedidos diarios |
+| Segundo nivel, aplicación | Analistas funcionales de los equipos de producto y soporte del partner OMS | Fallas de flujo, datos, conciliación y configuración | Volumen de incidentes y servicios integrados |
+| Tercer nivel, plataforma | Guardia rotativa de los equipos de desarrollo, apoyada en la observabilidad de E8a y E8b | Disponibilidad, integraciones, eventos y recuperación | Servicios críticos y horario de operación; se refuerza en campaña |
+
+El primer nivel crece con el número de tiendas. El segundo y el tercero crecen con los servicios críticos y su exigencia de disponibilidad, por eso no se multiplican por tienda. Durante el proyecto, los equipos que construyen cada servicio también lo operan.
+
+Para dimensionar el primer nivel se propone la regla: agentes de mesa por turno = tiendas activas × incidentes por tienda y turno × minutos por incidente / minutos disponibles por agente y turno. Los parámetros se miden en el piloto, entre las semanas 17 y 20, y se recalculan antes de cada ola. Si el resultado excede la capacidad de la mesa existente, el refuerzo es un costo incremental que G1 debe autorizar (SUP-26, R-17).
+
+La operación participa en la definición de terminado de cada salida: procedimientos operativos, alertas con responsable, reversión probada y guion de atención antes de abrir cada sitio. El soporte registra incidentes y problemas recurrentes, que alimentan el backlog de mejoras con su análisis de causa. Al cierre del mes 12, el servicio pasa a un equipo estable de operación y producto, con dueño, acuerdos de nivel de servicio y presupuesto recurrente fuera del proyecto, considerado en el horizonte económico del Business Case.
+
 ## Cambios y acuerdos pendientes
 
 Maverick integra este documento y los cuatro integrantes revisan inclusiones, exclusiones y diferimientos antes de cerrar la propuesta. Si el diagnóstico o la evaluación de alternativas cambia esa frontera, actualizar también Business Case, Charter, priorización, estimación y roadmap; no limitar la corrección a una lista de backlog.
