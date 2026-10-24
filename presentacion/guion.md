@@ -6,7 +6,7 @@
 
 **Maverick** · 1 min
 
-> Buenas tardes. A continuación les presentaremos nuestra recomendación para ZEUS. Propondremos la alternativa B, que consiste en una plataforma omnicanal modular, desarrollada por etapas. Primero probaremos el flujo completo de retiro en tienda en 10 tiendas. En el mes 5 evaluamos si mejora el servicio. Y si la evidencia lo respalda y las tiendas pueden operarlo, ampliamos la cobertura antes de Black Friday. Al final les pediremos autorizar la primera etapa, con condiciones que les permitan mantener, corregir o detener la inversión. A continuación Bryam describirá el problema que tratamos de abordar.
+> Buenas tardes. A continuación les presentaremos nuestra recomendación para ZEUS. Nos enfocaremos en una plataforma omnicanal modular, desarrollada por etapas. Que corresponde a la alternativa B. Primero probaremos el flujo completo de retiro en tienda en 10 tiendas. En el mes 5 evaluamos si mejora el servicio. Y si la evidencia lo respalda y las tiendas pueden operarlo, ampliamos la cobertura antes de Black Friday. Al final les pediremos autorizar la primera etapa, con condiciones que les permitan mantener, corregir o detener la inversión. A continuación Bryam describirá el problema que tratamos de abordar.
 
 ## Lámina 2 · Stock y preparación debilitan la promesa al cliente
 
@@ -34,7 +34,7 @@
 >
 > B y C parten por lo mismo, que es inventario, pedidos y retiro en tienda. B suma la devolución elegible y una evolución modular sobre servicios reutilizables, y por eso su inversión es mayor. Recomendamos B porque resuelve la causa del problema. El caso señala que cada nueva integración aumenta la complejidad y las dependencias, y pide reducir las integraciones punto a punto. C mejora el retiro en tienda, pero lo hace agregando más conexiones sobre los mismos sistemas. B, en cambio, deja servicios reutilizables que sostienen las devoluciones y cualquier capacidad futura sin volver a empezar. Alejandro explica cómo vamos a trabajar.
 
-**Nota para preguntas, no se lee:** el enunciado dice en la p. 3 que «cada nueva integración incrementa la complejidad tecnológica y las dependencias», y en la p. 5 pone como restricción reducir las integraciones punto a punto y avanzar hacia APIs reutilizables. Si preguntan por el costo, los tramos 1 y 2 suman 1.020 MM para piloto, expansión y campaña, 220 sobre la referencia de C. El retorno se mide en el piloto con el modelo de volumen requerido del anexo H.
+**Nota para preguntas, no se lee:** el enunciado dice en la p. 3 que «cada nueva integración incrementa la complejidad tecnológica y las dependencias», y en la p. 5 pone como restricción reducir las integraciones punto a punto y avanzar hacia APIs reutilizables. Si preguntan por el costo, los tramos 1 y 2 suman 1.020 MM para piloto, expansión y campaña, 220 sobre la referencia de C. El retorno se mide en el piloto con el modelo de volumen requerido del anexo E.
 
 ## Lámina 5 · Combinamos control de inversión y entregas pequeñas
 
@@ -84,7 +84,7 @@
 >
 > También probamos un escenario de estrés. Si los equipos cuestan 20% más y cada categoría llega a su extremo alto, el costo sube a 1.668 millones, 168 sobre el techo y más de lo que cubre la reserva. Para volver bajo el techo tendríamos que diferir los opcionales, reducir capacidad cancelable después de G2 y conseguir topes de precio para la gestión de pedidos, el WMS y el cloud, las 3 cosas a la vez. Con eso el escenario queda en 1.497,1 millones y deja un margen de 2,9. Es un margen estrecho, y esas condiciones todavía hay que negociarlas. Si alguna falla, el Comité ajusta cobertura o arquitectura antes de pasar los 1.500. Todas estas cifras son supuestos del ejercicio y ninguna viene de una cotización.
 
-**Nota para preguntas, no se lee:** escalera 1.668 → 1.602,0923 con 1 equipo menos durante 8,5 sprints tras G2 → 1.542,0923 con OMS a 180 → 1.512,0923 con WMS a 70 → 1.497,0923 con cloud a 85. Son 130 equipo-sprints pagados, 120 efectivos y 840 MM exactos (anexo D).
+**Nota para preguntas, no se lee:** escalera 1.668 → 1.602,0923 con 1 equipo menos durante 8,5 sprints tras G2 → 1.542,0923 con OMS a 180 → 1.512,0923 con WMS a 70 → 1.497,0923 con cloud a 85. Son 130 equipo-sprints pagados, 120 efectivos y 840 MM exactos (anexo B).
 
 ## Lámina 10 · La expansión depende de tiendas listas para operar
 
@@ -96,7 +96,7 @@
 >
 > Cada ola avanza solo con tiendas listas para operar. Proponemos 4 células de habilitación, y una célula pasa a la siguiente tienda cuando la anterior queda aceptada y con soporte. Las 68 tiendas son una meta condicionada. Si el piloto muestra que cada tienda toma más tiempo, ajustamos olas o cobertura antes de comprometer la campaña. Las ventanas tienen poco margen y requieren especialistas disponibles y un sexto equipo desde la semana 9. Además, cada tienda necesita capacidad propia aceptada para operar el retiro en todos sus turnos. Alejandro presenta qué hacemos si falla alguna de estas condiciones.
 
-**Nota para preguntas, no se lee:** habilitación y acompañamiento suman 145 persona-días frente a 150 disponibles, en 35 de 40 días hábiles. El corte del piloto usa 36 de 38 equipo-sprints y R2, 23 de 24 (anexo E). El soporte de primer nivel crece con las tiendas activas y los pedidos; el de aplicación y la guardia de plataforma crecen con los servicios críticos. La regla de dimensionamiento de la mesa se calibra en el piloto y, si exige más agentes, G1 autoriza el refuerzo con cargo a la reserva.
+**Nota para preguntas, no se lee:** habilitación y acompañamiento suman 145 persona-días frente a 150 disponibles, en 35 de 40 días hábiles. El corte del piloto usa 36 de 38 equipo-sprints y R2, 23 de 24 (anexo C). El soporte de primer nivel crece con las tiendas activas y los pedidos; el de aplicación y la guardia de plataforma crecen con los servicios críticos. La regla de dimensionamiento de la mesa se calibra en el piloto y, si exige más agentes, G1 autoriza el refuerzo con cargo a la reserva.
 
 ## Lámina 11 · Si falla una condición, corregimos antes de ampliar
 

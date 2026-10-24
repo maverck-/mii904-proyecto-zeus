@@ -4,7 +4,7 @@
 
 | Archivo | Contenido |
 | --- | --- |
-| [pauta_construccion.md](pauta_construccion.md) | Referencia única de los 12 títulos, 25 minutos, evidencia visible, composición, fuentes, sistema visual aplicado y anexos A–H. |
+| [pauta_construccion.md](pauta_construccion.md) | Referencia única de los 12 títulos, 25 minutos, evidencia visible, composición, fuentes, sistema visual aplicado y anexos A–E. |
 | [guion.md](guion.md) | Persona y texto hablado por lámina, con notas breves para preguntas. El reparto de expositores es una propuesta. |
 | [mapa_y_guion.md](mapa_y_guion.md) | Mapa de consulta: preguntas probables, criterio de respuesta y anexo que las respalda. Conserva su nombre por compatibilidad de enlaces. |
 
@@ -21,7 +21,7 @@ Cada cifra conserva su fuente al pie y su estado visible: «Umbral propuesto», 
 3. Revisar las cinco láminas de respaldo de la sección «Anexos»: A medición, D estimación y costos, E calendario y capacidad, F cambios de condición y H business case de B. Se usan solo en la defensa.
 4. Exportar la presentación en el formato que pida el aula y hacerla llegar al exponer, según clase 4.
 
-Rogelio contrasta prioridades/estimación y anexos C/D; Maverick alcance/roadmap y B/E. Bryam y Alejandro coordinan diagnóstico, Business Case, enfoque y Charter según su reparto real; el equipo revisa apertura, riesgos y decisión.
+Rogelio contrasta prioridades/estimación y el anexo B; Maverick alcance/roadmap y el anexo C. Bryam y Alejandro coordinan diagnóstico, Business Case, enfoque y Charter según su reparto real; el equipo revisa apertura, riesgos y decisión.
 
 ## Condiciones oficiales y pendientes
 

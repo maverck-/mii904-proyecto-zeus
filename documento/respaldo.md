@@ -6,7 +6,7 @@ La propuesta respeta las condiciones del caso: techo preliminar de 1.500 MM CLP,
 
 | Elemento | Propuesta |
 |:-----------------|:------------------------------------------------------------|
-| Alternativa | B modular, por etapas, con comparación frente a C antes de ampliar compromisos |
+| Alternativa | B modular, por etapas, porque reduce las integraciones punto a punto que pide el caso |
 | Primera salida | Flujo completo en 10 tiendas al terminar la semana 16 (mes 4) |
 | Decisión de valor | G1 al cierre del mes 5, con umbrales de uso y mejora frente a base comparable |
 | Expansión | Meta condicionada de 68 tiendas en el mes 7, en cuatro olas con cuatro células |
@@ -68,11 +68,12 @@ Fuente: enunciado, p. 4. ZEUS contribuye a estas metas corporativas. La atribuci
 | Techo y horizonte | Excede el techo y puede exceder el horizonte | Compatible; propuesta de 1.330 más reserva de 170 | Compatible; costo a igual cobertura por definir | Conserva caja y el costo de oportunidad |
 | Valor en el mes 5 | Requiere un corte temprano no demostrado | Piloto R1 con medición propuesta | Requiere un corte temprano equivalente | Sin mejora |
 | Black Friday | Cambio amplio, alta exposición | Olas condicionadas a operación aceptada | Debe presupuestar campaña e integración | Mantiene la exposición actual |
-| Evolución | Suite frente a ERP conservado | Contratos reutilizables y devolución elegible | Debe cumplir la condición de APIs; evolución por dimensionar | La complejidad continúa |
+| Integración | Reemplaza componentes con una suite | Capa de APIs reutilizable sobre ERP y WMS | Más conexiones sobre los mismos sistemas | La complejidad continúa |
+| Evolución | Suite frente a ERP conservado | Contratos reutilizables y devolución elegible | Su descripción no incluye la capa de APIs; sumarla amplía alcance y costo | Sin evolución |
 
-Fuente: enunciado, pp. 5 y 7; evaluación del equipo.
+Fuente: enunciado, pp. 3, 5 y 7; evaluación del equipo.
 
-**Recomendación.** Desarrollar B por etapas como hipótesis de inversión. B y C comparten el núcleo inicial de inventario, pedidos y retiro en tienda. B agrega la devolución elegible y una evolución modular sobre servicios reutilizables. Los tramos 1 y 2 suman 1.020 MM para piloto, expansión y campaña, 220 MM sobre la referencia de C. Mantenemos B si su valor adicional compensa ese costo frente a C con igual cobertura, calidad y horizonte económico. En caso contrario, recomendamos C. Descartamos A con las restricciones actuales.
+**Recomendación.** Desarrollar B por etapas. El enunciado señala que cada nueva integración incrementa la complejidad tecnológica y las dependencias, y fija como condición de arquitectura reducir las integraciones punto a punto y avanzar hacia servicios y APIs reutilizables. B responde a esa causa con una capa de APIs sobre ERP y WMS, que sostiene el núcleo de inventario, pedidos y retiro en tienda, la devolución elegible y las capacidades siguientes. C resuelve el mismo núcleo inicial, pero su descripción no incluye esa capa, y para cumplir la condición de arquitectura tendría que ampliar su alcance y su costo de referencia. Los tramos 1 y 2 suman 1.020 MM para piloto, expansión y campaña. El retorno de B se confirma con el piloto y en cada gate, porque el caso no informa volumen ni margen. Descartamos A porque excede el techo y el horizonte.
 
 ## 1.4 Entregables, resultados, beneficios y valor
 
@@ -273,7 +274,7 @@ E1 y E11 incluyen la validación inicial de existencias y el conteo cíclico del
 
 | Tratamiento | Elementos | Regla de decisión |
 |:--------------------|:------------------------------------|:------------------------------|
-| Restricción del caso | Techo, horizonte, valor en cinco meses, continuidad, controles, ERP conservado, WMS sin reemplazo completo | Se respetan; si no caben, se cambia la alternativa o se eleva la incompatibilidad |
+| Restricción del caso | Techo, horizonte, valor en cinco meses, continuidad, controles, ERP conservado, WMS sin reemplazo completo | Se respetan; si no caben, se ajusta el alcance o se eleva la incompatibilidad |
 | Compromiso propuesto | Flujo completo en 10 tiendas en el mes 5, objetivos y preparación de campaña | Cambios con impacto en beneficio, costo y fecha, por sponsor y Comité |
 | Meta condicionada | 68 tiendas en el mes 7 para el catálogo definido | G1 fija la cobertura previa a campaña con recursos y centros aceptados |
 | Adaptable | Historias, experiencia, orden técnico, selección de tiendas y olas | PO y equipos ajustan dentro de límites |
@@ -435,7 +436,7 @@ Unidad: equipo-sprint de referencia. E = (O + 4M + P) / 6 y σ = (P − O) / 6. 
 | 95% con correlación total entre épicas | 129,3 | 107,75% |
 | Suma pesimista de épicas | 160,0 | 133,33% |
 
-Estas cifras describen la sensibilidad del esfuerzo y no equivalen a una probabilidad de entregar antes de la campaña, porque no modelan la red de actividades ni los recursos. Ante el escenario pesimista, diferir E10 y E8b deja 145 equipo-sprints, todavía 25 sobre la capacidad. En ese caso el Comité revisa cobertura, horizonte o alternativa con una reestimación.
+Estas cifras describen la sensibilidad del esfuerzo y no equivalen a una probabilidad de entregar antes de la campaña, porque no modelan la red de actividades ni los recursos. Ante el escenario pesimista, diferir E10 y E8b deja 145 equipo-sprints, todavía 25 sobre la capacidad. En ese caso el Comité revisa cobertura u horizonte con una reestimación.
 
 ## 6.4 Capacidad y dotación
 
@@ -489,7 +490,7 @@ Para que los gates tengan opciones reales, proponemos contratar la capacidad ext
 | Tope de WMS en 70 | 30,0 | 1.512,1 | 12,1 |
 | Tope de cloud y observabilidad en 85 | 15,0 | 1.497,1 | 0,0 |
 
-Con las tres palancas, el escenario queda 2,9 MM bajo el techo. Los topes son condiciones de contratación por negociar. Si no se consiguen, el Comité revisa cobertura, arquitectura o la alternativa C antes de superar 1.500 MM.
+Con las tres palancas, el escenario queda 2,9 MM bajo el techo. Los topes son condiciones de contratación por negociar. Si no se consiguen, el Comité ajusta cobertura o arquitectura antes de superar 1.500 MM.
 
 ## 6.8 Actualización de la estimación
 
@@ -575,11 +576,11 @@ La cadena que condiciona el mes 5 es contrato OMS (semana 4), VT-01 (semana 8), 
 
 | ID | Supuesto | Validación prevista | Si falla |
 |:-------|:----------------------------------|:----------------------------|:----------------------------|
-| SUP-01 | ERP y WMS permiten integración acotada por APIs y, donde sea viable, eventos | Pruebas de consistencia, carga y recuperación en VT-01 | Revisar arquitectura, plazo, alcance y alternativa |
+| SUP-01 | ERP y WMS permiten integración acotada por APIs y, donde sea viable, eventos | Pruebas de consistencia, carga y recuperación en VT-01 | Revisar arquitectura, plazo y alcance |
 | SUP-02 | La dotación escalonada de equipos sostiene la secuencia | Sponsor y Operaciones confirman antes de R1 | Limitar trabajo en curso, cobertura o secuencia |
 | SUP-03 | Hay datos comparables y volumen para evaluar el piloto | Dueños de beneficio fijan base y suficiencia antes del piloto | Informar resultado inconcluso |
 | SUP-05 | 10 tiendas piloto y 68 en el mes 7 son operables | Operaciones autoriza cada ola y sus centros | Mantener solo la cobertura segura |
-| SUP-07 | 1.330 MM más 170 de reserva cubren el alcance | Finanzas contrasta costos y contratos por etapa | Revisar cobertura, experimento o alternativa |
+| SUP-07 | 1.330 MM más 170 de reserva cubren el alcance | Finanzas contrasta costos y contratos por etapa | Revisar cobertura o experimento |
 | SUP-12 | Un OMS de mercado cubre el flujo con configuración acotada | Selección en G0 y prueba en VT-01 | Revisar contrato y arquitectura |
 | SUP-14 | Piloto con 1 CD y 2 familias; expansión con hasta 3 CD | Logística valida sitios y catálogo en VT-01 | Ajustar selección y cobertura |
 | SUP-16 | Umbrales de G1: −20% cancelación, −25% preparación, adopción > 80% | Dueños de beneficio ratifican bases antes de abrir | Informar inconcluso o sin mejora |
@@ -632,8 +633,8 @@ Fuente: enunciado, pp. 6 y 7, para intereses y tensiones; respuestas propuestas 
 | Si cambia | Respuesta propuesta | Decide |
 |:----------------------|:----------------------------------------|:----------------------------|
 | Black Friday en el mes 7 | Recalcular hacia atrás la salida y el congelamiento; reducir la expansión antes que la preparación de campaña | Sponsor y Operaciones fijan la cobertura |
-| Techo de 1.200 MM | La base de 1.330 excede en 130; comparar un recorte reestimado y C con el mismo núcleo | Comité, con cálculo monetario |
-| ERP sin API viable | Probar la interfaz soportada, su consistencia y latencia, y cuantificar el cambio | Si rompe costo, valor o continuidad, se revisa arquitectura o alternativa |
+| Techo de 1.200 MM | La base de 1.330 excede en 130; reestimar B con menor cobertura y diferir opcionales, sin tocar el núcleo | Comité, con cálculo monetario |
+| ERP sin API viable | Probar la interfaz soportada, su consistencia y latencia, y cuantificar el cambio | Si rompe costo, valor o continuidad, se revisa la arquitectura antes del piloto |
 | Sin sexto equipo | La capacidad hasta la salida baja de 38 a 35 y el corte de 36 deja de caber | El PM eleva al Comité |
 | G1 inconcluso | Mantener la cobertura segura, revisar medición y causas, y acotar compromisos | Comité y Finanzas |
 | El CISO bloquea | Detener la exposición afectada y corregir | El CISO conserva su autoridad; el sponsor revisa fecha o cobertura |
