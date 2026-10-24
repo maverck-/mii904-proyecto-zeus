@@ -1,6 +1,6 @@
 # Guion de exposición ZEUS
 
-**Versión para ensayo, 23-10-2026.** Sigue las 12 láminas construidas en Figma Slides con la [pauta de construcción](pauta_construccion.md). El reparto de expositores es una propuesta por ajustar cuando el equipo acuerde los relevos.
+**Versión para ensayo, 23-10-2026.** Sigue las 12 láminas construidas en Figma Slides con la [pauta de construcción](pauta_construccion.md) y cierra con una guía para usar los anexos en las preguntas. El reparto de expositores es una propuesta por ajustar cuando el equipo acuerde los relevos.
 
 ## Lámina 1 · ZEUS: B Modular, piloto y expansión con evidencia
 
@@ -113,3 +113,47 @@
 **Rogelio** · 1 min
 
 > Pedimos al Comité autorizar la primera etapa, con 675 millones para R0 y R1 entre los meses 1 y 5. Esta autorización tiene 3 condiciones. Primero, verificar la integración en VT-01, al cierre del mes 2, antes de exponer el piloto. Segundo, evaluar el piloto en 10 tiendas, con la decisión de G1 al cierre del mes 5. Tercero, liberar los tramos siguientes, 345 millones en G1 y 310 en G2, solo si hay evidencia de valor, costo y capacidad. La reserva de 170 la administra el Comité. Antes de comprometer gasto conciliaremos categorías, meses y obligaciones contractuales. Ahora respondemos sus preguntas.
+
+## Anexos para preguntas
+
+No se leen. Están después de la lámina «Gracias», en el orden A a E. Respondan primero en una o dos frases y abran el anexo solo si ayuda a mostrar el dato. Responde quien expuso la lámina relacionada; si la pregunta cae en otro tema, pasa la palabra a quien corresponda. Las respuestas completas a las preguntas probables están en el [mapa de consulta](mapa_y_guion.md).
+
+### Anexo A · Medición
+
+**Lo abre:** Bryam, desde la lámina 3.
+
+**Úsenlo si preguntan** cómo sabremos si el piloto funcionó, contra qué se compara, qué diferencia hay entre el umbral de G1 y la meta del mes 12, o qué pasa si no hay una base válida.
+
+**Qué mostrar:** el calendario de semanas, con la base en las semanas 9 a 12, el uso en las 17 a 20 y G1 al cierre de la semana 22. Luego la tabla de indicadores, con el umbral de G1 y la meta del mes 12 para cada uno. La comparación se hace con tiendas no piloto de las mismas familias, con un piso de 1.000 pedidos por fase, cerca de 36 diarios entre las 10 tiendas. Sin base válida, el resultado se informa como inconcluso.
+
+### Anexo B · Estimación y costos
+
+**Lo abre:** Rogelio, desde la lámina 9.
+
+**Úsenlo si preguntan** cómo se estimó el esfuerzo, si alcanza la capacidad, de dónde salen los 1.330 millones o qué pasa si los costos suben.
+
+**Qué mostrar:** la tabla PERT por épica, que suma 104 equipo-sprints esperados frente a 120 efectivos y 130 pagados. Luego el presupuesto por categoría, con un rango de 1.215 a 1.668 millones, y la escalera de estrés, que baja de 1.668 a 1.497,1 con un equipo menos tras G2 y topes para OMS, WMS y cloud. Recalcar que son supuestos del equipo, sin cotizaciones.
+
+### Anexo C · Calendario y capacidad
+
+**Lo abre:** Maverick, desde la lámina 10.
+
+**Úsenlo si preguntan** si las fechas son realistas, para qué se necesita el sexto equipo o cómo se habilitan 58 tiendas antes de la campaña.
+
+**Qué mostrar:** los equipos por sprint, con el sexto equipo disponible en la semana 9. Luego las tres cifras de capacidad: el corte del piloto usa 36 de 38 equipo-sprints, R2 usa 23 de 24 y la habilitación usa 145 de 150 persona-días en 35 de 40 días hábiles. Las olas suman 15, 15, 14 y 14 tiendas. Los márgenes son estrechos y la fecha depende de tener esas especialidades disponibles.
+
+### Anexo D · Cambios de condición
+
+**Lo abre:** Alejandro, desde la lámina 11.
+
+**Úsenlo si preguntan** «¿qué pasa si…?»: Black Friday se adelanta al mes 7, el presupuesto baja 20%, el ERP no tiene una API viable, no llega el sexto equipo, G1 resulta inconcluso o el CISO bloquea una salida.
+
+**Qué mostrar:** la fila del caso que preguntan, con la respuesta propuesta y quién decide. Cerrar con la regla de la franja: antes de presentar opciones al Comité recalculamos capacidad, costo y beneficio.
+
+### Anexo E · Business Case
+
+**Lo abre:** Bryam, desde la lámina 4.
+
+**Úsenlo si preguntan** por qué B si C es más barata, cuánto gana la empresa o cuándo se recupera la inversión.
+
+**Qué mostrar:** la fila de integración, donde B deja una capa de APIs reutilizable sobre ERP y WMS y C suma conexiones a los mismos sistemas. Luego el volumen requerido. Con supuestos ilustrativos, harían falta 6.334 pedidos recuperados al mes para recuperar la inversión en 36 meses, o 4.250 en 60. El caso no informa volumen ni margen, por eso no proyectamos una ganancia en pesos; en G1 y G2 comparamos esas cifras con el volumen real.
