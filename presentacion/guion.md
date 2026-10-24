@@ -24,17 +24,17 @@
 >
 > Estos umbrales son nuestra propuesta para el mes 5. En el mes 12 evaluamos las metas finales en la operación cubierta, que son cancelar menos de 2% de los pedidos y prepararlos en menos de 3 horas. Si no logramos una base válida para comparar, informamos el resultado como inconcluso y la expansión queda condicionada. Con este criterio comparamos ahora las alternativas.
 
-**Nota para preguntas, no se lee:** los umbrales son reducciones relativas a la base. Si la base fuera la del caso, por ejemplo, la cancelación tendría que bajar de 7,8% a 6,24% o menos, y la preparación de 7,2 a 5,4 horas o menos. Base en semanas 9 a 12 y uso en 17 a 20, con tiendas no piloto de las mismas familias como comparación concurrente. El piso de 1.000 pedidos por fase es operacional, sin potencia estadística calculada. Si C&C es nuevo, el resultado alternativo se ratifica antes de abrir el piloto (01, anexo A).
+**Nota para preguntas, no se lee:** los umbrales son reducciones relativas a la base. Si la base fuera la del caso, por ejemplo, la cancelación tendría que bajar de 7,8% a 6,24% o menos, y la preparación de 7,2 a 5,4 horas o menos. Base en semanas 9 a 12 y uso en 17 a 20, con tiendas no piloto de las mismas familias como comparación concurrente. El piso de 1.000 pedidos por fase es operacional, sin potencia estadística calculada. Si C&C es nuevo, el resultado alternativo se ratifica antes de abrir el piloto (anexo A).
 
-## Lámina 4 · B debe justificar su mayor inversión frente a C
+## Lámina 4 · B resuelve la causa del problema dentro del techo
 
 **Bryam** · 2 min
 
 > El caso propone 3 alternativas. A, el reemplazo integral, cuesta 1.850 millones y puede tardar entre 12 y 18 meses. Supera el techo de 1.500 y el horizonte de 12 meses, así que la descartamos con estas restricciones. C, el MVP focalizado, cuesta 800 millones, y B, la plataforma modular, 1.350. Ambas caben bajo el techo.
 >
-> B y C parten por lo mismo, que es inventario, pedidos y retiro en tienda. B suma la devolución elegible y una evolución modular sobre servicios reutilizables, y por eso tiene que justificar su mayor inversión. Mantenemos B si ese valor adicional compensa su costo frente a C con igual cobertura. Si no lo compensa, recomendamos C. Como el caso no informa volumen ni margen, el retorno incremental queda por validar con los datos del piloto, y las etapas nos permiten decidirlo a tiempo. Alejandro explica cómo vamos a trabajar.
+> B y C parten por lo mismo, que es inventario, pedidos y retiro en tienda. B suma la devolución elegible y una evolución modular sobre servicios reutilizables, y por eso su inversión es mayor. Recomendamos B porque resuelve la causa del problema. El caso señala que cada nueva integración aumenta la complejidad y las dependencias, y pide reducir las integraciones punto a punto. C mejora el retiro en tienda, pero lo hace agregando más conexiones sobre los mismos sistemas. B, en cambio, deja servicios reutilizables que sostienen las devoluciones y cualquier capacidad futura sin volver a empezar. Alejandro explica cómo vamos a trabajar.
 
-**Nota para preguntas, no se lee:** los tramos 1 y 2 suman 1.020 MM para piloto, expansión y campaña, 220 sobre la referencia de C, sin una comparación a igual cobertura. El modelo de volumen requerido y cobertura efectiva está en el anexo H.
+**Nota para preguntas, no se lee:** el enunciado dice en la p. 3 que «cada nueva integración incrementa la complejidad tecnológica y las dependencias», y en la p. 5 pone como restricción reducir las integraciones punto a punto y avanzar hacia APIs reutilizables. Si preguntan por el costo, los tramos 1 y 2 suman 1.020 MM para piloto, expansión y campaña, 220 sobre la referencia de C. El retorno se mide en el piloto con el modelo de volumen requerido del anexo H.
 
 ## Lámina 5 · Combinamos control de inversión y entregas pequeñas
 
@@ -64,7 +64,7 @@
 >
 > Dejamos clara la frontera. El ERP se conserva y el WMS, el sistema de almacén, se adapta con cambios acotados. Quedan fuera la inteligencia artificial, una data platform completa, los cupos dinámicos y la búsqueda automática de otro punto de retiro. Con esto respondemos 3 preguntas del enunciado. La IA queda para una etapa posterior, los datos entran como habilitador mínimo y el despacho desde tienda se prueba como experimento después del primer release. Rogelio explica cómo ordenamos este trabajo.
 
-**Nota para preguntas, no se lee:** el 85% aplica a devoluciones elegibles de compras web de las familias cubiertas; el 90% estratégico mide otra población, así que la diferencia de 5 puntos compara poblaciones distintas (01, 04).
+**Nota para preguntas, no se lee:** el 85% aplica a devoluciones elegibles de compras web de las familias cubiertas; el 90% estratégico mide otra población, así que la diferencia de 5 puntos compara poblaciones distintas (anexo A).
 
 ## Lámina 8 · Integración y stock habilitan el retiro en tienda
 
@@ -74,7 +74,7 @@
 >
 > Seguridad, observabilidad mínima y adopción con formación acompañan el flujo desde el inicio, aunque tengan menor puntaje, porque toda salida a producción necesita estos criterios.
 
-**Nota para preguntas, no se lee:** la matriz WSJF y su sensibilidad están en 05 y en el anexo C. Con medias PERT en el denominador cambian los pares E1/E4, E2/E3 y E10/E9; la secuencia se mantiene por dependencia y obligatoriedad.
+**Nota para preguntas, no se lee:** el puntaje es WSJF, con la suma de valor, urgencia y reducción de riesgo dividida por el esfuerzo. Con medias PERT en el denominador cambian los pares E1/E4, E2/E3 y E10/E9; la secuencia se mantiene por dependencia y obligatoriedad.
 
 ## Lámina 9 · El presupuesto llega al límite del caso
 
@@ -84,7 +84,7 @@
 >
 > También probamos un escenario de estrés. Si los equipos cuestan 20% más y cada categoría llega a su extremo alto, el costo sube a 1.668 millones, 168 sobre el techo y más de lo que cubre la reserva. Para volver bajo el techo tendríamos que diferir los opcionales, reducir capacidad cancelable después de G2 y conseguir topes de precio para la gestión de pedidos, el WMS y el cloud, las 3 cosas a la vez. Con eso el escenario queda en 1.497,1 millones y deja un margen de 2,9. Es un margen estrecho, y esas condiciones todavía hay que negociarlas. Si alguna falla, el Comité revisa cobertura, arquitectura o la alternativa C antes de pasar los 1.500. Todas estas cifras son supuestos del ejercicio y ninguna viene de una cotización.
 
-**Nota para preguntas, no se lee:** escalera 1.668 → 1.602,0923 con 1 equipo menos durante 8,5 sprints tras G2 → 1.542,0923 con OMS a 180 → 1.512,0923 con WMS a 70 → 1.497,0923 con cloud a 85. Son 130 equipo-sprints pagados, 120 efectivos y 840 MM exactos (06, base de ejecución, anexo D).
+**Nota para preguntas, no se lee:** escalera 1.668 → 1.602,0923 con 1 equipo menos durante 8,5 sprints tras G2 → 1.542,0923 con OMS a 180 → 1.512,0923 con WMS a 70 → 1.497,0923 con cloud a 85. Son 130 equipo-sprints pagados, 120 efectivos y 840 MM exactos (anexo D).
 
 ## Lámina 10 · La expansión depende de tiendas listas para operar
 
@@ -96,7 +96,7 @@
 >
 > Cada ola avanza solo con tiendas listas para operar. Proponemos 4 células de habilitación, y una célula pasa a la siguiente tienda cuando la anterior queda aceptada y con soporte. Las 68 tiendas son una meta condicionada. Si el piloto muestra que cada tienda toma más tiempo, ajustamos olas o cobertura antes de comprometer la campaña. Las ventanas tienen poco margen y requieren especialistas disponibles y un sexto equipo desde la semana 9. Además, cada tienda necesita capacidad propia aceptada para operar el retiro en todos sus turnos. Alejandro presenta qué hacemos si falla alguna de estas condiciones.
 
-**Nota para preguntas, no se lee:** habilitación y acompañamiento suman 145 persona-días frente a 150 disponibles, en 35 de 40 días hábiles. El corte del piloto usa 36 de 38 equipo-sprints y R2, 23 de 24 (base de ejecución, 07, anexo E). El soporte de primer nivel crece con las tiendas activas y los pedidos; el de aplicación y la guardia de plataforma crecen con los servicios críticos. La regla de dimensionamiento de la mesa se calibra en el piloto y, si exige más agentes, G1 autoriza el refuerzo con cargo a la reserva (04, SUP-26, R-17).
+**Nota para preguntas, no se lee:** habilitación y acompañamiento suman 145 persona-días frente a 150 disponibles, en 35 de 40 días hábiles. El corte del piloto usa 36 de 38 equipo-sprints y R2, 23 de 24 (anexo E). El soporte de primer nivel crece con las tiendas activas y los pedidos; el de aplicación y la guardia de plataforma crecen con los servicios críticos. La regla de dimensionamiento de la mesa se calibra en el piloto y, si exige más agentes, G1 autoriza el refuerzo con cargo a la reserva.
 
 ## Lámina 11 · Si falla una condición, corregimos antes de ampliar
 

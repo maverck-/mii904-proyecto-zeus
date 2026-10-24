@@ -9,7 +9,7 @@ La versión anterior quedó sustituida: sus tres células y el rango de costo qu
 | Bloque | Láminas de la pauta | Qué debe quedar claro | Respaldo |
 | --- | --- | --- | --- |
 | Recomendación y valor | 1–3 | B es una propuesta para comprobar valor; los síntomas del caso y los umbrales del piloto tienen poblaciones/estados distintos. | [01](../trabajo/01_diagnostico_y_business_case.md), anexo A. |
-| Alternativa, enfoque y mandato | 4–6 | B debe justificar el incremento frente a C; prácticas y derechos de decisión responden a tensiones concretas. | [01](../trabajo/01_diagnostico_y_business_case.md), [02](../trabajo/02_enfoque.md), [03](../trabajo/03_charter.md), anexos F/H. |
+| Alternativa, enfoque y mandato | 4–6 | B resuelve la causa del problema, la complejidad de integración, dentro del techo; prácticas y derechos de decisión responden a tensiones concretas. | [01](../trabajo/01_diagnostico_y_business_case.md), [02](../trabajo/02_enfoque.md), [03](../trabajo/03_charter.md), anexos F/H. |
 | Alcance y prioridades | 7–8 | R1 es reserva simple/ventana fija; un ratio alto no elimina dependencias ni controles. | [04](../trabajo/04_alcance_y_backlog.md), [05](../trabajo/05_priorizacion.md), anexos B/C. |
 | Recursos y calendario | 9–10 | La capacidad no certifica fechas; cuatro células y sexto equipo anticipado sostienen una meta condicionada. El estrés solo cabe con reducción/topes. | [06](../trabajo/06_estimacion.md), [07](../trabajo/07_roadmap.md), [base](../registros/base_ejecucion.md), anexos D/E. |
 | Respuesta y autorización | 11–12 | La evidencia puede frenar escala/inversión; se solicita el primer tramo, con límites y autoridad para continuar. | [riesgos](../registros/riesgos.md), [03](../trabajo/03_charter.md), anexos D/F. |
@@ -24,7 +24,7 @@ Las filas siguientes son respaldo de contenido para preparar la defensa. No se c
 
 | Pregunta | Criterio de respuesta y límite | Lámina / anexo |
 | --- | --- | --- |
-| ¿Por qué B frente a C? | R0–R2 comparte el núcleo de C; comparar igual cobertura/calidad, costo a término y beneficio incremental de devolución/evolución. Faltan volumen/margen para superioridad económica demostrada. | 4, H. |
+| ¿Por qué B frente a C? | El enunciado dice que cada nueva integración aumenta complejidad y dependencias (p. 3) y pide reducir las integraciones punto a punto (p. 5). B agrega una capa de APIs reutilizable sobre ERP y WMS; C resuelve el retiro con más conexiones sobre los mismos sistemas. El retorno se confirma en el piloto, porque el caso no informa volumen ni margen. | 4, H. |
 | ¿Por qué híbrido? | WMS requiere hitos y pruebas; producto admite incrementos y feedback; dependencias se gestionan por flujo. Un bloqueo modifica forecast y puede exigir una decisión ejecutiva. | 5, F/E. |
 | ¿Cómo se escala de 10 a 68? | Cuatro olas, cuatro células, habilitación y acompañamiento explícitos, campo adicional en COST-06 y calibración con piloto. La capacidad diaria de tiendas/CD se acepta aparte. Si el esfuerzo por sitio crece, revisar cobertura/fecha. | 10, E. |
 | ¿El esfuerzo demuestra la fecha? | 104/120 es comparación aritmética. Corte piloto 36/38 y R2 23/24 requieren especialidades y dependencias disponibles; no hay CPM detallado ni probabilidad validada de fecha. | 9/10, D/E. |
