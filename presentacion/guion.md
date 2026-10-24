@@ -12,19 +12,19 @@
 
 **Bryam** · 2 min
 
-> Hoy un cliente puede comprar en la web un producto que ya no está disponible. El stock publicado tarda entre 45 y 120 minutos en actualizarse, y la meta estratégica es bajar de 2 minutos. Además, 7,8% de los pedidos se cancelan por falta de stock, cuando la meta es quedar bajo 2%. Cuando el pedido avanza, su preparación toma en promedio 7,2 horas, y la meta es menos de 3. Al final del recorrido, la tienda que entrega tiene visibilidad limitada del estado del pedido digital.
+> Entonces, hablando del problema: Hoy un cliente puede comprar en la web un producto que ya no está disponible. El stock publicado tarda entre 45 y 120 minutos en actualizarse, y la meta estratégica es bajar de 2 minutos. Además, 7,8% de los pedidos se cancelan por falta de stock, cuando la meta es quedar bajo 2%. Cuando el pedido avanza, su preparación toma en promedio 7,2 horas, y la meta es menos de 3. Al final del recorrido, la tienda que entrega tiene visibilidad limitada del estado del pedido digital.
 >
-> Estos datos vienen del enunciado, que no separa cuánto pesa cada causa. Pueden influir la sincronización entre sistemas, el stock físico, las esperas de preparación y la capacidad de cada tienda. Por eso tratamos esas causas como hipótesis y diseñamos el piloto para contrastarlas.
+> Estos datos vienen del enunciado, que no separa cuánto pesa cada causa. Por lo que, pueden influir la sincronización entre sistemas, el stock físico, las esperas de preparación y la capacidad de cada tienda. Por eso tratamos esas causas como hipótesis y diseñamos el piloto para contrastarlas.
 
 ## Lámina 3 · Primero comprobamos si el piloto mejora el servicio
 
 **Bryam** · 2 min
 
-> Antes de ampliar, comprobamos en 4 pasos si el piloto mejora el servicio. Primero entregamos el flujo completo en 10 tiendas al terminar la semana 16. Luego medimos el uso, y proponemos que más de 80% de los retiros se preparen con la aplicación en cada tienda. Después medimos la mejora frente a una base comparable del propio piloto. Buscamos una cancelación 20% menor y una preparación 25% menor. Con esa evidencia, en G1, al cierre del mes 5, el Comité decide si amplía, corrige o detiene la inversión.
+> Antes de ampliar, comprobamos en 4 pasos si el piloto mejora el servicio. Primero entregamos el flujo completo en 10 tiendas al terminar la semana 16. Luego medimos el uso, y proponemos que más de 80% de los retiros se preparen con la aplicación en cada tienda. Después medimos la mejora frente a una base comparable del propio piloto. Buscamos reducir la cancelación en al menos 20% y el tiempo de preparación en al menos 25%. Con esa evidencia, en G1, al cierre del mes 5, el Comité decide si amplía, corrige o detiene la inversión.
 >
-> Estos umbrales son nuestra propuesta para el mes 5. Las metas finales, bajo 2% de cancelación y menos de 3 horas de preparación, se evalúan en el mes 12 para la operación cubierta. Si no logramos una base válida para comparar, informamos el resultado como inconcluso y la expansión queda condicionada. Con este criterio comparamos ahora las alternativas.
+> Estos umbrales son nuestra propuesta para el mes 5. En el mes 12 evaluamos las metas finales en la operación cubierta, que son cancelar menos de 2% de los pedidos y prepararlos en menos de 3 horas. Si no logramos una base válida para comparar, informamos el resultado como inconcluso y la expansión queda condicionada. Con este criterio comparamos ahora las alternativas.
 
-**Nota para preguntas, no se lee:** base en semanas 9 a 12 y uso en 17 a 20, con tiendas no piloto de las mismas familias como comparación concurrente. El piso de 1.000 pedidos por fase es operacional, sin potencia estadística calculada. Si C&C es nuevo, el resultado alternativo se ratifica antes de abrir el piloto (01, anexo A).
+**Nota para preguntas, no se lee:** los umbrales son reducciones relativas a la base. Si la base fuera la del caso, por ejemplo, la cancelación tendría que bajar de 7,8% a 6,24% o menos, y la preparación de 7,2 a 5,4 horas o menos. Base en semanas 9 a 12 y uso en 17 a 20, con tiendas no piloto de las mismas familias como comparación concurrente. El piso de 1.000 pedidos por fase es operacional, sin potencia estadística calculada. Si C&C es nuevo, el resultado alternativo se ratifica antes de abrir el piloto (01, anexo A).
 
 ## Lámina 4 · B debe justificar su mayor inversión frente a C
 
@@ -58,7 +58,7 @@
 
 > Bueno, el primer flujo comienza con el stock, que se reserva sobre un inventario conciliado. Luego el pedido queda trazable en la gestión de pedidos y la tienda lo prepara con una app y una ventana fija de retiro. El flujo termina cuando el cliente retira su pedido en la tienda y se registra la entrega. Antes de habilitar el retiro en cada tienda, capacitamos al personal, conciliamos el stock y aseguramos controles y soporte. Si surge un problema importante, podemos suspender el nuevo flujo y atender los pedidos pendientes.
 >
-> El piloto partiría acotado, con solo 10 tiendas, 1 centro de distribución y 2 familias de productos, y su primera salida es al terminar la semana 16. Elegimos las familias por su peso en pedidos digitales, cancelaciones y contribución, y porque su stock se puede auditar.
+> El piloto comenzaría a operar al finalizar la semana 16, en solo 10 tiendas, con 1 centro de distribución y 2 familias de productos. Seleccionaríamos esas familias por su participación en los pedidos digitales, las cancelaciones y el margen que aportan, además de la posibilidad de verificar su stock físico.
 >
 > Después de G2 viene R3. Ahí entra la devolución elegible, que sostiene la meta de 85% de resolución al primer contacto en esos casos. R3 también incluye un experimento de despacho desde tienda en 3 a 5 tiendas, con un máximo de 4 semanas o 300 pedidos, y el Comité debe autorizar antes su techo monetario.
 >

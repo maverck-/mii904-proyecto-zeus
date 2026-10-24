@@ -98,7 +98,7 @@ Fuente: enunciado, pp. 5 y 7; evaluación del equipo.
 
 La meta de 85% en devoluciones aplica a compras web elegibles de las familias cubiertas. El 90% estratégico mide otra población, de modo que ambas cifras se reportan por separado.
 
-**Criterios para G1, mes 5.** Proponemos una cancelación al menos 20% menor y una preparación al menos 25% menor, ambas frente a una base comparable del piloto, adopción superior a 80% por tienda y un servicio operable. La base se mide en las semanas 9 a 12 y el uso en las semanas 17 a 20, con tiendas no piloto de las mismas familias como comparación concurrente. El piso operacional es de 1.000 pedidos elegibles por fase. Si el retiro en tienda es un flujo nuevo sin base comparable, el resultado alternativo se ratifica antes de abrir el piloto. Sin base válida, el resultado se informa como inconcluso.
+**Criterios para G1, mes 5.** Proponemos como criterios una reducción relativa de al menos 20% en la cancelación y de al menos 25% en el tiempo de preparación, ambas frente a una base comparable del piloto, una adopción superior a 80% por tienda y un servicio operable. La base se mide en las semanas 9 a 12 y el uso en las semanas 17 a 20, con tiendas no piloto de las mismas familias como comparación concurrente. El piso operacional es de 1.000 pedidos elegibles por fase. Si el retiro en tienda es un flujo nuevo sin base comparable, el resultado alternativo se ratifica antes de abrir el piloto. Sin base válida, el resultado se informa como inconcluso.
 
 ## 1.6 Costos, financiación y riesgos
 
