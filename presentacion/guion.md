@@ -14,7 +14,7 @@
 
 > Entonces, hablando del problema: Hoy un cliente puede comprar en la web un producto que ya no está disponible. El stock publicado tarda entre 45 y 120 minutos en actualizarse, y la meta estratégica es bajar de 2 minutos. Además, 7,8% de los pedidos se cancelan por falta de stock, cuando la meta es quedar bajo 2%. Cuando el pedido avanza, su preparación toma en promedio 7,2 horas, y la meta es menos de 3. Al final del recorrido, la tienda que entrega tiene visibilidad limitada del estado del pedido digital.
 >
-> Estos datos vienen del enunciado, que no separa cuánto pesa cada causa. Por lo que, pueden influir la sincronización entre sistemas, el stock físico, las esperas de preparación y la capacidad de cada tienda. Por eso tratamos esas causas como hipótesis y diseñamos el piloto para contrastarlas.
+> Estos datos vienen del caso, que no separa cuánto pesa cada causa. Por lo que, pueden influir la sincronización entre sistemas, el stock físico, las esperas de preparación y la capacidad de cada tienda. Por eso tratamos esas causas como hipótesis y diseñamos el piloto para contrastarlas.
 
 ## Lámina 3 · Primero comprobamos si el piloto mejora el servicio
 
@@ -34,7 +34,7 @@
 >
 > B y C parten por lo mismo, que es inventario, pedidos y retiro en tienda. B suma la devolución elegible y una evolución modular sobre servicios reutilizables, y por eso su inversión es mayor. Recomendamos B porque resuelve la causa del problema. El caso señala que cada nueva integración aumenta la complejidad y las dependencias, y pide reducir las integraciones punto a punto. C mejora el retiro en tienda, pero lo hace agregando más conexiones sobre los mismos sistemas. B, en cambio, deja servicios reutilizables que sostienen las devoluciones y cualquier capacidad futura sin volver a empezar. Alejandro explica cómo vamos a trabajar.
 
-**Nota para preguntas, no se lee:** el enunciado dice en la p. 3 que «cada nueva integración incrementa la complejidad tecnológica y las dependencias», y en la p. 5 pone como restricción reducir las integraciones punto a punto y avanzar hacia APIs reutilizables. Si preguntan por el costo, los tramos 1 y 2 suman 1.020 MM para piloto, expansión y campaña, 220 sobre la referencia de C. El retorno se mide en el piloto con el modelo de volumen requerido del anexo E.
+**Nota para preguntas, no se lee:** el caso dice en la p. 3 que «cada nueva integración incrementa la complejidad tecnológica y las dependencias», y en la p. 5 pone como restricción reducir las integraciones punto a punto y avanzar hacia APIs reutilizables. Si preguntan por el costo, los tramos 1 y 2 suman 1.020 MM para piloto, expansión y campaña, 220 sobre la referencia de C. El retorno se mide en el piloto con el modelo de volumen requerido del anexo E.
 
 ## Lámina 5 · Combinamos control de inversión y entregas pequeñas
 
@@ -62,9 +62,9 @@
 >
 > Después de G2 viene R3. Ahí entra la devolución elegible, que sostiene la meta de 85% de resolución al primer contacto en esos casos. R3 también incluye un experimento de despacho desde tienda en 3 a 5 tiendas, con un máximo de 4 semanas o 300 pedidos, y el Comité debe autorizar antes su techo monetario.
 >
-> Dejamos clara la frontera. El ERP se conserva y el WMS, el sistema de almacén, se adapta con cambios acotados. Quedan fuera la inteligencia artificial, una data platform completa, los cupos dinámicos y la búsqueda automática de otro punto de retiro. Con esto respondemos 3 preguntas del enunciado. La IA queda para una etapa posterior, los datos entran como habilitador mínimo y el despacho desde tienda se prueba como experimento después del primer release. Rogelio explica cómo ordenamos este trabajo.
+> Dejamos clara la frontera. El ERP se conserva y el WMS, el sistema de almacén, se adapta con cambios acotados. Quedan fuera la inteligencia artificial, una data platform completa, los cupos dinámicos y la búsqueda automática de otro punto de retiro. Así resolvemos 3 decisiones de alcance. La IA queda para una etapa posterior, los datos entran como habilitador mínimo y el despacho desde tienda se prueba como experimento después del primer release. Rogelio explica cómo ordenamos este trabajo.
 
-**Nota para preguntas, no se lee:** el 85% aplica a devoluciones elegibles de compras web de las familias cubiertas; el 90% estratégico mide otra población, así que la diferencia de 5 puntos compara poblaciones distintas (anexo A).
+**Nota para preguntas, no se lee:** el 85% aplica a devoluciones elegibles de compras web de las familias cubiertas; el 90% estratégico mide otra población, así que la diferencia de 5 puntos compara poblaciones distintas (anexo A). La IA, la data platform y el despacho desde tienda son 3 de las decisiones que el caso pide defender (p. 8).
 
 ## Lámina 8 · Integración y stock habilitan el retiro en tienda
 
