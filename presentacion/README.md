@@ -18,7 +18,7 @@ Cada cifra conserva su fuente al pie y su estado visible: «Umbral propuesto», 
 
 1. Acordar relevos y ajustar el reparto del guion; ensayar 25 minutos de exposición y 10 de defensa.
 2. Ratificar las propuestas rotuladas: catálogo/CD, umbrales del piloto, devolución elegible, dotación y límites del experimento.
-3. Revisar las cinco láminas de respaldo de la sección «Anexos»: A medición, D estimación y costos, E calendario y capacidad, F cambios de condición y H B frente a C. Se usan solo en la defensa.
+3. Revisar las cinco láminas de respaldo de la sección «Anexos»: A medición, D estimación y costos, E calendario y capacidad, F cambios de condición y H business case de B. Se usan solo en la defensa.
 4. Exportar la presentación en el formato que pida el aula y hacerla llegar al exponer, según clase 4.
 
 Rogelio contrasta prioridades/estimación y anexos C/D; Maverick alcance/roadmap y B/E. Bryam y Alejandro coordinan diagnóstico, Business Case, enfoque y Charter según su reparto real; el equipo revisa apertura, riesgos y decisión.
